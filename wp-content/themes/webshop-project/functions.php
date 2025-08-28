@@ -21,6 +21,8 @@ function create_blog_post_type() {
         'supports' => array('title', 'editor', 'thumbnail'),
         'menu_position' => 5,
         'show_in_rest' => true,
+        'rewrite' => array('slug' => 'blog'),
+        'taxonomies' => array('category', 'post_tag'),
     );
 
     register_post_type('blog', $args);
