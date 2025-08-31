@@ -1,7 +1,5 @@
 <?php
-/**
- * The header for Terraqua theme (static version, no ACF)
- */
+
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -17,7 +15,6 @@
   <!-- Upper header -->
   <div class="header-top" style="background:#0b2a57; color:#fff; padding:12px 20px; display:flex; align-items:center; justify-content:space-between;">
     
-    <!-- Logo -->
     <div class="logo">
       <a href="<?php echo home_url(); ?>" style="color:#fff; text-decoration:none; font-weight:bold; font-size:22px;">
         TERRAQUA
