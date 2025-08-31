@@ -7,7 +7,7 @@ Description: A custom WordPress theme for an online pet webshop + its blog.
 
 
 .header-top {
-    background: #0b2a57;
+    background: #1C3361;
     color: #fff;
     padding: 12px 20px;
     display: flex;
@@ -56,7 +56,7 @@ Description: A custom WordPress theme for an online pet webshop + its blog.
   }
   
   .header-bottom {
-    background: #f0f0f0;
+    background: #E4E4E4;
     padding: 12px 20px;
   }
   
@@ -73,5 +73,5 @@ Description: A custom WordPress theme for an online pet webshop + its blog.
   }
   
   .header-bottom .main-nav a.active {
-    border-bottom: 3px solid #0b2a57;
+    border-bottom: 3px solid #1C3361;
   }
