@@ -1,5 +1,3 @@
-<?php?>
-
 <footer id="colophon" class="site-footer" style="background:#0a2c5e; color:white; padding:40px 0;">
     <div class="container" style="display:grid; grid-template-columns: repeat(5, 1fr); gap:30px; text-align:left;">
 
