@@ -33,9 +33,9 @@
         );
         $query = new WP_Query($args);
         ?>
-        
-        <?php if (have_posts()): ?>
-            <?php while (have_posts()): the_post(); ?>
+
+        <?php if ($query->have_posts()): ?>
+            <?php while ($query->have_posts()): $query->the_post(); ?>
                 <?php
                     $url = get_the_permalink();
                     $categories = get_the_category();
