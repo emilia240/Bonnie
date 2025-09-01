@@ -20,7 +20,7 @@ function create_blog_post_type() {
         'labels' => $labels,
         'public' => true,
         'has_archive' => true,
-        'supports' => array('title', 'editor', 'thumbnail'),
+        'supports' => array('title', 'editor', 'thumbnail', 'comments',),
         'menu_position' => 5,
         'show_in_rest' => true,
         'rewrite' => array('slug' => 'blog'),
