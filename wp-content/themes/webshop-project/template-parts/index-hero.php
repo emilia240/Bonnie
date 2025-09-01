@@ -59,7 +59,8 @@
                 <!-- Category & Tag -->
                 <div class="!px-2 !py-2  text-[#1D1D1D] flex justify-between !gap-2 " style="font-family: 'Bodoni MT', serif">
                     <div class="category text-sm flex flex-wrap">
-                        <?php if ($category) echo '<span>' . esc_html($category) . '</span>'; ?>
+                        <?php if (!empty($category)): ?>
+                            <span> <?php echo esc_html($category) ?></span>
                     </div>
                     <!-- Tags -->
                     <div class="tags text-xs flex flex-wrap gap-2 underline text-[#1d1d1d]">
@@ -78,13 +79,13 @@
 
 
                 <!-- Title -->
-                <h3 class="!mb-2 text-xl font-headers" style="font-family: var(--font-headers);"><?php echo esc_html($title); ?></h3>
+                <h3 class="!mb-2 text-xl" style="font-family: 'Aquavit', san-serif; font-weight: 500;"><?php echo esc_html($title); ?></h3>
                 
                 <!-- Description -->
-                <p class="mb-4 font-body" style="font-family: var(--font-body);"><?php echo esc_html($description); ?></p>
+                <p class="!mb-4" style="font-family: 'Skolar Sans', sans-serif; font weight: 400;"><?php echo esc_html($description); ?></p>
                 
                 <!-- Button -->
-                <a href="<?php echo get_permalink(); ?>" class="inline-flex items-center gap-2 bg-[#1C3361] text-[#F4F4F4] px-4 py-2 rounded-full font-accent mt-auto" style="font-family: var(--font-accent);">
+                <a href="<?php echo get_permalink(); ?>" class="inline-flex items-center !gap-2 bg-[#1C3361] text-[#F4F4F4] !px-4 !py-2 rounded-full mt-auto uppercase" style="font-family:'Bodoni MT', serif ">
                 Read article
                         <!--LATER link it to blog post -->
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
