@@ -84,26 +84,12 @@ if (have_posts()) :
         </article>
 
 
-        <div class="comments-container">
-    <?php while ( have_posts() ) : the_post(); ?>
-        <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-            <header class="entry-header">
-                <h1 class="entry-title"><?php the_title(); ?></h1>
-            </header>
-
-            <div class="entry-content">
-                <?php the_content(); ?>
-            </div>
-
-            <?php
-            // Add the comment section here
-            if ( comments_open() || get_comments_number() ) :
-                comments_template();
-            endif;
-            ?>
-        </article>
-    <?php endwhile; ?>
-</div>
+        <?php
+        // Show comment form if comments are open or there are comments
+        if ( comments_open() || get_comments_number() ) :
+            comments_template();
+        endif;
+        ?>
 
 
 <?php
