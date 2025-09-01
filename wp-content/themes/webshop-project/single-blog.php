@@ -81,16 +81,19 @@ if (have_posts()) :
                 </div>
             </div>
 
-        </article>
 
-
-        <?php
+               <?php
         // Show comment form if comments are open or there are comments
         if ( comments_open() || get_comments_number() ) :
             comments_template();
         endif;
         ?>
 
+
+        </article>
+
+
+     
 
 <?php
     endwhile;
