@@ -57,7 +57,7 @@
             <div class="flex flex-col flex-grow !py-2 !px-6">
            
                 <!-- Category & Tag -->
-                <div class="!px-2 !py-2 text-[#1D1D1D] flex justify-between !gap-2 " style="font-family: 'Bodoni MT', serif">
+                <div class="!px-2 !py-2 text-[#1D1D1D] !gap-2 " style="font-family: 'Bodoni MT', serif">
                     <div class="category text-sm flex flex-wrap uppercase">
                         <?php if (!empty($category)): ?>
                             <span> <?php echo esc_html($category) ?></span>
