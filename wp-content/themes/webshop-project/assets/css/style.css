@@ -1,0 +1,93 @@
+/*
+Theme name: Webshop Project
+Author: Team CodersForLife
+Version: 1.0
+Description: A custom WordPress theme for an online pet webshop + its blog.
+*/
+
+:root {
+  --color-primary: #1C3361;
+  --color-secondary: #175735;
+  --color-accent: #74B24B;
+  --color-light: #F4F4F4;
+  --color-dark: #1D1D1D;
+  --color-header-bg: #E4E4E4;
+  --font-headers: 'Aquavit', sans-serif;
+  --font-body: 'Skolar Sans', sans-serif;  
+  --font-accent: 'Bodoni MT', serif;
+}
+
+.body {
+  background-color: var(--color-light);
+  color: var(--color-dark);
+}
+
+.header-top {
+    background: #1C3361;
+    color: #fff;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .header-top .logo a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px;
+  }
+  
+  .header-top .search-bar {
+    flex: 1;
+    margin: 0 30px;
+  }
+  
+  .header-top .search-bar input[type="search"] {
+    width: 100%;
+    padding: 8px 14px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  .header-top .top-links a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 14px;
+    text-decoration: none;
+  }
+  
+  .header-top .user-actions {
+    display: flex;
+    gap: 12px;
+  }
+  
+  .header-top .user-actions a {
+    background: #222;
+    color: #fff;
+    padding: 6px 14px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .header-bottom {
+    background: #E4E4E4;
+    padding: 12px 20px;
+  }
+  
+  .header-bottom .main-nav {
+    display: flex;
+    gap: 40px;
+    font-weight: bold;
+  }
+  
+  .header-bottom .main-nav a {
+    color: #000;
+    text-decoration: none;
+    padding-bottom: 2px;
+  }
+  
+  .header-bottom .main-nav a.active {
+    border-bottom: 3px solid #1C3361;
+  }

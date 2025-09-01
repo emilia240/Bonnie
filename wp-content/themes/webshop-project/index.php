@@ -1,12 +1,10 @@
 <?php get_header(); ?>
-    <!-- //variables -->
+    
+    <?php get_template_part('template-parts/index', 'hero'); ?>
+    <?php get_template_part('template-parts/index', 'sellers'); ?>
+    <?php get_template_part('template-parts/index', 'terrariums'); ?>
+    <?php get_template_part('template-parts/index', 'articles'); ?>
+    <?php get_template_part('template-parts/index', 'services'); ?>
 
-    <?php if ($loop -> have_posts() ) : ?>
-        
-        <?php while ( $loop -> have_posts() ) : $loop -> the_post(); ?>
-        <!-- //content -->
-        <?php endwhile; ?>
-        <?php wp_reset_postdata(); ?>
-
-    <?php endif; ?>
+   
 <?php get_footer(); ?>
