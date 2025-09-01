@@ -44,7 +44,7 @@
             $button = get_field('button');
         ?>
             <!--Article Card -->
-        <div class="flex flex-col rounded-lg shadow bg-white overflow-hidden">
+        <div class="flex flex-col md:flex-col md:flex-wrap justify-center h-auto w-full rounded-lg shadow bg-white overflow-hidden">
             
             <!-- Image -->
             <?php if ($image): ?>
@@ -54,11 +54,11 @@
             <?php endif; ?>
            
             <!-- Content -->
-            <div class="flex flex-col flex-grow !py-2 !px-6">
+            <div class="flex flex-col flex-grow items-start !py-2 !px-6">
            
                 <!-- Category & Tag -->
                 <div class="!px-2 !py-2  text-[#1D1D1D] flex justify-between !gap-2 " style="font-family: 'Bodoni MT', serif">
-                    <div class="category text-sm flex flex-wrap">
+                    <div class="category text-sm flex flex-wrap uppercase">
                         <?php if (!empty($category)): ?>
                             <span> <?php echo esc_html($category) ?></span>
                         <?php endif; ?>
@@ -80,7 +80,7 @@
 
 
                 <!-- Title -->
-                <h3 class="!mb-2 text-xl uppercase" style="font-family: 'Aquavit', san-serif; font-weight: 500;"><?php echo esc_html($title); ?></h3>
+                <h3 class="!mb-2 text-xl" style="font-family: 'Aquavit', san-serif; font-weight: 500;"><?php echo esc_html($title); ?></h3>
                 
                 <!-- Description -->
                 <p class="!mb-4 text-xs line-clamp-3 sm:line-clamp-4 lg:line-clamp-5" style="font-family: 'Skolar Sans', sans-serif; font weight: 400;"><?php echo esc_html($description); ?></p>
@@ -89,7 +89,7 @@
                 <a href="<?php echo get_permalink(); ?>" class="inline-flex items-center !gap-2 bg-[#1C3361] text-[#F4F4F4] !px-4 !py-2 rounded-full !mt-auto uppercase" style="font-family:'Skolar Sans', sans-serif; font weight: 400;">
                 Read article
                         <!--LATER link it to blog post -->
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg xmlns="http://www.w3.org/2000/svg" class="flex flex-col w-auto h-4 items-center no-wrap" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <line x1="4" y1="12" x2="18" y2="12" stroke="currentColor" stroke-width="2"/>
                     <polyline points="12,6 18,12 12,18" stroke="currentColor" stroke-width="2" fill="none"/>
                 </svg>
