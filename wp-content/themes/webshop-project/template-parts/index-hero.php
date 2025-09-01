@@ -61,9 +61,10 @@
                     <div class="category text-sm flex flex-wrap">
                         <?php if (!empty($category)): ?>
                             <span> <?php echo esc_html($category) ?></span>
+                        <?php endif; ?>
                     </div>
                     <!-- Tags -->
-                    <div class="tags text-xs flex flex-wrap gap-2 underline text-[#1d1d1d]">
+                    <div class="tags text-xs flex flex-wrap !gap-2 underline text-[#1d1d1d]">
                         <?php if (!empty($tag_one)): ?>
                             <span ><?php echo esc_html($tag_one); ?></span>
                         <?php endif; ?>
@@ -85,7 +86,7 @@
                 <p class="!mb-4" style="font-family: 'Skolar Sans', sans-serif; font weight: 400;"><?php echo esc_html($description); ?></p>
                 
                 <!-- Button -->
-                <a href="<?php echo get_permalink(); ?>" class="inline-flex items-center !gap-2 bg-[#1C3361] text-[#F4F4F4] !px-4 !py-2 rounded-full mt-auto uppercase" style="font-family:'Bodoni MT', serif ">
+                <a href="<?php echo get_permalink(); ?>" class="inline-flex items-center !gap-2 bg-[#1C3361] text-[#F4F4F4] !px-4 !py-2 rounded-full !mt-auto uppercase" style="font-family:'Bodoni MT', serif ">
                 Read article
                         <!--LATER link it to blog post -->
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
