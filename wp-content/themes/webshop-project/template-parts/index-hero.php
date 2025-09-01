@@ -13,7 +13,7 @@
     <div class="text-lg font-body max-w-2xl" style="font-family: var(--font-body);">
       Educational articles to learn about pet care, terrariums, and more!
     </div>
-    <button class="bg-[#1C3361] text-[#F4F4F4] !px-6 !py-2 rounded-lg flex items-center !gap-2 no-wrap" style="font-family: 'Bodoni MT', serif; font-weight: 500;">
+    <button class="bg-[#1C3361] text-[#F4F4F4] !px-6 !py-2 rounded-lg inline-flex items-center !gap-2 no-wrap" style="font-family: 'Bodoni MT', serif; font-weight: 500;">
       Our blogs
         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <line x1="4" y1="12" x2="18" y2="12" stroke="currentColor" stroke-width="2"/>
@@ -24,7 +24,6 @@
 
   <!-- Article cards -->
   <div class="grid gap-10 w-full grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mb-8 sm:px-10 ">
-<!--grid !gap-8 w-full grid-cols-1 md:grid-cols-3 !px-4 -->
         <?php
         $args = array(
         'post_type' => 'article-card',
@@ -32,24 +31,24 @@
         );
         $loop = new WP_Query($args);
 
-        if ($loop->have_posts()):
-        while ($loop->have_posts()): $loop->the_post();
-            $category = get_field('category');
-            $tag_one = get_field('tag-one');
-            $tag_two = get_field('tag-two');
-            $tag_three = get_field('tag-three');
-            $title = get_field('title');
-            $description = get_field('description');
-            $image = get_field('image');
-            $button = get_field('button');
+        if (have_posts()):
+        while (have_posts()): the_post();
+            $url = get_the_permalink();
+            $categories = get_the_category();
+            $tags = get_the_tags();
+            $title = get_the_title();
+            $description = get_the_excerpt();
+            $image_id = get_post_thumbnail_id();
+            $image_url = $image_id ? wp_get_attachment_image_url($image_id, 'medium') : '';
+
         ?>
             <!--Article Card -->
         <div class="flex flex-col md:flex-col md:flex-wrap justify-center h-auto w-full rounded-lg shadow bg-white overflow-hidden">
             
             <!-- Image -->
-            <?php if ($image): ?>
+            <?php if ($image_url): ?>
             <div class="w-full h-48 flex items-center justify-center bg-gray-100">
-                <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($title); ?>" class="object-cover w-full h-full rounded-t-lg" />
+                <img src="<?php echo esc_url($image_url); ?>" alt="<?php echo esc_attr($title); ?>" class="object-cover w-full h-full rounded-t-lg" />
             </div>
             <?php endif; ?>
            
@@ -59,20 +58,22 @@
                 <!-- Category & Tag -->
                 <div class="!px-2 !py-2 flex justify-between !gap-2 " style="font-family: 'Bodoni MT', serif">
                     <div class="category text-sm flex flex-wrap uppercase">
-                        <?php if (!empty($category)): ?>
-                            <span> <?php echo esc_html($category) ?></span>
+                        <?php if (!empty($categories)): ?>
+                            <?php foreach ($categories as $category): ?>
+                                <a href="<?php echo esc_url(get_category_link($category->term_id)); ?>" class="mr-2 underline">
+                                    <?php echo esc_html($category->name); ?>
+                                </a>
+                            <?php endforeach; ?>
                         <?php endif; ?>
                     </div>
                     <!-- Tags -->
                     <div class="tags text-xs flex flex-wrap !gap-2 underline">
-                        <?php if (!empty($tag_one)): ?>
-                            <span ><?php echo esc_html($tag_one); ?></span>
-                        <?php endif; ?>
-                        <?php if (!empty($tag_two)): ?>
-                            <span><?php echo esc_html($tag_two); ?></span>
-                        <?php endif; ?>
-                        <?php if (!empty($tag_three)): ?>
-                            <span><?php echo esc_html($tag_three); ?></span>
+                        <?php if (!empty($tags)): ?>
+                            <?php foreach ($tags as $tag): ?>
+                                <a href="<?php echo esc_url(get_tag_link($tag->term_id)); ?>" class="badge rounded-pill text-bg-primary">
+                                    <?php echo esc_html($tag->name); ?>
+                                </a>
+                            <?php endforeach; ?>
                         <?php endif; ?>
                     </div>
                 </div>
@@ -86,7 +87,7 @@
                 <p class="!mb-4 text-xs line-clamp-3 sm:line-clamp-4 lg:line-clamp-5" style="font-family: 'Skolar Sans', sans-serif; font weight: 400;"><?php echo esc_html($description); ?></p>
                 
                 <!-- Button -->
-                <a href="<?php echo get_permalink(); ?>" class="inline-block items-center !gap-2 bg-[#1C3361] text-[#F4F4F4] !px-4 !py-2 rounded-full !mt-auto" style="font-family:'Skolar Sans', sans-serif; font weight: 400;">
+                <a href="<?php echo esc_url($url); ?>" class="inline-flex items-center !gap-2 bg-[#1C3361] text-[#F4F4F4] !px-4 !py-2 rounded-full !mt-auto" style="font-family:'Skolar Sans', sans-serif; font weight: 400;">
                 Read article
                         <!--LATER link it to blog post -->
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 items-center no-wrap" fill="none" viewBox="0 0 24 24" stroke="currentColor">
