@@ -75,3 +75,81 @@ Description: A custom WordPress theme for an online pet webshop + its blog.
   .header-bottom .main-nav a.active {
     border-bottom: 3px solid #1C3361;
   }
+
+
+  /* Comments section style */
+
+
+
+.wp-block-post-comments-form,
+.comment-respond {
+    margin: 40px 0;
+    padding: 0;
+    background: transparent;
+}
+
+.wp-block-post-comments-form h3,
+.comment-reply-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+    font-family: inherit;
+}
+
+
+.comment-form-comment textarea,
+.wp-block-post-comments-form textarea {
+    width: 100%;
+    min-height: 150px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: inherit;
+    resize: vertical;
+    background: white;
+    box-sizing: border-box;
+}
+
+.comment-form-comment textarea:focus,
+.wp-block-post-comments-form textarea:focus {
+    outline: none;
+    border-color: #0073aa;
+    box-shadow: 0 0 0 1px #0073aa;
+}
+
+
+.comment-form .form-submit input[type="submit"],
+.wp-block-post-comments-form button[type="submit"],
+.wp-block-post-comments-form input[type="submit"] {
+    background: #2c5282;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    float: right;
+    margin-top: 10px;
+}
+
+.comment-form .form-submit input[type="submit"]:hover,
+.wp-block-post-comments-form button[type="submit"]:hover,
+.wp-block-post-comments-form input[type="submit"]:hover {
+    background: #1C3361;
+}
+
+
+.comment-form-comment label {
+    display: none;
+}
+
+
+.comment-form:after,
+.wp-block-post-comments-form:after {
+    content: "";
+    display: table;
+    clear: both;
+}
