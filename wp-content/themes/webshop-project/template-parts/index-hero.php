@@ -54,17 +54,17 @@
             <?php endif; ?>
            
             <!-- Content -->
-            <div class="flex flex-col flex-grow !py-2 !px-6">
+            <div class="flex flex-col flex-grow !py-2 !px-6 text-[#1D1D1D]">
            
                 <!-- Category & Tag -->
-                <div class="!px-2 !py-2 text-[#1D1D1D] !gap-2 " style="font-family: 'Bodoni MT', serif">
+                <div class="!px-2 !py-2 flex justify-between !gap-2 " style="font-family: 'Bodoni MT', serif">
                     <div class="category text-sm flex flex-wrap uppercase">
                         <?php if (!empty($category)): ?>
                             <span> <?php echo esc_html($category) ?></span>
                         <?php endif; ?>
                     </div>
                     <!-- Tags -->
-                    <div class="tags text-xs flex flex-wrap !gap-2 underline text-[#1d1d1d]">
+                    <div class="tags text-xs flex flex-wrap !gap-2 underline">
                         <?php if (!empty($tag_one)): ?>
                             <span ><?php echo esc_html($tag_one); ?></span>
                         <?php endif; ?>
@@ -89,7 +89,7 @@
                 <a href="<?php echo get_permalink(); ?>" class="inline-flex items-center !gap-2 bg-[#1C3361] text-[#F4F4F4] !px-4 !py-2 rounded-full !mt-auto uppercase" style="font-family:'Skolar Sans', sans-serif; font weight: 400;">
                 Read article
                         <!--LATER link it to blog post -->
-                <svg xmlns="http://www.w3.org/2000/svg" class="flex flex-col w-auto h-4 items-center no-wrap" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-auto h-4 items-center no-wrap" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <line x1="4" y1="12" x2="18" y2="12" stroke="currentColor" stroke-width="2"/>
                     <polyline points="12,6 18,12 12,18" stroke="currentColor" stroke-width="2" fill="none"/>
                 </svg>
