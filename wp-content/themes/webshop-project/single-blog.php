@@ -45,6 +45,14 @@ if (have_posts()) :
                 <div style="clear: both;"></div>
             </div>
 
+            <!-- Comments Section -->
+
+        <?php
+        if ( comments_open() || get_comments_number() ) :
+            comments_template();
+        endif;
+        ?>
+
             <!-- Related Posts -->
             <div class="related-posts" style="margin-top: 40px;">
                 <h3>Related Posts</h3>
@@ -82,12 +90,6 @@ if (have_posts()) :
             </div>
 
 
-               <?php
-        // Show comment form if comments are open or there are comments
-        if ( comments_open() || get_comments_number() ) :
-            comments_template();
-        endif;
-        ?>
 
 
         </article>
