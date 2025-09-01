@@ -24,15 +24,9 @@
 
   <!-- Article cards -->
   <div class="grid gap-10 w-full grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mb-8 sm:px-10 ">
+        <?php if (have_posts()): ?>
+        <?php while (have_posts()): the_post(); ?>
         <?php
-        $args = array(
-        'post_type' => 'article-card',
-        'posts_per_page' => 3,
-        );
-        $loop = new WP_Query($args);
-
-        if (have_posts()):
-        while (have_posts()): the_post();
             $url = get_the_permalink();
             $categories = get_the_category();
             $tags = get_the_tags();
