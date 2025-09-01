@@ -13,13 +13,14 @@
     <div class="text-lg font-body max-w-2xl" style="font-family: var(--font-body);">
       Educational articles to learn about pet care, terrariums, and more!
     </div>
-    <button class="bg-[#1C3361] text-[#F4F4F4] !px-6 !py-2 rounded-lg inline-flex items-center !gap-2 no-wrap" style="font-family: 'Bodoni MT', serif; font-weight: 500;">
+    <a  href="<?php echo esc_url(get_permalink(get_option('page_for_posts'))); ?>"
+    class="bg-[#1C3361] text-[#F4F4F4] !px-6 !py-2 rounded-lg inline-flex items-center !gap-2 no-wrap" style="font-family: 'Bodoni MT', serif; font-weight: 500;">
       Our blogs
         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <line x1="4" y1="12" x2="18" y2="12" stroke="currentColor" stroke-width="2"/>
             <polyline points="12,6 18,12 12,18" stroke="currentColor" stroke-width="2" fill="none"/>
         </svg>
-    </button>
+    </a>
   </div>
 
   <!-- Article cards -->
@@ -64,7 +65,7 @@
                             <div class="category text-sm flex flex-wrap uppercase">
                                 <?php if (!empty($categories)): ?>
                                     <?php foreach ($categories as $category): ?>
-                                        <a href="<?php echo esc_url(get_category_link($category->term_id)); ?>" class="mr-2 underline">
+                                        <a href="<?php echo esc_url(get_category_link($category->term_id)); ?>">
                                             <?php echo esc_html($category->name); ?>
                                         </a>
                                     <?php endforeach; ?>
@@ -107,6 +108,5 @@
             <?php else : ?>
             <p>No articles found.</p>
         <?php endif; ?>
-
   </div>
 </section>
