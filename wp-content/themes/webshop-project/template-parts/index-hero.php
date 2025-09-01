@@ -86,10 +86,10 @@
                 <p class="!mb-4 text-xs line-clamp-3 sm:line-clamp-4 lg:line-clamp-5" style="font-family: 'Skolar Sans', sans-serif; font weight: 400;"><?php echo esc_html($description); ?></p>
                 
                 <!-- Button -->
-                <a href="<?php echo get_permalink(); ?>" class="inline-flex items-center !gap-2 bg-[#1C3361] text-[#F4F4F4] !px-4 !py-2 rounded-full uppercase" style="font-family:'Skolar Sans', sans-serif; font weight: 400;">
+                <a href="<?php echo get_permalink(); ?>" class="inline-flex items-center !gap-2 bg-[#1C3361] text-[#F4F4F4] !px-4 !py-2 rounded-full !mt-auto uppercase" style="font-family:'Skolar Sans', sans-serif; font weight: 400;">
                 Read article
                         <!--LATER link it to blog post -->
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 items-center no-wrap" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 items-center" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <line x1="4" y1="12" x2="18" y2="12" stroke="currentColor" stroke-width="2"/>
                     <polyline points="12,6 18,12 12,18" stroke="currentColor" stroke-width="2" fill="none"/>
                 </svg>
