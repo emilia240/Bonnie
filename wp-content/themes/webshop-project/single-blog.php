@@ -35,12 +35,10 @@
 
         <!-- Main content: image left, text right -->
         <div class="post-content">
-            
-            <!-- Left side image -->
             <?php if (get_field('featured_image') || has_post_thumbnail()) : ?>
-                <div class="post-image">
+                <div class="post-image-wrap">
                     <?php if (get_field('featured_image')) : ?>
-                        <img class= "post-image-wrap" src="<?php the_field('featured_image'); ?>" alt="<?php the_title(); ?>" />
+                        <img src="<?php the_field('featured_image'); ?>" alt="<?php the_title(); ?>" />
                     <?php else : ?>
                         <?php the_post_thumbnail('large'); ?>
                     <?php endif; ?>
