@@ -1,6 +1,6 @@
 <?php
 function wb_load_resources() {
-    wp_enqueue_style( 'style', get_template_directory_uri() . "/style.css" );
+    wp_enqueue_style( 'style', get_template_directory_uri() . "/assets/css/style.css" );
     wp_enqueue_script( 'tailwind', 'https://cdn.tailwindcss.com', array(), null, true );
     wp_enqueue_style( 'adobe-fonts', 'https://use.typekit.net/fjs8eoq.css' );
 }
@@ -20,7 +20,7 @@ function create_blog_post_type() {
         'labels' => $labels,
         'public' => true,
         'has_archive' => true,
-        'supports' => array('title', 'editor', 'thumbnail'),
+        'supports' => array('title', 'editor', 'thumbnail', 'comments'),
         'menu_position' => 5,
         'show_in_rest' => true,
         'rewrite' => array('slug' => 'blog'),
@@ -30,3 +30,16 @@ function create_blog_post_type() {
     register_post_type('blog', $args);
 }
 add_action('init', 'create_blog_post_type');
+
+
+
+// Change comment form text
+function custom_comment_form_defaults( $defaults ) {
+    $defaults['title_reply'] = 'Leave a comment';  
+    $defaults['label_submit'] = 'Comment'; 
+    return $defaults;
+}
+add_filter( 'comment_form_defaults', 'custom_comment_form_defaults' );
+
+
+
