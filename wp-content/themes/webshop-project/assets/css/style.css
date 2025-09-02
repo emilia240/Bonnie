@@ -201,9 +201,7 @@ Description: A custom WordPress theme for an online pet webshop + its blog.
 
 /* Content Layout */
 .post-content {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
+  display: block; /* Remove flexbox */
   margin-bottom: 2rem;
 }
 
@@ -401,21 +399,21 @@ Description: A custom WordPress theme for an online pet webshop + its blog.
 
 
 .post-image-wrap {
-    float: left;               /* image floats left */
-    margin: 0 20px 20px 0;     /* space between image and text */
-    max-width: 300px;          /* adjust image width */
+  float: left;
+  margin: 0 20px 20px 0;
+  max-width: 300px;
 }
 
 .post-image-wrap img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
 }
 
-/* Clear floats after content */
 .post-content::after {
-    content: "";
-    display: table;
-    clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 
 /* Post meta */
