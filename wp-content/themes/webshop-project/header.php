@@ -50,9 +50,7 @@
     </nav>
   </div>
 
-     <ul class="language-switcher">
-   <?php pll_the_languages(array("show_flags" => true)) ?>
-      </ul>
+ 
 
 </header>
 <?php wp_footer(); ?>
