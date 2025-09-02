@@ -73,12 +73,13 @@ Description: A custom WordPress theme for an online pet webshop + its blog.
   
   .header-bottom {
     background: #E4E4E4;
+    justify-content: center;
     padding: 12px 20px;
   }
   
   .header-bottom .main-nav {
     display: flex;
-    gap: 40px;
+    justify-content: space-evenly;
     font-weight: bold;
   }
   
