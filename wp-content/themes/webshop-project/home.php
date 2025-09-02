@@ -1,23 +1,11 @@
-die('Loaded home.php');
 <?php get_header(); ?>
 
 <!-- categories filter here -->
 <h1>Blog Posts Template TEST </h1>
 <!-- Article cards -->
   <div class="grid gap-10 w-full grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mb-8 sm:px-10 ">
-        <?php
-        $args = array(
-            'post_type' => 'blog',
-            'posts_per_page' => 15,
-            'paged' => $paged,
-            'orderby' => 'date',
-            'order' => 'DESC',
-        );
-        $query = new WP_Query($args);
-        ?>
-
-        <?php if ($query->have_posts()): ?>
-            <?php while ($query->have_posts()): $query->the_post(); ?>
+        <?php if (have_posts()): ?>
+            <?php while (have_posts()): the_post(); ?>
                 <?php
                     $url = get_the_permalink();
                     $categories = get_the_category();
@@ -94,11 +82,6 @@ die('Loaded home.php');
 
     <!-- Pagination -->
      <div class="mt-8 flex justify-center">
-        <?php
-        echo paginate_links(array(
-            'total' => $query->max_num_pages,
-            'current' => $paged,
-        ));
-        ?>
+        <?php echo paginate_links();?>
     </div>
 <?php get_footer(); ?>
