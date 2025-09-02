@@ -408,7 +408,7 @@ Description: A custom WordPress theme for an online pet webshop + its blog.
   max-width: 300px;          /* adjust size as needed */
 }
 
-.post-image-wrap img {
+.post-image img {
   width: 100%;
   height: auto;
   border-radius: 0;          /* remove rounded corners */
