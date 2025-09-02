@@ -1,3 +1,4 @@
+die('Loaded home.php');
 <?php get_header(); ?>
 
 <!-- categories filter here -->
