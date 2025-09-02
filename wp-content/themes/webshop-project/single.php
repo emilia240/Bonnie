@@ -1,8 +1,5 @@
 <?php get_header(); ?>
 
-<!-- <main id="main-content">
-
-</main> -->
 
 
 
