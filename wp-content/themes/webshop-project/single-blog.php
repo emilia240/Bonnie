@@ -33,73 +33,72 @@
          </div> 
          <?php endif; ?>
 
-        <!-- Main content: image left, text right -->
-        <div class="post-content">
-            <?php if (get_field('featured_image') || has_post_thumbnail()) : ?>
-                <div class="post-image-wrap">
-                    <?php if (get_field('featured_image')) : ?>
-                        <img src="<?php the_field('featured_image'); ?>" alt="<?php the_title(); ?>" />
-                    <?php else : ?>
-                        <?php the_post_thumbnail('large'); ?>
-                    <?php endif; ?>
-                </div>
-            <?php endif; ?>
-
-            <!-- Right side text -->
-            <div class="post-text">
-                <?php if (get_field('post_text')) : ?>
-                    <?php the_field('post_text'); ?>
-                <?php else: ?>
-                    <?php the_content(); ?>
+       <!-- Main content with floated image -->
+    <div class="post-content">
+        <?php if (get_field('featured_image') || has_post_thumbnail()) : ?>
+            <div class="post-image-wrap">
+                <?php if (get_field('featured_image')) : ?>
+                    <img src="<?php the_field('featured_image'); ?>" alt="<?php the_title(); ?>" />
+                <?php else : ?>
+                    <?php the_post_thumbnail('large'); ?>
                 <?php endif; ?>
             </div>
-        </div>
+        <?php endif; ?>
 
-        <!-- Comments Section -->
-        <div class="comments-section">
-            <?php if ( comments_open() || get_comments_number() ) :
-                comments_template();
-            endif; ?>
-        </div>
+        <p>
+            <?php if (get_field('post_text')) : ?>
+                <?php the_field('post_text'); ?>
+            <?php else: ?>
+                <?php the_content(); ?>
+            <?php endif; ?>
+        </p>
+    </div>
 
-        <!-- Related Posts -->
-        <div class="related-posts">
-            <h3>Related Posts</h3>
-            <div class="related-grid">
-                <?php
-                $categories = wp_get_post_terms(get_the_ID(), 'category', array('fields' => 'ids'));
-                if ($categories) :
-                    $related = new WP_Query(array(
-                        'post_type' => 'blog',
-                        'tax_query' => array(
-                            array(
-                                'taxonomy' => 'category',
-                                'field' => 'term_id',
-                                'terms' => $categories,
-                            ),
+    <!-- Comments Section -->
+    <div class="comments-section">
+        <?php if ( comments_open() || get_comments_number() ) :
+            comments_template();
+        endif; ?>
+    </div>
+
+    <!-- Related Posts -->
+    <div class="related-posts">
+        <h3>Related Posts</h3>
+        <div class="related-grid">
+            <?php
+            $categories = wp_get_post_terms(get_the_ID(), 'category', array('fields' => 'ids'));
+            if ($categories) :
+                $related = new WP_Query(array(
+                    'post_type' => 'blog',
+                    'tax_query' => array(
+                        array(
+                            'taxonomy' => 'category',
+                            'field' => 'term_id',
+                            'terms' => $categories,
                         ),
-                        'post__not_in' => array(get_the_ID()),
-                        'posts_per_page' => 3
-                    ));
+                    ),
+                    'post__not_in' => array(get_the_ID()),
+                    'posts_per_page' => 3
+                ));
 
-                    while ($related->have_posts()) : $related->the_post(); ?>
-                        <div class="related-post">
-                            <a href="<?php the_permalink(); ?>">
-                                <?php if (has_post_thumbnail()) : ?>
-                                    <?php the_post_thumbnail('medium'); ?>
-                                <?php endif; ?>
-                                <h4><?php the_title(); ?></h4>
-                            </a>
-                        </div>
-                    <?php endwhile;
-                    wp_reset_postdata();
-                endif;
-                ?>
-            </div>
+                while ($related->have_posts()) : $related->the_post(); ?>
+                    <div class="related-post">
+                        <a href="<?php the_permalink(); ?>">
+                            <?php if (has_post_thumbnail()) : ?>
+                                <?php the_post_thumbnail('medium'); ?>
+                            <?php endif; ?>
+                            <h4><?php the_title(); ?></h4>
+                        </a>
+                    </div>
+                <?php endwhile;
+                wp_reset_postdata();
+            endif;
+            ?>
         </div>
+    </div>
 
-    </article>
- 
+</article>
+
 <?php endwhile; endif; ?>
 
 <?php get_footer(); ?>

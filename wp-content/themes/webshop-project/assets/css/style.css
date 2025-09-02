@@ -400,27 +400,22 @@ Description: A custom WordPress theme for an online pet webshop + its blog.
 
 
 
-/* Single blog post styles */
-
-.post-content {
-    display: flex;       /* Flex container */
-    gap: 20px;           /* Space between image and text */
-    flex-wrap: wrap;     /* Allows text to wrap below image on smaller screens */
-    margin-bottom: 2rem; /* Optional spacing below post content */
+.post-image-wrap {
+    float: left;               /* image floats left */
+    margin: 0 20px 20px 0;     /* space between image and text */
+    max-width: 300px;          /* adjust image width */
 }
 
-.post-image {
-    flex: 0 0 300px;     /* Fixed width for image */
-}
-
-.post-image img {
+.post-image-wrap img {
     width: 100%;
     height: auto;
-    border-radius: 0;    /* Optional: remove rounded corners */
 }
 
-.post-text {
-    flex: 1;             /* Takes remaining space */
+/* Clear floats after content */
+.post-content::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 /* Post meta */
