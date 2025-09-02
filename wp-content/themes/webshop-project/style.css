@@ -105,7 +105,7 @@ Description: A custom WordPress theme for an online pet webshop + its blog.
     width: 100%;
     min-height: 150px;
     padding: 15px;
-    border: 1px solid #ddd;
+    border: 1px solid #000;
     border-radius: 4px;
     font-size: 16px;
     font-family: inherit;
@@ -155,3 +155,106 @@ Description: A custom WordPress theme for an online pet webshop + its blog.
     display: table;
     clear: both;
 }
+
+.comment-form .logged-in-as,
+.logged-in-as {
+    display: none;
+}
+
+
+/* Overall comments container */
+.comments-area,
+.wp-block-comments {
+    margin: 40px 0;
+}
+
+/* Comments heading */
+.comments-title,
+.wp-block-comments h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Individual comment container */
+.comment,
+.wp-block-comment,
+.comment-body {
+    border: 1px solid #000;
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 20px;
+    background: white;
+    position: relative;
+    max-width: 800px; /* Change this value */
+
+}
+
+/* Comment author section */
+.comment-author,
+.wp-block-comment .wp-block-avatar {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+/* Avatar styling */
+.comment-author img,
+.wp-block-avatar img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+/* Author name */
+.comment-author .fn,
+.wp-block-comment .comment-author {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Comment content */
+.comment-content,
+.wp-block-comment .comment-content {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Reply button */
+.reply a,
+.wp-block-comment .reply-link {
+    background: #2c5282;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    display: inline-block;
+    float: right;
+    margin-top: 36px;
+}
+
+.reply a:hover,
+.wp-block-comment .reply-link:hover {
+    background: #2a4f7a;
+}
+
+/* See all comments link */
+.comments-area a[href*="comments"] {
+    color: #333;
+    text-decoration: underline;
+    font-size: 16px;
+}
+
+/* Hide comment meta/date if you don't want it */
+.comment-metadata {
+    display: none;
+}
+
+

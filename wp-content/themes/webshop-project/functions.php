@@ -35,8 +35,11 @@ add_action('init', 'create_blog_post_type');
 
 // Change comment form text
 function custom_comment_form_defaults( $defaults ) {
-    $defaults['title_reply'] = 'Comments';  
+    $defaults['title_reply'] = 'Leave a comment';  
     $defaults['label_submit'] = 'Comment'; 
     return $defaults;
 }
 add_filter( 'comment_form_defaults', 'custom_comment_form_defaults' );
+
+
+
