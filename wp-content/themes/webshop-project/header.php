@@ -42,13 +42,13 @@
  
   <div class="header-bottom">
     <nav class="main-nav">
-      <a href="#">Pets</a>
-      <a href="#">Food &amp; supplies</a>
-      <a href="#">Terrariums</a>
-      <a href="#">Offers</a>
-      <a href="#" class="active">Blog</a>
+      <a href="<?php echo esc_url(home_url('/pets')); ?>" class="<?php if (is_page('pets')) echo 'active'; ?>">Pets</a>
+      <a href="<?php echo esc_url(home_url('/food-supplies')); ?>" class="<?php if (is_page('food-supplies')) echo 'active'; ?>">Food &amp; supplies</a>
+      <a href="<?php echo esc_url(home_url('/terrariums')); ?>" class="<?php if (is_page('terrariums')) echo 'active'; ?>">Terrariums</a>
+      <a href="<?php echo esc_url(home_url('/offers')); ?>" class="<?php if (is_page('offers')) echo 'active'; ?>">Offers</a>
+      <a href="<?php echo esc_url(home_url('/blog')); ?>" class="<?php if (is_home() || is_single()) echo 'active'; ?>">Blog</a>
     </nav>
-  </div>
+</div>
 
  
 
