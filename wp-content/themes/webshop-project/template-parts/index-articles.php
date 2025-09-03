@@ -38,16 +38,6 @@
 
         <?php if ($query->have_posts()): ?>
             <?php while ($query->have_posts()): $query->the_post(); ?>
-                <?php
-                    $url = get_the_permalink();
-                    $categories = get_the_category();
-                    $tags = get_the_tags();
-                    $title = get_the_title();
-                    $description = get_the_excerpt();
-                    $image_id = get_post_thumbnail_id();
-                    $image_url = $image_id ? wp_get_attachment_image_url($image_id, 'medium') : '';
-
-                ?>
                 <!--Article Card -->
                 <?php get_template_part('template-parts/index-articles', 'card'); ?>
             
