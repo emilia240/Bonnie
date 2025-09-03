@@ -108,7 +108,10 @@
 
              <!-- Pagination -->
             <div class="mt-8 flex justify-center">
-                <?php echo paginate_links();?>
+                <?php echo paginate_links(array(
+                    'total' => $query->max_num_pages,
+                    'current' => get_query_var('paged') ? get_query_var('paged') : 1,
+                )); ?>
             </div>
         <?php endif; ?>
     </div>
