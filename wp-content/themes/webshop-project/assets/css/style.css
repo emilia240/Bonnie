@@ -48,6 +48,8 @@ Description: A custom WordPress theme for an online pet webshop + its blog.
     padding: 8px 14px;
     border-radius: 20px;
     border: 1px solid #ccc;
+    color: var(--color-dark); 
+    background-color: var(--color-light);
   }
   
   .header-top .top-links a {
