@@ -62,7 +62,7 @@
                     <div class="flex flex-col flex-grow !py-2 !px-6 text-[#1D1D1D]">
                 
                         <!-- Category & Tag -->
-                        <div class="flex justify-between !gap-2 " style="font-family: 'Skolar Sans', sans-serif; font weight: 400;">
+                        <div class="flex justify-between !gap-2 !py-2" style="font-family: 'Skolar Sans', sans-serif; font weight: 400;">
                             <div class="category text-xs flex flex-wrap uppercase !gap-2">
                                 <?php if (!empty($categories)): ?>
                                     <?php foreach ($categories as $category): ?>
