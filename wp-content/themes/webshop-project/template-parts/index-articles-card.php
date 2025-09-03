@@ -1,6 +1,26 @@
     <!--Article Card -->
                 <div class="flex flex-col md:flex-col md:flex-wrap justify-center h-auto w-full rounded-lg shadow bg-white overflow-hidden">
-                    
+                    <?php
+                    $url = get_the_permalink();
+                    $categories = get_the_category();
+                    $tags = get_the_tags();
+                    $title = get_the_title();
+                    $description = get_the_excerpt();
+                    $image_id = get_post_thumbnail_id();
+                    $image_url = $image_id ? wp_get_attachment_image_url($image_id, 'medium') : '';
+
+
+                    $cat_id = isset($_GET['cat']) && $_GET['cat'] !== '' ? intval($_GET['cat']) : '';
+                    $args = array(
+                        'post_type' => 'post',
+                        'posts_per_page' => 15,
+                        'paged' => get_query_var('paged') ? get_query_var('paged') : 1,
+                    );
+                    if ($cat_id) {
+                        $args['cat'] = $cat_id;
+                    }
+                    $query = new WP_Query($args);
+                    ?>
                     <!-- Image -->
                     <?php if ($image_url): ?>
                     <div class="w-full h-48 flex items-center justify-center bg-gray-100">
