@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <!-- categories filter here -->
-<h1>Blog Posts Template TEST </h1>
+
 <!-- Article cards -->
   <div class="grid gap-10 w-full grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mb-8 sm:px-10 ">
         <?php if (have_posts()): ?>
@@ -17,7 +17,7 @@
 
                 ?>
                     <!--Article Card -->
-                <div class="flex flex-col md:flex-col md:flex-wrap justify-center h-auto w-full rounded-lg shadow bg-white overflow-hidden">
+                <div class="flex flex-col md:flex-col md:flex-wrap justify-center h-auto w-full rounded-lg shadow bg-[#E4E4E4] overflow-hidden">
                     
                     <!-- Image -->
                     <?php if ($image_url): ?>
@@ -31,7 +31,7 @@
                 
                         <!-- Category & Tag -->
                         <div class="!px-2 !py-2 flex justify-between !gap-2 " style="font-family: 'Bodoni MT', serif">
-                            <div class="category text-sm flex flex-wrap uppercase">
+                            <div class="category text-sm flex flex-wrap uppercase !gap-2">
                                 <?php if (!empty($categories)): ?>
                                     <?php foreach ($categories as $category): ?>
                                         <a href="<?php echo esc_url(get_category_link($category->term_id)); ?>">
@@ -76,12 +76,14 @@
 
             <?php else : ?>
             <p>No articles found.</p>
+            
+             <!-- Pagination -->
+            <div class="mt-8 flex justify-center">
+                <?php echo paginate_links();?>
+            </div>
         <?php endif; ?>
     </div>
 
 
-    <!-- Pagination -->
-     <div class="mt-8 flex justify-center">
-        <?php echo paginate_links();?>
-    </div>
+   
 <?php get_footer(); ?>
