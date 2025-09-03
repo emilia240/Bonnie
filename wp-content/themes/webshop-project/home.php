@@ -31,7 +31,7 @@
                 
                         <!-- Category & Tag -->
                         <div class="!px-2 !py-2 flex justify-between !gap-2 " style="font-family: 'Bodoni MT', serif">
-                            <div class="category text-sm flex flex-wrap uppercase !gap-2">
+                            <div class="category text-xs flex flex-wrap uppercase !gap-2">
                                 <?php if (!empty($categories)): ?>
                                     <?php foreach ($categories as $category): ?>
                                         <a href="<?php echo esc_url(get_category_link($category->term_id)); ?>">
@@ -41,7 +41,7 @@
                                 <?php endif; ?>
                             </div>
                             <!-- Tags -->
-                            <div class="tags text-xs flex flex-wrap !gap-2 underline">
+                            <div class="tags text-xs flex flex-wrap !gap-2 hover:underline hover:text-[#1C3361] transition-colors duration-200">
                                 <?php if (!empty($tags)): ?>
                                     <?php foreach ($tags as $tag): ?>
                                         <a href="<?php echo esc_url(get_tag_link($tag->term_id)); ?>" class="badge rounded-pill text-bg-primary">
@@ -61,7 +61,8 @@
                         <p class="!mb-4 text-xs line-clamp-3 sm:line-clamp-4 lg:line-clamp-5" style="font-family: 'Skolar Sans', sans-serif; font weight: 400;"><?php echo esc_html($description); ?></p>
                         
                         <!-- Button -->
-                        <a href="<?php echo esc_url($url); ?>" class="inline-flex items-center !gap-2 bg-[#1C3361] text-[#F4F4F4] !px-4 !py-2 rounded-full !mt-auto" style="font-family:'Skolar Sans', sans-serif; font weight: 400;">
+                        <a href="<?php echo esc_url($url); ?>" class="inline-flex items-center !gap-2 bg-[#1C3361] text-[#F4F4F4] !px-4 !py-2 rounded-full !mt-auto w-fit hover:bg-white hover:text-[#1C3361] 
+                        hover:border hover:border-[#1C3361] transition-colors duration-200" style="font-family:'Skolar Sans', sans-serif; font weight: 400;" style="font-family:'Skolar Sans', sans-serif; font weight: 400;">
                         Read article
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 items-center no-wrap" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <line x1="4" y1="12" x2="18" y2="12" stroke="currentColor" stroke-width="2"/>
@@ -76,7 +77,7 @@
 
             <?php else : ?>
             <p>No articles found.</p>
-            
+
              <!-- Pagination -->
             <div class="mt-8 flex justify-center">
                 <?php echo paginate_links();?>

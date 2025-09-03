@@ -14,7 +14,8 @@
       Educational articles to learn about pet care, terrariums, and more!
     </div>
     <a  href="<?php echo esc_url(get_permalink(get_option('page_for_posts'))); ?>"
-    class="bg-[#1C3361] text-[#F4F4F4] !px-6 !py-2 rounded-lg inline-flex items-center !gap-2 no-wrap" style="font-family: 'Bodoni MT', serif; font-weight: 500;">
+    class="bg-[#1C3361] text-[#F4F4F4] !px-6 !py-2 rounded-lg inline-flex items-center !gap-2 no-wrap hover:bg-white hover:text-[#1C3361] 
+            hover:border hover:border-[#1C3361] transition-colors duration-200" style="font-family: 'Bodoni MT', serif; font-weight: 500;">
       Our blogs
         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <line x1="4" y1="12" x2="18" y2="12" stroke="currentColor" stroke-width="2"/>
@@ -61,8 +62,8 @@
                     <div class="flex flex-col flex-grow !py-2 !px-6 text-[#1D1D1D]">
                 
                         <!-- Category & Tag -->
-                        <div class="!px-2 !py-2 flex justify-between !gap-2 " style="font-family: 'Skolar Sans', sans-serif; font weight: 400;">
-                            <div class="category text-xs flex flex-wrap uppercase">
+                        <div class="flex justify-between !gap-2 " style="font-family: 'Skolar Sans', sans-serif; font weight: 400;">
+                            <div class="category text-xs flex flex-wrap uppercase !gap-2">
                                 <?php if (!empty($categories)): ?>
                                     <?php foreach ($categories as $category): ?>
                                         <a href="<?php echo esc_url(get_category_link($category->term_id)); ?>">
