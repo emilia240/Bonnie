@@ -24,16 +24,7 @@
         <?php if (have_posts()): ?>
             <?php while (have_posts()): the_post(); ?>
                 <?php
-                    $url = get_the_permalink();
-                    $categories = get_the_category();
-                    $tags = get_the_tags();
-                    $title = get_the_title();
-                    $description = get_the_excerpt();
-                    $image_id = get_post_thumbnail_id();
-                    $image_url = $image_id ? wp_get_attachment_image_url($image_id, 'medium') : '';
-
-
-                    $cat_id = isset($_GET['cat']) && $_GET['cat'] !== '' ? intval($_GET['cat']) : '';
+                /* $cat_id = isset($_GET['cat']) && $_GET['cat'] !== '' ? intval($_GET['cat']) : '';
                     $args = array(
                         'post_type' => 'post',
                         'posts_per_page' => 15,
@@ -42,7 +33,7 @@
                     if ($cat_id) {
                         $args['cat'] = $cat_id;
                     }
-                    $query = new WP_Query($args);
+                    $query = new WP_Query($args); */
                 ?>
                     <!--Article Card -->
                 <?php get_template_part('template-parts/index-articles', 'card'); ?>
