@@ -7,7 +7,7 @@ function wb_load_resources() {
 
 add_action( 'wp_enqueue_scripts', 'wb_load_resources' );
 
-function create_blog_post_type() {
+/* function create_blog_post_type() {
     $labels = array(
         'name' => 'Blog',
         'singular_name' => 'Blog Post',
@@ -29,7 +29,7 @@ function create_blog_post_type() {
 
     register_post_type('blog', $args);
 }
-add_action('init', 'create_blog_post_type');
+add_action('init', 'create_blog_post_type'); */
 
 
 
