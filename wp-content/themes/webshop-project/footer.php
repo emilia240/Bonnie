@@ -1,4 +1,4 @@
-<footer id="colophon" class="site-footer" style="background:#0a2c5e; color:white; padding:40px 0;">
+<footer id="colophon" class="site-footer" style="background:#0a2c5e; color:white; padding:40px 40px;">
     <div class="container" style="display:grid; grid-template-columns: repeat(5, 1fr); gap:30px; text-align:left;">
 
        
@@ -30,13 +30,13 @@
         </div>
 
         
-        <div class="footer-column">
+        <div class="footer-column" style="margin-right:20px">
             <h4>Contact Form</h4>
             <form method="post" action="#">
-                <input type="text" name="username" placeholder="Username" style="width:100%; margin-bottom:10px; padding:8px;">
-                <input type="email" name="email" placeholder="e-mail" style="width:100%; margin-bottom:10px; padding:8px;">
-                <textarea name="message" placeholder="Leave a message" style="width:100%; margin-bottom:10px; padding:8px;"></textarea>
-                <button type="submit" style="background:#3baae3; border:none; color:white; padding:8px 16px; cursor:pointer;">Send</button>
+                <input type="text" name="username" placeholder="Username" style="width:100%; margin-bottom:10px; padding:8px; border-radius:4px;">
+                <input type="email" name="email" placeholder="e-mail" style="width:100%; margin-bottom:10px; padding:8px; border-radius:4px;">
+                <textarea name="message" placeholder="Leave a message" style="width:100%; margin-bottom:10px; padding:8px; border-radius:4px;"></textarea>
+                <button type="submit" style="background:#3baae3; border:none; color:white; padding:8px 16px; cursor:pointer; border-radius:4px;">Send</button>
             </form>
         </div>
 
