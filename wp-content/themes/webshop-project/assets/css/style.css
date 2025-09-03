@@ -92,6 +92,8 @@ Description: A custom WordPress theme for an online pet webshop + its blog.
   }
   
   .header-bottom .main-nav a.active {
+    text-decoration: underline;
+    font-weight: bold;
     border-bottom: 3px solid #1C3361;
   }
 
