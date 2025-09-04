@@ -21,7 +21,7 @@
 
     <!-- About us content -->
     <div class="relative z-10 flex justify-end w-full h-full items-center">
-       <div class="w-full md:w-3/5 !px-12 !py-12 text-left">
+       <div class="w-full md:w-2/5 !px-12 !py-12 text-left">
             <h1 class="text-4xl md:text-5xl text-[#F4F4F4] !mb-4 drop-shadow-lg" style="font-family: 'Aquavit', san-serif; font-weight: 700;">
                 <?php the_field('hero_heading'); ?>
             </h1>
