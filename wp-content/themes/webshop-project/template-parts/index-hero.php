@@ -15,7 +15,7 @@
         <?php endif; ?>
 
             <!-- Gradient overlay -->
-        <div class="absolute inset-0 bg-gradient-to-l from-black/70 via-black/40 to-transparent"></div>
+        <div class="absolute inset-0 bg-gradient-to-l from-black/90 via-black/40 to-transparent"></div>
 
     </div>
 
