@@ -14,4 +14,10 @@
     <?php the_comments_navigation(); ?> 
 <?php endif; ?>
 
+<?php if (get_comments_number() > 2) : ?>
+    <a href="<?php echo get_permalink(); ?>#comments" class="see-all-comments-link">
+        See all comments
+    </a>
+<?php endif; ?>
+
 </div>

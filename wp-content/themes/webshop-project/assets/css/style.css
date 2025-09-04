@@ -314,21 +314,24 @@ Description: A custom WordPress theme for an online pet webshop + its blog.
     margin-bottom: 20px;
 }
 
-/* ===== Keep OUTER box, remove INNER box ===== */
-
-/* OUTER comment wrapper (keep the box) */
+/* Individual comment blocks - increased spacing */
 .comment,
 .wp-block-comment {
     border: 1px solid #000;
     border-radius: 8px;
     padding: 30px;
-    margin-bottom: 20px;
-    background: transparent;   /* no white fill on the outer box */
+    margin-bottom: 55px !important; 
+    background: transparent;  
     position: relative;
     max-width: 800px;
 }
 
-/* INNER comment article/body (remove the box) */
+/* Last comment shouldn't have bottom margin */
+.comment:last-child,
+.wp-block-comment:last-child {
+    margin-bottom: 0 !important;
+}
+
 .comment-body,
 .wp-block-comment .comment-body,
 .wp-block-comment__inner,
@@ -337,9 +340,8 @@ Description: A custom WordPress theme for an online pet webshop + its blog.
     background: transparent !important;
     padding: 0 !important;
     box-shadow: none !important;
+    margin: 0 !important; /* Prevent any internal margins from affecting spacing */
 }
-
-/* ============================================ */
 
 /* Comment author section */
 .comment-author,
@@ -387,7 +389,7 @@ Description: A custom WordPress theme for an online pet webshop + its blog.
     font-weight: 500;
     display: inline-block;
     float: right;
-    margin-top: 36px;
+    margin-top: 37px;
 }
 
 .reply a:hover,
@@ -406,7 +408,6 @@ Description: A custom WordPress theme for an online pet webshop + its blog.
 .comment-metadata {
     display: none;
 }
-
 
 
 
