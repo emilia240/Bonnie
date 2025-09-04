@@ -1,6 +1,6 @@
-<section class="w-full h-[500px] !py-12">
+<section class="w-full h-[500px] !py-12 relative overflow-hidden flex items-center">
     <!-- Slider container -->
-     <div>
+     <div id="hero-slider" class="w-full h-full relative">
         <?php if( have_rows('hero_slides') ): ?>
             <?php $i = 0; while( have_rows('hero_slides') ): the_row(); ?>
                 <?php $image = get_sub_field('slide_image');?>
@@ -20,7 +20,7 @@
     </div>
 
     <!-- About us content -->
-    <div>
+    <div class="relative z-10 flex justify-end w-full h-full items-center">
        <div class="w-full md:w-1/3 !px-8 !py-12 text-right">
             <h1 class="text-4xl md:text-5xl text-[#F4F4F4] !mb-4 drop-shadow-lg" style="font-family: 'Aquavit', san-serif; font-weight: 700;">
                 <?php the_field('hero_heading'); ?>
