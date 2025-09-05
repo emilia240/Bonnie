@@ -17,3 +17,28 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+
+// scroll to top button functionality
+document.addEventListener('scroll', function() {
+    var btn = document.getElementById('back-to-top');
+    if (window.scrollY > 300) {
+        btn.style.display = 'block';
+    } else {
+        btn.style.display = 'none';
+    }
+});
+
+
+
+// JavaScript for slider functionality 
+let currentSlide = 0;
+const slides = document.querySelectorAll('#hero-slider .slider-img');
+setInterval(() => {
+    slides.forEach((img, i) => {
+        img.style.opacity = (i === currentSlide) 
+        ? '1' 
+        : '0';
+    });
+    currentSlide = (currentSlide + 1) % slides.length;
+}, 3500);
