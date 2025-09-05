@@ -1,6 +1,13 @@
 <?php if ( have_rows('reviews') ) : ?>
     <section class="reviews">
-        <h2><?php the_field('heading'); ?></h2>
+        <div class="flex items-center w-full !mb-6">
+            <hr class="flex-grow border-t border-[var(--color-dark)]">
+            <h2 class="!mx-6 text-3xl" style="font-family: 'Aquavit', san-serif; font-weight: 500;">
+                Reviews
+            </h2>
+            <hr class="flex-grow border-t border-[var(--color-dark)]">
+        </div>
+
         <div class="reviews-wrapper">
             <?php while ( have_rows('reviews') ) : the_row(); 
                 $image = get_sub_field('reviewer_image');
