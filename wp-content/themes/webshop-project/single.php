@@ -19,7 +19,7 @@
 
 			<?php if ($categories_list) : ?>
 				<div class="post-categories">
-					<strong>Categories:</strong> <?php echo $categories_list; ?>
+					<span class= "category-button"><?php echo $categories_list; ?></span> 
 				</div>
 			<?php endif; ?>
 
@@ -27,7 +27,7 @@
 			$post_tags = get_the_tag_list('', ', '); ?>
 			<?php if ($post_tags) : ?>
 				<div class="post-tags">
-					<strong>Tags:</strong> <?php echo $post_tags; ?>
+					<span class= "tag-button"><?php echo $post_tags; ?></span> 
 				</div> 
 			<?php endif; ?>
 
