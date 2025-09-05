@@ -62,15 +62,6 @@
         </button>
     </div>
 <?php wp_footer(); ?>
-<script>
-document.addEventListener('scroll', function() {
-    var btn = document.getElementById('back-to-top');
-    if (window.scrollY > 300) {
-        btn.style.display = 'block';
-    } else {
-        btn.style.display = 'none';
-    }
-});
-</script>
+
 </body>
 </html>

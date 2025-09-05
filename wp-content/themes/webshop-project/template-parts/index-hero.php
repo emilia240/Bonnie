@@ -36,17 +36,3 @@
 
 </section>
 
-
-<script>
-// JavaScript for slider functionality 
-let currentSlide = 0;
-const slides = document.querySelectorAll('#hero-slider .slider-img');
-setInterval(() => {
-    slides.forEach((img, i) => {
-        img.style.opacity = (i === currentSlide) 
-        ? '1' 
-        : '0';
-    });
-    currentSlide = (currentSlide + 1) % slides.length;
-}, 3500);
-</script>
