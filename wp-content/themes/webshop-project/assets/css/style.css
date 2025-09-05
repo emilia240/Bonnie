@@ -441,7 +441,7 @@ Description: A custom WordPress theme for an online pet webshop + its blog.
 .post-image-wrap {
   float: left;
   margin: 0 20px 20px 0;
-  max-width: 300px;
+  max-width: 600px;
 }
 
 .post-image-wrap img {
