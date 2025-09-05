@@ -507,3 +507,36 @@ Description: A custom WordPress theme for an online pet webshop + its blog.
     font-size: 1rem;
     margin: 0;
 }
+
+
+/*Reviews*/
+
+.reviews {
+  text-align: center;
+  padding: 50px 0;
+}
+.reviews-wrapper {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.review-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  width: 250px;
+  text-align: center;
+}
+.review-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.stars {
+  color: green;
+  font-size: 20px;
+  margin-top: 10px;
+}
