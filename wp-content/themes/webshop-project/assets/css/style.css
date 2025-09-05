@@ -436,18 +436,20 @@ Description: A custom WordPress theme for an online pet webshop + its blog.
 }
 
 
-
+.post-content  {
+  text-align: justify;
+}
 
 .post-image-wrap {
   float: left;
   margin: 0 20px 20px 0;
-  max-width: 600px;
+  max-width: 350px;
 }
 
 .post-image-wrap img {
   width: 100%;
   height: auto;
-  border-radius: 12px;
+  border-radius: none;
 }
 
 .post-content::after {
