@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // See all comments functionality
     const commentList = document.querySelector('.comment-list');
     const seeAllBtn = document.querySelector('.see-all-comments-btn');
-    const comments = commentList ? commentList.querySelectorAll('li') : [];
+    const comments = commentList ? commentList.querySelectorAll('li.comment') : [];
 
     if (commentList && comments.length > 1) {
         comments.forEach((comment, i) => {
