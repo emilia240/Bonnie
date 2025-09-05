@@ -409,39 +409,32 @@ Description: A custom WordPress theme for an online pet webshop + its blog.
     display: none;
 }
 
-/* Hide comments after the first one initially */
+/* Hide all comments except the first by default */
 .comment-list .comment:not(:first-child) {
     display: none;
 }
 
+/* When .show-all is added, show all comments */
 .comment-list.show-all .comment {
     display: block;
 }
 
-/* Add to your theme's CSS file */
+/* Utility for JS toggling */
 .comment-list .hidden-comment {
     display: none;
 }
 
 /* Style the see all comments button */
 .see-all-comments-btn {
-    background: #f8f9fa;
     color: #333;
     padding: 10px 20px;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    text-decoration: none;
-    font-size: 14px;
+    text-decoration: underline;
     font-weight: 500;
-    display: inline-block;
-    margin: 15px 0;
+   
     cursor: pointer;
-    transition: background-color 0.2s;
+
 }
 
-.see-all-comments-btn:hover {
-    background: #e9ecef;
-}
 
 
 

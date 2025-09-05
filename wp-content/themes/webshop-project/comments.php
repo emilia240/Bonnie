@@ -1,3 +1,4 @@
+
 <div id="comments" class="comments-area">
 
 <?php if ( comments_open() ) : ?>
@@ -8,16 +9,13 @@
 
 <?php if ( have_comments() ) : ?>
     <h2 class="comments-title">Comments</h2>
-    <ul class="commentlist">
+    <ul class="comment-list">
         <?php wp_list_comments(); ?>
     </ul>
+    <?php if (get_comments_number() > 1) : ?>
+        <button class="see-all-comments-btn">See all comments</button>
+    <?php endif; ?>
     <?php the_comments_navigation(); ?> 
-<?php endif; ?>
-
-<?php if (get_comments_number() > 1) : ?>
-    <a href="<?php echo get_permalink(); ?>#comments" class="see-all-comments-link">
-        See all comments
-    </a>
 <?php endif; ?>
 
 </div>
