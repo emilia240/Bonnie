@@ -24,11 +24,17 @@
 			<?php endif; ?>
 
 			<?php 
-			$post_tags = get_the_tag_list('', ', '); ?>
-			<?php if ($post_tags) : ?>
-				<div class="post-tags">
-					<span class= "tag-button"><?php echo $post_tags; ?></span> 
-				</div> 
+			$post_tags = get_the_tags();
+			if ($post_tags) : ?>
+			    <div class="post-tags">
+			        <?php foreach ($post_tags as $tag) : ?>
+			            <span class="tag-button">
+			                <a href="<?php echo get_tag_link($tag->term_id); ?>">
+			                    <?php echo esc_html($tag->name); ?>
+			                </a>
+			            </span>
+			        <?php endforeach; ?>
+			    </div>
 			<?php endif; ?>
 
 			<!-- Main content with floated image -->

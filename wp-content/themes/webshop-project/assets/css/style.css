@@ -430,13 +430,20 @@ Description: A custom WordPress theme for an online pet webshop + its blog.
     padding: 10px 20px;
     text-decoration: underline;
     font-weight: 500;
-   
     cursor: pointer;
 
 }
 
 
-
+.post-content p {
+text-align: justify;
+margin-bottom: 1.5rem;
+}
+.post-content h2{
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
 
 .post-image-wrap {
   float: left;
@@ -447,7 +454,7 @@ Description: A custom WordPress theme for an online pet webshop + its blog.
 .post-image-wrap img {
   width: 100%;
   height: auto;
-  border-radius: 12px;
+  border-radius: none;
 }
 
 .post-content::after {
@@ -468,6 +475,8 @@ Description: A custom WordPress theme for an online pet webshop + its blog.
 }
 
 /* Related posts */
+
+
 .related-posts {
     margin-top: 3rem;
 }
@@ -507,7 +516,7 @@ Description: A custom WordPress theme for an online pet webshop + its blog.
   width: fit-content;
   border-radius: 6px;
   font-family: var(--font-body);
-  font-style: uppercase;
+  text-transform: uppercase;
 }
 
 .post-categories{
@@ -518,9 +527,10 @@ Description: A custom WordPress theme for an online pet webshop + its blog.
 }
 
 .post-tags{
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
   font-size: 0.9rem;
   color: black;
+  font-family: var(--font-body);
 }
 
 .tag-button {
@@ -530,6 +540,7 @@ Description: A custom WordPress theme for an online pet webshop + its blog.
   width: fit-content;
   border-radius: 6px;
   font-size: 12px;
+  margin-right: 5px;
 }
 
 
