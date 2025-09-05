@@ -513,7 +513,7 @@ Description: A custom WordPress theme for an online pet webshop + its blog.
   gap: 20px;
   justify-content: center;
   flex-wrap: wrap;
-}git config pull.rebase false
+}
 
 .review-card {
   background: #fff;
