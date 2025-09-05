@@ -1,6 +1,6 @@
 <section class="w-full h-[500px] !py-12 relative overflow-hidden flex items-center">
     <!-- Slider container -->
-     <div id="hero-slider" class="absolute inset-0 w-full h-full">
+     <div id="hero-slider" class="relative w-full h-full">
         <?php if( have_rows('hero_slides') ): ?>
             <?php $i = 0; while( have_rows('hero_slides') ): the_row(); ?>
                 <?php $image = get_sub_field('slide_image');?>
