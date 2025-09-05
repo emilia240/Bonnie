@@ -514,6 +514,16 @@ Description: A custom WordPress theme for an online pet webshop + its blog.
   justify-content: center;
   flex-wrap: wrap;
 }
+
+.reviews h2 {
+  margin-left: 1.5rem;   
+  margin-right: 1.5rem; 
+  margin-bottom: 2rem; 
+  font-size: 1.875rem;   
+  font-family: 'Aquavit', sans-serif;
+  font-weight: 500;
+}
+
 .review-card {
   background: #fff;
   padding: 20px;
@@ -527,9 +537,12 @@ Description: A custom WordPress theme for an online pet webshop + its blog.
   height: 50px;
   border-radius: 50%;
   object-fit: cover;
+  margin-bottom: 15px;
 }
+
 .stars {
   color: green;
   font-size: 20px;
   margin-top: 10px;
 }
+
