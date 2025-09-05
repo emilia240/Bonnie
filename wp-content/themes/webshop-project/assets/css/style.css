@@ -418,6 +418,11 @@ Description: A custom WordPress theme for an online pet webshop + its blog.
     display: block;
 }
 
+/* Add to your theme's CSS file */
+.comment-list .hidden-comment {
+    display: none;
+}
+
 /* Style the see all comments button */
 .see-all-comments-btn {
     background: #f8f9fa;

@@ -15,7 +15,9 @@
 <?php endif; ?>
 
 <?php if (get_comments_number() > 1) : ?>
-    <button class="see-all-comments-btn">See all comments</button>
+    <a href="<?php echo get_permalink(); ?>#comments" class="see-all-comments-link">
+        See all comments
+    </a>
 <?php endif; ?>
 
 </div>
