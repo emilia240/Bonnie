@@ -9,12 +9,12 @@
   </div>
 
   <!-- Subtitle and button row -->
-  <div class="flex items-center justify-between !mb-8 !px-4">
+  <div class="flex lg:flex-row sm:flex-row flex-col gap-2 items-center justify-between !mb-8 sm:px-10">
     <div class="text-lg font-body max-w-2xl" style="font-family: var(--font-body);">
       Pets and supplies that our customers love the most!
     </div>
     <a  href="<?php echo esc_url(get_permalink(get_option('page_for_posts'))); ?>"
-    class="bg-[#1C3361] text-[#F4F4F4] !px-6 !py-2 rounded-lg inline-flex items-center !gap-2 no-wrap hover:bg-white hover:text-[#1C3361] 
+    class="bg-[#1C3361] text-[#F4F4F4] !px-6 !py-2 rounded-full inline-flex items-center !gap-2 no-wrap hover:bg-white hover:text-[#1C3361] 
             hover:border hover:border-[#1C3361] transition-colors duration-200" style="font-family: 'Bodoni MT', serif; font-weight: 500;">
         Explore all
         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -25,7 +25,7 @@
   </div>
 
   <!-- Article cards -->
-  <div class="grid gap-10 w-full grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 !mb-8 sm:px-10 ">
+  <div class="grid gap-10 w-full grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 sm:px-10 ">
         <?php
         $args = array(
             'post_type' => 'post', // TO BE CHANGED to webshop post type(I guess) later
