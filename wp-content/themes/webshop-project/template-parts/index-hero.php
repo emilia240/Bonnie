@@ -32,15 +32,21 @@
     <!-- About us content -->
     <div class="relative z-10 flex justify-end w-full h-full items-center">
        <div class="w-full md:w-2/5 !px-6 !py-12 text-left">
-            <h1 class="text-4xl md:text-5xl text-[#F4F4F4] !mb-4 drop-shadow-lg" style="font-family: 'Aquavit', san-serif; font-weight: 700;">
-                <?php echo esc_html($heading); ?>
-            </h1>
-            <h2 class="text-2xl md:text-3xl text-[#F4F4F4] !mb-4 drop-shadow-lg" style="font-family: Bodoni MT, serif; font-weight: 500;">
-                <?php echo esc_html($subheading); ?>
-            </h2>
-            <div class="text-lg md:text-xl text-[#F4F4F4] drop-shadow-lg" style="font-family: var(--font-body);">
-                <?php echo esc_html($text); ?>
-            </div>
+            <?php if ($heading): ?>
+                <h1 class="text-4xl md:text-5xl text-[#F4F4F4] mb-4 drop-shadow-lg" style="font-family: 'Aquavit', san-serif; font-weight: 700;">
+                    <?php echo esc_html($heading); ?>
+                </h1>
+            <?php endif; ?>
+            <?php if ($subheading): ?>
+                <h2 class="text-2xl md:text-3xl text-[#F4F4F4] mb-4 drop-shadow-lg" style="font-family: Bodoni MT, serif; font-weight: 500;">
+                    <?php echo esc_html($subheading); ?>
+                </h2>
+            <?php endif; ?>
+            <?php if ($text): ?>
+                <div class="text-lg md:text-xl text-[#F4F4F4] drop-shadow-lg" style="font-family: var(--font-body);">
+                    <?php echo esc_html($text); ?>
+                </div>
+            <?php endif; ?>
         </div> 
     </div>
 
