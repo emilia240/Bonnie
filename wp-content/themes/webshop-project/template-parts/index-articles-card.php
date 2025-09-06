@@ -33,7 +33,7 @@
                 
                         <!-- Category & Tag -->
                         <div class="flex justify-between !gap-2 !py-2" style="font-family: 'Skolar Sans', sans-serif; font weight: 400;">
-                            <div class="category text-xs flex flex-wrap uppercase !gap-2">
+                            <div class="category text-xs flex flex-wrap uppercase !gap-2 hover:underline hover:text-[#1C3361] transition-colors duration-200">
                                 <?php if (!empty($categories)): ?>
                                     <?php foreach ($categories as $category): ?>
                                         <a href="<?php echo esc_url(get_category_link($category->term_id)); ?>">
@@ -43,10 +43,10 @@
                                 <?php endif; ?>
                             </div>
                             <!-- Tags -->
-                            <div class="tags text-xs flex flex-wrap !gap-2 hover:underline hover:text-[#1C3361] transition-colors duration-200">
+                            <div class="tags text-xs flex flex-wrap !gap-2">
                                 <?php if (!empty($tags)): ?>
                                     <?php foreach ($tags as $tag): ?>
-                                        <a href="<?php echo esc_url(get_tag_link($tag->term_id)); ?>" class="badge rounded-pill text-bg-primary">
+                                        <a href="<?php echo esc_url(get_tag_link($tag->term_id)); ?>" class="hover:underline hover:text-[#1C3361] transition-colors duration-200 badge rounded-pill text-bg-primary">
                                             <?php echo esc_html($tag->name); ?>
                                         </a>
                                     <?php endforeach; ?>
