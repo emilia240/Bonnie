@@ -26,9 +26,9 @@
         <!-- Service Item -->
         <div class="flex flex-col items-center cursor-pointer transition-transform duration-300 hover:-translate-y-2">
           <?php if ($image): ?>
-            <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($title); ?>" class="w-30 h-30 object-cover rounded-full !mb-6" />
+            <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($title); ?>" class="w-25 h-25 object-cover rounded-full !mb-6" />
           <?php endif; ?>
-          <h3 class="text-xl font-bold text-center" style="font-family: 'Aquavit', san-serif;">
+          <h3 class="text-xl text-center" style="font-family: 'Aquavit', san-serif;">
             <?php echo esc_html($title); ?>
           </h3>
         </div>
