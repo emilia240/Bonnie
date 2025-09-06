@@ -14,10 +14,17 @@
         </div>
 
        
-        <div class="footer-column">
-            <h4>Address</h4>
-            <p>body text</p>
-        </div>
+<div class="footer-column">
+    <div style="margin-bottom:40px;">
+        <h4>>Address</h4>
+        <p>5 Fleet Street, London EC4Y 1AA</p>
+    </div>
+    <div>
+        <h4>Opening hours/Schedule</h4>
+        <p>Mon - Fri: 9:00 AM - 6:30 PM </p>
+        <p>Weekdays: 10:00 AM - 5:00 PM </p>
+    </div>
+</div>
 
         
         <div class="footer-column">
