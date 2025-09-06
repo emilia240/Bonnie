@@ -25,7 +25,7 @@
   </div>
 
   <!-- Article cards -->
-  <div class="grid gap-10 w-full grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mb-8 sm:px-10 ">
+  <div class="grid gap-10 w-full grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 !mb-8 sm:px-10 ">
         <?php
         $args = array(
             'post_type' => 'post',
