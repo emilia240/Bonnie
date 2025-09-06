@@ -1,9 +1,16 @@
 <section class="w-full !py-12">
+
+  <?php
+    $headline = get_field('articles_headline');
+    $subtitle = get_field('articles_subtitle');
+  ?>
+
+
   <!-- Header with lines on the side -->
   <div class="flex items-center w-full !mb-6">
     <hr class="flex-grow border-t border-[var(--color-dark)]">
     <h2 class="!mx-6 text-3xl" style="font-family: 'Aquavit', san-serif; font-weight: 500;">
-      Our most popular articles
+      <?php echo esc_html($headline); ?>
     </h2>
     <hr class="flex-grow border-t border-[var(--color-dark)]">
   </div>
@@ -11,7 +18,7 @@
   <!-- Subtitle and button row -->
   <div class="flex lg:flex-row sm:flex-row flex-col gap-2 items-center justify-between !mb-8 sm:px-10">
     <div class="text-lg font-body max-w-2xl" style="font-family: var(--font-body);">
-      Educational articles to learn about pet care, terrariums, and more!
+      <?php echo esc_html($subtitle); ?>
     </div>
     <a  href="<?php echo esc_url(get_permalink(get_option('page_for_posts'))); ?>"
     class="bg-[#1C3361] text-[#F4F4F4] !px-6 !py-2 rounded-full inline-flex items-center !gap-2 no-wrap hover:bg-white hover:text-[#1C3361] 
