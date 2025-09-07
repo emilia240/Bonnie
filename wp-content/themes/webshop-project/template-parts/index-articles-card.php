@@ -1,6 +1,6 @@
 <!--Article Card -->
 
-<div class="flex flex-col md:flex-col md:flex-wrap justify-center h-auto w-full rounded-lg shadow-md bg-white overflow-hidden transition-transform duration-300 hover:-translate-y-2">
+<div class="flex flex-col md:flex-col md:flex-wrap justify-center h-auto w-full rounded-lg shadow-md bg-white overflow-hidden transition-transform duration-300 hover:scale-105">
     <?php
     $url = get_the_permalink();
     $categories = get_the_category();
