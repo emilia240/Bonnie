@@ -9,6 +9,7 @@ Description: A custom WordPress theme for an online pet webshop + its blog.
   --color-primary: #1C3361;
   --color-secondary: #175735;
   --color-accent: #74B24B;
+  --color-light-blue: #78BDE8;
   --color-light: #F4F4F4;
   --color-dark: #1D1D1D;
   --color-header-bg: #efefef;
@@ -68,6 +69,12 @@ Description: A custom WordPress theme for an online pet webshop + its blog.
     text-decoration: none;
     font-size: 14px;
   }
+
+  .header-top .top-links a:hover {
+    color: var(--color-light-blue);
+    font-weight: 600;
+    transition: color 0.2s, font-weight 0.2s;
+}
   
   .header-bottom {
     background: var(--color-header-bg);
