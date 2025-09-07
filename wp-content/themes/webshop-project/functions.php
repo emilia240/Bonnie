@@ -18,5 +18,3 @@ function custom_comment_form_defaults( $defaults ) {
 }
 add_filter( 'comment_form_defaults', 'custom_comment_form_defaults' );
 
-
-

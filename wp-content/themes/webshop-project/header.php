@@ -31,6 +31,14 @@
       <a href="#">Contact us</a>
     </nav>
 
+    
+  <ul class="language-picker">
+    <?php pll_the_languages(array(
+      "show_flags" => 1,
+      "show_names" => 0
+    )); ?>
+  </ul>
+
  
     <div class="user-actions">
       <a href="#" class="login">👤 Login</a>
