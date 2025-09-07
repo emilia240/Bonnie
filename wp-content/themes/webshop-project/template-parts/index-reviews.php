@@ -16,10 +16,12 @@
                 $stars = get_sub_field('stars');
             ?>
                 <div class="review-card">
-                    <?php if ($image) : ?>
+                    <div class="review-header">
+                       <?php if ($image) : ?>
                         <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($name); ?>" class="review-img" />
                     <?php endif; ?>
-                    <h3><?php echo esc_html($name); ?></h3>
+                    <h3><?php echo esc_html($name); ?></h3> 
+                    </div>
                     <p><?php echo esc_html($text); ?></p>
                     <div class="stars">
                         <?php for ($i = 0; $i < $stars; $i++) : ?>
