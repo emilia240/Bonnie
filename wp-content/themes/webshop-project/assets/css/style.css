@@ -567,33 +567,57 @@ margin-bottom: 1.5rem;
   text-align: center;
   padding: 50px 0;
 }
+
 .reviews-wrapper {
   display: flex;
   gap: 20px;
   justify-content: center;
   flex-wrap: wrap;
 }
-
 .review-card {
   background: #fff;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   width: 250px;
-  text-align: center;
+  text-align: left;
 }
+.review-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 15px;
+}
+
 .review-img {
   width: 50px;
   height: 50px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 15px;
+  flex-shrink: 0;
 }
+
+.reviewer-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-dark);
+  margin: 0;
+}
+
+.reviews p {
+  font-size: 14px;
+  color: var(--color-dark);
+  margin-bottom: 10px;
+} 
 
 .stars {
   color: green;
   font-size: 20px;
   margin-top: 10px;
 }
+
+
+
+
 
 
