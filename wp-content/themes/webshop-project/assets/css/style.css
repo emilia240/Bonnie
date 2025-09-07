@@ -11,7 +11,7 @@ Description: A custom WordPress theme for an online pet webshop + its blog.
   --color-accent: #74B24B;
   --color-light: #F4F4F4;
   --color-dark: #1D1D1D;
-  --color-header-bg: #E4E4E4;
+  --color-header-bg: #efefef;
   --font-headers: 'Aquavit', sans-serif;
   --font-body: 'Skolar Sans', sans-serif;  
   --font-accent: 'Bodoni MT', serif;
@@ -23,28 +23,24 @@ Description: A custom WordPress theme for an online pet webshop + its blog.
 }
 
 .header-top {
-    background: #1C3361;
-    color: #fff;
+    background: var(--color-primary);
+    color: var(--color-light);
     padding: 12px 20px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
   
   .header-top .logo a {
-    color: #fff;
+    color: var(--color-light);
     text-decoration: none;
     font-weight: bold;
     font-size: 22px;
   }
   
-  .header-top .search-bar {
-    flex: 1;
-    margin: 0 30px;
-  }
   
   .header-top .search-bar input[type="search"] {
-    width: 100%;
+    width: fit-content;
     padding: 8px 14px;
     border-radius: 20px;
     border: 1px solid #ccc;
@@ -53,7 +49,7 @@ Description: A custom WordPress theme for an online pet webshop + its blog.
   }
   
   .header-top .top-links a {
-    color: #fff;
+    color: var(--color-light);
     margin: 0 10px;
     font-size: 14px;
     text-decoration: none;
@@ -65,8 +61,8 @@ Description: A custom WordPress theme for an online pet webshop + its blog.
   }
   
   .header-top .user-actions a {
-    background: #222;
-    color: #fff;
+    background: var(--color-dark);
+    color: var(--color-light);
     padding: 6px 14px;
     border-radius: 20px;
     text-decoration: none;
@@ -74,27 +70,27 @@ Description: A custom WordPress theme for an online pet webshop + its blog.
   }
   
   .header-bottom {
-    background: #E4E4E4;
-    justify-content: center;
-    padding: 12px 20px;
+    background: var(--color-header-bg);
+    padding: 0.8rem 0;
+    font-family: var(--font-accent);
+    font-size: 1.2rem;
   }
   
   .header-bottom .main-nav {
     display: flex;
     justify-content: space-evenly;
-    font-weight: bold;
-  }
-  
-  .header-bottom .main-nav a {
-    color: #000;
+    color: var(--color-dark);
     text-decoration: none;
-    padding-bottom: 2px;
+    transition: transform 0.2s ease-in-out;
   }
-  
+
+  .header-bottom .main-nav a:hover {
+  transform: scale(1.08);
+  }
+
   .header-bottom .main-nav a.active {
-    text-decoration: underline;
-    font-weight: bold;
-    border-bottom: 3px solid #1C3361;
+    border-bottom: 0.5rem solid var(--color-primary);
+    margin-bottom: -0.6rem;
   }
 
 
