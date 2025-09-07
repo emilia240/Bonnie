@@ -27,7 +27,7 @@
     <nav class="top-links">
       <a href="#">Reorder</a>
       <a href="#">Favorites</a>
-      <a href="#">Sustainability</a>
+      <a href="<?php echo esc_url(home_url('/sustainability')); ?>" class="<?php if (is_page('sustainability')) echo 'active'; ?>">Sustainability</a>
       <a href="#">Contact us</a>
     </nav>
 
