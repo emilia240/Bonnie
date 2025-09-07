@@ -1,9 +1,12 @@
 <?php if ( have_rows('reviews') ) : ?>
     <section class="reviews">
+        <?php
+        $reviews_title = get_field('reviews_title');
+        ?>
         <div class="flex items-center w-full !mb-10">
             <hr class="flex-grow border-t border-[var(--color-dark)]">
             <h2 class="!mx-6 text-3xl" style="font-family: 'Aquavit', san-serif; font-weight: 500;">
-                Reviews
+                <?php echo esc_html($reviews_title); ?>
             </h2>
             <hr class="flex-grow border-t border-[var(--color-dark)]">
         </div>
