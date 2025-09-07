@@ -16,7 +16,7 @@
        
 <div class="footer-column">
     <div style="margin-bottom:40px;">
-        <h4>>Address</h4>
+        <h4>Address</h4>
         <p>5 Fleet Street, London EC4Y 1AA</p>
     </div>
     <div>
