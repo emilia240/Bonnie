@@ -3,10 +3,9 @@
 <head>
   <meta charset="<?php bloginfo('charset'); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css"> 
-  <!-- If this is in functions.php, you can remove it from here -->
   <?php wp_head(); ?>
 </head>
+
 <body <?php body_class(); ?>>
 
 <header class="site-header">
@@ -28,7 +27,7 @@
     <nav class="top-links">
       <a href="#">Reorder</a>
       <a href="#">Favorites</a>
-      <a href="#">Shipping</a>
+      <a href="#">Sustainability</a>
       <a href="#">Contact us</a>
     </nav>
 
@@ -48,7 +47,7 @@
       <a href="<?php echo esc_url(home_url('/offers')); ?>" class="<?php if (is_page('offers')) echo 'active'; ?>">Offers</a>
       <a href="<?php echo esc_url(home_url('/blog')); ?>" class="<?php if (is_home() || is_single()) echo 'active'; ?>">Blog</a>
     </nav>
-</div>
+  </div>
 
  
 
