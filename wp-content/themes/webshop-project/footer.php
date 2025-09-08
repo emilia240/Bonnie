@@ -1,6 +1,6 @@
 <footer id="colophon" class="site-footer">
     <div class="footer-container">
-       
+
         <div class="footer-column">
             <ul>
                 <li><a href="<?php echo home_url(); ?>"><?php echo esc_html(pll_e('Frontpage')); ?></a></li>
@@ -18,33 +18,35 @@
                 <p>
                     <?php
                         if ( function_exists('pll_current_language') ) {
-                            $lang = pll_current_language();
-                            if ($lang == 'en') {
-                                echo esc_html(SCF::get_option('address_uk'));
-                            } elseif ($lang == 'de') {
-                                echo esc_html(SCF::get_option('address_de'));
-                            }
+                        $lang = pll_current_language();
+                        if ($lang == 'en') {
+                            the_field('address_uk', 'option');
+                        } elseif ($lang == 'de') {
+                            the_field('address_de', 'option');
+                        }
                         }
                     ?>
                 </p>
+            
             </div>
             <div class="footer-block">
                 <h4><?php echo esc_html(pll_e('Opening Hours')); ?></h4>
                 <p>
                     <?php
                         if ( function_exists('pll_current_language') ) {
-                            $lang = pll_current_language();
-                            if ($lang == 'en') {
-                                echo nl2br(esc_html(SCF::get_option('hours_uk')));
-                            } elseif ($lang == 'de') {
-                                echo nl2br(esc_html(SCF::get_option('hours_de')));
-                            }
+                        $lang = pll_current_language();
+                        if ($lang == 'en') {
+                            the_field('hours_uk', 'option');
+                        } elseif ($lang == 'de') {
+                            the_field('hours_de', 'option');
+                        }
                         }
                     ?>
                 </p>
-               
+
             </div>
         </div>
+        
 
         <div class="footer-column">
             <h4>Social Media</h4>
