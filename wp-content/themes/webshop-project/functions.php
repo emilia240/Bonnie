@@ -34,5 +34,11 @@ function wb_register_strings() {
     pll_register_string('terrariums', 'Terrariums', 'Header');
     pll_register_string('offers', 'Offers', 'Header');
     pll_register_string('blog', 'Blog', 'Header');
+    pll_register_string('frontpage', 'Frontpage', 'Footer');
+    pll_register_string('blog', 'Blog', 'Footer');
+    pll_register_string('contact_us', 'Contact us', 'Footer');
+    pll_register_string('privacy_policy', 'Privacy and Policy', 'Footer');
+    pll_register_string('shipping_methods', 'Shipping methods', 'Footer');
+    pll_register_string('faq', 'FAQ', 'Footer');
 }
 add_action('init', 'wb_register_strings');
