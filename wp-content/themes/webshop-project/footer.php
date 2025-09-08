@@ -77,3 +77,19 @@
         </div>
     </div>
 </footer>
+
+
+    <!-- Back to top -->
+    <div id="back-to-top"
+        style="display:none; position:fixed; bottom:40px; right:40px; z-index:999;">
+        <button onclick="window.scrollTo({top:0,behavior:'smooth'});"
+            style="background:#74B24B; border:none; border-radius:50%; width:56px; height:56px; display:flex; align-items:center; justify-content:center; box-shadow:0 2px 8px rgba(0,0,0,0.15); cursor:pointer;">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="18 15 12 9 6 15"></polyline>
+            </svg>
+        </button>
+    </div>
+<?php wp_footer(); ?>
+
+</body>
+</html>
