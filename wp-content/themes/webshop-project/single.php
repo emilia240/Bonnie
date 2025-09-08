@@ -57,7 +57,7 @@
 
 			<!-- Related Posts -->
 			<div class="related-posts">
-				<h3>Related Posts</h3>
+				<h3><?php echo esc_html(pll_e('Related Posts')); ?></h3>
 				<div class="related-grid">
 					<?php
 					$categories = wp_get_post_terms(get_the_ID(), 'category', array('fields' => 'ids')); ?>

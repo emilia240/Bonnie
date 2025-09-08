@@ -42,6 +42,11 @@ function wb_register_strings() {
     pll_register_string('faq', 'FAQ', 'Footer');
     pll_register_string('our_blogs', 'Our blogs', 'Articles');
     pll_register_string('read_article', 'Read article', 'Articles');
+    pll_register_string('comments_closed', 'Comments are closed', 'Comments');
+    pll_register_string('comments', 'Comments', 'Comments');
+    pll_register_string('see_all_comments', 'See all comments', 'Comments');
+    pll_register_string('related_posts', 'Related Posts', 'Single Post');
+
 }
 
 add_action('init', 'wb_register_strings');

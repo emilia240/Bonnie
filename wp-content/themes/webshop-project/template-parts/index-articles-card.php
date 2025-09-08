@@ -66,8 +66,8 @@
         <!-- Button -->
         <a href="<?php echo esc_url($url); ?>" class="inline-flex items-center !gap-2 bg-[#1C3361] text-[#F4F4F4] !px-4 !py-2 rounded-full !mt-auto w-fit hover:bg-white hover:text-[#1C3361] 
         hover:border hover:border-[#1C3361] transition-colors duration-200" style="font-family:'Skolar Sans', sans-serif; font weight: 400;">
-        
-            <?php echo esc_html(pll_e('read_article')); ?>
+
+            <?php echo esc_html(pll_e('Read article')); ?>
 
             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 items-center no-wrap" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <line x1="4" y1="12" x2="18" y2="12" stroke="currentColor" stroke-width="2"/>
