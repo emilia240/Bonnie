@@ -40,5 +40,7 @@ function wb_register_strings() {
     pll_register_string('privacy_policy', 'Privacy and Policy', 'Footer');
     pll_register_string('shipping_methods', 'Shipping methods', 'Footer');
     pll_register_string('faq', 'FAQ', 'Footer');
+    pll_register_string('our_blogs', 'Our blogs', 'Articles');
+
 }
 add_action('init', 'wb_register_strings');
