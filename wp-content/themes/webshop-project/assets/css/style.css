@@ -636,9 +636,15 @@ margin-bottom: 1.5rem;
 /*Footer*/
 
 .site-footer {
-  background: #0a2c5e;
-  color: white;
+  background: var(--color-primary);
+  color: var(--color-light);
   padding: 50px 40px;
+  font-family: var(--font-body);
+  font-size: 14px;
+}
+
+.site-footer h4 {
+  font-family: var(--font-headers);
 }
 
 .footer-container {
@@ -650,9 +656,8 @@ margin-bottom: 1.5rem;
 
 .footer-column h4 {
   font-size: 18px;
-  font-weight: 800;
   margin-bottom: 10px;
-  color: #ffffff;
+  color: var(--color-light);
 }
 
 .footer-column ul {
@@ -666,13 +671,13 @@ margin-bottom: 1.5rem;
 }
 
 .footer-column ul li a {
-  color: #ddd;
+  color: var(--color-light);
   text-decoration: none;
   transition: color 0.3s;
 }
 
 .footer-column ul li a:hover {
-  color: #3baae3;
+  color: var(--color-light-blue);
 }
 
 
@@ -702,7 +707,7 @@ margin-bottom: 1.5rem;
 }
 
 .footer-column form button:hover {
-  background: #1f91c5;
+  background: var(--color-light-blue);
 }
 
 
