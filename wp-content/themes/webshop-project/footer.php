@@ -3,24 +3,46 @@
        
         <div class="footer-column">
             <ul>
-                <li><a href="<?php echo home_url(); ?>">Frontpage</a></li>
-                <li><a href="<?php echo home_url('/blog'); ?>">Blog</a></li>
-                <li><a href="<?php echo home_url('/contact'); ?>">Contact us</a></li>
-                <li><a href="<?php echo home_url('/privacy-policy'); ?>">Privacy and Policy</a></li>
-                <li><a href="<?php echo home_url('/shipping-methods'); ?>">Shipping methods</a></li>
-                <li><a href="<?php echo home_url('/faq'); ?>">FAQ</a></li>
+                <li><a href="<?php echo home_url(); ?>"><?php echo esc_html(pll_e('Frontpage')); ?></a></li>
+                <li><a href="<?php echo home_url('/blog'); ?>"><?php echo esc_html(pll_e('Blog')); ?></a></li>
+                <li><a href="<?php echo home_url('/contact'); ?>"><?php echo esc_html(pll_e('Contact us')); ?></a></li>
+                <li><a href="<?php echo home_url('/privacy-policy'); ?>"><?php echo esc_html(pll_e('Privacy and Policy')); ?></a></li>
+                <li><a href="<?php echo home_url('/shipping-methods'); ?>"><?php echo esc_html(pll_e('Shipping methods')); ?></a></li>
+                <li><a href="<?php echo home_url('/faq'); ?>"><?php echo esc_html(pll_e('FAQ')); ?></a></li>
             </ul>
         </div>
 
         <div class="footer-column">
             <div class="footer-block">
-                <h4>Address</h4>
-                <p>5 Fleet Street, London EC4Y 1AA</p>
+                <h4><?php echo esc_html(pll_e('Address')); ?></h4>
+                <p>
+                    <?php
+                        if ( function_exists('pll_current_language') ) {
+                            $lang = pll_current_language();
+                            if ($lang == 'en') {
+                                echo esc_html(SCF::get_option('address_uk'));
+                            } elseif ($lang == 'de') {
+                                echo esc_html(SCF::get_option('address_de'));
+                            }
+                        }
+                    ?>
+                </p>
             </div>
             <div class="footer-block">
-                <h4>Opening Hours</h4>
-                <p>Mon - Fri: 9:00 AM - 6:30 PM </p>
-                <p>Weekdays: 10:00 AM - 5:00 PM </p>
+                <h4><?php echo esc_html(pll_e('Opening Hours')); ?></h4>
+                <p>
+                    <?php
+                        if ( function_exists('pll_current_language') ) {
+                            $lang = pll_current_language();
+                            if ($lang == 'en') {
+                                echo nl2br(esc_html(SCF::get_option('hours_uk')));
+                            } elseif ($lang == 'de') {
+                                echo nl2br(esc_html(SCF::get_option('hours_de')));
+                            }
+                        }
+                    ?>
+                </p>
+               
             </div>
         </div>
 
