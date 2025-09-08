@@ -25,10 +25,10 @@ function wb_register_strings() {
     pll_register_string('reorder', 'Reorder', 'Header');
     pll_register_string('favorites', 'Favorites', 'Header');
     pll_register_string('sustainability', 'Sustainability', 'Header');
-    pll_register_string('contact_us', 'Contact us', 'Header');
+    pll_register_string('contact us', 'Contact us', 'Header');
     pll_register_string('login', 'Login', 'Header');
     pll_register_string('basket', 'Basket', 'Header');
-    pll_register_string('search_placeholder', 'Search', 'Header');
+    pll_register_string('search', 'Search', 'Header');
     pll_register_string('pets', 'Pets', 'Header');
     pll_register_string('food_supplies', 'Food & supplies', 'Header');
     pll_register_string('terrariums', 'Terrariums', 'Header');
