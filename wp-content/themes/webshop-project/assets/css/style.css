@@ -697,7 +697,7 @@ margin-bottom: 1.5rem;
 }
 
 .footer-column form button {
-  background: #3baae3;
+  background: var(--color-accent);
   border: none;
   color: white;
   padding: 10px 16px;
