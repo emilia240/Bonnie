@@ -11,10 +11,28 @@ add_action( 'wp_enqueue_scripts', 'wb_load_resources' );
 
 
 // Change comment form text
-function custom_comment_form_defaults( $defaults ) {
+function wb_custom_comment_form_defaults( $defaults ) {
     $defaults['title_reply'] = 'Leave a comment';  
     $defaults['label_submit'] = 'Comment'; 
     return $defaults;
 }
-add_filter( 'comment_form_defaults', 'custom_comment_form_defaults' );
+add_filter( 'comment_form_defaults', 'wb_custom_comment_form_defaults' );
 
+
+//hardcode header anf footer translation
+function wb_register_strings() {
+    pll_register_string('logo', 'TERRAQUA', 'Header');
+    pll_register_string('reorder', 'Reorder', 'Header');
+    pll_register_string('favorites', 'Favorites', 'Header');
+    pll_register_string('sustainability', 'Sustainability', 'Header');
+    pll_register_string('contact_us', 'Contact us', 'Header');
+    pll_register_string('login', 'Login', 'Header');
+    pll_register_string('basket', 'Basket', 'Header');
+    pll_register_string('search_placeholder', 'Search', 'Header');
+    pll_register_string('pets', 'Pets', 'Header');
+    pll_register_string('food_supplies', 'Food & supplies', 'Header');
+    pll_register_string('terrariums', 'Terrariums', 'Header');
+    pll_register_string('offers', 'Offers', 'Header');
+    pll_register_string('blog', 'Blog', 'Header');
+}
+add_action('init', 'wb_register_strings');

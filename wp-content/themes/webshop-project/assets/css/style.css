@@ -79,16 +79,11 @@ Description: A custom WordPress theme for an online pet webshop + its blog.
 
 .header-top .language-picker {
   display: flex;
+  gap: 1rem;
+  align-items: center;
 }
 
-.language-picker li {
-  list-style: none;
-  width: 50px;
-}
 
-.language-picker li.current-lang  {
-  font-weight: bold;
-}
   
   .header-bottom {
     background: var(--color-header-bg);
