@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 
-<!-- Sustainability Page -->
+<?php get_template_part('template-parts/page-sustainability-hero'); ?>
 
 
 <?php get_footer(); ?>
