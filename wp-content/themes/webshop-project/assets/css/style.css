@@ -72,8 +72,7 @@ Description: A custom WordPress theme for an online pet webshop + its blog.
 
   .header-top .top-links a:hover {
     color: var(--color-light-blue);
-    font-weight: 600;
-    transition: color 0.2s, font-weight 0.2s;
+    transition: color 0.2s;
 }
 
 
@@ -658,6 +657,20 @@ margin-bottom: 1.5rem;
   font-size: 18px;
   margin-bottom: 10px;
   color: var(--color-light);
+}
+
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-social img {
+  transition: filter 0.3s ease;
+}
+
+.footer-social a:hover img {
+  filter: brightness(0) saturate(100%) invert(42%) sepia(90%) saturate(2000%) hue-rotate(180deg) brightness(95%) contrast(90%);
 }
 
 .footer-column ul {
