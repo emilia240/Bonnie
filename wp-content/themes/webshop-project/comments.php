@@ -4,12 +4,12 @@
 <?php if ( comments_open() ) : ?>
     <?php 
     comment_form(array(
-        'title_reply' => pll__('Leave a comment'),
-        'label_submit' => pll__('Comment'),
+        'title_reply' => pll_e('Leave a comment'),
+        'label_submit' => pll_e('Comment'),
     ));
     ?>
 <?php else : ?>
-    <p class="no-comments"><?php echo esc_html(pll__('Comments are closed')); ?></p>
+    <p class="no-comments"><?php echo esc_html(pll_e('Comments are closed')); ?></p>
 <?php endif; ?>
 
 
