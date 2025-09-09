@@ -190,17 +190,16 @@ Description: A custom WordPress theme for an online pet webshop + its blog.
 
 /* Container */
 .article-container {
-  max-width: 900px;
-  margin: 0 auto;
+  /* max-width: 900px; */
+  margin: 0 8rem;
   padding: 2rem;
-  font-family: 'Inter', sans-serif;
-  line-height: 1.6;
-  color: #1a1a1a;
+  line-height: 1.4;
+  color: var(--color-dark);
 }
 
 /* Headline */
 .post-title {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
 }
@@ -208,9 +207,10 @@ Description: A custom WordPress theme for an online pet webshop + its blog.
 /* Meta */
 .post-meta {
   display: flex;
-  gap: 20px;
+  gap: 1rem;
   font-size: 0.9rem;
-  color: #666;
+  font-family: var(--font-body);
+  color: var(--color-dark);
   margin-bottom: 1.5rem;
 }
 
@@ -218,6 +218,7 @@ Description: A custom WordPress theme for an online pet webshop + its blog.
 .post-content {
   display: block; /* Remove flexbox */
   margin-bottom: 2rem;
+  font-family: var(--font-body);
 }
 
 .post-image {
@@ -448,10 +449,12 @@ Description: A custom WordPress theme for an online pet webshop + its blog.
 
 .post-content p {
 text-align: justify;
+padding: 0 1rem;
 margin-bottom: 1.5rem;
 }
 .post-content h2{
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  font-family: var(--font-headers);
   margin-top: 2rem;
   margin-bottom: 1rem;
 }
@@ -474,16 +477,7 @@ margin-bottom: 1.5rem;
   clear: both;
 }
 
-/* Post meta */
-.post-meta {
-    margin-bottom: 1.5rem;
-    font-size: 0.9rem;
-    color: #666;
-}
 
-.post-meta span {
-    margin-right: 15px;
-}
 
 /* Related posts */
 
