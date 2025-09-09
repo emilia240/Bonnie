@@ -50,11 +50,17 @@
 
         <div class="footer-column">
             <h4>Social Media</h4>
-            <ul>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">TikTok</a></li>
-            </ul>
+            <div class="footer-social">
+                <a href="#" target="_blank" aria-label="Facebook">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/facebook.svg" alt="Facebook" class="w-8 h-8">
+                </a>
+                <a href="#" target="_blank" aria-label="Instagram">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/instagram.svg" alt="Instagram" class="w-8 h-8">
+                </a>
+                <a href="#" target="_blank" aria-label="TikTok">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/tiktok.svg" alt="TikTok" class="w-8 h-8">
+                </a>
+            </div>
         </div>
 
 
