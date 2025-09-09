@@ -10,10 +10,10 @@ add_action( 'wp_enqueue_scripts', 'wb_load_resources' );
 
 
 
-// Change comment form text
+// Change comment form text with Polylang
 function wb_custom_comment_form_defaults( $defaults ) {
-    $defaults['title_reply'] = 'Leave a comment';  
-    $defaults['label_submit'] = 'Comment'; 
+    $defaults['title_reply']  = pll__( 'Leave a comment' );  
+    $defaults['label_submit'] = pll__( 'Comment' ); 
     return $defaults;
 }
 add_filter( 'comment_form_defaults', 'wb_custom_comment_form_defaults' );
@@ -48,6 +48,8 @@ function wb_register_strings() {
     pll_register_string('comments', 'Comments', 'Comments');
     pll_register_string('see_all_comments', 'See all comments', 'Comments');
     pll_register_string('related_posts', 'Related Posts', 'Single Post');
+    pll_register_string('leave_a_comment', 'Leave a comment', 'Comments');
+    pll_register_string('comment_submit', 'Comment', 'Comments');
 
 }
 
