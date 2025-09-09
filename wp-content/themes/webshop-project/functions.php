@@ -40,6 +40,8 @@ function wb_register_strings() {
     pll_register_string('privacy_policy', 'Privacy and Policy', 'Footer');
     pll_register_string('shipping_methods', 'Shipping methods', 'Footer');
     pll_register_string('faq', 'FAQ', 'Footer');
+    pll_register_string('address', 'Address', 'Footer');
+    pll_register_string('opening_hours', 'Opening Hours', 'Footer');
     pll_register_string('our_blogs', 'Our blogs', 'Articles');
     pll_register_string('read_article', 'Read article', 'Articles');
     pll_register_string('comments_closed', 'Comments are closed', 'Comments');
