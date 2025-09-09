@@ -23,7 +23,7 @@
                  class="slider-img absolute inset-0 w-full h-full object-cover transition-opacity duration-700 <?php echo $i === 0 ? 'opacity-100' : 'opacity-0'; ?>" />
         <?php endforeach; ?>
         <!-- Dark overlay -->
-       <div class="absolute inset-0 bg-black/50"></div>
+       <div class="absolute inset-0 bg-black/30"></div>
 
     </div>
 
