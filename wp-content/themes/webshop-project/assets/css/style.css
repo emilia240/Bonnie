@@ -818,26 +818,27 @@ margin-bottom: 1.5rem;
 
 /*Footer*/
 
-.site-footer {
+/* .site-footer {
   background: var(--color-primary);
   color: var(--color-light);
   padding: 50px 40px;
   font-family: var(--font-body);
   font-size: 14px;
-}
+} */
 
-.site-footer h4 {
+/* .site-footer h4 {
   font-family: var(--font-headers);
-}
+} */
 
+/* 
 .footer-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1.3fr 1fr;
   gap: 40px;
   text-align: left;
-}
+} */
 
-.footer-column h4 {
+/* .footer-column h4 {
   font-size: 18px;
   margin-bottom: 10px;
   color: var(--color-light);
@@ -918,7 +919,7 @@ margin-bottom: 1.5rem;
 
 .footer-column img:hover {
   filter: brightness(1) invert(0);
-}
+} */
 
 
 

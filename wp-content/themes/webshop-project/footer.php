@@ -1,20 +1,20 @@
-<footer id="colophon" class="site-footer">
-    <div class="footer-container">
+<footer class="bg-[#1C3361] text-[#F4F4F4] !py-12 !px-10 text-sm" style="font-family: 'Skolar Sans', sans-serif;">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10 text-left">
 
         <div class="footer-column">
-            <ul>
-                <li><a href="<?php echo home_url(); ?>"><?php echo esc_html(pll_e('Frontpage')); ?></a></li>
-                <li><a href="<?php echo home_url('/blog'); ?>"><?php echo esc_html(pll_e('Blog')); ?></a></li>
-                <li><a href="<?php echo home_url('/contact'); ?>"><?php echo esc_html(pll_e('Contact us')); ?></a></li>
-                <li><a href="<?php echo home_url('/privacy-policy'); ?>"><?php echo esc_html(pll_e('Privacy and Policy')); ?></a></li>
-                <li><a href="<?php echo home_url('/shipping-methods'); ?>"><?php echo esc_html(pll_e('Shipping methods')); ?></a></li>
-                <li><a href="<?php echo home_url('/faq'); ?>"><?php echo esc_html(pll_e('FAQ')); ?></a></li>
+            <ul class="flex flex-col gap-2">
+                <li><a href="<?php echo home_url(); ?>" class="hover:text-[#78BDE8] transition-colors"><?php echo esc_html(pll_e('Frontpage')); ?></a></li>
+                <li><a href="<?php echo home_url('/blog'); ?>" class="hover:text-[#78BDE8] transition-colors"><?php echo esc_html(pll_e('Blog')); ?></a></li>
+                <li><a href="<?php echo home_url('/contact'); ?>" class="hover:text-[#78BDE8] transition-colors"><?php echo esc_html(pll_e('Contact us')); ?></a></li>
+                <li><a href="<?php echo home_url('/privacy-policy'); ?>" class="hover:text-[#78BDE8] transition-colors"><?php echo esc_html(pll_e('Privacy and Policy')); ?></a></li>
+                <li><a href="<?php echo home_url('/shipping-methods'); ?>" class="hover:text-[#78BDE8] transition-colors"><?php echo esc_html(pll_e('Shipping methods')); ?></a></li>
+                <li><a href="<?php echo home_url('/faq'); ?>" class="hover:text-[#78BDE8] transition-colors"><?php echo esc_html(pll_e('FAQ')); ?></a></li>
             </ul>
         </div>
 
-        <div class="footer-column">
-            <div class="footer-block">
-                <h4><?php echo esc_html(pll_e('Address')); ?></h4>
+        <div>
+            <div class="!mb-6">
+                <h4 class="text-lg !mb-2" style="font-family: 'Aquavit', sans-serif;"><?php echo esc_html(pll_e('Address')); ?></h4>
                 <p>
                     <?php
                     if ( function_exists('pll_current_language') ) {
@@ -25,8 +25,8 @@
                 </p>
             
             </div>
-            <div class="footer-block">
-                <h4><?php echo esc_html(pll_e('Opening Hours')); ?></h4>
+            <div class="!mb-6">
+                <h4 class="text-lg !mb-2" style="font-family: 'Aquavit', sans-serif;"><?php echo esc_html(pll_e('Opening Hours')); ?></h4>
                 <p>
                     <?php
                         if ( function_exists('pll_current_language') ) {
@@ -40,38 +40,41 @@
         </div>
         
 
-        <div class="footer-column">
-            <h4>Social Media</h4>
-            <div class="footer-social">
-                <a href="#" target="_blank" aria-label="Facebook">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/facebook.svg" alt="Facebook" class="w-8 h-8">
+        <div>
+            <h4 class="text-lg !mb-2" style="font-family: 'Aquavit', sans-serif;"><?php echo esc_html(pll_e('Social Media')); ?></h4>
+            <div class="flex flex-col gap-2">
+                <a href="#" target="_blank" aria-label="Facebook" class="flex items-center gap-3 group">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/facebook.svg" alt="Facebook" class="w-8 h-8 transition duration-200 filter invert group-hover:invert-1 group-hover:brightness-0 group-hover:sepia group-hover:hue-rotate-[180deg] group-hover:saturate-[7] group-hover:text-[#78BDE8]">
+                    <span class="text-white transition-colors duration-200 group-hover:text-[#78BDE8]"><?php echo esc_html(pll_e('Facebook')); ?></span>
                 </a>
-                <a href="#" target="_blank" aria-label="Instagram">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/instagram.svg" alt="Instagram" class="w-8 h-8">
+                <a href="#" target="_blank" aria-label="Instagram" class="flex items-center gap-3 group">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/instagram.svg" alt="Instagram" class="w-8 h-8 transition duration-200 filter invert group-hover:invert-1 group-hover:brightness-0 group-hover:sepia group-hover:hue-rotate-[180deg] group-hover:saturate-[7] group-hover:text-[#78BDE8]">
+                    <span class="text-white transition-colors duration-200 group-hover:text-[#78BDE8]"><?php echo esc_html(pll_e('Instagram')); ?></span>
                 </a>
-                <a href="#" target="_blank" aria-label="TikTok">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/tiktok.svg" alt="TikTok" class="w-8 h-8">
+                <a href="#" target="_blank" aria-label="TikTok" class="flex items-center gap-3 group">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/tiktok.svg" alt="TikTok" class="w-8 h-8 transition duration-200 filter invert group-hover:invert-1 group-hover:brightness-0 group-hover:sepia group-hover:hue-rotate-[180deg] group-hover:saturate-[7] group-hover:text-[#78BDE8]">
+                    <span class="text-white transition-colors duration-200 group-hover:text-[#78BDE8]"><?php echo esc_html(pll_e('TikTok')); ?></span>
                 </a>
             </div>
         </div>
 
 
         <div class="footer-column" >
-            <h4>Contact Form</h4>
-            <form method="post" action="#">
-                <input type="text" name="username" placeholder="Username">
-                <input type="email" name="email" placeholder="e-mail">
-                <textarea name="message" placeholder="Leave a message"></textarea>
-                <button type="submit">Send</button>
+            <h4 class="text-lg !mb-2" style="font-family: 'Aquavit', sans-serif;"><?php echo esc_html(pll_e('Contact Form')); ?></h4>
+            <form method="post" action="#" class="flex flex-col gap-2">
+                <input type="text" name="username" placeholder="Username" class="w-full !mb-2 !px-3 !py-2 rounded bg-[#F4F4F4] text-[#1D1D1D]">
+                <input type="email" name="email" placeholder="e-mail" class="w-full !mb-2 !px-3 !py-2 rounded bg-[#F4F4F4] text-[#1D1D1D]">
+                <textarea name="message" placeholder="Leave a message" class="w-full !mb-2 !px-3 !py-2 rounded bg-[#F4F4F4] text-[#1D1D1D]"></textarea>
+                <button type="submit" class="bg-[#74B24B] hover:bg-[#78BDE8] text-white !px-4 !py-2 rounded transition w-fit">Send</button>
             </form>
         </div>
 
        
-        <div class="footer-column ml-20px">
-            <h4>Payment</h4>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" alt="Visa">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png" alt="Mastercard">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal">
+        <div>
+            <h4 class="text-lg !mb-2" style="font-family: 'Aquavit', sans-serif;"><?php echo esc_html(pll_e('Payment')); ?></h4>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" alt="Visa" class="!h-8 !mb-3 filter brightness-0 invert transition hover:filter-none">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png" alt="Mastercard" class="!h-8 !mb-3 filter brightness-0 invert transition hover:filter-none">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal" class="!h-8 !mb-3 filter brightness-0 invert transition hover:filter-none">
         </div>
     </div>
 </footer>
