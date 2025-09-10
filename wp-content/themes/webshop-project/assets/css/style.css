@@ -23,24 +23,22 @@ Description: A custom WordPress theme for an online pet webshop + its blog.
   color: var(--color-dark);
 }
 
-.header-top {
-    background: var(--color-primary);
-    color: var(--color-light);
+/* .header-top {
     padding: 12px 20px;
     display: flex;
     align-items: center;
     justify-content: space-around;
-  }
+  } */
   
-  .header-top .logo a {
+/*   .header-top .logo a {
     color: var(--color-light);
     text-decoration: none;
     font-weight: bold;
     font-size: 22px;
   }
+   */
   
-  
-  .header-top .search-bar input[type="search"] {
+ /*  .header-top .search-bar input[type="search"] {
     width: fit-content;
     padding: 8px 14px;
     border-radius: 20px;
@@ -48,43 +46,44 @@ Description: A custom WordPress theme for an online pet webshop + its blog.
     color: var(--color-dark); 
     background-color: var(--color-light);
   }
-  
-  .header-top .top-links a {
+   */
+
+/*   .header-top .top-links a {
     color: var(--color-light);
     margin: 0 10px;
     font-size: 14px;
     text-decoration: none;
   }
-  
-  .header-top .user-actions {
+   */
+ /*  .header-top .user-actions {
     display: flex;
     gap: 12px;
   }
-  
-  .header-top .user-actions a {
+   */
+  /* .header-top .user-actions a {
     background: var(--color-dark);
     color: var(--color-light);
     padding: 6px 14px;
     border-radius: 20px;
     text-decoration: none;
     font-size: 14px;
-  }
+  } */
 
-  .header-top .top-links a:hover {
+/*   .header-top .top-links a:hover {
     color: var(--color-light-blue);
     transition: color 0.2s;
-}
+} */
 
 
-.header-top .language-picker {
+/* .header-top .language-picker {
   display: flex;
   gap: 1rem;
   align-items: center;
-}
+} */
 
 
   
-  .header-bottom {
+/*   .header-bottom {
     background: var(--color-header-bg);
     padding: 0.8rem 0;
     font-family: var(--font-accent);
@@ -97,17 +96,17 @@ Description: A custom WordPress theme for an online pet webshop + its blog.
     color: var(--color-dark);
     text-decoration: none;
     transition: transform 0.2s ease-in-out;
-  }
+  } */
 
-  .header-bottom .main-nav a:hover {
+  /* .header-bottom .main-nav a:hover {
   transform: scale(1.08);
-  }
+  } */
 
-  .header-bottom .main-nav a.active {
+/*   .header-bottom .main-nav a.active {
     border-bottom: 0.5rem solid var(--color-primary);
     margin-bottom: -0.6rem;
   }
-
+ */
 
 
 
@@ -931,4 +930,11 @@ margin-bottom: 1.5rem;
 
 .lang-item-de img {
     content: url('../icons/flag-for-flag-germany-svgrepo-com.svg');
+}
+
+.lang-item-en img,
+.lang-item-de img {
+    width: 2rem!important;
+    height: auto !important;
+    object-fit: contain !important;
 }
