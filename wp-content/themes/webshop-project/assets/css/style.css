@@ -732,5 +732,8 @@ margin-bottom: 1.5rem;
 
 
 
+/* language picker flags ICONS */
 
-
+.lang-item-en img {
+    content: url('../icons/facebook.svg');
+}

@@ -35,11 +35,7 @@
                     <?php
                         if ( function_exists('pll_current_language') ) {
                         $lang = pll_current_language();
-                        if ($lang == 'en') {
-                            the_field('hours_uk', 'option');
-                        } elseif ($lang == 'de') {
-                            the_field('hours_de', 'option');
-                        }
+                        the_field('hours_' . $lang, 'option');
                         }
                     ?>
                 </p>

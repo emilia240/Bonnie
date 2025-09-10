@@ -12,8 +12,8 @@ add_action( 'wp_enqueue_scripts', 'wb_load_resources' );
 
 // Change comment form text with Polylang
 function wb_custom_comment_form_defaults( $defaults ) {
-    $defaults['title_reply']  = pll_e( 'Leave a comment' );  
-    $defaults['label_submit'] = pll_e( 'Comment' ); 
+    $defaults['title_reply']  = pll__( 'Leave a comment' );  
+    $defaults['label_submit'] = pll__( 'Comment' ); 
     return $defaults;
 }
 add_filter( 'comment_form_defaults', 'wb_custom_comment_form_defaults' );

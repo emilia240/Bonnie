@@ -33,11 +33,11 @@
       <a href="#"><?php echo esc_html(pll__('Contact us')); ?></a>
     </nav>
 
-    
   <ul class="language-picker">
     <?php pll_the_languages(array(
       "show_flags" => 1,
-      "show_names" => 0
+      "show_names" => 0,
+      'post_id' => get_queried_object_id()
     )); ?>
   </ul>
 
