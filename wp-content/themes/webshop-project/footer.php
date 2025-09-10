@@ -17,14 +17,10 @@
                 <h4><?php echo esc_html(pll_e('Address')); ?></h4>
                 <p>
                     <?php
-                        if ( function_exists('pll_current_language') ) {
+                    if ( function_exists('pll_current_language') ) {
                         $lang = pll_current_language();
-                        if ($lang == 'en') {
-                            the_field('address_uk', 'option');
-                        } elseif ($lang == 'de') {
-                            the_field('address_de', 'option');
-                        }
-                        }
+                        the_field('address_' . $lang, 'option');
+                    }
                     ?>
                 </p>
             
