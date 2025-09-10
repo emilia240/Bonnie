@@ -626,6 +626,44 @@ margin-bottom: 1.5rem;
 }
 
 
+
+/* Initative cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* Eco-friendly Packaging */
+.cards .card:nth-child(3n+1) {
+  background: var(--color-secondary);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+/* Partnerships with Green Suppliers */
+.cards .card:nth-child(3n+2) {
+  background: var(--color-accent);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+/* Educational Campaigns */
+.cards .card:nth-child(3n+3) {
+  background: #fff;
+  border: 2px solid #38bdf8;
+  color: #000;
+  text-align: center;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+
+
 /*Footer*/
 
 .site-footer {
