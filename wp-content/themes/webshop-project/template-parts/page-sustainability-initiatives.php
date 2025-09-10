@@ -28,8 +28,10 @@
         </div>
         <h3><?php the_sub_field('initiative_header'); ?></h3>
         <p><?php the_sub_field('initative_description'); ?></p>
-        <?php if( get_sub_field('initiative_link_button') ): ?>
-          <a href="<?php the_sub_field('initiative_link_button'); ?>"></a>
+       <?php if( get_sub_field('initiative_link_button') ): ?>
+       <a href="<?php the_sub_field('initiative_link_button'); ?>" class="learn-more-btn">
+       <?php echo get_sub_field('button_text') ? get_sub_field('button_text') : 'Learn More'; ?>
+        </a>
         <?php endif; ?>
       </div>
     <?php endwhile; ?>
