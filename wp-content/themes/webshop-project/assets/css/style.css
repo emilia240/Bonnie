@@ -735,5 +735,9 @@ margin-bottom: 1.5rem;
 /* language picker flags ICONS */
 
 .lang-item-en img {
-    content: url('../icons/facebook.svg');
+    content: url('../icons/united-kingdom-uk-svgrepo-com.svg');
+}
+
+.lang-item-de img {
+    content: url('../icons/flag-for-flag-germany-svgrepo-com.svg');
 }
