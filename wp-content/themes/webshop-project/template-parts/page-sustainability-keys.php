@@ -17,14 +17,24 @@ if ($keys) {
           <!-- images column -->
           <div class="gallery-container">
             <?php 
+            // Display video if key_video field exists
+            if (!empty($row['key_video'])): ?>
+              <div class="gallery-item">
+                <video controls width="100%">
+                  <source src="<?php echo esc_url($row['key_video']); ?>" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            <?php endif; ?>
+            <?php 
             if( !empty($row['key_gallery']) ):
                 foreach( $row['key_gallery'] as $keyGallery ):
-                    // Security: Ensure alt and url are properly escaped
                     ?>
-               <div class="gallery-item">
-                   <img src="<?php echo esc_url($keyGallery['url']); ?>" alt="<?php echo esc_attr($keyGallery['alt']); ?>">
-               </div>
-                <?php endforeach; 
+                    <div class="gallery-item">
+                        <img src="<?php echo esc_url($keyGallery['url']); ?>" alt="<?php echo esc_attr($keyGallery['alt']); ?>">
+                    </div>
+                    <?php
+                endforeach;
             endif; ?>
           </div>
 
