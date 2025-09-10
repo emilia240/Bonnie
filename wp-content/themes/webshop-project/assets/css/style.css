@@ -749,14 +749,14 @@ margin-bottom: 1.5rem;
   height: 100%;
   object-fit: cover; /* Crop to fill container while maintaining aspect ratio */
   object-position: center; /* Center the image */
-  border-radius: 8px;
+
 }
 
 .gallery-item video {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 8px;
+
   background: #000;
   display: block;
 }
@@ -802,7 +802,6 @@ margin-bottom: 1.5rem;
 /* Typography */
 .wrapper h3 {
   font-size: 1.75rem;
-  font-weight: 600;
   color: #333;
   margin: 0; /* Remove default margins since we're using gap in flex container */
   line-height: 1.2;
@@ -815,6 +814,9 @@ margin-bottom: 1.5rem;
   color: #555;
   margin-bottom: 1.2rem;
 }
+
+
+
 /*Footer*/
 
 .site-footer {

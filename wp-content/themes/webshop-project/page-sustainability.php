@@ -7,5 +7,9 @@
 <?php get_template_part('template-parts/page-sustainability-keys'); ?>
 <?php get_template_part('template-parts/page-sustainability-promise'); ?>
 
+<!-- Blogs template part -->
+
+<?php get_template_part('template-parts/page-sustainability-newsletter'); ?>
+
 
 <?php get_footer(); ?>
