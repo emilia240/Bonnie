@@ -1,7 +1,7 @@
 <section class="w-full h-[500px] !py-12 relative overflow-hidden flex items-center">
     <?php
 
-        $text        = get_field('hero_text');
+        $text = get_field('hero_text');
 
         // Preparing slides array
         $slides = array();
