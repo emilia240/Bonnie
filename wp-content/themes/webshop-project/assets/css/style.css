@@ -712,12 +712,16 @@ margin-bottom: 1.5rem;
 }
 .wrapper {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row; /* Default: images right, text left */
   gap: 3rem;
   align-items: flex-start;
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem 0;
+}
+
+.wrapper:nth-child(even) {
+  flex-direction: row-reverse; /* Even rows: images left, text right */
 }
 
 .wrapper > div:nth-child(1) {
@@ -769,7 +773,6 @@ margin-bottom: 1.5rem;
   color: #555;
   margin-bottom: 1.2rem;
 }
-
 /*Footer*/
 
 .site-footer {
