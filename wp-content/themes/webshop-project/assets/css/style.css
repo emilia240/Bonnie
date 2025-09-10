@@ -705,6 +705,12 @@ margin-bottom: 1.5rem;
 }
 
 
+/* Keys Section */
+.keys-border {
+  border-top: 1px solid var(--color-primary);
+  margin: 40px 0;
+}
+
 /*Footer*/
 
 .site-footer {
