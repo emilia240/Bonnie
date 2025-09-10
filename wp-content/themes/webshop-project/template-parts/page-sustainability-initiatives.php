@@ -20,10 +20,12 @@
       <div class="card">
         <div class="icon">
           <?php 
-            $icon = get_sub_field('icon'); 
-            if( $icon ) : 
-              echo wp_get_attachment_image($icon, 'full'); 
-            endif; 
+           // ...existing code...
+         $icon = get_sub_field('initiative_icon'); 
+          if( $icon ) : 
+          $icon_id = is_array($icon) ? $icon['ID'] : $icon;
+           echo wp_get_attachment_image($icon_id, 'full'); 
+           endif; 
           ?>
         </div>
         <h3><?php the_sub_field('initiative_header'); ?></h3>
