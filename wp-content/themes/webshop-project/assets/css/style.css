@@ -114,24 +114,16 @@ Description: A custom WordPress theme for an online pet webshop + its blog.
 
 
 
-.wp-block-post-comments-form,
+/* .wp-block-post-comments-form,
 .comment-respond {
     margin: 40px 0;
     padding: 0;
     background: transparent;
-}
-
-.wp-block-post-comments-form h3,
-.comment-reply-title {
-    font-size: 24px;
-    font-weight: 600;
-    color: #333;
-    margin-bottom: 20px;
-    font-family: inherit;
-}
+} */
 
 
-.comment-form-comment textarea,
+
+/* .comment-form-comment textarea,
 .wp-block-post-comments-form textarea {
     width: 100%;
     min-height: 150px;
@@ -143,7 +135,7 @@ Description: A custom WordPress theme for an online pet webshop + its blog.
     resize: vertical;
     background: white;
     box-sizing: border-box;
-}
+} */
 
 .comment-form-comment textarea:focus,
 .wp-block-post-comments-form textarea:focus {
@@ -235,21 +227,19 @@ Description: A custom WordPress theme for an online pet webshop + its blog.
 }
 
 /* Comments */
-.wp-block-post-comments-form,
+/* .wp-block-post-comments-form,
 .comment-respond {
     margin: 40px 0;
     padding: 0;
     background: transparent;
     max-width: 800px; 
-}
+} */
 
 .wp-block-post-comments-form h3,
 .comment-reply-title {
-    font-size: 24px;
-    font-weight: 600;
-    color: #333;
-    margin-bottom: 20px;
-    font-family: inherit;
+    font-size: 1.5rem;
+    margin-bottom: 0.4rem;
+    font-family: var(--font-body);
 }
 
 .comment-form-comment textarea,
@@ -311,16 +301,13 @@ Description: A custom WordPress theme for an online pet webshop + its blog.
 }
 
 /* Overall comments container */
-.comments-area,
 .wp-block-comments {
     margin: 40px 0;
 }
 
 /* Comments heading */
-.comments-title,
 .wp-block-comments h3 {
     font-size: 24px;
-    font-weight: 600;
     color: #333;
     margin-bottom: 20px;
 }
@@ -435,15 +422,7 @@ Description: A custom WordPress theme for an online pet webshop + its blog.
     display: none;
 }
 
-/* Style the see all comments button */
-.see-all-comments-btn {
-    color: #333;
-    padding: 10px 20px;
-    text-decoration: underline;
-    font-weight: 500;
-    cursor: pointer;
 
-}
 
 
 .post-content p {
