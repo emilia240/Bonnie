@@ -23,119 +23,27 @@ Description: A custom WordPress theme for an online pet webshop + its blog.
   color: var(--color-dark);
 }
 
-/* .header-top {
-    padding: 12px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-  } */
-  
-/*   .header-top .logo a {
-    color: var(--color-light);
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 22px;
-  }
-   */
-  
- /*  .header-top .search-bar input[type="search"] {
-    width: fit-content;
-    padding: 8px 14px;
-    border-radius: 20px;
-    border: 1px solid #ccc;
-    color: var(--color-dark); 
-    background-color: var(--color-light);
-  }
-   */
+/* language picker flags ICONS */
 
-/*   .header-top .top-links a {
-    color: var(--color-light);
-    margin: 0 10px;
-    font-size: 14px;
-    text-decoration: none;
-  }
-   */
- /*  .header-top .user-actions {
-    display: flex;
-    gap: 12px;
-  }
-   */
-  /* .header-top .user-actions a {
-    background: var(--color-dark);
-    color: var(--color-light);
-    padding: 6px 14px;
-    border-radius: 20px;
-    text-decoration: none;
-    font-size: 14px;
-  } */
+.lang-item-en img {
+    content: url('../icons/united-kingdom-uk-svgrepo-com.svg');
+}
 
-/*   .header-top .top-links a:hover {
-    color: var(--color-light-blue);
-    transition: color 0.2s;
-} */
+.lang-item-de img {
+    content: url('../icons/flag-for-flag-germany-svgrepo-com.svg');
+}
 
-
-/* .header-top .language-picker {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-} */
-
-
-  
-/*   .header-bottom {
-    background: var(--color-header-bg);
-    padding: 0.8rem 0;
-    font-family: var(--font-accent);
-    font-size: 1.2rem;
-  }
-  
-  .header-bottom .main-nav {
-    display: flex;
-    justify-content: space-evenly;
-    color: var(--color-dark);
-    text-decoration: none;
-    transition: transform 0.2s ease-in-out;
-  } */
-
-  /* .header-bottom .main-nav a:hover {
-  transform: scale(1.08);
-  } */
-
-/*   .header-bottom .main-nav a.active {
-    border-bottom: 0.5rem solid var(--color-primary);
-    margin-bottom: -0.6rem;
-  }
- */
+.lang-item-en img,
+.lang-item-de img {
+    width: 2rem!important;
+    height: auto !important;
+    object-fit: contain !important;
+}
 
 
 
 /* Comments section style */
 
-
-
-/* .wp-block-post-comments-form,
-.comment-respond {
-    margin: 40px 0;
-    padding: 0;
-    background: transparent;
-} */
-
-
-
-/* .comment-form-comment textarea,
-.wp-block-post-comments-form textarea {
-    width: 100%;
-    min-height: 150px;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 16px;
-    font-family: inherit;
-    resize: vertical;
-    background: white;
-    box-sizing: border-box;
-} */
 
 .comment-form-comment textarea:focus,
 .wp-block-post-comments-form textarea:focus {
@@ -179,63 +87,9 @@ Description: A custom WordPress theme for an online pet webshop + its blog.
     clear: both;
 }
 
-/* Container */
 
-
-/* .article-container {
-  max-width: 900px; 
-  margin: 0 8rem;
-  padding: 2rem;
-  line-height: 1.4;
-  color: var(--color-dark);
-}
- */
-/* Headline */
-/* .post-title {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
-} */
-
-/* Meta */
-/* .post-meta {
-  display: flex;
-  gap: 1rem;
-  font-size: 0.9rem;
-  font-family: var(--font-body);
-  color: var(--color-dark);
-  margin-bottom: 1.5rem;
-} */
-
-/* Content Layout */
-/* .post-content {
-  display: block; 
-  margin-bottom: 2rem;
-  font-family: var(--font-body);
-} */
-
-.post-image {
-  flex: 1 1 40%;
-}
-
-.post-image img {
-  width: 100%;
-  border-radius: 12px;
-  height: auto;
-}
-
-.post-text {
-  flex: 1 1 55%;
-}
 
 /* Comments */
-/* .wp-block-post-comments-form,
-.comment-respond {
-    margin: 40px 0;
-    padding: 0;
-    background: transparent;
-    max-width: 800px; 
-} */
 
 .wp-block-post-comments-form h3,
 .comment-reply-title {
@@ -425,7 +279,19 @@ Description: A custom WordPress theme for an online pet webshop + its blog.
 }
 
 
+/* post image */
 
+.post-image {
+  flex: 1 1 40%;
+}
+
+.post-image img {
+  width: 100%;
+  border-radius: 12px;
+  height: auto;
+}
+
+/* post content */
 
 .post-content p {
 text-align: justify;
@@ -448,7 +314,6 @@ margin-bottom: 1.5rem;
 .post-image-wrap img {
   width: 100%;
   height: auto;
-  border-radius: none;
 }
 
 .post-content::after {
@@ -458,99 +323,6 @@ margin-bottom: 1.5rem;
 }
 
 
-
-/* Related posts */
-
-/* 
-.related-posts {
-    margin-top: 3rem;
-}
-
-.related-grid {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.related-post {
-    flex: 0 0 30%;
-    background: #f9f9f9;
-    padding: 1rem;
-    border-radius: 12px;
-    transition: box-shadow 0.2s;
-}
-
-.related-post:hover {
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-.related-post img {
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 0.8rem;
-}
-
-.related-post h4 {
-    font-size: 1rem;
-    margin: 0;
-}
- */
-
-/* .category-button {
-  background-color: var(--color-primary);
-  color: white;
-  padding: 12px 24px;
-  width: fit-content;
-  border-radius: 6px;
-  font-family: var(--font-body);
-  text-transform: uppercase;
-} */
-
-/* .post-categories{
-  margin-bottom: 1.5rem;
-  font-size: 0.9rem;
-  color: black;
-
-}
-
-.post-tags{
-  margin-bottom: 1rem;
-  font-size: 0.9rem;
-  color: black;
-  font-family: var(--font-body);
-} */
-
-/* .tag-button {
-  background-color: var(--color-primary);
-  color: white;
-  padding: 12px 24px;
-  width: fit-content;
-  border-radius: 6px;
-  font-size: 12px;
-  margin-right: 5px;
-} */
-
-/* 
-.category-button,
-.tag-button {
-  background-color: var(--color-primary);
-  color: var(--color-light);
-  padding: 12px 24px;
-  width: fit-content;
-  border-radius: 6px;
-  font-size: 12px;
-  border: 2px solid transparent; 
-  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
-}
-
-.category-button:hover,
-.tag-button:hover {
-  background-color: var(--color-light);
-  color: var(--color-primary); 
-  border: 2px solid var(--color-primary); 
-  cursor: pointer;
-}
- */
 
 /*Reviews*/
 
@@ -799,126 +571,3 @@ margin-bottom: 1.5rem;
 
 
 
-/*Footer*/
-
-/* .site-footer {
-  background: var(--color-primary);
-  color: var(--color-light);
-  padding: 50px 40px;
-  font-family: var(--font-body);
-  font-size: 14px;
-} */
-
-/* .site-footer h4 {
-  font-family: var(--font-headers);
-} */
-
-/* 
-.footer-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1.3fr 1fr;
-  gap: 40px;
-  text-align: left;
-} */
-
-/* .footer-column h4 {
-  font-size: 18px;
-  margin-bottom: 10px;
-  color: var(--color-light);
-}
-
-.footer-social {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.footer-social img {
-  transition: filter 0.3s ease;
-}
-
-.footer-social a:hover img {
-  filter: brightness(0) saturate(100%) invert(42%) sepia(90%) saturate(2000%) hue-rotate(180deg) brightness(95%) contrast(90%);
-}
-
-.footer-column ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer-column ul li {
-  margin-bottom: 8px;
-}
-
-.footer-column ul li a {
-  color: var(--color-light);
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-.footer-column ul li a:hover {
-  color: var(--color-light-blue);
-}
-
-
-.footer-block {
-  margin-bottom: 20px;
-}
-
-
-.footer-column form input,
-.footer-column form textarea {
-  width: 90%;
-  margin-bottom: 10px;
-  padding: 10px;
-  border-radius: 4px;
-  border: none;
-  font-size: 14px;
-}
-
-.footer-column form button {
-  background: var(--color-accent);
-  border: none;
-  color: white;
-  padding: 10px 16px;
-  cursor: pointer;
-  border-radius: 4px;
-  transition: background 0.3s;
-}
-
-.footer-column form button:hover {
-  background: var(--color-light-blue);
-}
-
-
-.footer-column img {
-  height: 30px;
-  display: block;
-  margin-bottom: 12px;
-  filter: brightness(0) invert(1);
-  transition: filter 0.3s;
-}
-
-.footer-column img:hover {
-  filter: brightness(1) invert(0);
-} */
-
-
-
-/* language picker flags ICONS */
-
-.lang-item-en img {
-    content: url('../icons/united-kingdom-uk-svgrepo-com.svg');
-}
-
-.lang-item-de img {
-    content: url('../icons/flag-for-flag-germany-svgrepo-com.svg');
-}
-
-.lang-item-en img,
-.lang-item-de img {
-    width: 2rem!important;
-    height: auto !important;
-    object-fit: contain !important;
-}
