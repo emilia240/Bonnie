@@ -1,5 +1,8 @@
 <?php
 function wb_load_resources() {
+    if(is_single()) {
+        wp_enqueue_style( 'single', get_template_directory_uri() . "/assets/css/single.css" );
+    }
     wp_enqueue_style( 'style', get_template_directory_uri() . "/assets/css/style.css" );
     wp_enqueue_script( 'tailwind', 'https://cdn.tailwindcss.com', array(), null, true );
     wp_enqueue_style( 'adobe-fonts', 'https://use.typekit.net/fjs8eoq.css' );
