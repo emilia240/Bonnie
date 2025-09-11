@@ -437,11 +437,11 @@ margin-bottom: 1.5rem;
 
 /* Row 1 → Green shades */
 .cards .card:nth-child(-n+3) {
-  background: #065f46; 
+  background: var(--color-secondary); 
   color: #fff;
 }
 .cards .card:nth-child(2):nth-child(-n+3) {
-  background: #10b981; 
+  background: var(--color-accent); 
 }
 .cards .card:nth-child(3):nth-child(-n+3) {
   background: #6ee7b7; 
