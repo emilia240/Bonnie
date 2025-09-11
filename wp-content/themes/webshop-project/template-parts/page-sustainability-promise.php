@@ -15,7 +15,7 @@
   </div>
 
 
-  <div class="max-w-5xl mx-auto bg-gray-200 !mb-20 rounded-xl p-14">
+  <div class="max-w-5xl mx-auto bg-gray-200 !mb-20 rounded-xl !p-14">
   <p class="text-lg">
    <?php echo esc_html($promiseText); ?>
   </p>
