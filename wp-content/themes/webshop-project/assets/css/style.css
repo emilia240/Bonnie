@@ -435,29 +435,41 @@ margin-bottom: 1.5rem;
   font-size: 20px
 }
 
-/* Eco-friendly Packaging - Dark Green */
-.cards .card:nth-child(3n+1) {
-  background: #2d5016;
-  color: #ffffff;
+/* Row 1 → Green shades */
+.cards .card:nth-child(-n+3) {
+  background: #065f46; 
+  color: #fff;
+}
+.cards .card:nth-child(2):nth-child(-n+3) {
+  background: #10b981; 
+}
+.cards .card:nth-child(3):nth-child(-n+3) {
+  background: #6ee7b7; 
 }
 
-/* Partnerships with Green Suppliers - Light Green */
-.cards .card:nth-child(3n+2) {
-  background: #7cb342;
-  color: #ffffff;
+/* Row 2 → Brown shades */
+.cards .card:nth-child(n+4):nth-child(-n+6) {
+  background: #78350f;
+  color: #fff;
+}
+.cards .card:nth-child(5) {
+  background: #b45309; 
+}
+.cards .card:nth-child(6) {
+  background: #d97706; 
 }
 
-/* Educational Campaigns - White with Blue Border */
-.cards .card:nth-child(3n+3) {
-  background: #ffffff;
-  border: 2px solid #38bdf8;
-  color: #1f2937;
+/* Row 3 → Blue shades */
+.cards .card:nth-child(n+7):nth-child(-n+9) {
+  background: #1e3a8a; 
+  color: #fff;
 }
-
-.cards .card:nth-child(3n+3) h3 {
-  color: #1f2937;
+.cards .card:nth-child(8) {
+  background: #2563eb; 
 }
-
+.cards .card:nth-child(9) {
+  background: #60a5fa; 
+}
 
 .keys {
   max-width: 1200px;
