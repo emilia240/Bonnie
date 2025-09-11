@@ -9,7 +9,7 @@
 
     if( $rows ) :
       $i = 0;
-      foreach( array_reverse($rows) as $row ): 
+      foreach( $rows as $row ): 
       $i++;
       ?>
         <div class="key">
