@@ -39,7 +39,7 @@
 
   <div class="flex justify-center mt-10">
     <a href="<?php echo esc_url(home_url('/blog')); ?>"
-       class="bg-[#1C3361] text-white px-8 py-3 rounded-full font-semibold text-lg transition-colors hover:bg-[#78BDE8] hover:text-[#1C3361] no-underline">
+       class="bg-[#1C3361] text-white !px-8 !py-3 rounded-full font-semibold text-lg transition-colors hover:bg-[#78BDE8] hover:text-[#1C3361] no-underline">
         <?php echo esc_html(pll__('See all blog posts')); ?>
     </a>
 </div>
