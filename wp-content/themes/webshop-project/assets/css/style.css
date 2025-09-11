@@ -435,20 +435,55 @@ margin-bottom: 1.5rem;
   font-size: 20px
 }
 
+.keys .key:nth-child(1) .key_icon_box { background: #0c2f1f; }
+.keys .key:nth-child(2) .key_icon_box { background: var(--color-secondary); }
+.keys .key:nth-child(3) .key_icon_box { background: var(--color-accent); }
+
+/* Row 2 */
+.keys .key:nth-child(4) .key_icon_box { background: #142952; }
+.keys .key:nth-child(5) .key_icon_box { background: #476cb5; }
+.keys .key:nth-child(6) .key_icon_box { background: #78BDE8; }
+
+/* Row 3 */
+.keys .key:nth-child(7) .key_icon_box { background: #4b2823; }
+.keys .key:nth-child(8) .key_icon_box { background: #74503d; }
+.keys .key:nth-child(9) .key_icon_box { background: #c29c77; }
+
 /* Row 1 → Green shades */
-.cards .card:nth-child(1) { background: #0c2f1f; color: #fff; }
-.cards .card:nth-child(2) { background: var(--color-secondary); color: #fff; }
-.cards .card:nth-child(3) { background: var(--color-accent); color: #fff; }
+.cards .card:nth-child(-n+3) {
+  background: #0c2f1f; 
+  color: #fff;
+}
+.cards .card:nth-child(2):nth-child(-n+3) {
+  background: var(--color-secondary); 
+}
+.cards .card:nth-child(3):nth-child(-n+3) {
+  background: var(--color-accent); 
+}
 
 /* Row 2 → Brown shades */
-.cards .card:nth-child(4) { background: #142952; color: #fff; }
-.cards .card:nth-child(5) { background: #476cb5; color: #fff; }
-.cards .card:nth-child(6) { background: #78BDE8; color: #fff; }
+.cards .card:nth-child(n+4):nth-child(-n+6) {
+  background:#142952;
+  color: #fff;
+}
+.cards .card:nth-child(5) {
+  background: #476cb5; 
+}
+.cards .card:nth-child(6) {
+  background: #78BDE8; 
+}
 
 /* Row 3 → Blue shades */
-.cards .card:nth-child(7) { background: #4b2823; color: #fff; }
-.cards .card:nth-child(8) { background: #74503d; color: #fff; }
-.cards .card:nth-child(9) { background: #c29c77; color: #fff; }
+.cards .card:nth-child(n+7):nth-child(-n+9) {
+  background:#8D5447; 
+  color: #fff;
+}
+.cards .card:nth-child(8) {
+  background: #74503d; 
+}
+.cards .card:nth-child(9) {
+  background: #c29c77; 
+}
 
 .keys {
   max-width: 1200px;
