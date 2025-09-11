@@ -3,32 +3,32 @@
 <?php if (have_posts()) : ?>
 	<?php while (have_posts()) : the_post(); ?>
 
-		<article id="post-<?php the_ID(); ?>" <?php post_class('article-container'); ?>>
+		<article id="post-<?php the_ID(); ?>" <?php post_class('max-w-4xl !mx-auto !p-8 bg-white rounded-lg text-[#1D1D1D] !leading-[1.4]'); ?>>
 
 			<!-- Heading -->
-			<h1 class="post-title" style="font-family: 'Aquavit', sans-serif;"><?php the_title(); ?></h1>
+			<h1 class="text-4xl !mb-2" style="font-family: 'Aquavit', sans-serif;"><?php the_title(); ?></h1>
 
 			<!-- Date & Author -->
-			<div class="post-meta">
-				<span class="post-date"><?php echo get_the_date(); ?></span>
-				<span class="post-author"><?php echo get_the_author(); ?></span>
+			<div class="flex gap-4 text-base text-[#1D1D1D] !mb-6" style="font-family: 'Skolar Sans', sans-serif;">
+				<span><?php echo get_the_date(); ?></span>
+				<span><?php echo get_the_author(); ?></span>
 			</div>
 			
 			<?php
 			$categories_list = get_the_category_list(', '); ?>
 
 			<?php if ($categories_list) : ?>
-				<div class="post-categories">
-					<span class= "category-button"><?php echo $categories_list; ?></span> 
+				<div class="!mb-4">
+					<span style="font-family: 'Skolar Sans', sans-serif;" class="bg-[#1C3361] text-white !px-4 !py-2 rounded uppercase text-xs inline-block hover:bg-[#F4F4F4] hover:text-[#1C3361] border-2 border-transparent hover:border-[#1C3361] transition"><?php echo $categories_list; ?></span> 
 				</div>
 			<?php endif; ?>
 
 			<?php 
 			$post_tags = get_the_tags();
 			if ($post_tags) : ?>
-			    <div class="post-tags">
+			    <div class="!mb-4 flex flex-wrap gap-2">
 			        <?php foreach ($post_tags as $tag) : ?>
-			            <span class="tag-button">
+			            <span style="font-family: 'Skolar Sans', sans-serif;" class="bg-[#1C3361] text-white !px-4 !py-2 rounded text-xs inline-block hover:bg-[#F4F4F4] hover:text-[#1C3361] border-2 border-transparent hover:border-[#1C3361] transition">
 			                <a href="<?php echo get_tag_link($tag->term_id); ?>">
 			                    <?php echo esc_html($tag->name); ?>
 			                </a>
@@ -38,25 +38,27 @@
 			<?php endif; ?>
 
 			<!-- Main content with floated image -->
-			<div class="post-content">
+			<div class="!mb-8" style="font-family: 'Skolar Sans', sans-serif;">
 				<?php if (has_post_thumbnail()) : ?>
-					<div class="post-image-wrap">
-						<?php the_post_thumbnail('large'); ?>
+					<div class="float-left !mr-5 !mb-5 max-w-xs w-full">
+						<?php the_post_thumbnail('large', ['class' => 'rounded-lg w-full h-auto']); ?>
 					</div>
 				<?php endif; ?>
 
-				<?php the_content(); ?>
+				<div class="prose prose-lg text-justify">
+					<?php the_content(); ?>
+				</div>
 			</div>
 
 			<!-- Comments Section -->
-			<div class="comments-section">
+			<div class="!my-10">
 				<?php if (comments_open() || get_comments_number()) : ?>
 					<?php comments_template(); ?>
 				<?php endif; ?>
 			</div>
 
 			<!-- Related Posts -->
-			<div class="related-posts w-full !py-12">
+			<div class="w-full !py-12">
 				<!-- Header with lines on the side -->
 				<div class="flex items-center w-full !mb-10">
 					<hr class="flex-grow border-t border-[var(--color-dark)]">
