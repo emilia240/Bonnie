@@ -44,6 +44,26 @@ Description: A custom WordPress theme for an online pet webshop + its blog.
 
 /* Comments section style */
 
+.wp-block-post-comments-form,
+.comment-respond {
+    margin: 40px 0;
+    padding: 0;
+    background: transparent;
+}
+
+.comment-form-comment textarea,
+.wp-block-post-comments-form textarea {
+    width: 100%;
+    min-height: 150px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: inherit;
+    resize: vertical;
+    background: white;
+    box-sizing: border-box;
+} 
 
 .comment-form-comment textarea:focus,
 .wp-block-post-comments-form textarea:focus {
@@ -90,6 +110,16 @@ Description: A custom WordPress theme for an online pet webshop + its blog.
 
 
 /* Comments */
+
+.wp-block-post-comments-form,
+.comment-respond {
+    margin: 40px 0;
+    padding: 0;
+    background: transparent;
+    max-width: 800px; 
+}
+
+
 
 .wp-block-post-comments-form h3,
 .comment-reply-title {
@@ -141,14 +171,14 @@ Description: A custom WordPress theme for an online pet webshop + its blog.
 }
 
 .comment-form-comment label {
-    display: none;
+    display: none !important;
 }
 
 .comment-form:after,
 .wp-block-post-comments-form:after {
-    content: "";
+    content: "" !important;
     display: table;
-    clear: both;
+    clear: both !important;
 }
 
 .comment-form .logged-in-as,
@@ -278,7 +308,25 @@ Description: A custom WordPress theme for an online pet webshop + its blog.
     display: none;
 }
 
+/* Hide "Your email address will not be published..." text */
+.comment-notes {
+    display: none !important;
+}
 
+/* Hide asterisks from labels */
+.required {
+    display: none !important;
+}
+
+/* Hide "Save my info" checkbox and text */
+.comment-form-cookies-consent {
+    display: none !important;
+}
+
+/* Ensure labels don't show */
+.comment-form label {
+    display: none !important;
+}
 
 
 
