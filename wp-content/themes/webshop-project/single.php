@@ -5,21 +5,22 @@
 
 		<article id="post-<?php the_ID(); ?>" <?php post_class('max-w-4xl !mx-auto !p-8 bg-white rounded-lg text-[#1D1D1D] !leading-[1.4]'); ?>>
 
+			<!-- Date & Author -->
+			<div class="flex items-center gap-4 text-[#1D1D1D]/80 !mb-2" style="font-family: 'Skolar Sans', sans-serif;">
+				<span class="text-xs"><?php echo get_the_date(); ?></span>
+				<span class="text-sm font-bold"><?php echo get_the_author(); ?></span>
+			</div>
+
 			<!-- Heading -->
 			<h1 class="text-4xl !mb-2" style="font-family: 'Aquavit', sans-serif;"><?php the_title(); ?></h1>
 
-			<!-- Date & Author -->
-			<div class="flex gap-4 text-base text-[#1D1D1D] !mb-6" style="font-family: 'Skolar Sans', sans-serif;">
-				<span><?php echo get_the_date(); ?></span>
-				<span><?php echo get_the_author(); ?></span>
-			</div>
 			
 			<?php
 			$categories_list = get_the_category_list(', '); ?>
 
 			<?php if ($categories_list) : ?>
 				<div class="!mb-4">
-					<span style="font-family: 'Skolar Sans', sans-serif;" class="bg-[#1C3361] text-white !px-4 !py-2 rounded uppercase text-xs inline-block hover:bg-[#F4F4F4] hover:text-[#1C3361] border-2 border-transparent hover:border-[#1C3361] transition"><?php echo $categories_list; ?></span> 
+					<span style="font-family: 'Skolar Sans', sans-serif;" class="text-[#1C3361] uppercase text-base inline-block hover:underline"><?php echo $categories_list; ?></span> 
 				</div>
 			<?php endif; ?>
 
@@ -38,7 +39,7 @@
 			<?php endif; ?>
 
 			<!-- Main content with floated image -->
-			<div class="!mb-8" style="font-family: 'Skolar Sans', sans-serif;">
+			<div class="post-content !mb-8" style="font-family: 'Skolar Sans', sans-serif;">
 				<?php if (has_post_thumbnail()) : ?>
 					<div class="float-left !mr-5 !mb-5 max-w-xs w-full">
 						<?php the_post_thumbnail('large', ['class' => 'rounded-lg w-full h-auto']); ?>
