@@ -70,3 +70,6 @@
     <input type="submit" value="Submit" class="h-[55px] w-[130px] cursor-pointer rounded-lg bg-[#1C3361] px-6 py-2 text-lg mb-10 font-bold text-white hover:bg-blue-800" />
   </div>
 </form>
+
+
+<!-- Semantics! visual consistency?! - fonts family and size? ALIGNMENT on the page? button style consistency? mobile responsiveness?-->
