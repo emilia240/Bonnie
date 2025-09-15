@@ -57,3 +57,32 @@ function wb_register_strings() {
 }
 
 add_action('init', 'wb_register_strings');
+
+
+//survey form submission for Facebook
+
+function wb_save_survey_response_handler() {
+	//fetch the input fields
+	$fb_group_interest = $_REQUEST["fb_group_interest"];
+	$fb_usage = $_REQUEST["fb_usage"]; 
+	$fb_expectations = $_REQUEST["fb_expectations"];
+
+	// Create the survey response post
+	$response = wp_insert_post(array(
+		"post_type" => "survey-response",
+		"post_status" => "publish",
+		"post_title" => "Survey Response"
+	));
+
+	// Store the values in SCF fields
+	update_field("fb_group_interest", $fb_group_interest, $response);
+	update_field("fb_usage", $fb_usage, $response);
+	update_field("fb_expectations", $fb_expectations, $response);
+
+	// Redirect to thank you page
+	wp_redirect($_SERVER["HTTP_REFERER"]);
+	exit;
+}
+
+add_action("admin_post_save_survey_response", "wb_save_survey_response_handler");
+add_action("admin_post_nopriv_save_survey_response", "wb_save_survey_response_handler");
