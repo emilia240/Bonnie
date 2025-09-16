@@ -67,11 +67,14 @@ function wb_save_survey_response_handler() {
 	$fb_usage = $_REQUEST["fb_usage"]; 
 	$fb_expectations = $_REQUEST["fb_expectations"];
 
+    // Creating a unique title with date and time
+    $title = "Survey Response - " . date('Y-m-d H:i:s');
+
 	// Create the survey response post
 	$response = wp_insert_post(array(
 		"post_type" => "survey-response",
 		"post_status" => "publish",
-		"post_title" => "Survey Response"
+		"post_title" => $title
 	));
 
 	// Store the values in SCF fields
@@ -80,7 +83,8 @@ function wb_save_survey_response_handler() {
 	update_field("fb_expectations", $fb_expectations, $response);
 
 	// Redirect to thank you page
-	wp_redirect($_SERVER["HTTP_REFERER"]);
+	wp_redirect(add_query_arg('survey_submitted', '1', $_SERVER["HTTP_REFERER"]));
+    //add a query parameter to indicate submission; this will be used to show the alert message
 	exit;
 }
 
