@@ -46,6 +46,12 @@ document.addEventListener('DOMContentLoaded', function() {
             currentSlide = (currentSlide + 1) % slides.length;
         }, 3500);
     }
+
+    // Survey submission alert
+    if (window.location.search.includes('survey_submitted=1')) {
+    alert('Thank you for doing the survey!');
+  }
+  
 });
 
 // Back to top button (can be outside DOMContentLoaded)
