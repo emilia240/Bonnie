@@ -39,8 +39,14 @@
 
   <div class="flex justify-center mt-10">
     <a href="<?php echo esc_url(home_url('/blog')); ?>"
-       class="bg-[#1C3361] text-white !px-8 !py-3 rounded-full font-semibold text-lg transition-colors hover:bg-[#78BDE8] hover:text-[#1C3361] no-underline">
+       class="bg-[#1C3361] text-[#F4F4F4] !px-6 !py-2 rounded-full inline-flex items-center !gap-2 no-wrap hover:bg-white hover:text-[#1C3361] 
+            hover:border hover:border-[#1C3361] transition-colors duration-200" style="font-family: 'Bodoni MT', serif; font-weight: 500;">
         <p><?php echo esc_html(pll__('See all blog posts')); ?></p>
+        
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <line x1="4" y1="12" x2="18" y2="12" stroke="currentColor" stroke-width="2"/>
+            <polyline points="12,6 18,12 12,18" stroke="currentColor" stroke-width="2" fill="none"/>
+      </svg>
     </a>
 </div>
 </section>
