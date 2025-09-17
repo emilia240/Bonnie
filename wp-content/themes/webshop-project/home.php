@@ -34,15 +34,16 @@
             <?php else : ?>
             <p>No articles found.</p>
 
-             <!-- Pagination -->
-              <!-- to style after we get 10+ articles; later -->
-            <div class="mt-8 flex justify-center">
-                <?php echo paginate_links(array(
-                    'total' => $query->max_num_pages,
-                    'current' => get_query_var('paged') ? get_query_var('paged') : 1,
-                )); ?>
-            </div>
+             
         <?php endif; ?>
+    </div>
+    <!-- Pagination -->
+        <!-- to style after we get 10+ articles; later -->
+    <div class="mt-8 flex justify-center">
+        <?php echo paginate_links(array(
+           /*  'total' => $query->max_num_pages,
+            'current' => get_query_var('paged') ? get_query_var('paged') : 1, */
+        )); ?>
     </div>
 
 
