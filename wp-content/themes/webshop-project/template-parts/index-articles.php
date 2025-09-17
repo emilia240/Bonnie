@@ -19,16 +19,16 @@
 
   <!-- Subtitle and button row -->
   <div class="flex lg:flex-row sm:flex-row flex-col gap-2 items-center justify-between !mb-8 sm:px-10">
-    <div class="text-lg font-body max-w-2xl" style="font-family: var(--font-body);">
+    <p class="text-lg font-body max-w-2xl" style="font-family: var(--font-body);">
       <?php if ($subtitle): ?>
           <?php echo esc_html($subtitle); ?>
       <?php endif; ?>
-    </div>
+    </p>
     <a  href="<?php echo esc_url(get_permalink(get_option('page_for_posts'))); ?>"
     class="bg-[#1C3361] text-[#F4F4F4] !px-6 !py-2 rounded-full inline-flex items-center !gap-2 no-wrap hover:bg-white hover:text-[#1C3361] 
             hover:border hover:border-[#1C3361] transition-colors duration-200" style="font-family: 'Bodoni MT', serif; font-weight: 500;">
 
-        <?php echo esc_html(pll_e('Our blogs')); ?>
+        <p><?php echo esc_html(pll_e('Our blogs')); ?></p>
         
         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <line x1="4" y1="12" x2="18" y2="12" stroke="currentColor" stroke-width="2"/>
