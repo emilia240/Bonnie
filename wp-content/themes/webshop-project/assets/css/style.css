@@ -76,7 +76,7 @@ Description: A custom WordPress theme for an online pet webshop + its blog.
 .comment-form .form-submit input[type="submit"],
 .wp-block-post-comments-form button[type="submit"],
 .wp-block-post-comments-form input[type="submit"] {
-    background: #2c5282;
+    background: var(--color-primary);
     color: white;
     padding: 12px 24px;
     border: none;
@@ -152,22 +152,27 @@ Description: A custom WordPress theme for an online pet webshop + its blog.
 .comment-form .form-submit input[type="submit"],
 .wp-block-post-comments-form button[type="submit"],
 .wp-block-post-comments-form input[type="submit"] {
-    background: #2c5282;
+    background: var(--color-primary);
     color: white;
     padding: 12px 24px;
     border: none;
     border-radius: 6px;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 550;
     cursor: pointer;
     float: right;
     margin-top: 10px;
+    transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+
 }
 
 .comment-form .form-submit input[type="submit"]:hover,
 .wp-block-post-comments-form button[type="submit"]:hover,
 .wp-block-post-comments-form input[type="submit"]:hover {
-    background: #1C3361;
+  background-color: white;
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+
 }
 
 .comment-form-comment label {

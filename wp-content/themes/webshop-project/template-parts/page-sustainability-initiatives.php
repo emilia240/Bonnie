@@ -22,7 +22,6 @@
       <div class="card">
         <div class="icon">
           <?php 
-           // ...existing code...
          $icon = get_sub_field('initiative_icon'); 
           if( $icon ) : 
           $icon_id = is_array($icon) ? $icon['ID'] : $icon;

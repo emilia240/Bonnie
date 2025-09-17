@@ -1,3 +1,7 @@
+<section class="w-full !py-12">
+
+
+
 <?php
     $goalHeadline = get_field('goal_headline');
     $goalImage = get_field('goal_image');
@@ -19,9 +23,9 @@
     <hr class="flex-grow border-t border-[var(--color-dark)]">
   </div>
 
-<section class="mx-auto max-w-6xl px-4 py-16 sm:py-12 ">
+<div class="mx-auto max-w-6xl px-4 py-16 sm:py-12 ">
   <div class="mb-12 text-left">
-    <p class="mx-auto max-w-6xl text-xl">
+    <p class="mx-auto max-w-6xl text-xl" style="font-family: var(--font-body);">
       <?php echo wp_kses_post($goalIntro); ?>
     </p>
   </div>
@@ -29,23 +33,22 @@
   <!-- Content Flex Container -->
   <div class="flex gap-8 items-start">
     <!-- SDG Card -->
-    <div class="flex-shrink-0 w-1/5 rounded-lg border bg-white">
+    <div class="flex-shrink-0 w-1/5 rounded-lg border">
       <div class="text-center">
-        <div class="h-full w-full bg-gray-200 flex items-center justify-center">
-          <img src="<?php echo esc_url($goalImage['url']); ?>" alt="">
-        </div>
-        <p class="text-lg p-4"><?php echo esc_html($goalCardText); ?></p>
+          <img src="<?php echo esc_url($goalImage['url']); ?>" alt="" class="h-full w-full bg-gray-200 flex items-center justify-center">
+        <p class="text-lg p-4" style="font-family: var(--font-headers);"><?php echo esc_html($goalCardText); ?></p>
       </div>
     </div>
 
-    <div class="flex-1 space-y-12 text-xl">
-      <?php echo wp_kses_post($goalSubText); ?>
+    <div class="flex-1 space-y-6 text-xl" style="font-family: var(--font-body);">
+     <p> <?php echo wp_kses_post($goalSubText); ?></p> 
     </div>
-  </div>
+   </div>
 
-  <div class="mt-12 text-left">
-    <p class="mx-auto max-w-6xl text-xl">
+  
+    <p class="mx-auto max-w-6xl mt-12 text-left text-xl" style="font-family: var(--font-body);">
      <?php echo wp_kses_post($goalOutro); ?>
     </p>
+
   </div>
-</section>
+ </section>
