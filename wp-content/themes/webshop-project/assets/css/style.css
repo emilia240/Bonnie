@@ -503,6 +503,7 @@ Description: A custom WordPress theme for an online pet webshop + its blog.
 .key_text {
   flex: 1;
   max-width: 50%;
+  
 }
 
 .key_header {
@@ -533,11 +534,14 @@ Description: A custom WordPress theme for an online pet webshop + its blog.
   color: #151515;
   margin: 0;
   flex: 1;
+  font-family: var(--font-headers);
 }
 
 .key_content p {
-  margin: 0 0 1rem; /* bottom spacing between paragraphs */
-  line-height: 1.6; /* improves readability */
+  margin: 0 0 1rem; 
+  line-height: 1.6; 
+  font-family: var(--font-body);
+  font-size: 18px ;
 }
 
 
@@ -561,7 +565,7 @@ Description: A custom WordPress theme for an online pet webshop + its blog.
 
 .key_video {
 
-  background-color: #f0f0f0;
+  background-color: var(--color-light);
   border-radius: 8px;
   display: flex;
   align-items: center;
