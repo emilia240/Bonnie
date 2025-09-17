@@ -1,10 +1,14 @@
-<?php
+<section class="w-full !py-12">
+
+
+
+   <?php
     $tipHeadline = get_field('tip_headline');
     $tipNewsletterHeader = get_field('tip_newsletter_header');
     $tipNewsletterDescription = get_field('tip_newsletter_description');
     $newsletterButton = get_field('newsletter_button');
 
-    ?>
+  ?>
 
   <!-- Header with lines on the side -->
   <div class="flex items-center w-full !mt-10 !mb-20">
@@ -18,12 +22,12 @@
   </div>
   
   <div class="flex flex-col items-center justify-center text-xl !mb-16">
-  <!-- Wrapper to align headline + green box -->
-  <div class="w-full max-w-4xl">
+    <!-- Wrapper to align headline + green box -->
+   <div class="w-full max-w-4xl">
    
-    <h3 class="mb-6 text-left text-xl">
+    <p class="mb-6 text-left text-xl" style="font-family: var(--font-body);">
             <?php echo esc_html($tipNewsletterHeader); ?>
-        </h3>
+    </p>
 
     <div class="h-[200px] rounded-xl bg-[#74B24B] p-14">
       <form class="flex flex-col gap-4">
@@ -31,21 +35,26 @@
           <input 
             type="email" 
             placeholder="write your email here....." 
-            class="flex-1 rounded-lg bg-white px-4 py-3 text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-green-700" 
+            class="flex-1 rounded-lg bg-[#F4F4F4] px-4 py-3 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-700" style="font-family: var(--font-body);"
           />
           <button 
             type="submit" 
-            class="rounded-md bg-[#1C3361] px-6 w-[130px] py-3 font-semibold text-lg text-white transition hover:bg-blue-800"
+            class="rounded-md bg-[#1C3361] px-6 w-[130px] py-3 font-semibold text-lg text-[#F4F4F4] hover:bg-white hover:text-[#1C3361] 
+            hover:border hover:border-[#1C3361] transition-colors duration-200" style="font-family: var(--font-body);"
           >
             <?php echo esc_html($newsletterButton); ?></h3>
           </button>
         </div>
 
         
-        <p class="text-sm text-white">
+        <p class="text-sm text-white" style="font-family: var(--font-body);">
             <?php echo esc_html($tipNewsletterDescription); ?>
         </p>
       </form>
     </div>
   </div>
-</div>
+ </div>
+
+
+
+</section>

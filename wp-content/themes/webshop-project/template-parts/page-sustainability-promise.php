@@ -1,3 +1,6 @@
+<section class="w-full !py-12">
+
+
 <?php
     $promiseHeadline = get_field('promise_headline');
     $promiseText = get_field('promise_text');
@@ -16,8 +19,9 @@
 
 
   <div class="max-w-5xl mx-auto bg-gray-200 !mb-20 rounded-xl !p-14">
-  <p class="text-lg">
+  <p class="text-lg" style="font-family: var(--font-body)";>
    <?php echo esc_html($promiseText); ?>
   </p>
 </div>
 
+</section>
