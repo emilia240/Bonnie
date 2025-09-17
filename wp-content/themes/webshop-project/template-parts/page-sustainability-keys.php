@@ -1,4 +1,3 @@
-<div class="keys-border"></div>
 
 
 <?php if( have_rows('keys') ): ?>
