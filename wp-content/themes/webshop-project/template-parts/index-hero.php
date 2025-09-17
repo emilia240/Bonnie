@@ -37,10 +37,10 @@
             <h2 class="text-2xl md:text-3xl text-[#F4F4F4] !mb-4 drop-shadow-lg" style="font-family: Bodoni MT, serif; font-weight: 500;">
                 <?php echo esc_html($subheading); ?>
             </h2>
-            <div class="text-lg md:text-xl text-[#F4F4F4] drop-shadow-lg" style="font-family: var(--font-body);">
+            <p class="text-lg md:text-xl text-[#F4F4F4] drop-shadow-lg" style="font-family: var(--font-body);">
                 <?php echo esc_html($text); ?>
-            </div>
-        </div> 
+            </p>
+        </div>
     </div>
 
 </section>
