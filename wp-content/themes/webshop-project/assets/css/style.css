@@ -29,11 +29,11 @@ Description: A custom WordPress theme for an online pet webshop + its blog.
 /* language picker flags ICONS */
 
 .lang-item-en img {
-    content: url('../icons/united-kingdom-uk-svgrepo-com.svg');
+    content: url('../icons/united-kingdom-flag.svg');
 }
 
 .lang-item-de img {
-    content: url('../icons/flag-for-flag-germany-svgrepo-com.svg');
+    content: url('../icons/germany-flag.svg');
 }
 
 .lang-item-en img,
