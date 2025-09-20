@@ -32,10 +32,19 @@
     </nav>
 
   <ul class="flex !gap-4 items-center">
-    <?php pll_the_languages(array(
+    <?php 
+    $current_id = null;
+    if (is_single() || is_page()) {
+        $current_id = get_the_ID();
+    } elseif (is_home()) {
+        $current_id = get_option('page_for_posts');
+    } else {
+        $current_id = get_queried_object_id();
+    }
+    pll_the_languages(array(
       "show_flags" => 1,
       "show_names" => 0,
-      'post_id' => get_queried_object_id()
+      'post_id' => $current_id
     )); ?>
   </ul>
 
