@@ -29,25 +29,25 @@
             <?php echo esc_html($tipNewsletterHeader); ?>
     </p>
 
-    <div class="h-[200px] rounded-xl bg-[#74B24B] p-14">
+    <div class="!min-h-[200px] md:min-h-[400px] rounded-xl bg-[#74B24B] p-14">
       <form class="flex flex-col gap-4">
         <div class="flex flex-col items-center gap-4 md:flex-row">
           <input 
             type="email" 
             placeholder="write your email here....." 
-            class="flex-1 rounded-lg bg-[#F4F4F4] px-4 py-3 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-700" style="font-family: var(--font-body);"
+            class="flex-1 rounded-lg bg-[#F4F4F4] w-full px-4 py-3 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-700" style="font-family: var(--font-body);"
           />
           <button 
             type="submit" 
-            class="rounded-md bg-[#1C3361] px-6 w-[130px] py-3 font-semibold text-lg text-[#F4F4F4] hover:bg-white hover:text-[#1C3361] 
+            class="rounded-md bg-[#1C3361] px-6 lg:w-[130px] md:w-[300px] py-3 font-semibold text-lg text-[#F4F4F4] hover:bg-white hover:text-[#1C3361] 
             hover:border hover:border-[#1C3361] transition-colors duration-200" style="font-family: var(--font-body);"
           >
             <?php echo esc_html($newsletterButton); ?></h3>
           </button>
         </div>
 
-        
-        <p class="text-sm text-white" style="font-family: var(--font-body);">
+         
+        <p class="md:text-sm lg:text-sm text-[#F4F4F4]" style="font-family: var(--font-body);">
             <?php echo esc_html($tipNewsletterDescription); ?>
         </p>
       </form>

@@ -23,6 +23,9 @@ Description: A custom WordPress theme for an online pet webshop + its blog.
   color: var(--color-dark);
 }
 
+
+
+
 /* language picker flags ICONS */
 
 .lang-item-en img {
@@ -389,6 +392,15 @@ Description: A custom WordPress theme for an online pet webshop + its blog.
   margin-top: 10px;
 }
 
+@media (max-width: 768px) {
+  .cards {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+    margin: 20px !important;
+    justify-items: center !important;
+  }
+}
 
 
 /* Initiative cards */
@@ -476,6 +488,19 @@ Description: A custom WordPress theme for an online pet webshop + its blog.
 .cards .card:nth-child(7) { background: #4b2823; color: #fff; }
 .cards .card:nth-child(8) { background: #74503d; color: #fff; }
 .cards .card:nth-child(9) { background: #c29c77; color: #fff; }
+
+@media (max-width: 768px) {
+  .key {
+    flex-direction: column !important; 
+    gap: 1.5rem;                       
+    margin-bottom: 2rem;                
+  }
+
+  .key_text,
+  .key_images {
+    max-width: 100% !important; 
+}
+}
 
 .keys {
   max-width: 1200px;
