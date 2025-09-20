@@ -1,0 +1,289 @@
+/* Comments section style */
+
+.wp-block-post-comments-form,
+.comment-respond {
+    margin: 40px 0;
+    padding: 0;
+    background: transparent;
+}
+
+.comment-form-comment textarea,
+.wp-block-post-comments-form textarea {
+    width: 100%;
+    min-height: 150px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: inherit;
+    resize: vertical;
+    background: white;
+    box-sizing: border-box;
+} 
+
+.comment-form-comment textarea:focus,
+.wp-block-post-comments-form textarea:focus {
+    outline: none;
+    border-color: #0073aa;
+    box-shadow: 0 0 0 1px #0073aa;
+}
+
+
+.comment-form .form-submit input[type="submit"],
+.wp-block-post-comments-form button[type="submit"],
+.wp-block-post-comments-form input[type="submit"] {
+    background: var(--color-primary);
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    float: right;
+    margin-top: 10px;
+}
+
+.comment-form .form-submit input[type="submit"]:hover,
+.wp-block-post-comments-form button[type="submit"]:hover,
+.wp-block-post-comments-form input[type="submit"]:hover {
+    background: var(--color-primary);
+}
+
+
+.comment-form-comment label {
+    display: none;
+}
+
+
+.comment-form:after,
+.wp-block-post-comments-form:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+/* Comments */
+
+.wp-block-post-comments-form,
+.comment-respond {
+    margin: 40px 0;
+    padding: 0;
+    background: transparent;
+    max-width: 800px; 
+}
+
+
+
+.wp-block-post-comments-form h3,
+.comment-reply-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.4rem;
+    font-family: var(--font-body);
+}
+
+.comment-form-comment textarea,
+.wp-block-post-comments-form textarea {
+    width: 100%;
+    min-height: 150px;
+    padding: 15px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: inherit;
+    resize: vertical;
+    background: white;
+    box-sizing: border-box;
+}
+
+.comment-form-comment textarea:focus,
+.wp-block-post-comments-form textarea:focus {
+    outline: none;
+    border-color: #0073aa;
+    box-shadow: 0 0 0 1px #0073aa;
+}
+
+.comment-form .form-submit input[type="submit"],
+.wp-block-post-comments-form button[type="submit"],
+.wp-block-post-comments-form input[type="submit"] {
+    background: var(--color-primary);
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 550;
+    cursor: pointer;
+    float: right;
+    margin-top: 10px;
+    transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+
+}
+
+.comment-form .form-submit input[type="submit"]:hover,
+.wp-block-post-comments-form button[type="submit"]:hover,
+.wp-block-post-comments-form input[type="submit"]:hover {
+  background-color: white;
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+
+}
+
+.comment-form-comment label {
+    display: none !important;
+}
+
+.comment-form:after,
+.wp-block-post-comments-form:after {
+    content: "" !important;
+    display: table;
+    clear: both !important;
+}
+
+.comment-form .logged-in-as,
+.logged-in-as {
+    display: none;
+}
+
+/* Overall comments container */
+.wp-block-comments {
+    margin: 40px 0;
+}
+
+/* Comments heading */
+.wp-block-comments h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Individual comment blocks - increased spacing */
+.comment,
+.wp-block-comment {
+    border: 1px solid #000;
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 55px !important; 
+    background: transparent;  
+    position: relative;
+    max-width: 800px;
+}
+
+/* Last comment shouldn't have bottom margin */
+.comment:last-child,
+.wp-block-comment:last-child {
+    margin-bottom: 0 !important;
+}
+
+.comment-body,
+.wp-block-comment .comment-body,
+.wp-block-comment__inner,
+.wp-block-comment article {
+    border: 0 !important;
+    background: transparent !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    margin: 0 !important; /* Prevent any internal margins from affecting spacing */
+}
+
+/* Comment author section */
+.comment-author,
+.wp-block-comment .wp-block-avatar {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+/* Avatar styling */
+.comment-author img,
+.wp-block-avatar img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+/* Author name */
+.comment-author .fn,
+.wp-block-comment .comment-author {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Comment content */
+.comment-content,
+.wp-block-comment .comment-content {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Reply button */
+.reply a,
+.wp-block-comment .reply-link {
+    background: #2c5282;
+    color: white;
+    padding: 8px 35px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    float: right;
+    margin-top: 37px;
+}
+
+.reply a:hover,
+.wp-block-comment .reply-link:hover {
+    background: #2a4f7a;
+}
+
+/* See all comments link */
+.comments-area a[href*="comments"] {
+    color: #333;
+    text-decoration: underline;
+    font-size: 16px;
+}
+
+/* Hide comment meta/date if you don't want it */
+.comment-metadata {
+    display: none;
+}
+
+/* Hide all comments except the first by default */
+.comment-list .comment:not(:first-child) {
+    display: none;
+}
+
+/* When .show-all is added, show all comments */
+.comment-list.show-all .comment {
+    display: block;
+}
+
+/* Utility for JS toggling */
+.comment-list .hidden-comment {
+    display: none;
+}
+
+/* Hide "Your email address will not be published..." text */
+.comment-notes {
+    display: none !important;
+}
+
+/* Hide asterisks from labels */
+.required {
+    display: none !important;
+}
+
+/* Hide "Save my info" checkbox and text */
+.comment-form-cookies-consent {
+    display: none !important;
+}
+
+/* Ensure labels don't show */
+.comment-form label {
+    display: none !important;
+}

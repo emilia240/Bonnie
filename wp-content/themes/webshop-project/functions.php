@@ -1,7 +1,15 @@
 <?php
 function wb_load_resources() {
+    // Optimization technique called conditional CSS loading
     if(is_single()) {
         wp_enqueue_style( 'single', get_template_directory_uri() . "/assets/css/single.css" );
+    }
+    if(is_single() || is_page() && (comments_open() || get_comments_number())) {
+        wp_enqueue_style( 'comments', get_template_directory_uri() . "/assets/css/comments.css" );
+    }
+    if(is_page('sustainability')) {
+        wp_enqueue_style( 'initiatives', get_template_directory_uri() . "/assets/css/initiatives.css" );
+        wp_enqueue_style( 'keys', get_template_directory_uri() . "/assets/css/keys.css" );
     }
     wp_enqueue_style( 'style', get_template_directory_uri() . "/assets/css/style.css" );
     wp_enqueue_script( 'tailwind', 'https://cdn.tailwindcss.com', array(), null, true );
