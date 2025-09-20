@@ -98,3 +98,30 @@ function wb_save_survey_response_handler() {
 
 add_action("admin_post_save_survey_response", "wb_save_survey_response_handler");
 add_action("admin_post_nopriv_save_survey_response", "wb_save_survey_response_handler");
+
+
+
+// Custom pagination function for SEO purposes
+function wb_pagination_seo() {
+    if (is_home() || is_category() || is_tag() || is_archive()) {
+        global $wp_query;
+        $current = max(1, get_query_var('paged'));
+        $total = $wp_query->max_num_pages;
+        
+        if ($total > 1) {
+            // Canonical URL
+            echo '<link rel="canonical" href="' . get_pagenum_link($current) . '">' . "\n";
+            
+            // Previous page
+            if ($current > 1) {
+                echo '<link rel="prev" href="' . get_pagenum_link($current - 1) . '">' . "\n";
+            }
+            
+            // Next page
+            if ($current < $total) {
+                echo '<link rel="next" href="' . get_pagenum_link($current + 1) . '">' . "\n";
+            }
+        }
+    }
+}
+add_action('wp_head', 'wb_pagination_seo');
