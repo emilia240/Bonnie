@@ -4,6 +4,7 @@
   <meta charset="<?php bloginfo('charset'); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Discover TERRAQUA – your eco-friendly shop for exotic pets, food, supplies & terrariums. Quality products with sustainability at the heart of everything we do.">
+  <title ><?php bloginfo('name'); ?></title>
   <?php wp_head(); ?>
 </head>
 
