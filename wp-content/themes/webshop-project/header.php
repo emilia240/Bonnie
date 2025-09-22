@@ -12,58 +12,117 @@
 
 <header class="bg-[#1C3361] text-[#F4F4F4]">
 
-  <div class="flex items-center justify-around bg-[#1C3361] text-[#F4F4F4] !py-3 !px-5">
+  <div class="flex items-center lg:justify-evenly justify-between bg-[#1C3361] text-[#F4F4F4] !py-3 !px-5">
+
     <div class="font-bold text-2xl">
       <a href="<?php echo home_url(); ?>" class="text-[#F4F4F4] no-underline font-bold text-2xl"><?php echo esc_html(pll__('TERRAQUA')); ?></a>
     </div>
 
+    <!-- Mobile hamburger button -->
+    <button id="mobile-menu-toggle" class="lg:hidden flex flex-col gap-1 p-2">
+      <span class="w-6 h-0.5 bg-[#F4F4F4] transition-all"></span>
+      <span class="w-6 h-0.5 bg-[#F4F4F4] transition-all"></span>
+      <span class="w-6 h-0.5 bg-[#F4F4F4] transition-all"></span>
+    </button>
 
-    <div class="!mx-4">
-      <form role="search" method="get" action="<?php echo esc_url(home_url('/')); ?>">
-        <input type="search" name="s" class="w-fit !px-4 !py-2 rounded-full border border-gray-300 text-[#1D1D1D] bg-[#F4F4F4]" placeholder="<?php echo esc_attr(pll__('Search')); ?>">
-      </form>
-    </div>
+    <!-- Search bar + nav(hidden on small screens)- desktop view -->
+    <div class="hidden lg:flex lg:items-center lg:gap-6">
+      <div class="!mx-4">
+        <form role="search" method="get" action="<?php echo esc_url(home_url('/')); ?>">
+          <input type="search" name="s" class="w-fit min-w-[400px] !px-8 !py-2 rounded-full border border-gray-300 text-[#1D1D1D] bg-[#F4F4F4]" placeholder="<?php echo esc_attr(pll__('Search')); ?>">
+        </form>
+      </div>
+    
+
+      <!-- Top nav links -->
+      <nav class="lg:flex lg:flex-row flex-col flex-wrap !gap-2 text-sm text-center">
+        <a href="#" class="text-[#F4F4F4] !mx-2 no-underline hover:text-[#78BDE8] transition-colors transition-transform hover:scale-105"><?php echo esc_html(pll__('Reorder')); ?></a>
+        <a href="#" class="text-[#F4F4F4] !mx-2 no-underline hover:text-[#78BDE8] transition-colors transition-transform hover:scale-105"><?php echo esc_html(pll__('Favorites')); ?></a>
+        <a href="<?php echo esc_url(home_url('/sustainability')); ?>" class="<?php if (is_page('sustainability')) echo 'active'; ?> text-[#F4F4F4] !mx-2 no-underline hover:text-[#78BDE8] transition-colors transition-transform hover:scale-105"><?php echo esc_html(pll__('Sustainability')); ?></a>
+        <a href="#" class="text-[#F4F4F4] !mx-2 no-underline hover:text-[#78BDE8] transition-colors transition-transform hover:scale-105"><?php echo esc_html(pll__('Contact us')); ?></a>
+      </nav>
 
 
-    <nav class="flex !gap-2 text-sm">
-      <a href="#" class="text-[#F4F4F4] !mx-2 no-underline hover:text-[#78BDE8] transition-colors transition-transform hover:scale-105"><?php echo esc_html(pll__('Reorder')); ?></a>
-      <a href="#" class="text-[#F4F4F4] !mx-2 no-underline hover:text-[#78BDE8] transition-colors transition-transform hover:scale-105"><?php echo esc_html(pll__('Favorites')); ?></a>
-      <a href="<?php echo esc_url(home_url('/sustainability')); ?>" class="<?php if (is_page('sustainability')) echo 'active'; ?> text-[#F4F4F4] !mx-2 no-underline hover:text-[#78BDE8] transition-colors transition-transform hover:scale-105"><?php echo esc_html(pll__('Sustainability')); ?></a>
-      <a href="#" class="text-[#F4F4F4] !mx-2 no-underline hover:text-[#78BDE8] transition-colors transition-transform hover:scale-105"><?php echo esc_html(pll__('Contact us')); ?></a>
-    </nav>
+      <!-- Language picker -->
+      <ul class="flex flex-wrap !gap-4 items-center">
+        <?php 
+        $current_id = null;
+        if (is_single() || is_page()) {
+            $current_id = get_the_ID();
+        } elseif (is_home()) {
+            $current_id = get_option('page_for_posts');
+        } else {
+            $current_id = get_queried_object_id();
+        }
+        pll_the_languages(array(
+          "show_flags" => 1,
+          "show_names" => 0,
+          'post_id' => $current_id
+        )); ?>
+      </ul>
 
-  <ul class="flex !gap-4 items-center">
-    <?php 
-    $current_id = null;
-    if (is_single() || is_page()) {
-        $current_id = get_the_ID();
-    } elseif (is_home()) {
-        $current_id = get_option('page_for_posts');
-    } else {
-        $current_id = get_queried_object_id();
-    }
-    pll_the_languages(array(
-      "show_flags" => 1,
-      "show_names" => 0,
-      'post_id' => $current_id
-    )); ?>
-  </ul>
-
- 
-    <div class="flex !gap-3">
-      <a href="#" class="bg-[#1D1D1D] text-[#F4F4F4] !px-4 !py-2 rounded-full no-underline text-sm">👤 <?php echo esc_html(pll__('Login')); ?></a>
-      <a href="#" class="bg-[#1D1D1D] text-[#F4F4F4] !px-4 !py-2 rounded-full no-underline text-sm">🛒 <?php echo esc_html(pll__('Basket')); ?></a>
+        <!-- Login/Basket -->
+      <div class="flex flex-wrap !gap-3">
+        <a href="#" class="bg-[#1D1D1D] text-[#F4F4F4] !px-4 !py-2 rounded-full no-underline text-sm">👤 <?php echo esc_html(pll__('Login')); ?></a>
+        <a href="#" class="bg-[#1D1D1D] text-[#F4F4F4] !px-4 !py-2 rounded-full no-underline text-sm">🛒 <?php echo esc_html(pll__('Basket')); ?></a>
+      </div>
     </div>
   </div>
 
+  <!-- Menu- mobile view(hidden on desktop) -->
+  <div id="mobile-menu" class="lg:hidden hidden fixed inset-0 z-50 overflow-y-auto bg-[#1C3361]">
+    <div class="flex flex-col justify-between min-h-screen space-y-4">
+      <!-- Close button at the top -->
+      <div class="flex justify-end">
+        <button id="mobile-menu-close" class="text-[#F4F4F4] text-2xl p-2">
+          ✕
+        </button>
+      </div>
 
-  <div class="bg-[#efefef] !py-3 text-lg" style="font-family: 'Bodoni MT', serif;">
-    <nav class="flex justify-evenly">
-      <a href="<?php echo esc_url(home_url('/pets')); ?>" class="<?php if (is_page('pets')) echo 'active'; ?> text-[#1D1D1D] no-underline !px-4 !py-2 transition-transform hover:scale-105 border-b-4 border-transparent [&.active]:border-[#1C3361] [&.active]:!mb-[-6px]"><?php echo esc_html(pll__('Pets')); ?></a>
-      <a href="<?php echo esc_url(home_url('/food-supplies')); ?>" class="<?php if (is_page('food-supplies')) echo 'active'; ?> text-[#1D1D1D] no-underline !px-4 !py-2 transition-transform hover:scale-105 border-b-4 border-transparent [&.active]:border-[#1C3361] [&.active]:!mb-[-6px]"><?php echo esc_html(pll__('Food & supplies')); ?></a>
-      <a href="<?php echo esc_url(home_url('/terrariums')); ?>" class="<?php if (is_page('terrariums')) echo 'active'; ?> text-[#1D1D1D] no-underline !px-4 !py-2 transition-transform hover:scale-105 border-b-4 border-transparent [&.active]:border-[#1C3361] [&.active]:!mb-[-6px]"><?php echo esc_html(pll__('Terrariums')); ?></a>
-      <a href="<?php echo esc_url(home_url('/offers')); ?>" class="<?php if (is_page('offers')) echo 'active'; ?> text-[#1D1D1D] no-underline !px-4 !py-2 transition-transform hover:scale-105 border-b-4 border-transparent [&.active]:border-[#1C3361] [&.active]:!mb-[-6px]"><?php echo esc_html(pll__('Offers')); ?></a>
-      <a href="<?php echo esc_url(home_url('/blog')); ?>" class="<?php if (is_home() || is_single()) echo 'active'; ?> text-[#1D1D1D] no-underline !px-4 !py-2 transition-transform hover:scale-105 border-b-4 border-transparent [&.active]:border-[#1C3361] [&.active]:!mb-[-6px]"><?php echo esc_html(pll__('Blog')); ?></a>
+      <!-- Mobile search -->
+      <form role="search" method="get" action="<?php echo esc_url(home_url('/')); ?>">
+        <input type="search" name="s" class="w-full px-8 py-4 rounded-full border border-gray-300 text-[#1D1D1D] bg-[#F4F4F4]" placeholder="<?php echo esc_attr(pll__('Search')); ?>">
+      </form>
+
+      <!-- Mobile nav links -->
+      <nav class="flex flex-col items-center space-y-3 text-sm">
+        <a href="#" class="text-[#F4F4F4] py-2"><?php echo esc_html(pll__('Reorder')); ?></a>
+        <a href="#" class="text-[#F4F4F4] py-2"><?php echo esc_html(pll__('Favorites')); ?></a>
+        <a href="<?php echo esc_url(home_url('/sustainability')); ?>" class="text-[#F4F4F4] py-2"><?php echo esc_html(pll__('Sustainability')); ?></a>
+        <a href="#" class="text-[#F4F4F4] py-2"><?php echo esc_html(pll__('Contact us')); ?></a>
+      </nav>
+
+      <!-- Mobile language picker -->
+      <ul class="flex gap-8 items-center justify-center py-2">
+        <?php pll_the_languages(array("show_flags" => 1, "show_names" => 0, 'post_id' => $current_id)); ?>
+      </ul>
+
+      <!-- Mobile login/basket -->
+      <div class="flex flex-col gap-6 items-center justify-center py-2">
+        <a href="#" class="bg-[#1D1D1D] text-[#F4F4F4] px-4 py-2 rounded-full no-underline text-sm">👤 <?php echo esc_html(pll__('Login')); ?></a>
+        <a href="#" class="bg-[#1D1D1D] text-[#F4F4F4] px-4 py-2 rounded-full no-underline text-sm">🛒 <?php echo esc_html(pll__('Basket')); ?></a>
+      </div>
+
+      <!-- Mobile bottom navigation -->
+      <nav class="flex flex-col items-center bg-[#efefef]">
+        <a href="<?php echo esc_url(home_url('/pets')); ?>" class="<?php if (is_page('pets')) echo 'text-[#78BDE8]'; else echo 'text-[#1D1D1D]'; ?> py-2 text-lg" style="font-family: 'Bodoni MT', serif;"><?php echo esc_html(pll__('Pets')); ?></a>
+        <a href="<?php echo esc_url(home_url('/food-supplies')); ?>" class="<?php if (is_page('food-supplies')) echo 'text-[#78BDE8]'; else echo 'text-[#1D1D1D]'; ?> py-2 text-lg" style="font-family: 'Bodoni MT', serif;"><?php echo esc_html(pll__('Food & supplies')); ?></a>
+        <a href="<?php echo esc_url(home_url('/terrariums')); ?>" class="<?php if (is_page('terrariums')) echo 'text-[#78BDE8]'; else echo 'text-[#1D1D1D]'; ?> py-2 text-lg" style="font-family: 'Bodoni MT', serif;"><?php echo esc_html(pll__('Terrariums')); ?></a>
+        <a href="<?php echo esc_url(home_url('/offers')); ?>" class="<?php if (is_page('offers')) echo 'text-[#78BDE8]'; else echo 'text-[#1D1D1D]'; ?> py-2 text-lg" style="font-family: 'Bodoni MT', serif;"><?php echo esc_html(pll__('Offers')); ?></a>
+        <a href="<?php echo esc_url(home_url('/blog')); ?>" class="<?php if (is_home() || is_single()) echo 'text-[#78BDE8]'; else echo 'text-[#1D1D1D]'; ?> py-2 text-lg" style="font-family: 'Bodoni MT', serif;"><?php echo esc_html(pll__('Blog')); ?></a>
+      </nav>
+    </div>
+
+  </div>
+
+  <!-- Bottom navigation (desktop view) -->
+  <div class="hidden lg:block bg-[#efefef] !py-3 text-lg" style="font-family: 'Bodoni MT', serif;">
+    <nav class="flex justify-evenly min-w-max lg:min-w-0">
+      <a href="<?php echo esc_url(home_url('/pets')); ?>" class="<?php if (is_page('pets')) echo 'active'; ?> text-[#1D1D1D] no-underline !px-4 !py-2 transition-transform hover:scale-105 border-b-4 border-transparent [&.active]:border-[#1C3361] [&.active]:!mb-[-6px] whitespace-nowrap"><?php echo esc_html(pll__('Pets')); ?></a>
+      <a href="<?php echo esc_url(home_url('/food-supplies')); ?>" class="<?php if (is_page('food-supplies')) echo 'active'; ?> text-[#1D1D1D] no-underline !px-4 !py-2 transition-transform hover:scale-105 border-b-4 border-transparent [&.active]:border-[#1C3361] [&.active]:!mb-[-6px] whitespace-nowrap"><?php echo esc_html(pll__('Food & supplies')); ?></a>
+      <a href="<?php echo esc_url(home_url('/terrariums')); ?>" class="<?php if (is_page('terrariums')) echo 'active'; ?> text-[#1D1D1D] no-underline !px-4 !py-2 transition-transform hover:scale-105 border-b-4 border-transparent [&.active]:border-[#1C3361] [&.active]:!mb-[-6px] whitespace-nowrap"><?php echo esc_html(pll__('Terrariums')); ?></a>
+      <a href="<?php echo esc_url(home_url('/offers')); ?>" class="<?php if (is_page('offers')) echo 'active'; ?> text-[#1D1D1D] no-underline !px-4 !py-2 transition-transform hover:scale-105 border-b-4 border-transparent [&.active]:border-[#1C3361] [&.active]:!mb-[-6px] whitespace-nowrap"><?php echo esc_html(pll__('Offers')); ?></a>
+      <a href="<?php echo esc_url(home_url('/blog')); ?>" class="<?php if (is_home() || is_single()) echo 'active'; ?> text-[#1D1D1D] no-underline !px-4 !py-2 transition-transform hover:scale-105 border-b-4 border-transparent [&.active]:border-[#1C3361] [&.active]:!mb-[-6px] whitespace-nowrap"><?php echo esc_html(pll__('Blog')); ?></a>
     </nav>
   </div>
 
