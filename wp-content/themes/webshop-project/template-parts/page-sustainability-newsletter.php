@@ -13,7 +13,7 @@
   <!-- Header with lines on the side -->
   <div class="flex items-center w-full !mt-10 !mb-20">
     <hr class="flex-grow border-t border-[var(--color-dark)]">
-    <h2 class="!mx-6 text-3xl" style="font-family: 'Aquavit', san-serif; font-weight: 500;">
+    <h2 class="!mx-6 text-responsive-lg" style="font-family: 'Aquavit', san-serif; font-weight: 500;">
         <?php if ($tipHeadline): ?>
             <?php echo esc_html($tipHeadline); ?>
         <?php endif; ?>
@@ -21,11 +21,11 @@
     <hr class="flex-grow border-t border-[var(--color-dark)]">
   </div>
   
-  <div class="flex flex-col items-center justify-center text-xl !mb-16">
+  <div class="flex flex-col items-center justify-center px-10">
     <!-- Wrapper to align headline + green box -->
    <div class="w-full max-w-4xl">
    
-    <p class="mb-6 text-left text-xl" style="font-family: var(--font-body);">
+    <p class="mb-6 text-left text-responsive-md" style="font-family: var(--font-body);">
             <?php echo esc_html($tipNewsletterHeader); ?>
     </p>
 
@@ -35,19 +35,19 @@
           <input 
             type="email" 
             placeholder="write your email here....." 
-            class="flex-1 rounded-lg bg-[#F4F4F4] w-full px-4 py-3 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-700" style="font-family: var(--font-body);"
+            class="text-responsive-xs flex-1 rounded-lg bg-[#F4F4F4] w-full px-4 py-3 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-700" style="font-family: var(--font-body);"
           />
           <button 
-            type="submit" 
-            class="rounded-md bg-[#1C3361] px-6 lg:w-[130px] md:w-[300px] py-3 font-semibold text-lg text-[#F4F4F4] hover:bg-white hover:text-[#1C3361] 
-            hover:border hover:border-[#1C3361] transition-colors duration-200" style="font-family: var(--font-body);"
+            type="submit" style="font-family: var(--font-body);"
+            class="rounded-md bg-[#1C3361] px-6 lg:w-[130px] md:w-[300px] py-3 text-responsive-sm text-[#F4F4F4] lg:hover:bg-white lg:hover:text-[#1C3361] 
+            lg:hover:border lg:hover:border-[#1C3361] transition-colors duration-200" style="font-family: var(--font-body);"
           >
             <?php echo esc_html($newsletterButton); ?></h3>
           </button>
         </div>
 
          
-        <p class="md:text-sm lg:text-sm text-[#F4F4F4]" style="font-family: var(--font-body);">
+        <p class="text-responsive-sm text-[#1D1D1D]" style="font-family: var(--font-body);">
             <?php echo esc_html($tipNewsletterDescription); ?>
         </p>
       </form>

@@ -9,7 +9,7 @@
   <!-- Header with lines on the side -->
   <div class="flex items-center w-full !mb-10">
     <hr class="flex-grow border-t border-[var(--color-dark)]">
-    <h2 class="!mx-6 text-3xl" style="font-family: 'Aquavit', san-serif; font-weight: 500;">
+    <h2 class="!mx-6 text-responsive-lg" style="font-family: 'Aquavit', sans-serif; font-weight: 500;">
       <?php if ($headline): ?>
         <?php echo esc_html($headline); ?>
       <?php endif; ?>
@@ -19,16 +19,16 @@
 
   <!-- Subtitle and button row -->
   <div class="flex lg:flex-row sm:flex-row flex-col gap-2 items-center justify-between !mb-8 sm:px-10">
-    <p class="text-lg font-body max-w-2xl" style="font-family: var(--font-body);">
+    <p class="text-responsive-md max-w-2xl" style="font-family: var(--font-body);">
       <?php if ($subtitle): ?>
           <?php echo esc_html($subtitle); ?>
       <?php endif; ?>
     </p>
     <a  href="<?php echo esc_url(get_permalink(get_option('page_for_posts'))); ?>"
-    class="bg-[#1C3361] text-[#F4F4F4] !px-6 !py-2 rounded-full inline-flex items-center !gap-2 no-wrap hover:bg-white hover:text-[#1C3361] 
-            hover:border hover:border-[#1C3361] transition-colors duration-200" style="font-family: 'Bodoni MT', serif; font-weight: 500;">
+    class="bg-[#1C3361] text-[#F4F4F4] !px-6 !py-2 rounded-full inline-flex items-center !gap-2 no-wrap lg:hover:bg-white lg:hover:text-[#1C3361] 
+            lg:hover:border lg:hover:border-[#1C3361] transition-colors duration-200" style="font-family: 'Bodoni MT', serif; font-weight: 500;">
 
-        <p><?php echo esc_html(pll_e('Our blogs')); ?></p>
+        <p class="text-responsive-base"><?php echo esc_html(pll_e('Our blogs')); ?></p>
         
         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <line x1="4" y1="12" x2="18" y2="12" stroke="currentColor" stroke-width="2"/>
