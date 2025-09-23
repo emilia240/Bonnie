@@ -6,7 +6,7 @@
             ?>
             <div class="flex items-center w-full !mb-10">
                 <hr class="flex-grow border-t border-[var(--color-dark)]">
-                <h2 class="!mx-6 text-3xl" style="font-family: 'Aquavit', sans-serif; font-weight: 500;">
+                <h2 class="!mx-6 text-responsive-lg" style="font-family: 'Aquavit', sans-serif; font-weight: 500;">
                     <?php echo esc_html($reviews_title); ?>
                 </h2>
                 <hr class="flex-grow border-t border-[var(--color-dark)]">
@@ -32,9 +32,9 @@
                            <?php if ($image) : ?>
                                 <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($name); ?>" class="review-img" />
                            <?php endif; ?>
-                           <h3><?php echo esc_html($name); ?></h3> 
+                           <h3 class="text-responsive-md"><?php echo esc_html($name); ?></h3> 
                         </div>
-                        <p><?php echo esc_html($text); ?></p>
+                        <p class="text-responsive-sm"><?php echo esc_html($text); ?></p>
                         <div class="stars">
                             <?php for ($i = 0; $i < $stars; $i++) : ?>
                                 ⭐

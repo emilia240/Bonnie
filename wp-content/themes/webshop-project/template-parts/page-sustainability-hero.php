@@ -17,7 +17,7 @@
 
     <!-- About us content -->
       <div class="absolute inset-0 flex items-center justify-center z-10 px-6 sm:px-10 md:px-20">
-      <h1 class="text-4xl sm:text-5xl text-[#F4F4F4] text-center max-w-full font-bold mb-4 sm:mb-6" style="font-family: var(--font-headers);">
+      <h1 class="text-responsive-xl text-[#F4F4F4] text-center max-w-full font-bold mb-4 sm:mb-6" style="font-family: var(--font-headers);">
         <?php echo esc_html($text); ?>
       </h1>
   </div>

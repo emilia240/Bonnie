@@ -93,7 +93,7 @@ Description: A custom WordPress theme for an online pet webshop + its blog.
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  width: 250px;
+  max-width: 400px;
   text-align: left;
 }
 .review-header {
@@ -112,14 +112,14 @@ Description: A custom WordPress theme for an online pet webshop + its blog.
 }
 
 .reviewer-name {
-  font-size: 18px;
-  font-weight: 600;
+  /* font-size: 18px; */
+  /* font-weight: 600; */
   color: var(--color-dark);
   margin: 0;
 }
 
 .reviews p {
-  font-size: 14px;
+  /* font-size: 14px; */
   color: var(--color-dark);
   margin-bottom: 10px;
 } 

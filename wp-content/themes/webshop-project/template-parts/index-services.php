@@ -7,7 +7,7 @@
   <!-- Header with lines on the side -->
   <div class="flex items-center w-full !mb-16">
     <hr class="flex-grow border-t border-[var(--color-dark)]">
-    <h2 class="!mx-6 text-3xl" style="font-family: 'Aquavit', san-serif; font-weight: 500;">
+    <h2 class="!mx-6 text-responsive-lg" style="font-family: 'Aquavit', san-serif; font-weight: 500;">
         <?php if ($headline): ?>
             <?php echo esc_html($headline); ?>
         <?php endif; ?>
@@ -28,7 +28,7 @@
           <?php if ($image): ?>
             <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($title); ?>" class="w-25 max-h-[200px] object-cover border-2 border-[var(--color-accent)] rounded-full !mb-6" />
           <?php endif; ?>
-          <h3 class="text-xl text-center" style="font-family: 'Aquavit', san-serif;">
+          <h3 class="text-responsive-md text-center" style="font-family: 'Aquavit', san-serif;">
             <?php echo esc_html($title); ?>
           </h3>
         </div>

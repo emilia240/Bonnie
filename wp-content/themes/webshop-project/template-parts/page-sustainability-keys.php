@@ -13,7 +13,7 @@
       foreach( $rows as $row ): 
       $i++;
       ?>
-        <div class="key">
+        <div class="key px-10">
           <div class="key_text">
             <header class="key_header">
               <div class="key_icon_box">
@@ -21,12 +21,12 @@
                   <img src="<?php echo esc_url($row['key_icon_box']['url']); ?>" alt="<?php echo esc_attr($row['key_icon_box']['alt']); ?>">
                 <?php endif; ?>
               </div>
-              <h2 class="key_title">
+              <h2 class="key_title text-responsive-lg">
                 <a name="i<?php echo $i; ?>"><?php echo esc_html($row['key_title']); ?></a>
                 </h2>
               </header>
-            <div class="key_content">
-              <?php echo wpautop( wp_kses_post( $row['key_content'] ) ); ?>
+            <div class="key_content text-responsive-base">
+              <p><?php echo wpautop( wp_kses_post( $row['key_content'] ) ); ?></p>
             </div>
           </div>
           <div class="key_images">

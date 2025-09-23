@@ -82,7 +82,7 @@
 }
 
 .key_title {
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
   color: #151515;
   margin: 0;
   flex: 1;
@@ -93,7 +93,7 @@
   margin: 0 0 1rem; 
   line-height: 1.6; 
   font-family: var(--font-body);
-  font-size: 18px ;
+  /* font-size: 18px ; */
 }
 
 
@@ -111,8 +111,6 @@
   object-fit: cover;
   overflow: hidden;
 }
-
-
 
 
 .key_video {
