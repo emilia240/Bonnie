@@ -3,7 +3,7 @@
 
 
 <?php if( have_rows('keys') ): ?>
-  <div class="keys">
+  <section class="keys">
     <?php 
     // Get all rows as an array
     $rows = get_field('keys'); 
@@ -15,16 +15,16 @@
       ?>
         <div class="key">
           <div class="key_text">
-            <div class="key_header">
+            <header class="key_header">
               <div class="key_icon_box">
                 <?php if( $row['key_icon_box'] ): ?>
                   <img src="<?php echo esc_url($row['key_icon_box']['url']); ?>" alt="<?php echo esc_attr($row['key_icon_box']['alt']); ?>">
                 <?php endif; ?>
               </div>
-              <div class="key_title">
+              <h2 class="key_title">
                 <a name="i<?php echo $i; ?>"><?php echo esc_html($row['key_title']); ?></a>
-              </div>
-            </div>
+                </h2>
+              </header>
             <div class="key_content">
               <?php echo wpautop( wp_kses_post( $row['key_content'] ) ); ?>
             </div>
@@ -44,7 +44,7 @@
         </div>
       <?php endforeach; ?>
     <?php endif; ?>
-  </div>
+  </section>
 <?php endif; ?>
 
 

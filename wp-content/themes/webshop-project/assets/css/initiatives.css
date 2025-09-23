@@ -2,9 +2,10 @@
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /*removes unnecesary space */
   gap: 30px;
-  margin: 40px 50px;
+  margin: 40px auto; 
+  max-width: 1200px; 
   justify-items: center;
 }
 
@@ -13,7 +14,7 @@
   border-radius: 16px;
   text-align: center;
   min-height: 280px;
-  width: 350px;
+  max-width: 350px; 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -28,8 +29,9 @@
 }
 
 .card .icon img {
-  max-width: 100px;
+  max-width: 100%;
   max-height: 100px;
+  height: auto; 
   object-fit: contain;
 }
 
@@ -41,40 +43,33 @@
 }
 
 .card p {
-  font-size: 1rem;
+  font-size: 20px;
   line-height: 1.6;
   margin-bottom: 20px;
   flex-grow: 1;
-  font-size: 20px;
 }
 
 .card a {
   text-decoration: underline;
-  font-size: 20px
+  font-size: 20px;
 }
 
 
-/* Row 1 → Green shades */
+/* Row colors remain as-is */
 .cards .card:nth-child(1) { background: #0c2f1f; color: #fff; }
 .cards .card:nth-child(2) { background: var(--color-secondary); color: #fff; }
 .cards .card:nth-child(3) { background: var(--color-accent); color: #fff; }
-
-/* Row 2 → Brown shades */
 .cards .card:nth-child(4) { background: #142952; color: #fff; }
 .cards .card:nth-child(5) { background: #476cb5; color: #fff; }
 .cards .card:nth-child(6) { background: #78BDE8; color: #fff; }
-
-/* Row 3 → Blue shades */
 .cards .card:nth-child(7) { background: #4b2823; color: #fff; }
 .cards .card:nth-child(8) { background: #74503d; color: #fff; }
 .cards .card:nth-child(9) { background: #c29c77; color: #fff; }
 
 @media (max-width: 768px) {
   .cards {
-    display: grid !important;
     grid-template-columns: 1fr !important;
     gap: 20px !important;
-    margin: 20px !important;
-    justify-items: center !important;
+    margin: 20px auto !important;
   }
 }
