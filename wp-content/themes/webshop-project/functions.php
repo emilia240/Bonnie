@@ -61,6 +61,8 @@ function wb_register_strings() {
     pll_register_string('related_posts', 'Related Posts', 'Single Post');
     pll_register_string('leave_a_comment', 'Leave a comment', 'Comments');
     pll_register_string('comment_submit', 'Comment', 'Comments');
+    pll_register_string('contact_form', 'Contact Form', 'Forms');
+    pll_register_string('payments', 'Payment', 'Footer');
 
 }
 
