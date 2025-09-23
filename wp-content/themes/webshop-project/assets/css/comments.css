@@ -81,7 +81,7 @@
 .comment-reply-title {
     font-size: 1.5rem;
     margin-bottom: 0.4rem;
-    font-family: var(--font-body);
+    font-family: var(--font-headers);
 }
 
 .comment-form-comment textarea,
