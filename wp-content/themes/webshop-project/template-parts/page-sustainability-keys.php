@@ -1,5 +1,5 @@
-<section class="w-full !py-12">
-<!-- this is a div -->
+<div class="w-full !py-12">
+
 
 
 <?php if( have_rows('keys') ): ?>
@@ -15,8 +15,8 @@
       ?>
         <div class="key px-10">
           <div class="key_text">
-            <!-- //no header here -->
-            <header class="key_header">
+            
+            <div class="key_header">
               <div class="key_icon_box">
                 <?php if( $row['key_icon_box'] ): ?>
                   <img src="<?php echo esc_url($row['key_icon_box']['url']); ?>" alt="<?php echo esc_attr($row['key_icon_box']['alt']); ?>">
@@ -25,7 +25,7 @@
               <h2 class="key_title text-responsive-lg">
                 <a name="i<?php echo $i; ?>"><?php echo esc_html($row['key_title']); ?></a>
                 </h2>
-              </header>
+                </div>
             <div class="key_content text-responsive-base">
               <p><?php echo wpautop( wp_kses_post( $row['key_content'] ) ); ?></p>
             </div>
@@ -49,4 +49,4 @@
 <?php endif; ?>
 
 
-</section>
+</div>
