@@ -7,7 +7,7 @@ function wb_load_resources() {
     if(is_single() || is_page() && (comments_open() || get_comments_number())) {
         wp_enqueue_style( 'comments', get_template_directory_uri() . "/assets/css/comments.css" );
     }
-    if(is_page('sustainability')) {
+    if(is_page(array('sustainability', 'sustainability-deutsch'))) {
         wp_enqueue_style( 'initiatives', get_template_directory_uri() . "/assets/css/initiatives.css" );
         wp_enqueue_style( 'keys', get_template_directory_uri() . "/assets/css/keys.css" );
     }
