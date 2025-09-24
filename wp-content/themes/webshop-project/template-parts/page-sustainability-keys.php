@@ -1,5 +1,5 @@
 <section class="w-full !py-12">
-
+<!-- this is a div -->
 
 
 <?php if( have_rows('keys') ): ?>
@@ -15,6 +15,7 @@
       ?>
         <div class="key px-10">
           <div class="key_text">
+            <!-- //no header here -->
             <header class="key_header">
               <div class="key_icon_box">
                 <?php if( $row['key_icon_box'] ): ?>

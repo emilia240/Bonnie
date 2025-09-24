@@ -1,3 +1,8 @@
+<?php
+/**
+ * Template Name: Sustainability Page
+ */
+?>
 <?php get_header(); ?>
 
 

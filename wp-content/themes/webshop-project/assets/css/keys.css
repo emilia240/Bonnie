@@ -15,6 +15,7 @@
 .keys .key:nth-child(8) .key_icon_box { background: #74503d; }
 .keys .key:nth-child(9) .key_icon_box { background: #c29c77; }
 
+/* min width example to do */
 
 @media (max-width: 768px) {
   .key {
