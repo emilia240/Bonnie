@@ -3,6 +3,7 @@
         <section class="reviews">
             <?php
             $reviews_title = get_field('reviews_title');
+            $image_alt = $image_id ? get_post_meta($image_id, '_wp_attachment_image_alt', true) : ''; // Get alt text of the image
             ?>
             <div class="flex items-center w-full !mb-10">
                 <hr class="flex-grow border-t border-[var(--color-dark)]">
@@ -30,7 +31,7 @@
                     <div class="review-card">
                         <div class="review-header">
                            <?php if ($image) : ?>
-                                <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($name); ?>" class="review-img" />
+                                <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image_alt); ?>" class="review-img" />
                            <?php endif; ?>
                            <h3 class="text-responsive-md"><?php echo esc_html($name); ?></h3> 
                         </div>
