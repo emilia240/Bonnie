@@ -24,31 +24,33 @@
   </div>
 
 <div class="mx-auto max-w-6xl px-10 py-8 ">
+  <!-- Intro Text -->
   <div class="mb-12 text-left">
     <p class="mx-auto max-w-6xl text-responsive-base" style="font-family: var(--font-body);">
       <?php echo wp_kses_post($goalIntro); ?>
     </p>
   </div>
 
-  <!-- Content Flex Container -->
-  <div class="flex gap-8 items-start">
-    <!-- SDG Card -->
-    <div class="flex-shrink-0 w-1/5 rounded-lg border">
-      <div class="text-center">
-          <img src="<?php echo esc_url($goalImage['url']); ?>" alt="" class="h-full w-full bg-gray-200 flex items-center justify-center">
-        <p class="text-responsive-sm p-4" style="font-family: var(--font-headers);"><?php echo esc_html($goalCardText); ?></p>
-      </div>
-    </div>
-
-    <div class="flex-1 space-y-6 text-responsive-base" style="font-family: var(--font-body);">
-     <p> <?php echo wp_kses_post($goalSubText); ?></p> 
-    </div>
-   </div>
-
-  
-    <p class="mx-auto max-w-6xl mt-12 text-left text-responsive-base" style="font-family: var(--font-body);">
-     <?php echo wp_kses_post($goalOutro); ?>
-    </p>
-
+ <!-- Content Flex Container -->
+<div class="flex flex-col md:flex-row gap-8 items-start">
+  <!-- Intro Text -->
+  <div class="flex-1 space-y-6 text-responsive-base order-1 md:order-none" style="font-family: var(--font-body);">
+    <p><?php echo wp_kses_post($goalSubText); ?></p>
   </div>
+
+  <!-- SDG Card -->
+  <div class="flex-shrink-0 w-[212px] mx-auto md:w-1/5 rounded-lg border order-2 md:order-none">
+    <div class="text-center">
+      <img src="<?php echo esc_url($goalImage['url']); ?>" alt="" class="h-[212px] w-[212px] bg-gray-200 flex items-center justify-center">
+      <p class="text-responsive-sm p-4" style="font-family: var(--font-headers);">
+        <?php echo esc_html($goalCardText); ?>
+      </p>
+    </div>
+  </div>
+ </div>
+
+  <p class="mx-auto max-w-6xl mt-12 text-left text-responsive-base" style="font-family: var(--font-body);">
+  <?php echo wp_kses_post($goalOutro); ?>
+  </p>
+</div>
  </section>
