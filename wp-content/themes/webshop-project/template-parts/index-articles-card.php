@@ -40,7 +40,7 @@
                 <?php if (!empty($categories)): ?>
                     <?php foreach ($categories as $category): ?>
                         <a href="<?php echo esc_url(get_category_link($category->term_id)); ?>">
-                            <p><?php echo esc_html($category->name); ?></p>
+                            <p class="text-responsive-xs"><?php echo esc_html($category->name); ?></p>
                         </a>
                     <?php endforeach; ?>
                 <?php endif; ?>
@@ -50,7 +50,7 @@
                 <?php if (!empty($tags)): ?>
                     <?php foreach ($tags as $tag): ?>
                         <a href="<?php echo esc_url(get_tag_link($tag->term_id)); ?>" class="lg:hover:underline lg:hover:text-[#1C3361] transition-colors duration-200 badge rounded-pill text-bg-primary">
-                            <p><?php echo esc_html($tag->name); ?></p>
+                            <p class="text-responsive-xs text-right"><?php echo esc_html($tag->name); ?></p>
                         </a>
                     <?php endforeach; ?>
                 <?php endif; ?>

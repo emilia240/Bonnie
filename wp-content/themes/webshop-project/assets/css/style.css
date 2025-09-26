@@ -45,9 +45,7 @@ Description: A custom WordPress theme for an online pet webshop + its blog.
 
 /* font sizes*/
 
-.category, .tags {
-  font-size: clamp(0.875rem, 1.3vw, 0.8rem);
-}
+
 
 .text-responsive-xl {
     font-size: clamp(1.75rem, 4vw, 3rem); /* Large headings */
