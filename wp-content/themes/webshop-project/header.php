@@ -16,8 +16,8 @@
 
   <div class="flex items-center lg:justify-evenly justify-between bg-[#1C3361] text-[#F4F4F4] !py-3 !px-5">
 
-    <div class="font-bold text-2xl">
-      <a href="<?php echo home_url(); ?>" class="text-[#F4F4F4] no-underline font-bold text-2xl"><?php echo esc_html(pll__('TERRAQUA')); ?></a>
+    <div class="font-bold text-responsive-md">
+      <a href="<?php echo home_url(); ?>" class="text-[#F4F4F4] no-underline"><?php echo esc_html(pll__('TERRAQUA')); ?></a>
     </div>
 
     <!-- Mobile hamburger button -->
@@ -37,11 +37,11 @@
     
 
       <!-- Top nav links -->
-      <nav class="lg:flex lg:flex-row flex-col flex-wrap !gap-2 text-sm text-center">
-        <a href="#" class="text-[#F4F4F4] !mx-2 no-underline hover:text-[#78BDE8] transition-colors transition-transform hover:scale-105"><?php echo esc_html(pll__('Reorder')); ?></a>
-        <a href="#" class="text-[#F4F4F4] !mx-2 no-underline hover:text-[#78BDE8] transition-colors transition-transform hover:scale-105"><?php echo esc_html(pll__('Favorites')); ?></a>
-        <a href="<?php echo esc_url(home_url('/sustainability')); ?>" class="<?php if (is_page('sustainability')) echo 'active'; ?> text-[#F4F4F4] !mx-2 no-underline hover:text-[#78BDE8] transition-colors transition-transform hover:scale-105"><?php echo esc_html(pll__('Sustainability')); ?></a>
-        <a href="#" class="text-[#F4F4F4] !mx-2 no-underline hover:text-[#78BDE8] transition-colors transition-transform hover:scale-105"><?php echo esc_html(pll__('Contact us')); ?></a>
+      <nav class="lg:flex lg:flex-row flex-col flex-wrap !gap-2 text-responsive-xs text-center">
+        <a href="#" class="text-[#F4F4F4] !mx-2 no-underline lg:hover:text-[#78BDE8] transition-colors transition-transform lg:hover:scale-105"><?php echo esc_html(pll__('Reorder')); ?></a>
+        <a href="#" class="text-[#F4F4F4] !mx-2 no-underline lg:hover:text-[#78BDE8] transition-colors transition-transform lg:hover:scale-105"><?php echo esc_html(pll__('Favorites')); ?></a>
+        <a href="<?php echo esc_url(home_url('/sustainability')); ?>" class="<?php if (is_page('sustainability')) echo 'active'; ?> text-[#F4F4F4] !mx-2 no-underline lg:hover:text-[#78BDE8] transition-colors transition-transform lg:hover:scale-105"><?php echo esc_html(pll__('Sustainability')); ?></a>
+        <a href="#" class="text-[#F4F4F4] !mx-2 no-underline lg:hover:text-[#78BDE8] transition-colors transition-transform lg:hover:scale-105"><?php echo esc_html(pll__('Contact us')); ?></a>
       </nav>
 
 
@@ -65,8 +65,8 @@
 
         <!-- Login/Basket -->
       <div class="flex flex-wrap !gap-3">
-        <a href="#" class="bg-[#1D1D1D] text-[#F4F4F4] !px-4 !py-2 rounded-full no-underline text-sm">👤 <?php echo esc_html(pll__('Login')); ?></a>
-        <a href="#" class="bg-[#1D1D1D] text-[#F4F4F4] !px-4 !py-2 rounded-full no-underline text-sm">🛒 <?php echo esc_html(pll__('Basket')); ?></a>
+        <a href="#" class="bg-[#1D1D1D] text-[#F4F4F4] !px-4 !py-2 rounded-full no-underline text-responsive-xs">👤 <?php echo esc_html(pll__('Login')); ?></a>
+        <a href="#" class="bg-[#1D1D1D] text-[#F4F4F4] !px-4 !py-2 rounded-full no-underline text-responsive-xs">🛒 <?php echo esc_html(pll__('Basket')); ?></a>
       </div>
     </div>
   </div>
@@ -76,7 +76,7 @@
     <div class="flex flex-col justify-between min-h-screen space-y-4">
       <!-- Close button at the top -->
       <div class="flex justify-end">
-        <button id="mobile-menu-close" class="text-[#F4F4F4] text-2xl p-2">
+        <button id="mobile-menu-close" class="text-[#F4F4F4] text-responsive-sm p-2">
           ✕
         </button>
       </div>
@@ -87,7 +87,7 @@
       </form>
 
       <!-- Mobile nav links -->
-      <nav class="flex flex-col items-center space-y-3 text-sm">
+      <nav class="flex flex-col items-center space-y-3 text-responsive-sm">
         <a href="#" class="text-[#F4F4F4] py-2"><?php echo esc_html(pll__('Reorder')); ?></a>
         <a href="#" class="text-[#F4F4F4] py-2"><?php echo esc_html(pll__('Favorites')); ?></a>
         <a href="<?php echo esc_url(home_url('/sustainability')); ?>" class="text-[#F4F4F4] py-2"><?php echo esc_html(pll__('Sustainability')); ?></a>
@@ -101,30 +101,30 @@
 
       <!-- Mobile login/basket -->
       <div class="flex flex-col gap-6 items-center justify-center py-2">
-        <a href="#" class="bg-[#1D1D1D] text-[#F4F4F4] px-4 py-2 rounded-full no-underline text-sm">👤 <?php echo esc_html(pll__('Login')); ?></a>
-        <a href="#" class="bg-[#1D1D1D] text-[#F4F4F4] px-4 py-2 rounded-full no-underline text-sm">🛒 <?php echo esc_html(pll__('Basket')); ?></a>
+        <a href="#" class="bg-[#1D1D1D] text-[#F4F4F4] px-4 py-2 rounded-full no-underline text-responsive-xs">👤 <?php echo esc_html(pll__('Login')); ?></a>
+        <a href="#" class="bg-[#1D1D1D] text-[#F4F4F4] px-4 py-2 rounded-full no-underline text-responsive-xs">🛒 <?php echo esc_html(pll__('Basket')); ?></a>
       </div>
 
       <!-- Mobile bottom navigation -->
       <nav class="flex flex-col items-center bg-[#efefef]">
-        <a href="<?php echo esc_url(home_url('/pets')); ?>" class="<?php if (is_page('pets')) echo 'text-[#78BDE8]'; else echo 'text-[#1D1D1D]'; ?> py-2 text-lg" style="font-family: 'Bodoni MT', serif;"><?php echo esc_html(pll__('Pets')); ?></a>
-        <a href="<?php echo esc_url(home_url('/food-supplies')); ?>" class="<?php if (is_page('food-supplies')) echo 'text-[#78BDE8]'; else echo 'text-[#1D1D1D]'; ?> py-2 text-lg" style="font-family: 'Bodoni MT', serif;"><?php echo esc_html(pll__('Food & supplies')); ?></a>
-        <a href="<?php echo esc_url(home_url('/terrariums')); ?>" class="<?php if (is_page('terrariums')) echo 'text-[#78BDE8]'; else echo 'text-[#1D1D1D]'; ?> py-2 text-lg" style="font-family: 'Bodoni MT', serif;"><?php echo esc_html(pll__('Terrariums')); ?></a>
-        <a href="<?php echo esc_url(home_url('/offers')); ?>" class="<?php if (is_page('offers')) echo 'text-[#78BDE8]'; else echo 'text-[#1D1D1D]'; ?> py-2 text-lg" style="font-family: 'Bodoni MT', serif;"><?php echo esc_html(pll__('Offers')); ?></a>
-        <a href="<?php echo esc_url(home_url('/blog')); ?>" class="<?php if (is_home() || is_single()) echo 'text-[#78BDE8]'; else echo 'text-[#1D1D1D]'; ?> py-2 text-lg" style="font-family: 'Bodoni MT', serif;"><?php echo esc_html(pll__('Blog')); ?></a>
+        <a href="<?php echo esc_url(home_url('/pets')); ?>" class="<?php if (is_page('pets')) echo 'text-[#78BDE8]'; else echo 'text-[#1D1D1D]'; ?> py-2 text-responsive-base" style="font-family: 'Bodoni MT', serif;"><?php echo esc_html(pll__('Pets')); ?></a>
+        <a href="<?php echo esc_url(home_url('/food-supplies')); ?>" class="<?php if (is_page('food-supplies')) echo 'text-[#78BDE8]'; else echo 'text-[#1D1D1D]'; ?> py-2 text-responsive-base" style="font-family: 'Bodoni MT', serif;"><?php echo esc_html(pll__('Food & supplies')); ?></a>
+        <a href="<?php echo esc_url(home_url('/terrariums')); ?>" class="<?php if (is_page('terrariums')) echo 'text-[#78BDE8]'; else echo 'text-[#1D1D1D]'; ?> py-2 text-responsive-base" style="font-family: 'Bodoni MT', serif;"><?php echo esc_html(pll__('Terrariums')); ?></a>
+        <a href="<?php echo esc_url(home_url('/offers')); ?>" class="<?php if (is_page('offers')) echo 'text-[#78BDE8]'; else echo 'text-[#1D1D1D]'; ?> py-2 text-responsive-base" style="font-family: 'Bodoni MT', serif;"><?php echo esc_html(pll__('Offers')); ?></a>
+        <a href="<?php echo esc_url(home_url('/blog')); ?>" class="<?php if (is_home() || is_single()) echo 'text-[#78BDE8]'; else echo 'text-[#1D1D1D]'; ?> py-2 text-responsive-base" style="font-family: 'Bodoni MT', serif;"><?php echo esc_html(pll__('Blog')); ?></a>
       </nav>
     </div>
 
   </div>
 
   <!-- Bottom navigation (desktop view) -->
-  <div class="hidden lg:block bg-[#efefef] !py-3 text-lg" style="font-family: 'Bodoni MT', serif;">
+  <div class="hidden lg:block bg-[#efefef] !py-3 text-responsive-base" style="font-family: 'Bodoni MT', serif;">
     <nav class="flex justify-evenly min-w-max lg:min-w-0">
-      <a href="<?php echo esc_url(home_url('/pets')); ?>" class="<?php if (is_page('pets')) echo 'active'; ?> text-[#1D1D1D] no-underline !px-4 !py-2 transition-transform hover:scale-105 border-b-4 border-transparent [&.active]:border-[#1C3361] [&.active]:!mb-[-6px] whitespace-nowrap"><?php echo esc_html(pll__('Pets')); ?></a>
-      <a href="<?php echo esc_url(home_url('/food-supplies')); ?>" class="<?php if (is_page('food-supplies')) echo 'active'; ?> text-[#1D1D1D] no-underline !px-4 !py-2 transition-transform hover:scale-105 border-b-4 border-transparent [&.active]:border-[#1C3361] [&.active]:!mb-[-6px] whitespace-nowrap"><?php echo esc_html(pll__('Food & supplies')); ?></a>
-      <a href="<?php echo esc_url(home_url('/terrariums')); ?>" class="<?php if (is_page('terrariums')) echo 'active'; ?> text-[#1D1D1D] no-underline !px-4 !py-2 transition-transform hover:scale-105 border-b-4 border-transparent [&.active]:border-[#1C3361] [&.active]:!mb-[-6px] whitespace-nowrap"><?php echo esc_html(pll__('Terrariums')); ?></a>
-      <a href="<?php echo esc_url(home_url('/offers')); ?>" class="<?php if (is_page('offers')) echo 'active'; ?> text-[#1D1D1D] no-underline !px-4 !py-2 transition-transform hover:scale-105 border-b-4 border-transparent [&.active]:border-[#1C3361] [&.active]:!mb-[-6px] whitespace-nowrap"><?php echo esc_html(pll__('Offers')); ?></a>
-      <a href="<?php echo esc_url(home_url('/blog')); ?>" class="<?php if (is_home() || is_single()) echo 'active'; ?> text-[#1D1D1D] no-underline !px-4 !py-2 transition-transform hover:scale-105 border-b-4 border-transparent [&.active]:border-[#1C3361] [&.active]:!mb-[-6px] whitespace-nowrap"><?php echo esc_html(pll__('Blog')); ?></a>
+      <a href="<?php echo esc_url(home_url('/pets')); ?>" class="<?php if (is_page('pets')) echo 'active'; ?> text-[#1D1D1D] no-underline !px-4 !py-2 transition-transform lg:hover:scale-105 border-b-4 border-transparent [&.active]:border-[#1C3361] [&.active]:!mb-[-6px] whitespace-nowrap"><?php echo esc_html(pll__('Pets')); ?></a>
+      <a href="<?php echo esc_url(home_url('/food-supplies')); ?>" class="<?php if (is_page('food-supplies')) echo 'active'; ?> text-[#1D1D1D] no-underline !px-4 !py-2 transition-transform lg:hover:scale-105 border-b-4 border-transparent [&.active]:border-[#1C3361] [&.active]:!mb-[-6px] whitespace-nowrap"><?php echo esc_html(pll__('Food & supplies')); ?></a>
+      <a href="<?php echo esc_url(home_url('/terrariums')); ?>" class="<?php if (is_page('terrariums')) echo 'active'; ?> text-[#1D1D1D] no-underline !px-4 !py-2 transition-transform lg:hover:scale-105 border-b-4 border-transparent [&.active]:border-[#1C3361] [&.active]:!mb-[-6px] whitespace-nowrap"><?php echo esc_html(pll__('Terrariums')); ?></a>
+      <a href="<?php echo esc_url(home_url('/offers')); ?>" class="<?php if (is_page('offers')) echo 'active'; ?> text-[#1D1D1D] no-underline !px-4 !py-2 transition-transform lg:hover:scale-105 border-b-4 border-transparent [&.active]:border-[#1C3361] [&.active]:!mb-[-6px] whitespace-nowrap"><?php echo esc_html(pll__('Offers')); ?></a>
+      <a href="<?php echo esc_url(home_url('/blog')); ?>" class="<?php if (is_home() || is_single()) echo 'active'; ?> text-[#1D1D1D] no-underline !px-4 !py-2 transition-transform lg:hover:scale-105 border-b-4 border-transparent [&.active]:border-[#1C3361] [&.active]:!mb-[-6px] whitespace-nowrap"><?php echo esc_html(pll__('Blog')); ?></a>
     </nav>
   </div>
 
