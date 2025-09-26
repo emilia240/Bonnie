@@ -1,4 +1,4 @@
-<section class="w-full !py-12">
+<section class="w-full !py-12 px-10">
 
   <?php
     $headline = get_field('articles_headline');
