@@ -8,8 +8,7 @@
 
     <!-- Slider container -->
      <div id="hero-slider" class="absolute inset-0 w-full h-full">>
-            <img src="<?php echo esc_url($image['url']); ?>"
-                 class="absolute inset-0 w-full h-full object-cover transition-opacity" />
+            <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr(!empty($image['alt']) ? $image['alt'] : $image['title']); ?>" class="absolute inset-0 w-full h-full object-cover transition-opacity" />
         <!-- Dark overlay -->
        <div class="absolute inset-0 bg-black/30"></div>
 
