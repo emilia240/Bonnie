@@ -21,8 +21,9 @@
      <div id="hero-slider" class="absolute inset-0 w-full h-full">>
         <?php foreach ($slides as $i => $image): ?>
             <img src="<?php echo esc_url($image['url']); ?>"
-                 class="slider-img absolute inset-0 w-full h-full object-cover transition-opacity duration-700 <?php echo $i === 0 ? 'opacity-100' : 'opacity-0'; ?>" />
-        <?php endforeach; ?>
+         alt="<?php echo esc_attr(!empty($image['alt']) ? $image['alt'] : $image['title']); ?>"
+         class="slider-img absolute inset-0 w-full h-full object-cover transition-opacity duration-700 <?php echo $i === 0 ? 'opacity-100' : 'opacity-0'; ?>" />
+         <?php endforeach; ?>
         <!-- Gradient overlay -->
         <div class="absolute inset-0 bg-gradient-to-l from-black/90 via-black/40 to-transparent"></div>
 
