@@ -41,7 +41,7 @@
   <!-- SDG Card -->
   <div class="flex-shrink-0 w-[212px] mx-auto md:w-1/5 rounded-lg border order-2 md:order-none">
     <div class="text-center">
-      <img src="<?php echo esc_url($goalImage['url']); ?>" alt="" class="h-[212px] w-[212px] bg-gray-200 flex items-center justify-center">
+      <img src="<?php echo esc_url($goalImage['url']); ?>" alt="<?php echo esc_attr($goalImage['alt']); ?>" class="h-[212px] w-[212px] bg-gray-200 flex items-center justify-center">
       <p class="text-responsive-sm p-4" style="font-family: var(--font-headers);">
         <?php echo esc_html($goalCardText); ?>
       </p>
