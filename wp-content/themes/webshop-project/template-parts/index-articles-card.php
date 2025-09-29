@@ -9,7 +9,7 @@
     $description = get_the_excerpt();
     $image_id = get_post_thumbnail_id();
     $image_url = $image_id ? wp_get_attachment_image_url($image_id, 'medium') : '';
-    $image_alt = $image_id ? get_post_meta($image_id, '_wp_attachment_image_alt', true) : ''; // Get alt text of the image
+    // $image_alt = $image_id ? get_post_meta($image_id, '_wp_attachment_image_alt', true) : ''; // Get alt text of the image
 
 
     $cat_id = isset($_GET['cat']) && $_GET['cat'] !== '' ? intval($_GET['cat']) : '';
@@ -27,7 +27,7 @@
     <!-- Image -->
     <?php if ($image_url): ?>
     <div class="w-full h-48 flex items-center justify-center bg-gray-100">
-        <img src="<?php echo esc_url($image_url); ?>" alt="<?php echo esc_attr($image_alt); ?>" class="object-cover w-full h-full rounded-t-lg" />
+        <img src="<?php echo esc_url($image_url); ?>" alt="<?php echo esc_attr($image_url); ?>" class="object-cover w-full h-full rounded-t-lg" />
     </div>
     <?php endif; ?>
 
