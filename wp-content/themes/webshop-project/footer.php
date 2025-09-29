@@ -65,7 +65,7 @@
                 <input type="text" name="username" placeholder="Username" class="w-full !mb-2 !px-3 !py-2 rounded bg-[#F4F4F4] text-[#1D1D1D]">
                 <input type="email" name="email" placeholder="e-mail" class="w-full !mb-2 !px-3 !py-2 rounded bg-[#F4F4F4] text-[#1D1D1D]">
                 <textarea name="message" placeholder="Leave a message" class="w-full !mb-2 !px-3 !py-2 rounded bg-[#F4F4F4] text-[#1D1D1D]"></textarea>
-                <button type="submit" class="bg-[#74B24B] lg:hover:bg-[#78BDE8] text-white !px-4 !py-2 rounded transition w-fit">Send</button>
+                <button type="submit" class="bg-[#1D1D1D] lg:hover:bg-[#78BDE8] text-white !px-4 !py-2 rounded transition w-fit">Send</button>
             </form>
         </div>
 
