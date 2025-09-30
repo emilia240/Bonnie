@@ -250,40 +250,32 @@
 
 /* Hide comment meta/date if you don't want it */
 .comment-metadata {
-    display: none;
 }
 
 /* Hide all comments except the first by default */
 .comment-list .comment:not(:first-child) {
-    display: none;
 }
 
 /* When .show-all is added, show all comments */
 .comment-list.show-all .comment {
-    display: block;
 }
 
 /* Utility for JS toggling */
 .comment-list .hidden-comment {
-    display: none;
 }
 
 /* Hide "Your email address will not be published..." text */
 .comment-notes {
-    display: none !important;
 }
 
 /* Hide asterisks from labels */
 .required {
-    display: none !important;
 }
 
 /* Hide "Save my info" checkbox and text */
 .comment-form-cookies-consent {
-    display: none !important;
 }
 
 /* Ensure labels don't show */
 .comment-form label {
-    display: none !important;
 }
