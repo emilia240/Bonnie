@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Themes - Twenty Twenty-Four package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-01-02 23:05:33+0000\n"
+"PO-Revision-Date: 2025-09-20 00:44:00+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1303,12 +1303,12 @@ msgstr "Suche"
 #: patterns/hidden-post-navigation.php:12
 msgctxt "Label before the title of the next post. There is a space after the colon."
 msgid "Next: "
-msgstr "Nächste: "
+msgstr "Nächster: "
 
 #: patterns/hidden-post-navigation.php:11
 msgctxt "Label before the title of the previous post. There is a space after the colon."
 msgid "Previous: "
-msgstr "Vorherige: "
+msgstr "Vorheriger: "
 
 #: patterns/hidden-post-navigation.php:9 patterns/hidden-post-navigation.php:10
 #: patterns/hidden-posts-heading.php:10
@@ -1425,7 +1425,7 @@ msgstr "Bildschirmfüllendes Bild"
 
 #: patterns/footer.php:92
 msgid "Social Media"
-msgstr "Social Media"
+msgstr "Soziale Medien"
 
 #: patterns/footer.php:86
 msgid "Social"

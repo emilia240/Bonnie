@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 6.8.x - Development - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-08-13 20:50:37+0000\n"
+"PO-Revision-Date: 2025-09-23 13:57:56+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1145,7 +1145,7 @@ msgstr "Es wird versucht, die vorherige Version wiederherzustellen."
 
 #: wp-admin/includes/class-bulk-upgrader-skin.php:209
 msgid "More details."
-msgstr "Weitere Details."
+msgstr "Weitere Details"
 
 #: wp-admin/contribute.php:103
 msgid "Find your team &rarr;"
@@ -2668,24 +2668,24 @@ msgstr "Zu den Aktualisierungen"
 
 #: wp-admin/user-edit.php:225
 msgid "&larr; Go to Users"
-msgstr "&larr; Zurück zu „Benutzer“"
+msgstr "&larr; Zu Benutzer"
 
 #: wp-admin/revision.php:112
 msgid "&larr; Go to editor"
-msgstr "&larr; Zurück zum Editor"
+msgstr "&larr; Zum Editor"
 
 #: wp-admin/includes/class-plugin-installer-skin.php:145
 #: wp-admin/includes/class-plugin-installer-skin.php:151
 msgid "Go to Plugin Installer"
-msgstr "Weiter zur Plugin-Installation"
+msgstr "Zur Plugin-Installation"
 
 #: wp-admin/includes/class-plugin-installer-skin.php:139
 msgid "Go to Importers"
-msgstr "Weiter zu den Importern"
+msgstr "Zu den Importern"
 
 #: wp-admin/includes/class-theme-installer-skin.php:164
 msgid "Go to Theme Installer"
-msgstr "Weiter zur Theme-Installation"
+msgstr "Zur Theme-Installation"
 
 #: wp-admin/includes/privacy-tools.php:294
 msgid "Go to top"
@@ -3176,7 +3176,7 @@ msgstr "%s jetzt installieren"
 #: wp-admin/user-edit.php:997 wp-admin/js/application-passwords.js:203
 #: wp-admin/js/common.js:1109
 msgid "Dismiss this notice."
-msgstr "Diese Meldung ausblenden."
+msgstr "Diesen Hinweis verwerfen"
 
 #. translators: %s: Theme name.
 #: wp-admin/theme-install.php:430 wp-admin/themes.php:641
@@ -4064,12 +4064,12 @@ msgstr "<a href=\"https://wordpress.org/documentation/article/comments-screen/\"
 #. translators: %s: UTC time.
 #: wp-admin/options-general.php:405
 msgid "Universal time is %s."
-msgstr "Die Universalzeit ist %s Uhr."
+msgstr "Die koordinierte Weltzeit ist %s Uhr."
 
 #. translators: %s: UTC abbreviation
 #: wp-admin/options-general.php:394
 msgid "Choose either a city in the same timezone as you or a %s (Coordinated Universal Time) time offset."
-msgstr "Wähle entweder eine Stadt in der gleichen Zeitzone wie die deine oder einen %s (Koordinierte Universalzeit) Zeitversatz."
+msgstr "Wähle entweder eine Stadt in der gleichen Zeitzone wie die deine oder einen %s-Zeitversatz (koordinierte Weltzeit)."
 
 #: wp-admin/options-general.php:265
 msgid "Administration Email Address"
@@ -4509,7 +4509,7 @@ msgstr "Nach Beitrags-Format filtern"
 
 #: wp-admin/includes/plugin.php:2579 wp-admin/includes/plugin.php:2661
 msgid "Go to the Plugins screen"
-msgstr "Zur Plugins-Ansicht wechseln"
+msgstr "Zur Plugins-Ansicht"
 
 #. translators: %s: The filename of the package.
 #: wp-admin/includes/file.php:1516
@@ -4677,7 +4677,7 @@ msgstr "Dieses Plugin konnte nicht richtig geladen werden und wird im Wiederhers
 
 #: wp-admin/includes/theme.php:1247
 msgid "Go to the Themes screen"
-msgstr "Zur Themes-Ansicht wechseln"
+msgstr "Zur Themes-Ansicht"
 
 #: wp-admin/includes/class-wp-debug-data.php:1994
 msgid "Total size is not available. Some errors were encountered when determining the size of your installation."
@@ -5383,7 +5383,7 @@ msgstr "GD-Version"
 
 #: wp-admin/includes/class-wp-debug-data.php:667
 msgid "Imagick Resource Limits"
-msgstr "Imagick-Resource-Limits"
+msgstr "Imagick-Ressourcen-Limits"
 
 #: wp-admin/includes/class-wp-debug-data.php:591
 msgid "ImageMagick version string"
@@ -10319,12 +10319,12 @@ msgstr "An:"
 #: wp-admin/includes/revision.php:377
 msgctxt "Button label for a next revision"
 msgid "Next"
-msgstr "Weiter"
+msgstr "Nächste"
 
 #: wp-admin/includes/revision.php:373
 msgctxt "Button label for a previous revision"
 msgid "Previous"
-msgstr "Zurück"
+msgstr "Vorherige"
 
 #: wp-admin/includes/revision.php:405
 msgctxt "Followed by post revision info"
@@ -10858,7 +10858,7 @@ msgstr "Installiert"
 
 #: wp-admin/themes.php:180
 msgid "Previewing and Customizing"
-msgstr "Vorschau und Anpassen"
+msgstr "Vorschau und Anpassung"
 
 #: wp-admin/theme-install.php:135
 msgid "Previewing and Installing"
@@ -11748,7 +11748,7 @@ msgstr "Zum Dashboard &rarr; Startseite"
 
 #: wp-admin/about.php:340
 msgid "Go to Dashboard &rarr; Updates"
-msgstr "Weiter zu Dashboard &rarr; Aktualisierungen"
+msgstr "Zu Dashboard &rarr; Aktualisierungen"
 
 #: wp-admin/user-edit.php:217
 msgid "Profile updated."
@@ -11929,7 +11929,7 @@ msgstr "Die Rollen wurden geändert."
 #: wp-admin/theme-editor.php:340 wp-admin/includes/network.php:473
 #: wp-admin/network/themes.php:140 wp-admin/network/themes.php:151
 msgid "Caution:"
-msgstr "Vorsicht:"
+msgstr "Achtung:"
 
 #: wp-admin/user-new.php:382 wp-admin/network/site-users.php:243
 #: wp-admin/network/user-new.php:91 wp-admin/network/users.php:272
@@ -12594,19 +12594,19 @@ msgstr "Eine neue Version von %1$s ist verfügbar. <a href=\"%2$s\" %3$s>Details
 #: wp-admin/includes/class-theme-installer-skin.php:170
 #: wp-admin/includes/class-theme-upgrader-skin.php:127
 msgid "Go to Themes page"
-msgstr "Weiter zur Themes-Seite"
+msgstr "Zur Themes-Seite"
 
 #: wp-admin/includes/class-bulk-plugin-upgrader-skin.php:82
 #: wp-admin/includes/class-bulk-theme-upgrader-skin.php:83
 #: wp-admin/includes/class-language-pack-upgrader-skin.php:98
 msgid "Go to WordPress Updates page"
-msgstr "Weiter zur WordPress-Aktualisierungs-Seite"
+msgstr "Zur WordPress-Aktualisierungsseite"
 
 #: wp-admin/includes/class-bulk-plugin-upgrader-skin.php:77
 #: wp-admin/includes/class-plugin-installer-skin.php:157
 #: wp-admin/includes/class-plugin-upgrader-skin.php:101
 msgid "Go to Plugins page"
-msgstr "Weiter zur Plugins-Seite"
+msgstr "Zur Plugins-Seite"
 
 #: wp-admin/includes/nav-menu.php:1295
 msgid "Click Save Menu to make pending menu items public."
@@ -13862,7 +13862,7 @@ msgstr "Diese Aktualisierung ausblenden"
 
 #: wp-admin/themes.php:675
 msgid "Broken Themes"
-msgstr "Beschädigte Themes"
+msgstr "Fehlerhafte Themes"
 
 #. translators: %s: Theme name.
 #: wp-admin/includes/class-wp-themes-list-table.php:234
@@ -14761,7 +14761,7 @@ msgstr "Antwort senden"
 
 #: wp-admin/includes/template.php:463
 msgid "Reply to Comment"
-msgstr "Antwort auf Kommentar"
+msgstr "Auf Kommentar antworten"
 
 #: wp-admin/includes/class-wp-posts-list-table.php:1217
 msgid "Missed schedule"
@@ -14866,7 +14866,7 @@ msgstr "Warnung! Wildcard DNS wurde eventuell nicht korrekt konfiguriert!"
 #. translators: %s: Network title.
 #: wp-admin/options-general.php:86
 msgid "Just another %s site"
-msgstr "Eine weitere %s Website"
+msgstr "Eine weitere %s-Website"
 
 #. translators: Site tagline.
 #: wp-admin/options-general.php:83
@@ -15313,7 +15313,7 @@ msgstr "Upload-Datum:"
 #: wp-admin/user-new.php:608 wp-admin/js/password-toggle.js:28
 #: wp-admin/js/user-profile.js:91
 msgid "Hide"
-msgstr "Verbergen"
+msgstr "Ausblenden"
 
 #: wp-admin/includes/media.php:1429
 msgid "Location of the uploaded file."
