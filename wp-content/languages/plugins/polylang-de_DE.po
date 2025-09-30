@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Polylang - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-08-18 23:44:27+0000\n"
+"PO-Revision-Date: 2025-09-27 01:44:39+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -820,7 +820,7 @@ msgstr "WP SYNTEX"
 #: modules/wizard/wizard.php:484 modules/wizard/wizard.php:675
 #: settings/settings.php:327
 msgid "Dismiss this notice."
-msgstr "Hinweis ausblenden."
+msgstr "Diesen Hinweis verwerfen"
 
 #: include/filters.php:432
 msgid "User"
@@ -1200,7 +1200,7 @@ msgstr "Südsudan"
 
 #: settings/flags.php:223
 msgid "Suriname"
-msgstr "Suriname"
+msgstr "Surinam"
 
 #: settings/flags.php:222
 msgid "Somalia"
@@ -1468,7 +1468,7 @@ msgstr "Montenegro"
 
 #: settings/flags.php:155
 msgid "Moldova"
-msgstr "Moldawien"
+msgstr "Moldau"
 
 #: settings/flags.php:154
 msgid "Monaco"
