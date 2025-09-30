@@ -10,6 +10,7 @@
 !wp-content/
 !wp-content/themes/**/*
 
+wp-content/cache/**
 wp-content/themes/twenty*/**
 wp-content/themes/index.php
 wp-content/plugins/index.php
