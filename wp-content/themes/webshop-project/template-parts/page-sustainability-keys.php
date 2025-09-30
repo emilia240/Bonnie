@@ -38,7 +38,7 @@
             
             <?php if( $row['key_video'] ): ?>
               <div class="key_video">
-                <iframe  aria-label="Video about <?php echo esc_attr($row['key_title']); ?>"  src="<?php echo esc_url($row['key_video']); ?>" frameborder="0"></iframe>
+                <iframe title="Video about <?php echo esc_attr($row['key_title']); ?>"  src="<?php echo esc_url($row['key_video']); ?>"></iframe>
               </div>
             <?php endif; ?>
           </div>

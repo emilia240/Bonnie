@@ -119,12 +119,12 @@
 
 
 .key_video {
-
   background-color: var(--color-light);
   border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
+  border: none;
 }
 
 .key_video iframe {
