@@ -127,3 +127,16 @@ function wb_pagination_seo() {
     }
 }
 add_action('wp_head', 'wb_pagination_seo');
+
+
+// Change comment form fields order
+add_filter('comment_form_fields', function($fields) {
+    if (isset($fields['comment'])) {
+        $comment_field = $fields['comment'];
+        unset($fields['comment']);
+        // Add comment field at the end
+        $fields['comment'] = $comment_field;
+    }
+    return $fields;
+});
+
