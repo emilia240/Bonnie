@@ -3,7 +3,7 @@
 <footer class="bg-[#1C3361] text-[#F4F4F4] !py-12 !px-10" style="font-family: 'Skolar Sans', sans-serif;" role="contentinfo">
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10 text-left">
 
-        <div class="footer-column" role="navigation" aria-label="Footer navigation">
+        <nav class="footer-column" role="navigation" aria-label="Footer navigation">
             <ul class="flex flex-col gap-2">
                 <li><a href="<?php echo home_url(); ?>" class="lg:hover:text-[#78BDE8] transition-colors"><?php echo esc_html(pll_e('Frontpage')); ?></a></li>
                 <li><a href="<?php echo home_url('/blog'); ?>" class="lg:hover:text-[#78BDE8] transition-colors"><?php echo esc_html(pll_e('Blog')); ?></a></li>
@@ -12,7 +12,7 @@
                 <li><a href="<?php echo home_url('/shipping-methods'); ?>" class="lg:hover:text-[#78BDE8] transition-colors"><?php echo esc_html(pll_e('Shipping methods')); ?></a></li>
                 <li><a href="<?php echo home_url('/faq'); ?>" class="lg:hover:text-[#78BDE8] transition-colors"><?php echo esc_html(pll_e('FAQ')); ?></a></li>
             </ul>
-        </div>
+        </nav>
 
         <div>
             <div class="!mb-6" role="contentinfo" aria-label="Store address">
