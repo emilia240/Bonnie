@@ -3,7 +3,6 @@
 <head>
   <meta charset="<?php bloginfo('charset'); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Discover Terraqua’s terrarium kits, custom aquariums UK, shrimps, crabs, and exotic pets UK. Order exotic animals safely and learn what exotic pets are legal in UK.">
   <meta name="keywords" content="crabs, terrarium kits, custom aquariums UK, exotic pets UK, order exotic animals, legal exotic pets UK, shrimps, what exotic pets are legal in UK">
   <meta name="author" content="Terraqua">
   <title ><?php bloginfo('name'); ?></title>
