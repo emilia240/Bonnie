@@ -4,8 +4,8 @@
     <section class="flex lg:flex-row flex-wrap justify-center !gap-4 !my-8 !px-4">
         <!-- ALL option -->
         <form method="get" action="<?php echo esc_url(get_permalink(get_option('page_for_posts'))); ?>">
-            <button type="submit" name="cat" value="" class="uppercase font-bold px-4 py-2 text-[#1D1D1D] lg:hover:underline lg:hover:text-[#1C3361]" style="font-family: 'Skolar Sans', sans-serif; font-weight: 400;">
-                <p class="text-responsive-sm">ALL</p>
+            <button class="text-responsive-sm" type="submit" name="cat" value="" class="uppercase font-bold px-4 py-2 text-[#1D1D1D] lg:hover:underline lg:hover:text-[#1C3361]" style="font-family: 'Skolar Sans', sans-serif; font-weight: 400;">
+                ALL
             </button>
         </form>
 
@@ -14,8 +14,8 @@
         ?>
         <?php foreach ($categories as $category): ?>
             <form method="get" action="<?php echo esc_url(get_permalink(get_option('page_for_posts'))); ?>">
-                <button type="submit" name="cat" value="<?php echo esc_attr($category->term_id); ?>" class="uppercase px-4 py-2 text-[#1D1D1D] lg:hover:underline lg:hover:text-[#1C3361]" style="font-family: 'Skolar Sans', sans-serif; font-weight: 400;">
-                    <p class="text-responsive-sm"><?php echo esc_html($category->name); ?></p>
+                <button class="text-responsive-sm" type="submit" name="cat" value="<?php echo esc_attr($category->term_id); ?>" class="uppercase px-4 py-2 text-[#1D1D1D] lg:hover:underline lg:hover:text-[#1C3361]" style="font-family: 'Skolar Sans', sans-serif; font-weight: 400;">
+                  <?php echo esc_html($category->name); ?>
                 </button>
             </form>
         <?php endforeach; ?>
