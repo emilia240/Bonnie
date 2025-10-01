@@ -42,7 +42,7 @@
             class="rounded-md bg-[#1C3361] px-6 lg:w-[130px] md:w-[300px] py-3 text-responsive-sm text-[#F4F4F4] lg:hover:bg-white lg:hover:text-[#1C3361] 
             lg:hover:border lg:hover:border-[#1C3361] transition-colors duration-200" style="font-family: var(--font-body);"
           >
-            <?php echo esc_html($newsletterButton); ?></h3>
+            <?php echo esc_html($newsletterButton); ?>
           </button>
         </div>
 
