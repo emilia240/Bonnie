@@ -82,6 +82,7 @@
     font-size: 1.5rem;
     margin-bottom: 0.4rem;
     font-family: var(--font-headers);
+    margin-bottom: 8px;
 }
 
 .comment-form-comment textarea,
@@ -188,6 +189,22 @@
     margin: 0 !important; /* Prevent any internal margins from affecting spacing */
 }
 
+/* Style name, email, and website fields */
+.comment-form input[type="text"],
+.comment-form input[type="email"],
+.wp-block-post-comments-form input[type="text"],
+.wp-block-post-comments-form input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 18px;
+    box-sizing: border-box;
+    background: white;
+}
+
 /* Comment author section */
 .comment-author,
 .wp-block-comment .wp-block-avatar {
@@ -216,7 +233,7 @@
 /* Comment content */
 .comment-content,
 .wp-block-comment .comment-content {
-    font-size: 16px;
+    font-size: 30px;
     line-height: 1.6;
     color: #333;
     margin-bottom: 15px;
@@ -238,7 +255,10 @@
 
 .reply a:hover,
 .wp-block-comment .reply-link:hover {
-    background: #2a4f7a;
+  background-color: white;
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+
 }
 
 /* See all comments link */
@@ -248,34 +268,17 @@
     font-size: 16px;
 }
 
-/* Hide comment meta/date if you don't want it */
-.comment-metadata {
-}
 
-/* Hide all comments except the first by default */
-.comment-list .comment:not(:first-child) {
-}
-
-/* When .show-all is added, show all comments */
-.comment-list.show-all .comment {
-}
-
-/* Utility for JS toggling */
-.comment-list .hidden-comment {
-}
 
 /* Hide "Your email address will not be published..." text */
 .comment-notes {
+    margin-bottom: 10px;
 }
 
-/* Hide asterisks from labels */
-.required {
-}
 
 /* Hide "Save my info" checkbox and text */
 .comment-form-cookies-consent {
+    margin-bottom: 5px;
 }
 
-/* Ensure labels don't show */
-.comment-form label {
-}
+
