@@ -41,7 +41,7 @@
 
       <div class="mb-6">
         <label class="mb-3 block font-medium text-responsive-base" style="font-family: var(--font-body);">
-          Would you be interested in a private Facebook group for our community?
+        <?php echo esc_html(pll__('Would you be interested in a private Facebook group for our community?')) ?> 
         </label>
         <div class="flex flex-col gap-3">
            <?php if($interest_loop->have_posts()): ?>
@@ -70,7 +70,7 @@
 
       <div class="!mb-6">
         <label class="mb-3 block text-responsive-base" style="font-family: var(--font-body);">
-          If yes, how often do you use Facebook?
+        <?php echo esc_html(pll__('If yes, how often do you use Facebook?') );?>
         </label>
         <div class="flex flex-col gap-3" style="font-family: var(--font-body);">
             <?php if($usage_loop->have_posts()): ?>
@@ -91,17 +91,18 @@
 
       <div class="mb-6">
         <label for="fb_expectations" class="mb-3 block text-responsive-base" style="font-family: var(--font-body);">
-          What kind of content would you like to see in our group?
+        <?php echo esc_html(pll__('What kind of content would you like to see in our group? '));?>
         </label>
-        <textarea name="fb_expectations" id="fb_expectations" rows="3" 
-                  placeholder="e.g. care tips, contact with breeders, pet help..." 
-                  class="text-responsive-sm w-full h-[180px] sm:h-[200px] md:h-[230px] rounded-md border border-gray-300 p-3 focus:border-blue-500" style="font-family: var(--font-body);"></textarea>
+          <textarea name="fb_expectations" id="fb_expectations" rows="3"
+           placeholder="<?php echo esc_html(pll__('e.g. care tips, contact with breeders, pet help...')); ?>"
+           class="text-responsive-sm w-full h-[180px] sm:h-[200px] md:h-[230px] rounded-md border border-gray-300 p-3 focus:border-blue-500"
+           style="font-family: var(--font-body);"></textarea>
       </div>
 
       <div class="flex justify-end">
-        <input type="submit" value="Submit" style="font-family: var(--font-body);"
-              class="w-full sm:w-[130px] cursor-pointer rounded-md bg-[#1C3361] px-6 py-3 text-[#F4F4F4] text-responsive-sm lg:hover:bg-white lg:hover:text-[#1C3361] 
-            lg:hover:border lg:hover:border-[#1C3361] transition-colors duration-200"/>
+      <input type="submit" value="<?php echo esc_html(pll__('Submit')); ?>" style="font-family: var(--font-body);"
+      class="w-full sm:w-[130px] cursor-pointer rounded-md bg-[#1C3361] px-6 py-3 text-[#F4F4F4] text-responsive-sm lg:hover:bg-white lg:hover:text-[#1C3361]
+      lg:hover:border lg:hover:border-[#1C3361] transition-colors duration-200"/>
       </div>
       <!-- message alert -->
       <input type="hidden" name="survey_submitted" value="1"> 

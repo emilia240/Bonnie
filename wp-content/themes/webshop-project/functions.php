@@ -67,6 +67,11 @@ function wb_register_strings() {
     pll_register_string('url', 'Website', 'Comments');
     pll_register_string('prev_page', 'Prev', 'Pagination');
     pll_register_string('next_page', 'Next', 'Pagination');
+    pll_register_string('fb_group_question', 'Would you be interested in a private Facebook group for our community?', 'Forms');
+    pll_register_string('fb_usage_question', 'If yes, how often do you use Facebook?', 'Forms');
+    pll_register_string('fb_expectations_question', 'What kind of content would you like to see in our group?', 'Forms');
+    pll_register_string('fb_expectations_placeholder', 'e.g. care tips, contact with breeders, pet help...', 'Forms');
+    pll_register_string('survey_submit', 'Submit', 'Forms');
 }
 
 add_action('init', 'wb_register_strings');
