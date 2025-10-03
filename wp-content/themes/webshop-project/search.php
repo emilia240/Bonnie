@@ -21,6 +21,29 @@
     <p class="text-responsive-sm text-[#1D1D1D] bg-[#F4F4F4] rounded-lg shadow !p-6">No results found.</p>
   <?php endif; ?>
 
+      <!-- Custom Pagination-->
+   <div class="flex items-center justify-center gap-2 my-8">
+        <?php
+        $links = paginate_links(array(
+            'type' => 'array',
+            'prev_text' => pll__('Prev'),
+            'next_text' => pll__('Next')
+        ));
+        
+        if ($links) {
+            foreach ($links as $link) {
+                if (strpos($link, 'current') !== false) {
+                    // Current page - blue background
+                    echo str_replace('page-numbers current', 'border rounded-lg border-[#1C3361] px-3 py-2 bg-[#1C3361] text-white min-w-[40px] text-center', $link);
+                } else {
+                    // Other pages - white background
+                    echo str_replace('page-numbers', 'border rounded-lg border-[#1C3361] px-3 py-2 text-[#1C3361] lg:hover:bg-[#1C3361] lg:hover:text-white transition-colors min-w-[40px] text-center', $link);
+                }
+            }
+        }
+        ?>
+    </div>
+
 </section>
 
 <?php get_footer(); ?>

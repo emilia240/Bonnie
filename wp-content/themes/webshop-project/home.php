@@ -41,8 +41,8 @@
         <?php
         $links = paginate_links(array(
             'type' => 'array',
-            'prev_text' => 'Prev',
-            'next_text' => 'Next'
+            'prev_text' => pll__('Prev'),
+            'next_text' => pll__('Next')
         ));
         
         if ($links) {
