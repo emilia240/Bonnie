@@ -47,11 +47,17 @@
             </div>
             <!-- Tags -->
             <div class="tags flex justify-end flex-wrap !gap-2">
-                <?php if (!empty($tags)): ?>
-                    <?php foreach ($tags as $tag): ?>
-                        <a href="<?php echo esc_url(get_tag_link($tag->term_id)); ?>" class="bg-[#1C3361] text-[#F4F4F4] !px-3 !py-1 rounded-full w-fit lg:hover:bg-white lg:hover:text-[#1C3361] lg:hover:border lg:hover:border-[#1C3361] transition-colors duration-200" style="font-family: 'Skolar Sans', sans-serif; font-weight: 400;">
-                    <?php endforeach; ?>
-                <?php endif; ?>
+              <?php if (!empty($tags)): ?>
+              <?php foreach ($tags as $tag): ?>
+                 <a href="<?php echo esc_url(get_tag_link($tag->term_id)); ?>" 
+               class="bg-[#1C3361] text-[#F4F4F4] !px-3 !py-1 rounded-full w-fit 
+                      lg:hover:bg-white lg:hover:text-[#1C3361] lg:hover:border lg:hover:border-[#1C3361] 
+                      transition-colors duration-200" 
+               style="font-family: 'Skolar Sans', sans-serif; font-weight: 400;">
+                  <p class="text-responsive-xs text-right"><?php echo esc_html($tag->name); ?></p>
+                </a>
+              <?php endforeach; ?>
+              <?php endif; ?>
             </div>
         </div>
 
