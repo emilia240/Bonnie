@@ -44,6 +44,8 @@
 
     <!-- Social Media Section -->
     <div role="navigation" aria-label="Social media links">
+    <p class="text-responsive-md !mb-2" style="font-family: 'Aquavit', sans-serif;"><?php echo esc_html(pll_e('Social Media')); ?></p>
+
     <div class="flex flex-col gap-2">
         <?php if (function_exists('pll_current_language')) {
             $lang = pll_current_language();
