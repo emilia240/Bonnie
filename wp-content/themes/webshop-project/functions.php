@@ -72,6 +72,12 @@ function wb_register_strings() {
     pll_register_string('fb_expectations_question', 'What kind of content would you like to see in our group?', 'Forms');
     pll_register_string('fb_expectations_placeholder', 'e.g. care tips, contact with breeders, pet help...', 'Forms');
     pll_register_string('survey_submit', 'Submit', 'Forms');
+    pll_register_string('social_media', 'Social Media', 'Footer');
+    pll_register_string('facebook', 'Facebook', 'Social Media');
+    pll_register_string('instagram', 'Instagram', 'Social Media');
+    pll_register_string('tiktok', 'TikTok', 'Social Media');
+    pll_register_string('whatsapp', 'WhatsApp', 'Social Media');
+   
 }
 
 add_action('init', 'wb_register_strings');
