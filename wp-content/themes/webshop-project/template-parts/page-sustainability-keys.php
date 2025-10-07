@@ -19,7 +19,7 @@
             <div class="key_header">
               <div class="key_icon_box">
                 <?php if( $row['key_icon_box'] ): ?>
-                  <img src="<?php echo esc_url($row['key_icon_box']['url']); ?>" alt="<?php echo esc_attr($row['key_icon_box']['alt']); ?>">
+                  <img src="<?php echo esc_url($row['key_icon_box']['url']); ?>" alt="<?php echo esc_attr($row['key_icon_box']['alt']); ?>" loading="lazy" >
                 <?php endif; ?>
               </div>
               <h2 class="key_title text-responsive-lg">
@@ -33,12 +33,12 @@
           <div class="key_images">
             <?php if( $row['key_gallery'] ): 
               foreach( $row['key_gallery'] as $image ): ?>
-                <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>">
+                <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" loading="lazy" >
             <?php endforeach; endif; ?>
             
             <?php if( $row['key_video'] ): ?>
               <div class="key_video">
-                <iframe title="Video about <?php echo esc_attr($row['key_title']); ?>"  src="<?php echo esc_url($row['key_video']); ?>"></iframe>
+                <iframe title="Video about <?php echo esc_attr($row['key_title']); ?>"  src="<?php echo esc_url($row['key_video']); ?>" loading="lazy" ></iframe>
               </div>
             <?php endif; ?>
           </div>
