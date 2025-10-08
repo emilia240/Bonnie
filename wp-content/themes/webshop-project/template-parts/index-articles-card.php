@@ -27,7 +27,7 @@
     <!-- Image -->
     <?php if ($image_url): ?>
     <div class="w-full h-48 flex items-center justify-center bg-gray-100">
-        <img src="<?php echo esc_url($image_url); ?>" alt="<?php echo esc_attr($image_url); ?>" class="object-cover w-full h-full rounded-t-lg" />
+        <img src="<?php echo esc_url($image_url); ?>" alt="<?php echo esc_attr($image_url); ?>" class="object-cover w-full h-full rounded-t-lg" loading="lazy"  />
     </div>
     <?php endif; ?>
 
