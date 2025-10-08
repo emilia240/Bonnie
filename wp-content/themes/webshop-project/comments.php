@@ -6,16 +6,11 @@
     comment_form(array(
         'title_reply' => pll__('Leave a comment'),
         'label_submit' => pll__('Comment'),
-        'url' => pll__('Website'),
 
         // START OF FIX: Explicitly define the textarea and its label
         'comment_field' => '<p class="comment-form-comment">
             <label for="comment">' . pll__('Leave a comment') . ' <span class="required">*</span></label>
             <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea>
-        </p>',
-         'url' => '<p class="comment-form-url">
-            <label for="url">' . pll__('Website') . '</label>
-            <input id="url" name="url" type="url" value="" size="30" />
         </p>',
         // END OF FIX
     ));

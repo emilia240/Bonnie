@@ -25,7 +25,6 @@ add_action( 'wp_enqueue_scripts', 'wb_load_resources' );
 function wb_custom_comment_form_defaults( $defaults ) {
     $defaults['title_reply']  = pll__( 'Leave a comment' );  
     $defaults['label_submit'] = pll__( 'Comment' ); 
-    $defaults['url'] = pll__( 'Website' );
     return $defaults;
 }
 add_filter( 'comment_form_defaults', 'wb_custom_comment_form_defaults' );
@@ -64,7 +63,6 @@ function wb_register_strings() {
     pll_register_string('comment_submit', 'Comment', 'Comments');
     pll_register_string('contact_form', 'Contact Form', 'Forms');
     pll_register_string('payments', 'Payment', 'Footer');
-    pll_register_string('url', 'Website', 'Comments');
     pll_register_string('prev_page', 'Prev', 'Pagination');
     pll_register_string('next_page', 'Next', 'Pagination');
     pll_register_string('fb_group_question', 'Would you be interested in a private Facebook group for our community?', 'Forms');
