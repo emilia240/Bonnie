@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Themes - Twenty Twenty-Five package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-08-16 18:02:18+0000\n"
+"PO-Revision-Date: 2025-10-06 02:59:41+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1830,7 +1830,7 @@ msgstr "Hier eingeben …"
 #: patterns/cta-heading-search.php:21 patterns/hidden-search.php:14
 msgctxt "Search form label."
 msgid "Search"
-msgstr "Suche"
+msgstr "Suchen"
 
 #: patterns/cta-heading-search.php:18
 msgid "What are you looking for?"

@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Rank Math SEO – AI SEO Tools to Dominate SEO Rankings - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-09-29 00:32:27+0000\n"
+"PO-Revision-Date: 2025-10-08 01:50:59+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -216,7 +216,7 @@ msgstr "Ob das Objekt eine Weiterleitung hat oder nicht"
 msgid "Sorry, the field contains invalid characters."
 msgstr "Entschuldigung, das Feld enthält ungültige Zeichen."
 
-#: includes/rest/class-post.php:170
+#: includes/rest/class-post.php:187
 msgid "Selected posts to update the data for."
 msgstr "Ausgewählte Beiträge, für die die Daten aktualisiert werden sollen."
 
@@ -630,7 +630,7 @@ msgstr "Gründungsdatum"
 msgid "Legal Name"
 msgstr "Offizieller Name"
 
-#: includes/frontend/class-shortcodes.php:371
+#: includes/frontend/class-shortcodes.php:372
 msgid "Description:"
 msgstr "Beschreibung:"
 
@@ -722,23 +722,23 @@ msgstr "Setzen auf noindex"
 msgid "&#8595; Rank Math"
 msgstr "&#8595; Rank Math"
 
-#: includes/admin/class-admin-menu.php:286
+#: includes/admin/class-admin-menu.php:281
 msgid "Cyber Monday Sale"
 msgstr "Cyber ​​Monday Sale"
 
-#: includes/admin/class-admin-menu.php:281
+#: includes/admin/class-admin-menu.php:276
 msgid "Black Friday Sale"
 msgstr "Black Friday Sale"
 
-#: includes/admin/class-admin-menu.php:276
+#: includes/admin/class-admin-menu.php:271
 msgid "Anniversary Sale"
 msgstr "Jubiläums Sale"
 
-#: includes/admin/class-admin-menu.php:271
+#: includes/admin/class-admin-menu.php:291
 msgid "New Year Sale"
 msgstr "Neujahrs Sale"
 
-#: includes/admin/class-admin-menu.php:266
+#: includes/admin/class-admin-menu.php:286
 msgid "Christmas Sale"
 msgstr "Weihnachts Sale"
 
@@ -963,7 +963,7 @@ msgstr "Estnisch"
 #: includes/modules/content-ai/views/options.php:166
 #: assets/admin/js/generalSettings.js:1
 msgid "Dutch"
-msgstr "Holländisch"
+msgstr "Niederländisch"
 
 #: includes/modules/content-ai/views/options.php:165
 #: assets/admin/js/generalSettings.js:1
@@ -1962,22 +1962,22 @@ msgstr "Aus dem Cache bedient"
 msgid "Rank Math SEO Redirection Debugger"
 msgstr "Ranking Math SEO Umleitungs Fehlersuchprogramm"
 
-#: includes/admin/class-admin-helper.php:461 assets/admin/js/components.js:1
+#: includes/admin/class-admin-helper.php:472 assets/admin/js/components.js:1
 msgid "WordPress General Settings"
 msgstr "WordPress Allgemeine Einstellungen"
 
-#: includes/admin/class-admin-helper.php:460 assets/admin/js/components.js:1
+#: includes/admin/class-admin-helper.php:471 assets/admin/js/components.js:1
 msgid "Site Address (URL)"
 msgstr "Website (URL)"
 
-#: includes/admin/class-admin-helper.php:459 assets/admin/js/components.js:1
+#: includes/admin/class-admin-helper.php:470 assets/admin/js/components.js:1
 msgid "WordPress Address (URL)"
 msgstr "WordPress-Adresse (URL)"
 
 #. Translators: 1 is "WordPress Address (URL)", 2 is "Site Address (URL)", 3 is
 #. a link to the General Settings, with "WordPress General Settings" as anchor
 #. text.
-#: includes/admin/class-admin-helper.php:458 assets/admin/js/components.js:1
+#: includes/admin/class-admin-helper.php:469 assets/admin/js/components.js:1
 msgid "Rank Math cannot be connected because your site URL doesn't appear to be a valid URL. If the domain name contains special characters, please make sure to use the encoded version in the %1$s &amp; %2$s fields on the %3$s page."
 msgstr "Rank Math kann nicht verbunden werden, da deine Website-URL keine gültige URL zu sein scheint. Wenn der Domainname Sonderzeichen enthält, stelle bitte sicher, dass du die codierte Version in den Feldern %1$s &amp; %2$s auf der %3$s Seite verwendest."
 
@@ -2318,7 +2318,7 @@ msgstr "Füge URLs ein, die an die IndexNow API gesendet werden sollen (eine pro
 #. Translators: placeholder is human-readable time, e.g. "1 hour".
 #: includes/modules/instant-indexing/class-rest.php:174
 msgid "%s ago"
-msgstr "Vor %s"
+msgstr "vor %s"
 
 #. Translators: %s is the number of URLs submitted.
 #: includes/modules/instant-indexing/class-rest.php:148
@@ -2955,17 +2955,17 @@ msgstr "E-Mail-Berichte"
 msgid "This option cannot be changed since your theme has added the support for Rank Math Breadcrumbs using: %s"
 msgstr "Diese Option kann nicht geändert werden, da dein Theme die Unterstützung für Rank Math Breadcrumbs hinzugefügt hat mit: %s"
 
-#: includes/admin/class-notices.php:255
+#: includes/admin/class-notices.php:296
 msgid "<b>Rank Math Warning:</b> Changing the permalinks on a live, indexed site may result in serious loss of traffic if done incorrectly. Consider adding a new redirection from the old URL format to the new one."
 msgstr "<b>Rank Math Warnung:</b> Das Ändern der Permalinks auf einer lebenden, indizierten Website kann zu ernsthaften Traffic-Verlusten führen, wenn es falsch gemacht wird. Ziehe in Erwägung, eine neue Umleitung vom alten URL-Format zum neuen hinzuzufügen."
 
 #. Translators: placeholder is the post type names separated with commas.
-#: includes/admin/class-notices.php:114
+#: includes/admin/class-notices.php:155
 msgid "Rank Math has detected new post types: %1$s. You may want to check the settings of the <a href=\"%2$s\">Titles &amp; Meta page</a>."
 msgstr "Rank Math hat neue Beitragstypen erkannt: %1$s. Du solltest die Einstellungen der <a href=\"%2$s\">Titel &amp; Meta-Seite</a> überprüfen."
 
 #. Translators: placeholder is the post type name.
-#: includes/admin/class-notices.php:110
+#: includes/admin/class-notices.php:151
 msgid "Rank Math has detected a new post type: %1$s. You may want to check the settings of the <a href=\"%2$s\">Titles &amp; Meta page</a>."
 msgstr "Rank Math hat einen neuen Beitragstyp erkannt: %1$s. Du solltest die Einstellungen der <a href=\"%2$s\">Titel &amp; Meta-Seite</a> überprüfen."
 
@@ -3996,11 +3996,11 @@ msgstr "Daten importieren"
 msgid "Import Locations"
 msgstr "Orte importieren"
 
-#: includes/frontend/class-shortcodes.php:355
+#: includes/frontend/class-shortcodes.php:356
 msgid "Email:"
 msgstr "E-Mail:"
 
-#: includes/frontend/class-shortcodes.php:296
+#: includes/frontend/class-shortcodes.php:297
 msgid "Telephone"
 msgstr "Telefonnummer"
 
@@ -4080,7 +4080,7 @@ msgstr "Konto trennen"
 #: includes/modules/content-ai/assets/js/content-ai-page.js:1
 #: includes/modules/content-ai/assets/js/content-ai.js:1
 #: includes/modules/content-ai/blocks/command/assets/js/index.js:1
-#: includes/modules/content-ai/blocks/command/assets/src/edit.js:24
+#: includes/modules/content-ai/blocks/command/assets/src/edit.js:30
 msgid "Connect Now"
 msgstr "Jetzt verbinden"
 
@@ -4109,7 +4109,7 @@ msgstr "Verbunden"
 msgid "Account"
 msgstr "Konto"
 
-#: includes/admin/class-notices.php:139
+#: includes/admin/class-notices.php:180
 msgid "Please activate the WPML String Translation plugin to convert Rank Math Setting values in different languages."
 msgstr "Aktiviere bitte das Modul WPML String Translation, um Einstellungen von Rank Math in verschiedene Sprachen zu konvertieren."
 
@@ -4335,7 +4335,7 @@ msgstr "Du bist leider nicht berechtigt, Plugins dieser Website zu deaktivieren.
 #. filter link
 #: includes/settings/general/others.php:90 assets/admin/js/generalSettings.js:1
 msgid "filter"
-msgstr "Auswahl einschränken"
+msgstr "Filtern"
 
 #. Translators: %s is the word "nofollow" code tag and second one for the
 #. filter link
@@ -5425,7 +5425,7 @@ msgstr "Preis gültig bis"
 msgid "Page %s"
 msgstr "Seite %s"
 
-#: includes/admin/class-post-columns.php:235
+#: includes/admin/class-post-columns.php:282
 msgid "Is Pillar"
 msgstr "Ist Säule"
 
@@ -5435,7 +5435,7 @@ msgstr "Ist Säule"
 msgid "Performer"
 msgstr "Darsteller"
 
-#: includes/admin/class-post-columns.php:244
+#: includes/admin/class-post-columns.php:291
 msgid "Not Set"
 msgstr "Nicht festgelegt"
 
@@ -7938,27 +7938,27 @@ msgstr "404-Monitorprotokoll"
 msgid "Titles & Meta Settings"
 msgstr "Titel- und Meta-Einstellungen"
 
-#: includes/admin/class-admin-helper.php:355 assets/admin/js/components.js:1
+#: includes/admin/class-admin-helper.php:366 assets/admin/js/components.js:1
 msgid "Share"
 msgstr "Teilen"
 
-#: includes/admin/class-admin-helper.php:352 assets/admin/js/components.js:1
+#: includes/admin/class-admin-helper.php:363 assets/admin/js/components.js:1
 #: includes/modules/content-ai/assets/js/content-ai-page.js:1
 #: includes/modules/content-ai/assets/js/content-ai.js:1
 msgid "Tweet"
 msgstr "Tweet"
 
-#: includes/admin/class-admin-helper.php:345 assets/admin/js/components.js:1
+#: includes/admin/class-admin-helper.php:356 assets/admin/js/components.js:1
 msgid "SEO by Rank Math"
 msgstr "SEO von Rank Math"
 
 #. translators: sitename
-#: includes/admin/class-admin-helper.php:331 assets/admin/js/components.js:1
+#: includes/admin/class-admin-helper.php:342 assets/admin/js/components.js:1
 msgid "I just installed Rank Math SEO WordPress Plugin. It looks promising!"
 msgstr "Ich habe gerade das Rank Math SEO WordPress Plugin installiert. Es sieht vielversprechend aus!"
 
 #. translators: sitename
-#: includes/admin/class-admin-helper.php:329 assets/admin/js/components.js:1
+#: includes/admin/class-admin-helper.php:340 assets/admin/js/components.js:1
 msgid "I just installed @RankMathSEO #WordPress Plugin. It looks great! %s"
 msgstr "Ich habe gerade @RankMathSEO #WordPress Plugin installiert. Es sieht Klasse aus! %s"
 
@@ -8116,7 +8116,7 @@ msgstr "Nicht folgen"
 msgid "Prevents pages from being indexed and displayed in search engine result pages"
 msgstr "Verhindert, dass Seiten indiziert und in Suchmaschinen-Ergebnisseiten angezeigt werden"
 
-#: includes/admin/class-post-columns.php:218
+#: includes/admin/class-post-columns.php:265
 #: includes/helpers/class-choices.php:75 assets/admin/js/rank-math-app.js:1
 msgid "No Index"
 msgstr "Kein Index"
@@ -8411,7 +8411,7 @@ msgstr "Seite"
 msgid "Focus Keyword of the current post"
 msgstr "Fokus-Schlüsselwort des aktuellen Beitrags"
 
-#: includes/admin/class-post-columns.php:239
+#: includes/admin/class-post-columns.php:286
 #: includes/replace-variables/class-advanced-variables.php:44
 #: assets/admin/js/rank-math-app.js:1
 #: includes/modules/content-ai/assets/js/content-ai-page.js:1
@@ -9302,43 +9302,45 @@ msgstr "Dieses Feld ist erforderlich."
 msgid "Pillar Content"
 msgstr "Säulen-Inhalt"
 
-#: includes/admin/class-post-columns.php:146
+#: includes/admin/class-post-columns.php:160
 msgid "Alternative Text"
 msgstr "Alternativer Text"
 
-#: includes/admin/class-post-columns.php:145 assets/admin/js/rank-math-app.js:1
+#: includes/admin/class-post-columns.php:159 assets/admin/js/rank-math-app.js:1
 #: includes/modules/analytics/assets/js/stats.js:1
 #: includes/modules/schema/assets/js/schema-gutenberg.js:1
 #: includes/modules/schema/assets/js/schema-template.js:1
 msgid "Title"
 msgstr "Titel"
 
-#: includes/admin/class-post-columns.php:241
+#: includes/admin/class-post-columns.php:288
 msgid "Keyword"
 msgstr "Schlüsselwort"
 
-#: includes/admin/class-post-columns.php:178
-#: includes/admin/class-post-columns.php:199
-#: includes/admin/class-post-columns.php:254
-#: includes/admin/class-post-columns.php:274
-#: includes/admin/class-post-columns.php:287
+#: includes/admin/class-post-columns.php:229
+#: includes/admin/class-post-columns.php:250
+#: includes/admin/class-post-columns.php:301
+#: includes/admin/class-post-columns.php:321
+#: includes/admin/class-post-columns.php:334
 #: includes/modules/schema/assets/js/schema-gutenberg.js:1
 #: includes/modules/schema/assets/js/schema-template.js:1
 msgid "Save"
 msgstr "Speichern"
 
-#: includes/admin/class-post-columns.php:118
+#: includes/admin/class-post-columns.php:132
+#: includes/admin/class-post-columns.php:176
 msgid "SEO Desc"
 msgstr "SEO-Beschreibung"
 
-#: includes/admin/class-post-columns.php:117
+#: includes/admin/class-post-columns.php:131
+#: includes/admin/class-post-columns.php:175
 #: includes/replace-variables/class-post-variables.php:81
 #: includes/modules/content-ai/assets/js/content-ai-page.js:1
 #: includes/modules/content-ai/assets/js/content-ai.js:1
 msgid "SEO Title"
 msgstr "SEO-Titel"
 
-#: includes/admin/class-post-columns.php:114
+#: includes/admin/class-post-columns.php:128
 msgid "SEO Details"
 msgstr "SEO-Details"
 
@@ -9358,11 +9360,11 @@ msgstr "SEO Score: Schlecht"
 msgid "SEO Score: Good"
 msgstr "SEO Score: Gut"
 
-#: includes/admin/class-post-columns.php:179
-#: includes/admin/class-post-columns.php:200
-#: includes/admin/class-post-columns.php:255
-#: includes/admin/class-post-columns.php:275
-#: includes/admin/class-post-columns.php:288 assets/admin/js/post-list.js:1
+#: includes/admin/class-post-columns.php:230
+#: includes/admin/class-post-columns.php:251
+#: includes/admin/class-post-columns.php:302
+#: includes/admin/class-post-columns.php:322
+#: includes/admin/class-post-columns.php:335 assets/admin/js/post-list.js:1
 #: includes/modules/redirections/assets/js/redirections.js:1
 msgid "Cancel"
 msgstr "Abbrechen"
