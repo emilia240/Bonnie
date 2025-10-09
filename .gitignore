@@ -16,3 +16,4 @@ wp-content/themes/index.php
 wp-content/plugins/index.php
 wp-content/wp-cache-config.php
 wp-content/updraft/**
+wp-content/wflogs/**
