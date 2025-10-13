@@ -21,7 +21,7 @@
      <div id="hero-slider" class="absolute inset-0 w-full h-full" aria-live="polite">
         <?php foreach ($slides as $i => $image): ?>
             <img src="<?php echo esc_url($image['url']); ?>"
-         alt="<?php echo esc_attr(!empty($image['alt']) ? $image['alt'] : $image['title']); ?>"
+         alt="<?php echo esc_attr($image['alt']); ?>"
          class="slider-img absolute inset-0 w-full h-full object-cover transition-opacity duration-700 <?php echo $i === 0 ? 'opacity-100' : 'opacity-0'; ?>" />
          <?php endforeach; ?>
         <!-- Gradient overlay -->

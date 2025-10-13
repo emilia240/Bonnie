@@ -9,7 +9,7 @@
     $description = get_the_excerpt();
     $image_id = get_post_thumbnail_id();
     $image_url = $image_id ? wp_get_attachment_image_url($image_id, 'medium') : '';
-    // $image_alt = $image_id ? get_post_meta($image_id, '_wp_attachment_image_alt', true) : ''; // Get alt text of the image
+    $image_alt = $image_id ? get_post_meta($image_id, '_wp_attachment_image_alt', true) : '';
 
 
     $cat_id = isset($_GET['cat']) && $_GET['cat'] !== '' ? intval($_GET['cat']) : '';
@@ -27,7 +27,7 @@
     <!-- Image -->
     <?php if ($image_url): ?>
     <div class="w-full h-48 flex items-center justify-center bg-gray-100">
-        <img src="<?php echo esc_url($image_url); ?>" alt="<?php echo esc_attr($image_url); ?>" class="object-cover w-full h-full rounded-t-lg" loading="lazy"  />
+        <img src="<?php echo esc_url($image_url); ?>" alt="<?php echo esc_attr(pll__($image_alt)); ?>" class="object-cover w-full h-full rounded-t-lg" loading="lazy"  />
     </div>
     <?php endif; ?>
 
@@ -73,7 +73,7 @@
         <a href="<?php echo esc_url($url); ?>" class="inline-flex items-center !gap-2 bg-[#1C3361] text-[#F4F4F4] !px-4 !py-2 rounded-full !mt-auto w-fit lg:hover:bg-white lg:hover:text-[#1C3361] 
         lg:hover:border lg:hover:border-[#1C3361] transition-colors duration-200" style="font-family: 'Skolar Sans', sans-serif; font-weight: 400;">
 
-            <?php echo esc_html(pll_e('Read article')); ?>
+            <?php echo esc_html(pll_('Read article')); ?>
 
             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 items-center no-wrap" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <line x1="4" y1="12" x2="18" y2="12" stroke="currentColor" stroke-width="2"/>
