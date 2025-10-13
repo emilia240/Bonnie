@@ -76,6 +76,10 @@ function wb_register_strings() {
     pll_register_string('tiktok', 'TikTok', 'Social Media');
     pll_register_string('whatsapp', 'WhatsApp', 'Social Media');
     pll_register_string('customer_reviews', 'Customer Reviews', 'Reviews');
+    pll_register_string('skip_to_main', 'Skip to main content', 'Accessibility');
+    pll_register_string('toggle_mobile_menu', 'Toggle mobile menu', 'Accessibility');
+    pll_register_string('search', 'Search', 'Accessibility');
+    
    
 }
 

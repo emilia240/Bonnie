@@ -12,7 +12,7 @@
 <body <?php body_class(); ?>>
   
 <!-- Skip to main content link -->
-<a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-blue-600 text-white px-4 py-2 rounded z-50" aria-label="Skip to main content">Skip to main content</a>
+<a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-blue-600 text-white px-4 py-2 rounded z-50" aria-label="<?php echo esc_attr(pll__('Skip to main content')); ?>"><?php echo esc_html(pll__('Skip to main content')); ?></a>
 
 
 <header class="bg-[#1C3361] text-[#F4F4F4]" role="banner">
@@ -24,7 +24,7 @@
     </div>
 
     <!-- Mobile hamburger button -->
-    <button id="mobile-menu-toggle" class="lg:hidden flex flex-col gap-1 p-2" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-menu">
+    <button id="mobile-menu-toggle" class="lg:hidden flex flex-col gap-1 p-2" aria-label="<?php echo esc_attr(pll__('Toggle mobile menu')); ?>" aria-expanded="false" aria-controls="mobile-menu">
       <span class="w-6 h-0.5 bg-[#F4F4F4] transition-all"></span>
       <span class="w-6 h-0.5 bg-[#F4F4F4] transition-all"></span>
       <span class="w-6 h-0.5 bg-[#F4F4F4] transition-all"></span>
@@ -34,7 +34,7 @@
     <div class="hidden lg:flex lg:items-center lg:gap-6">
       <div class="!mx-4">
         <form role="search" method="get" action="<?php echo esc_url(home_url('/')); ?>" aria-label="Site search">
-          <label for="search-input" class="sr-only">Search</label>
+          <label for="search-input" class="sr-only"><?php echo esc_html(pll__('Search')); ?></label>
           <input type="search" id="search-input" name="s" class="w-fit min-w-[400px] !px-8 !py-2 rounded-full border border-gray-300 text-[#1D1D1D] bg-[#F4F4F4]" placeholder="<?php echo esc_attr(pll__('Search')); ?>">
         </form>
       </div>
@@ -88,12 +88,12 @@
       </div>
 
       <!-- Mobile search -->
-      <form role="search" method="get" action="<?php echo esc_url(home_url('/')); ?>">
+      <form role="search" method="get" action="<?php echo esc_url(home_url('/')); ?>" aria-label="Site search">
         <input type="search" name="s" class="w-full px-8 py-4 rounded-full border border-gray-300 text-[#1D1D1D] bg-[#F4F4F4]" placeholder="<?php echo esc_attr(pll__('Search')); ?>">
       </form>
 
       <!-- Mobile nav links -->
-      <nav class="flex flex-col items-center space-y-3 text-responsive-sm">
+      <nav class="flex flex-col items-center space-y-3 text-responsive-sm" aria-label="Top navigation">
         <a href="#" class="text-[#F4F4F4] py-2"><?php echo esc_html(pll__('Reorder')); ?></a>
         <a href="#" class="text-[#F4F4F4] py-2"><?php echo esc_html(pll__('Favorites')); ?></a>
         <a href="<?php echo esc_url(home_url('/sustainability')); ?>" class="text-[#F4F4F4] py-2"><?php echo esc_html(pll__('Sustainability')); ?></a>
@@ -101,18 +101,18 @@
       </nav>
 
       <!-- Mobile language picker -->
-      <ul class="flex gap-8 items-center justify-center py-2">
+      <ul class="flex gap-8 items-center justify-center py-2" aria-label="Language picker">
         <?php pll_the_languages(array("show_flags" => 1, "show_names" => 0, 'post_id' => $current_id)); ?>
       </ul>
 
       <!-- Mobile login/basket -->
-      <div class="flex flex-col gap-6 items-center justify-center py-2">
+      <div class="flex flex-col gap-6 items-center justify-center py-2" aria-label="User account and shopping basket">
         <a href="#" class="bg-[#1D1D1D] text-[#F4F4F4] px-4 py-2 rounded-full no-underline text-responsive-xs">👤 <?php echo esc_html(pll__('Login')); ?></a>
         <a href="#" class="bg-[#1D1D1D] text-[#F4F4F4] px-4 py-2 rounded-full no-underline text-responsive-xs">🛒 <?php echo esc_html(pll__('Basket')); ?></a>
       </div>
 
       <!-- Mobile bottom navigation -->
-      <nav class="flex flex-col items-center bg-[#efefef]">
+      <nav class="flex flex-col items-center bg-[#efefef]" aria-label="Main navigation">
         <a href="<?php echo esc_url(home_url('/pets')); ?>" class="<?php if (is_page('pets')) echo 'text-[#78BDE8]'; else echo 'text-[#1D1D1D]'; ?> py-2 text-responsive-base" style="font-family: 'Bodoni MT', serif;"><?php echo esc_html(pll__('Pets')); ?></a>
         <a href="<?php echo esc_url(home_url('/food-supplies')); ?>" class="<?php if (is_page('food-supplies')) echo 'text-[#78BDE8]'; else echo 'text-[#1D1D1D]'; ?> py-2 text-responsive-base" style="font-family: 'Bodoni MT', serif;"><?php echo esc_html(pll__('Food & supplies')); ?></a>
         <a href="<?php echo esc_url(home_url('/terrariums')); ?>" class="<?php if (is_page('terrariums')) echo 'text-[#78BDE8]'; else echo 'text-[#1D1D1D]'; ?> py-2 text-responsive-base" style="font-family: 'Bodoni MT', serif;"><?php echo esc_html(pll__('Terrariums')); ?></a>
