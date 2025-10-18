@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 6.8.x - Development - Continents & Cities package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-01-22 23:30:10+0000\n"
+"PO-Revision-Date: 2025-10-14 00:30:02+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -637,123 +637,123 @@ msgstr "Greenwich"
 
 #: wp-admin/includes/continents-cities.php:420
 msgid "GMT0"
-msgstr "GMT0"
+msgstr "UTC0"
 
 #: wp-admin/includes/continents-cities.php:419
 msgid "GMT-9"
-msgstr "GMT-9"
+msgstr "UTC-9"
 
 #: wp-admin/includes/continents-cities.php:418
 msgid "GMT-8"
-msgstr "GMT-8"
+msgstr "UTC-8"
 
 #: wp-admin/includes/continents-cities.php:417
 msgid "GMT-7"
-msgstr "GMT-7"
+msgstr "UTC-7"
 
 #: wp-admin/includes/continents-cities.php:416
 msgid "GMT-6"
-msgstr "GMT-6"
+msgstr "UTC-6"
 
 #: wp-admin/includes/continents-cities.php:415
 msgid "GMT-5"
-msgstr "GMT-5"
+msgstr "UTC-5"
 
 #: wp-admin/includes/continents-cities.php:414
 msgid "GMT-4"
-msgstr "GMT-4"
+msgstr "UTC-4"
 
 #: wp-admin/includes/continents-cities.php:413
 msgid "GMT-3"
-msgstr "GMT-3"
+msgstr "UTC-3"
 
 #: wp-admin/includes/continents-cities.php:412
 msgid "GMT-2"
-msgstr "GMT-2"
+msgstr "UTC-2"
 
 #: wp-admin/includes/continents-cities.php:411
 msgid "GMT-14"
-msgstr "GMT-14"
+msgstr "UTC-14"
 
 #: wp-admin/includes/continents-cities.php:410
 msgid "GMT-13"
-msgstr "GMT-13"
+msgstr "UTC-13"
 
 #: wp-admin/includes/continents-cities.php:409
 msgid "GMT-12"
-msgstr "GMT-12"
+msgstr "UTC-12"
 
 #: wp-admin/includes/continents-cities.php:408
 msgid "GMT-11"
-msgstr "GMT-11"
+msgstr "UTC-11"
 
 #: wp-admin/includes/continents-cities.php:407
 msgid "GMT-10"
-msgstr "GMT-10"
+msgstr "UTC-10"
 
 #: wp-admin/includes/continents-cities.php:406
 msgid "GMT-1"
-msgstr "GMT-1"
+msgstr "UTC-1"
 
 #: wp-admin/includes/continents-cities.php:405
 msgid "GMT-0"
-msgstr "GMT-0"
+msgstr "UTC-0"
 
 #: wp-admin/includes/continents-cities.php:404
 msgid "GMT+9"
-msgstr "GMT+9"
+msgstr "UTC+9"
 
 #: wp-admin/includes/continents-cities.php:403
 msgid "GMT+8"
-msgstr "GMT+8"
+msgstr "UTC+8"
 
 #: wp-admin/includes/continents-cities.php:402
 msgid "GMT+7"
-msgstr "GMT+7"
+msgstr "UTC+7"
 
 #: wp-admin/includes/continents-cities.php:401
 msgid "GMT+6"
-msgstr "GMT+6"
+msgstr "UTC+6"
 
 #: wp-admin/includes/continents-cities.php:400
 msgid "GMT+5"
-msgstr "GMT+5"
+msgstr "UTC+5"
 
 #: wp-admin/includes/continents-cities.php:399
 msgid "GMT+4"
-msgstr "GMT+4"
+msgstr "UTC+4"
 
 #: wp-admin/includes/continents-cities.php:398
 msgid "GMT+3"
-msgstr "GMT+3"
+msgstr "UTC+3"
 
 #: wp-admin/includes/continents-cities.php:397
 msgid "GMT+2"
-msgstr "GMT+2"
+msgstr "UTC+2"
 
 #: wp-admin/includes/continents-cities.php:396
 msgid "GMT+12"
-msgstr "GMT+12"
+msgstr "UTC+12"
 
 #: wp-admin/includes/continents-cities.php:395
 msgid "GMT+11"
-msgstr "GMT+11"
+msgstr "UTC+11"
 
 #: wp-admin/includes/continents-cities.php:394
 msgid "GMT+10"
-msgstr "GMT+10"
+msgstr "UTC+10"
 
 #: wp-admin/includes/continents-cities.php:393
 msgid "GMT+1"
-msgstr "GMT+1"
+msgstr "UTC+1"
 
 #: wp-admin/includes/continents-cities.php:392
 msgid "GMT+0"
-msgstr "GMT+0"
+msgstr "UTC+0"
 
 #: wp-admin/includes/continents-cities.php:391
 msgid "GMT"
-msgstr "GMT"
+msgstr "UTC"
 
 #: wp-admin/includes/continents-cities.php:390
 msgid "Etc"

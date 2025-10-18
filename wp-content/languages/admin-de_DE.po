@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 6.8.x - Development - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-10-08 01:59:45+0000\n"
+"PO-Revision-Date: 2025-10-14 00:24:31+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1907,7 +1907,7 @@ msgstr "Datenschutzgesetze rund um die Welt verlangen von Unternehmen und Online
 
 #: wp-admin/erase-personal-data.php:41
 msgid "<strong>Comments</strong> &mdash; WordPress does not delete comments. The software does anonymize (but, again, <em>never</em> publishes) the associated Email Address, IP Address, and User Agent (Browser/OS)."
-msgstr "<strong>Kommentare</strong> &ndash; WordPress löscht keine Kommentare. Die Software anonymisiert (aber, nochmal, veröffentlicht <em>niemals</em>) die zugehörige E-Mail-Adresse, IP-Adresse und den User Agent (Browser/Betriebssystem)."
+msgstr "<strong>Kommentare</strong> &ndash; WordPress löscht keine Kommentare. Die Software anonymisiert (aber, noch einmal, veröffentlicht <em>niemals</em>) die zugehörige E-Mail-Adresse, IP-Adresse und den User Agent (Browser/Betriebssystem)."
 
 #: wp-admin/erase-personal-data.php:37
 msgid "WordPress collects (but <em>never</em> publishes) a limited amount of data from logged-in users but then deletes it or anonymizes it. That data can include:"
@@ -3276,7 +3276,7 @@ msgstr "Aktivierung nicht möglich"
 
 #: wp-admin/comment.php:47
 msgid "You cannot edit this comment because the associated post is in the Trash. Please restore the post first, then try again."
-msgstr "Du kannst diesen Kommentar nicht bearbeiten, da der zugehörige Beitrag im Papierkorb ist. Bitte zuerst diesen Beitrag wiederherstellen und dann nochmal versuchen."
+msgstr "Du kannst diesen Kommentar nicht bearbeiten, da der zugehörige Beitrag im Papierkorb ist. Bitte zuerst diesen Beitrag wiederherstellen und dann noch einmal versuchen."
 
 #: wp-admin/async-upload.php:70
 msgctxt "media item"
@@ -7777,7 +7777,7 @@ msgstr "Eine Änderung deiner E-Mail-Adresse zu %s steht noch aus."
 
 #: wp-admin/user-edit.php:242
 msgid "Error while saving the new email address. Please try again."
-msgstr "Fehler beim Speichern der neuen E-Mail-Adresse. Bitte versuche es nochmal."
+msgstr "Beim Speichern der neuen E-Mail-Adresse ist ein Fehler aufgetreten. Bitte versuche es erneut."
 
 #: wp-admin/upload.php:371
 msgid "You can narrow the list by file type/status or by date using the dropdown menus above the media table."
@@ -9008,7 +9008,7 @@ msgstr ""
 "\n"
 "du hast gerade den Link „Website löschen“ für deine Website angeklickt und ein Formular auf dieser Seite ausgefüllt.\n"
 "\n"
-"Wenn du deine Website wirklich löschen möchtest, klicke bitte den nachfolgenden Link an. Du wirst nicht nochmal nach einer Bestätigung gefragt. Deshalb klicke den Link bitte nur, wenn du dir absolut sicher bist: ###URL_DELETE###\n"
+"Wenn du deine Website wirklich löschen möchtest, klicke bitte den nachfolgenden Link an. Du wirst nicht noch einmal nach einer Bestätigung gefragt. Deshalb klicke den Link bitte nur, wenn du dir absolut sicher bist: ###URL_DELETE###\n"
 "\n"
 "Wenn du deine Website löschst, ziehe bitte in Betracht, hier irgendwann in der Zukunft eine neue Website zu eröffnen! (Denke aber daran, dass deine aktuelle Website und dein Benutzername endgültig gelöscht sind.)\n"
 "\n"
@@ -9200,7 +9200,7 @@ msgstr "Du bist nun von allen anderen Geräten abgemeldet."
 
 #: wp-admin/includes/ajax-actions.php:3985
 msgid "Could not log out user sessions. Please try again."
-msgstr "Die Sitzungen konnten nicht abgemeldet werden. Bitte versuche es nochmal."
+msgstr "Die Sitzungen konnten nicht abgemeldet werden. Bitte versuche es noch einmal."
 
 #: wp-admin/includes/ajax-actions.php:3856
 msgid "This preview is unavailable in the editor."
@@ -9454,7 +9454,7 @@ msgstr "Populär"
 #: wp-admin/includes/class-wp-theme-install-list-table.php:64
 msgctxt "themes"
 msgid "Featured"
-msgstr "Vorgestellt"
+msgstr "Hervorgehoben"
 
 #: wp-admin/includes/ms.php:967 wp-admin/users.php:416
 msgid "Attribute all content to:"
@@ -9734,7 +9734,7 @@ msgstr ""
 
 #: wp-admin/post.php:82
 msgid "Unable to submit this form, please refresh and try again."
-msgstr "Dieses Formular kann nicht übertragen werden. Bitte lade es neu und versuche es nochmal."
+msgstr "Dieses Formular konnte nicht übertragen werden. Bitte lade es neu und versuche es erneut."
 
 #: wp-admin/index.php:92
 msgid "<strong>Quick Draft</strong> &mdash; Allows you to create a new post and save it as a draft. Also displays links to the 3 most recent draft posts you've started."
@@ -10017,7 +10017,7 @@ msgstr "Du musst eine E-Mail-Adresse angeben."
 
 #: wp-admin/install.php:435
 msgid "Your passwords do not match. Please try again."
-msgstr "Deine Passwörter stimmen nicht überein. Bitte versuche es nochmal."
+msgstr "Deine Passwörter stimmen nicht überein. Bitte versuche es erneut."
 
 #: wp-admin/install.php:431
 msgid "The username you provided has invalid characters."
@@ -11392,7 +11392,7 @@ msgstr "Es ist eine automatische Speicherung dieses Beitrags verfügbar, welche 
 #: wp-admin/includes/class-custom-image-header.php:1074
 #: wp-admin/includes/class-custom-image-header.php:1420
 msgid "Image could not be processed. Please go back and try again."
-msgstr "Bild konnte nicht verarbeitet werden. Bitte gehe zurück und versuche es nochmal."
+msgstr "Das Bild konnte nicht verarbeitet werden. Bitte gehe zurück und versuche es erneut."
 
 #: wp-admin/themes.php:263
 msgid "The active theme is broken. Reverting to the default theme."
@@ -13684,7 +13684,7 @@ msgstr "Zusätzliche Berechtigungen"
 
 #: wp-admin/user-edit.php:700
 msgid "Type your new password again."
-msgstr "Gib dein neues Passwort nochmal ein."
+msgstr "Gib dein neues Passwort erneut ein."
 
 #: wp-admin/user-edit.php:675
 msgid "New Password"
@@ -13987,7 +13987,7 @@ msgstr "Populär"
 #: wp-admin/includes/class-wp-plugin-install-list-table.php:112
 msgctxt "Plugin Installer"
 msgid "Featured"
-msgstr "Vorgestellt"
+msgstr "Hervorgehoben"
 
 #: wp-admin/plugin-editor.php:327 wp-admin/theme-editor.php:356
 msgid "Update File"
@@ -14514,7 +14514,7 @@ msgstr "WordPress installieren"
 
 #: wp-admin/install.php:181
 msgid "Double-check your email address before continuing."
-msgstr "Bitte überprüfe nochmal deine E-Mail-Adresse auf Richtigkeit, bevor du weitermachst."
+msgstr "Bitte überprüfe deine E-Mail-Adresse noch einmal, bevor du fortfährst."
 
 #: wp-admin/install.php:179
 msgid "Your Email"
@@ -15364,7 +15364,7 @@ msgstr "Es gibt nichts zu speichern, das Bild wurde nicht verändert."
 
 #: wp-admin/includes/image-edit.php:950
 msgid "Error while saving the scaled image. Please reload the page and try again."
-msgstr "Fehler beim Speichern des skalierten Bildes. Bitte lade die Seite neu und versuche es nochmal."
+msgstr "Beim Speichern des skalierten Bildes ist ein Fehler aufgetreten. Bitte lade die Seite neu und versuche es erneut."
 
 #: wp-admin/includes/image-edit.php:917
 msgid "Unable to create new image."

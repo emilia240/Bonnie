@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - UpdraftPlus: WP Backup &amp; Migration Plugin - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-10-06 22:40:53+0000\n"
+"PO-Revision-Date: 2025-10-12 22:19:38+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -353,6 +353,10 @@ msgstr "Dieses Sicherungs-Archiv ist %s MB groß – der Versuch, es per E-Mail 
 msgid "These tables only"
 msgstr "Nur diese Tabellen"
 
+#: includes/migrator-lite.php:320
+msgid "Rows per batch"
+msgstr "Zeilen pro Stapel"
+
 #: includes/migrator-lite.php:258
 msgid "search term"
 msgstr "Suchbegriff"
@@ -361,21 +365,61 @@ msgstr "Suchbegriff"
 msgid "Search for"
 msgstr "Suchen nach"
 
+#: includes/migrator-lite.php:1121
+msgid "Time taken (seconds):"
+msgstr "Benötigte Zeit (Sekunden):"
+
+#: includes/migrator-lite.php:1118
+msgid "Changes made:"
+msgstr "Änderungen vorgenommen:"
+
+#: includes/migrator-lite.php:1117
+msgid "Rows examined:"
+msgstr "Untersuchte Zeilen:"
+
 #: includes/migrator-lite.php:1068
 msgid "already done"
 msgstr "schon erledigt"
+
+#: includes/migrator-lite.php:1028
+msgid "skipped (not in list)"
+msgstr "übersprungen (nicht in der Liste)"
+
+#: includes/migrator-lite.php:404
+msgid "Processed plugin:"
+msgstr "Verarbeitetes Plugin:"
 
 #: includes/class-http-error-descriptions.php:78
 msgid "Not Extended"
 msgstr "Nicht verlängert"
 
+#: includes/class-http-error-descriptions.php:77
+msgid "Loop Detected"
+msgstr "Schleife erkannt"
+
+#: includes/class-http-error-descriptions.php:76
+msgid "Insufficient Storage"
+msgstr "Unzureichender Speicherplatz"
+
+#: includes/class-http-error-descriptions.php:72
+msgid "Service Unavailable"
+msgstr "Dienst nicht verfügbar"
+
 #: includes/class-http-error-descriptions.php:71
 msgid "Bad Gateway"
 msgstr "Schlechtes Gateway"
 
+#: includes/class-http-error-descriptions.php:70
+msgid "Not Implemented"
+msgstr "Nicht implementiert"
+
 #: includes/class-http-error-descriptions.php:69
 msgid "Internal Server Error"
 msgstr "Interner Serverfehler"
+
+#: includes/class-http-error-descriptions.php:61
+msgid "Too Many Requests"
+msgstr "Zu viele Anfragen"
 
 #: includes/migrator-lite.php:429
 msgid "Search and replace site location in the database (migrate)"
@@ -394,17 +438,41 @@ msgstr "Die Sicherungs-Archivdateien wurden verarbeitet, allerdings mit einigen 
 msgid "Replace with"
 msgstr "Ersetzen durch"
 
+#: includes/class-http-error-descriptions.php:60
+msgid "Precondition Required"
+msgstr "Voraussetzung erforderlich"
+
+#: includes/class-http-error-descriptions.php:59
+msgid "Upgrade Required"
+msgstr "Upgrade erforderlich"
+
 #: includes/class-http-error-descriptions.php:58
 msgid "Too Early"
 msgstr "Zu früh"
+
+#: includes/class-http-error-descriptions.php:57
+msgid "Failed Dependency"
+msgstr "Fehlgeschlagene Abhängigkeit"
 
 #: includes/class-http-error-descriptions.php:56
 msgid "Locked"
 msgstr "Gesperrt"
 
+#: includes/class-http-error-descriptions.php:54
+msgid "Misdirected Request"
+msgstr "Fehlgeleitete Anfrage"
+
 #: includes/class-http-error-descriptions.php:50
 msgid "URI Too Long"
 msgstr "URI zu lang"
+
+#: includes/class-http-error-descriptions.php:49
+msgid "Payload Too Large"
+msgstr "Nutzlast zu groß"
+
+#: includes/class-http-error-descriptions.php:47
+msgid "Length Required"
+msgstr "Länge erforderlich"
 
 #: includes/class-http-error-descriptions.php:46
 msgid "Gone"
@@ -414,6 +482,14 @@ msgstr "Verschwunden"
 msgid "Conflict"
 msgstr "Konflikt"
 
+#: includes/class-http-error-descriptions.php:42
+msgid "Not Acceptable"
+msgstr "Inakzeptabel"
+
+#: includes/class-http-error-descriptions.php:41
+msgid "Method Not Allowed"
+msgstr "Methode nicht erlaubt"
+
 #: includes/class-http-error-descriptions.php:40
 msgid "Not Found."
 msgstr "Nicht gefunden."
@@ -422,6 +498,30 @@ msgstr "Nicht gefunden."
 msgid "Forbidden."
 msgstr "Verboten."
 
+#: includes/class-http-error-descriptions.php:38
+msgid "Unauthorized."
+msgstr "Unautorisiert."
+
+#: includes/class-http-error-descriptions.php:30
+msgid "Temporary Redirect."
+msgstr "Temporäre Weiterleitung"
+
+#: includes/class-http-error-descriptions.php:31
+msgid "Permanent Redirect."
+msgstr "Permanente Weiterleitung"
+
+#: includes/class-http-error-descriptions.php:28
+msgid "Not Modified."
+msgstr "Nicht modifiziert"
+
+#: includes/class-http-error-descriptions.php:25
+msgid "Moved Permanently."
+msgstr "Dauerhaft verschoben"
+
+#: includes/class-http-error-descriptions.php:24
+msgid "Multiple Choices."
+msgstr "Mehrere Auswahlmöglichkeiten."
+
 #: includes/class-commands.php:1199
 msgid "No backup will be started."
 msgstr "Es wird keine Sicherung gestartet."
@@ -429,6 +529,10 @@ msgstr "Es wird keine Sicherung gestartet."
 #: includes/class-http-error-descriptions.php:37
 msgid "Bad Request."
 msgstr "Falsche Anfrage."
+
+#: includes/class-http-error-descriptions.php:55
+msgid "Unprocessable Entity"
+msgstr "Unverarbeitbare Entität"
 
 #: class-updraftplus.php:5096
 msgid "The database file is encrypted."
@@ -489,6 +593,10 @@ msgstr "Dieser Sicherung-Satz stammt von einer anderen Seite (%s) – es handelt
 msgid "Your backup is of a WordPress multisite install; but this site is not."
 msgstr "Bei deiner Sicherung handelt es sich um eine WordPress-Multisite-Installation, aber diese Website ist keine."
 
+#: admin.php:5687 templates/wp-admin/settings/delete-and-restore-modals.php:112
+msgid "Verifications"
+msgstr "Verifizierungen"
+
 #: admin.php:2534 includes/class-commands.php:1045
 msgid "OK."
 msgstr "OK."
@@ -537,6 +645,10 @@ msgstr "Die Verbindung zu deinem %s-Konto war erfolgreich."
 msgid "Reducing your database size with WP-Optimize helps to maintain a fast, efficient, and user-friendly website."
 msgstr "Die Reduzierung deiner Datenbankgröße mit WP-Optimize trägt dazu bei, eine schnelle, effiziente und benutzerfreundliche Website aufrechtzuerhalten."
 
+#: methods/dropbox.php:611
+msgid "Your Dropbox App Key"
+msgstr "Dein Dropbox-App-Schlüssel"
+
 #: templates/wp-admin/advanced/tools-menu.php:28
 msgid "Database size"
 msgstr "Datenbankgröße"
@@ -565,6 +677,10 @@ msgstr "Leeren"
 msgid "Total Size"
 msgstr "Gesamtgröße"
 
+#: templates/wp-admin/advanced/db-size.php:6
+msgid "Search for table"
+msgstr "Nach Tabelle suchen"
+
 #: templates/wp-admin/advanced/db-size.php:34
 msgid "Index size"
 msgstr "Index-Größe"
@@ -577,6 +693,10 @@ msgstr "Einträge"
 #: includes/class-manipulation-functions.php:505
 msgid "[deleted]"
 msgstr "[gelöscht]"
+
+#: admin.php:3924
+msgid "Delete old folders"
+msgstr "Alte Ordner löschen"
 
 #: methods/dropbox.php:606
 msgid "(You are already authenticated)."
@@ -603,6 +723,10 @@ msgstr "Deine Website läuft auf der PHP-Version %s und verfügt über derzeit a
 #: admin.php:975 admin.php:976
 msgid "This file is not an UpdraftPlus backup archive (such files are .zip or .gz files which have a name like: backup_(time)_(site name)_(code)_(type).(zip|gz))."
 msgstr "Bei dieser Datei handelt es sich nicht um ein UpdraftPlus-Sicherungsarchiv (solche Dateien sind .zip- oder .gz-Dateien mit einem Namen wie: backup_(Zeit)_(Websitename)_(Code)_(Typ).(zip|gz))."
+
+#: class-updraftplus.php:5563
+msgid "Deselect All"
+msgstr "Alle abwählen"
 
 #: methods/openstack2.php:269
 msgid "Authentication URI"

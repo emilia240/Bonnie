@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Query Monitor &#8211; The developer tools panel for WordPress - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-04-22 15:16:58+0000\n"
+"PO-Revision-Date: 2025-10-13 12:31:32+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,6 +10,32 @@ msgstr ""
 "X-Generator: GlotPress/4.0.1\n"
 "Language: en_GB\n"
 "Project-Id-Version: Plugins - Query Monitor &#8211; The developer tools panel for WordPress - Stable (latest release)\n"
+
+#. translators: 1: PHP class name, 2: Version number.
+#: classes/Deprecated_Class_Run.php:35
+msgid "Class %1$s is deprecated since version %2$s with no alternative available."
+msgstr "Class %1$s is deprecated since version %2$s with no alternative available."
+
+#. translators: 1: PHP class name, 2: Version number, 3: Alternative class or
+#. function name.
+#: classes/Deprecated_Class_Run.php:26
+msgid "Class %1$s is deprecated since version %2$s! Use %3$s instead."
+msgstr "Class %1$s is deprecated since version %2$s! Use %3$s instead."
+
+#. translators: An HTTP API request redirected to another URL
+#: output/html/http.php:205
+msgid "This HTTP request was redirected to:"
+msgstr "This HTTP request was redirected to:"
+
+#. translators: %s: The name of a filter that short-circuited an HTTP API
+#. request
+#: output/html/http.php:194
+msgid "This HTTP request was short-circuited by the %s filter and was not sent"
+msgstr "This HTTP request was short-circuited by the %s filter and was not sent"
+
+#: output/html/environment.php:281
+msgid "Basic Auth"
+msgstr "Basic Auth"
 
 #: output/html/assets.php:53
 msgid "Module"

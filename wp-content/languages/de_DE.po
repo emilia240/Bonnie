@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 6.8.x - Development package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-10-08 01:54:44+0000\n"
+"PO-Revision-Date: 2025-10-14 01:02:48+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -669,7 +669,7 @@ msgstr[1] "%d Ergebnisse gefunden"
 #. of posts
 #: wp-includes/blocks/query-total.php:54
 msgid "Displaying %1$s – %2$s of %3$s"
-msgstr "%1$s - %2$s von %3$s werden angezeigt"
+msgstr "%1$s–%2$s von %3$s werden angezeigt"
 
 #. translators: 1: Start index of posts, 2: Total number of posts
 #: wp-includes/blocks/query-total.php:47
@@ -4534,7 +4534,7 @@ msgstr "Medien"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:1486
 msgid "The date the comment was published, as GMT."
-msgstr "Das Datum in GMT, an dem der Kommentar veröffentlicht wurde."
+msgstr "Das Datum in UTC, an dem der Kommentar veröffentlicht wurde."
 
 #: wp-includes/blocks/button/block.json wp-includes/blocks/buttons/block.json
 msgctxt "block keyword"
@@ -4547,7 +4547,7 @@ msgstr "Alphanumerische Kennung für den Beitrag, die für seinen Typ eindeutig 
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2404
 msgid "The date the post was last modified, as GMT."
-msgstr "Das Datum in GMT, an dem der Beitrag zuletzt geändert wurde."
+msgstr "Das Datum in UTC, an dem der Beitrag zuletzt geändert wurde."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2397
 msgid "The date the post was last modified, in the site's timezone."
@@ -6503,11 +6503,11 @@ msgstr "Die IP-Adresse, von der das Anwendungspasswort zuletzt benutzt wurde."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-application-passwords-controller.php:830
 msgid "The GMT date the application password was last used."
-msgstr "Das Datum in GMT, an dem das Anwendungspasswort zuletzt benutzt wurde."
+msgstr "Das Datum in UTC, an dem das Anwendungspasswort zuletzt benutzt wurde."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-application-passwords-controller.php:823
 msgid "The GMT date the application password was created."
-msgstr "Das Datum in GMT, an dem das Anwendungspasswort erstellt wurde."
+msgstr "Das Datum in UTC, an dem das Anwendungspasswort erstellt wurde."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-application-passwords-controller.php:817
 msgid "The generated password. Only available after adding an application."
@@ -6855,7 +6855,7 @@ msgstr "B"
 #: wp-includes/functions.php:485
 msgctxt "unit symbol"
 msgid "KB"
-msgstr "kB"
+msgstr "KB"
 
 #. translators: Unit symbol for megabyte.
 #: wp-includes/functions.php:483
@@ -8700,7 +8700,7 @@ msgstr "Die Website konnte nicht in die Datenbank eingefügt werden."
 
 #: wp-includes/ms-functions.php:2178
 msgid "Unable to submit this form, please try again."
-msgstr "Das Formular kann nicht abgeschickt werden, bitte versuche es nochmal."
+msgstr "Das Formular konnte nicht abgeschickt werden. Bitte versuche es erneut."
 
 #: wp-includes/taxonomy.php:177
 msgctxt "post format"
@@ -10237,7 +10237,7 @@ msgstr "Benutzer kann nicht zu dieser Website hinzugefügt werden."
 
 #: wp-includes/load.php:1865
 msgid "Scrape key check failed. Please try again."
-msgstr "Die Scrape-Nonce-Prüfung ist fehlgeschlagen. Bitte versuche es nochmal."
+msgstr "Die Scrape-Nonce-Prüfung ist fehlgeschlagen. Bitte versuche es erneut."
 
 #. translators: Do not translate OLD_EMAIL, NEW_EMAIL, SITENAME, SITEURL: those
 #. are placeholders.
@@ -10546,7 +10546,7 @@ msgstr "Noch keine Änderungen gespeichert, es kann nichts in den Papierkorb gel
 
 #: wp-includes/class-wp-customize-manager.php:3151
 msgid "There was an authentication problem. Please reload and try again."
-msgstr "Es gab ein Authentifizierungsproblem. Bitte neu laden und nochmal probieren."
+msgstr "Es ist ein Authentifizierungsproblem aufgetreten. Bitte lade die Seite neu und versuche es erneut."
 
 #. translators: %s: Number of invalid settings.
 #: wp-includes/class-wp-customize-manager.php:2803
@@ -10564,7 +10564,7 @@ msgstr "Du musst ein in der Zukunft liegendes Datum zur Planung angeben."
 
 #: wp-includes/class-wp-customize-manager.php:2661
 msgid "The previous set of changes has already been published. Please try saving your current set of changes again."
-msgstr "Das vorherige Änderungs-Set wurde bereits veröffentlicht. Bitte versuche, dein aktuelles Änderungs-Set nochmal zu speichern."
+msgstr "Der vorherige Änderungssatz wurde bereits veröffentlicht. Bitte versuche, deinen aktuellen Änderungssatz erneut zu speichern."
 
 #: wp-includes/admin-bar.php:932
 msgid "Edit User"
@@ -12076,7 +12076,7 @@ msgstr "Eine alphanumerische Kennung für die Revision, die für ihren Typ einde
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:764
 msgid "The date the revision was last modified, as GMT."
-msgstr "Das Datum in GMT, an dem die Revision zuletzt geändert wurde."
+msgstr "Das Datum in UTC, an dem die Revision zuletzt geändert wurde."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:758
 msgid "The date the revision was last modified, in the site's timezone."
@@ -12096,7 +12096,7 @@ msgstr "Die global eindeutige Kennung für den Beitrag."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:742
 msgid "The date the revision was published, as GMT."
-msgstr "Das Datum in GMT, an dem die Revision veröffentlicht wurde."
+msgstr "Das Datum in UTC, an dem die Revision veröffentlicht wurde."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:736
 msgid "The date the revision was published, in the site's timezone."
@@ -12340,7 +12340,7 @@ msgstr "URL zum Objekt."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2358
 msgid "The date the post was published, as GMT."
-msgstr "Das Datum in GMT, an dem der Beitrag veröffentlicht wurde."
+msgstr "Das Datum in UTC, an dem der Beitrag veröffentlicht wurde."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2571
 msgid "HTML content for the post, transformed for display."
@@ -16126,7 +16126,7 @@ msgstr "Rechtsbündig"
 #: wp-admin/includes/ajax-actions.php:2383 wp-admin/js/media.js:127
 #: wp-admin/js/media.js:132 wp-admin/js/updates.js:2345
 msgid "An error has occurred. Please reload the page and try again."
-msgstr "Ein Fehler ist aufgetreten. Bitte lade die Seite neu und versuche es nochmal."
+msgstr "Ein Fehler ist aufgetreten. Bitte lade die Seite neu und versuche es erneut."
 
 #: wp-includes/class-wp-customize-widgets.php:729
 msgid "Select an area to move this widget into:"
@@ -18166,7 +18166,7 @@ msgstr "Bitte warte noch ein bisschen. Manchmal kann sich die Zustellung von E-M
 
 #: wp-signup.php:300
 msgid "Your registration email is sent to this address. (Double-check your email address before continuing.)"
-msgstr "Wir verschicken deine Registrierungs-E-Mail an diese Adresse. (Überprüfe also nochmal deine E-Mail-Adresse, bevor du fortfährst.)"
+msgstr "Deine Registrierungs-E-Mail wird an diese Adresse gesendet. (Bitte überprüfe deine E-Mail-Adresse noch einmal, bevor du fortfährst.)"
 
 #: wp-includes/class-wp-post-type.php:1001
 msgid "Parent Page:"
@@ -18423,9 +18423,7 @@ msgstr "Seite %s"
 
 #: wp-includes/load.php:414
 msgid "Briefly unavailable for scheduled maintenance. Check back in a minute."
-msgstr ""
-"Wegen Wartungsarbeiten ist diese Website kurzzeitig nicht verfügbar. \n"
-"Schau in einer Minute nochmal vorbei."
+msgstr "Diese Website ist aufgrund planmäßiger Wartungsarbeiten vorübergehend nicht verfügbar. Bitte versuche es in wenigen Minuten erneut."
 
 #: wp-includes/load.php:415
 msgid "Maintenance"
@@ -18826,7 +18824,7 @@ msgstr "Erhalte dein eigenes %s-Konto in wenigen Sekunden"
 
 #: wp-signup.php:375
 msgid "There was a problem, please correct the form below and try again."
-msgstr "Es trat ein Fehler auf. Bitte korrigiere die Eingaben und versuche es nochmal."
+msgstr "Es ist ein Fehler aufgetreten. Bitte korrigiere das untenstehende Formular und versuche es erneut."
 
 #: wp-signup.php:291
 msgid "Email&nbsp;Address:"
@@ -19016,7 +19014,7 @@ msgstr "Die Konfiguration ist fehlerhaft. Bitte wende dich an deinen Serveradmin
 
 #: wp-includes/script-loader.php:1012
 msgid "An error occurred in the upload. Please try again later."
-msgstr "Bei dem Upload ist ein Fehler aufgetreten. Bitte versuche es später nochmal."
+msgstr "Bei dem Upload ist ein Fehler aufgetreten. Bitte versuche es später erneut."
 
 #: wp-includes/script-loader.php:1007
 msgid "This file is empty. Please try another."
@@ -19955,7 +19953,7 @@ msgstr "&laquo; Zurück"
 
 #: wp-includes/functions.php:3705
 msgid "Please try again."
-msgstr "Bitte versuche es nochmal."
+msgstr "Bitte versuche es erneut."
 
 #. translators: %s: Logout URL.
 #: wp-includes/functions.php:3691
