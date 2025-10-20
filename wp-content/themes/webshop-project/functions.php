@@ -157,3 +157,66 @@ add_filter('comment_form_fields', function($fields) {
     return $fields;
 });
 
+
+// review form submission
+add_action('admin_post_submit_review', 'handle_review_submission');
+add_action('admin_post_nopriv_submit_review', 'handle_review_submission_guest');
+
+function handle_review_submission() {
+    // Check if user is logged in
+    if (!is_user_logged_in()) {
+        wp_die(__('You must be logged in to submit a review.'), __('Access Denied'), array('response' => 403));
+    }
+
+    // Verify nonce for security
+    if (!wp_verify_nonce($_POST['review_nonce'], 'submit_review')) {
+        wp_die(__('Security check failed.'), __('Security Error'), array('response' => 403));
+    }
+
+    // Sanitize input data
+    $reviewer_name = sanitize_text_field($_POST['reviewer_name']);
+    $review_text = sanitize_textarea_field($_POST['review_text']);
+    $stars = intval($_POST['stars']);
+
+    // Validate required fields
+    if (empty($reviewer_name) || empty($review_text) || $stars < 1 || $stars > 5) {
+        wp_die(__('Please fill in all required fields correctly.'), __('Validation Error'), array('response' => 400));
+    }
+
+    // Create the review post
+    $post_data = array(
+        'post_title' => 'Review by ' . $reviewer_name,
+        'post_type' => 'review',
+        'post_status' => 'pending', // Needs admin approval
+        'post_author' => get_current_user_id()
+    );
+
+    $post_id = wp_insert_post($post_data);
+
+    if ($post_id) {
+        // Save custom fields
+        update_field('reviewer_name', $reviewer_name, $post_id);
+        update_field('review_text', $review_text, $post_id);
+        update_field('stars', $stars, $post_id);
+
+        // Handle image upload
+        if (!empty($_FILES['reviewer_image']['name'])) {
+            $uploaded = media_handle_upload('reviewer_image', $post_id);
+            if (!is_wp_error($uploaded)) {
+                update_field('reviewer_image', $uploaded, $post_id);
+            }
+        }
+
+        // Redirect with success message
+        wp_redirect(add_query_arg('review_submitted', '1', wp_get_referer()));
+        exit;
+    } else {
+        wp_die(__('Failed to submit review. Please try again.'), __('Submission Error'), array('response' => 500));
+    }
+}
+
+// Handle guest user attempts
+function handle_review_submission_guest() {
+    wp_die(__('You must be logged in to submit a review.'), __('Access Denied'), array('response' => 403));
+}
+
