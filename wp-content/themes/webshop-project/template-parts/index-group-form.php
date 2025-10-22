@@ -29,6 +29,7 @@
 
     <form action="<?php echo esc_url(admin_url('admin-post.php')); ?>" method="POST" 
           class="w-full max-w-full sm:max-w-md md:max-w-2xl lg:max-w-5xl rounded-lg bg-gray-100 p-4 sm:p-6 md:p-8 shadow-sm text-gray-900">
+          <?php wp_nonce_field('save_survey_response', 'survey_nonce'); ?>
       <input type="hidden" name="action" value="save_survey_response" style="font-family: var(--font-body);" />
 
     <!-- Interest Options -->
