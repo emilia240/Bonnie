@@ -3,7 +3,7 @@
 <footer class="bg-[#1C3361] text-[#F4F4F4] !py-12 !px-10" style="font-family: 'Skolar Sans', sans-serif;" role="contentinfo">
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10 text-left">
 
-        <nav class="footer-column" role="navigation" aria-label="Footer navigation">
+        <nav class="footer-column" role="navigation" aria-label="<?php echo esc_attr(pll__('Footer navigation')); ?>">
             <ul class="flex flex-col gap-2">
                 <li><a href="<?php echo home_url(); ?>" class="lg:hover:text-[#78BDE8] transition-colors"><?php echo esc_html(pll_e('Frontpage')); ?></a></li>
                 <li><a href="<?php echo home_url('/blog'); ?>" class="lg:hover:text-[#78BDE8] transition-colors"><?php echo esc_html(pll_e('Blog')); ?></a></li>
@@ -15,7 +15,7 @@
         </nav>
 
         <div>
-            <div class="!mb-6" role="contentinfo" aria-label="Store address">
+            <div class="!mb-6" role="contentinfo" aria-label="<?php echo esc_attr(pll__('Store address')); ?>">
                 <p class="text-responsive-md !mb-2" style="font-family: 'Aquavit', sans-serif;"><?php echo esc_html(pll_e('Address')); ?></h4>
                 <p>
                     <?php
@@ -27,7 +27,7 @@
                 </p>
             
             </div>
-            <div class="!mb-6" role="contentinfo" aria-label="Store opening hours">
+            <div class="!mb-6" role="contentinfo" aria-label="<?php echo esc_attr(pll__('Store opening hours')); ?>">
                 <p class="text-responsive-md !mb-2" style="font-family: 'Aquavit', sans-serif;"><?php echo esc_html(pll_e('Opening Hours')); ?></p>
                 <p>
                     <?php
@@ -43,35 +43,35 @@
     
 
     <!-- Social Media Section -->
-    <div role="navigation" aria-label="Social media links">
+    <div role="navigation" aria-label="<?php echo esc_attr(pll__('Social media links')); ?>">
     <p class="text-responsive-md !mb-2" style="font-family: 'Aquavit', sans-serif;"><?php echo esc_html(pll_e('Social Media')); ?></p>
 
     <div class="flex flex-col gap-2">
         <?php if (function_exists('pll_current_language')) {
             $lang = pll_current_language();
             if ($lang == 'en') { ?>
-                <a href="<?php the_field('facebook_url', 'option'); ?>" target="_blank" aria-label="Facebook" class="flex items-center gap-3 group">
+                <a href="<?php the_field('facebook_url', 'option'); ?>" target="_blank" aria-label="<?php echo esc_attr(pll__('Facebook')); ?>" class="flex items-center gap-3 group">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/facebook.svg" alt="Facebook" class="w-8 h-8 transition duration-200 filter invert lg:group-hover:text-[#78BDE8]">
                     <span class="text-white transition-colors duration-200 lg:group-hover:text-[#78BDE8]">Facebook</span>
                 </a>
-                <a href="<?php the_field('instagram_url', 'option'); ?>" target="_blank" aria-label="Instagram" class="flex items-center gap-3 group">
+                <a href="<?php the_field('instagram_url', 'option'); ?>" target="_blank" aria-label="<?php echo esc_attr(pll__('Instagram')); ?>" class="flex items-center gap-3 group">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/instagram.svg" alt="Instagram" class="w-8 h-8 transition duration-200 filter invert lg:group-hover:text-[#78BDE8]">
                     <span class="text-white transition-colors duration-200 lg:group-hover:text-[#78BDE8]">Instagram</span>
                 </a>
-                <a href="<?php the_field('tiktok_url', 'option'); ?>" target="_blank" aria-label="TikTok" class="flex items-center gap-3 group">
+                <a href="<?php the_field('tiktok_url', 'option'); ?>" target="_blank" aria-label="<?php echo esc_attr(pll__('TikTok')); ?>" class="flex items-center gap-3 group">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/tiktok.svg" alt="TikTok" class="w-8 h-8 transition duration-200 filter invert lg:group-hover:text-[#78BDE8]">
                     <span class="text-white transition-colors duration-200 lg:group-hover:text-[#78BDE8]">TikTok</span>
                 </a>
             <?php } else { ?>
-                <a href="<?php the_field('facebook_url', 'option'); ?>" target="_blank" aria-label="Facebook" class="flex items-center gap-3 group">
+                <a href="<?php the_field('facebook_url', 'option'); ?>" target="_blank" aria-label="<?php echo esc_attr(pll__('Facebook')); ?>" class="flex items-center gap-3 group">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/facebook.svg" alt="Facebook" class="w-8 h-8 transition duration-200 filter invert lg:group-hover:text-[#78BDE8]">
                     <span class="text-white transition-colors duration-200 lg:group-hover:text-[#78BDE8]">Facebook</span>
                 </a>
-                <a href="<?php the_field('instagram_url', 'option'); ?>" target="_blank" aria-label="Instagram" class="flex items-center gap-3 group">
+                <a href="<?php the_field('instagram_url', 'option'); ?>" target="_blank" aria-label="<?php echo esc_attr(pll__('Instagram')); ?>" class="flex items-center gap-3 group">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/instagram.svg" alt="Instagram" class="w-8 h-8 transition duration-200 filter invert lg:group-hover:text-[#78BDE8]">
                     <span class="text-white transition-colors duration-200 lg:group-hover:text-[#78BDE8]">Instagram</span>
                 </a>
-                <a href="<?php the_field('whatsapp_url', 'option'); ?>" target="_blank" aria-label="WhatsApp" class="flex items-center gap-3 group">
+                <a href="<?php the_field('whatsapp_url', 'option'); ?>" target="_blank" aria-label="<?php echo esc_attr(pll__('WhatsApp')); ?>" class="flex items-center gap-3 group">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/whatsapp.svg" alt="WhatsApp" class="w-8 h-8 transition duration-200 filter lg:group-hover:text-[#78BDE8]">
                     <span class="text-white transition-colors duration-200 lg:group-hover:text-[#78BDE8]">WhatsApp</span>
                 </a>
@@ -124,7 +124,7 @@
     <div id="back-to-top"
         style="display:none; position:fixed; bottom:40px; right:40px; z-index:999;">
         <button onclick="window.scrollTo({top:0,behavior:'smooth'});"
-            aria-label="Back to top"
+            aria-label="<?php echo esc_attr(pll__('Back to top')); ?>"
             aria-hidden="true"
             style="background:#74B24B; border:none; border-radius:50%; width:56px; height:56px; display:flex; align-items:center; justify-content:center; box-shadow:0 2px 8px rgba(0,0,0,0.15); cursor:pointer;">
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">

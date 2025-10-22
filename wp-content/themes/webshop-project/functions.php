@@ -39,7 +39,7 @@ function wb_register_strings() {
     pll_register_string('contact us', 'Contact us', 'Header');
     pll_register_string('login', 'Login', 'Header');
     pll_register_string('basket', 'Basket', 'Header');
-    pll_register_string('search', 'Search', 'Header');
+    pll_register_string('search_header', 'Search', 'Header');
     pll_register_string('pets', 'Pets', 'Header');
     pll_register_string('food_supplies', 'Food & supplies', 'Header');
     pll_register_string('terrariums', 'Terrariums', 'Header');
@@ -79,6 +79,15 @@ function wb_register_strings() {
     pll_register_string('skip_to_main', 'Skip to main content', 'Accessibility');
     pll_register_string('toggle_mobile_menu', 'Toggle mobile menu', 'Accessibility');
     pll_register_string('search_button', 'Search', 'Accessibility');
+    pll_register_string('close_menu', 'Close menu', 'Accessibility');
+    pll_register_string('site_search', 'Site search', 'Accessibility');
+    pll_register_string('top_navigation', 'Top navigation', 'Accessibility');
+    pll_register_string('language_picker', 'Language picker', 'Accessibility');
+    pll_register_string('user_account_basket', 'User account and shopping basket', 'Accessibility');
+    pll_register_string('mobile_menu', 'Mobile menu', 'Accessibility');
+    pll_register_string('main_navigation', 'Main navigation', 'Accessibility');
+    pll_register_string('menu', 'Menu', 'Accessibility');
+
     pll_register_string('no_results', 'No results found.', 'Search');
     pll_register_string('search_results_for', 'Search results for : ', 'Search');
     pll_register_string('no_tag_posts', 'No posts found with this tag', 'Tags');

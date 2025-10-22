@@ -1,4 +1,4 @@
-<section class="w-full h-[500px] !py-12 relative overflow-hidden flex items-center" role="banner" aria-label="Hero section">
+<section class="w-full h-[500px] !py-12 relative overflow-hidden flex items-center" role="banner" aria-label="<?php echo esc_attr(pll__('Hero section')); ?>">
     <?php
         $heading     = get_field('hero_heading');
         $subheading  = get_field('hero_subheading');
