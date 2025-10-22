@@ -87,7 +87,15 @@ function wb_register_strings() {
     pll_register_string('mobile_menu', 'Mobile menu', 'Accessibility');
     pll_register_string('main_navigation', 'Main navigation', 'Accessibility');
     pll_register_string('menu', 'Menu', 'Accessibility');
-
+    pll_register_string('footer_navigation', 'Footer navigation', 'Accessibility');
+    pll_register_string('store_address', 'Store address', 'Accessibility');
+    pll_register_string('store_opening_hours', 'Store opening hours', 'Accessibility');
+    pll_register_string('social_media_links', 'Social media links', 'Accessibility');
+    pll_register_string('back_to_top', 'Back to top', 'Accessibility');
+    pll_register_string('facebook', 'Facebook', 'Accessibility');
+    pll_register_string('instagram', 'Instagram', 'Accessibility');
+    pll_register_string('tiktok', 'TikTok', 'Accessibility');
+    pll_register_string('whatsapp', 'WhatsApp', 'Accessibility');
     pll_register_string('no_results', 'No results found.', 'Search');
     pll_register_string('search_results_for', 'Search results for : ', 'Search');
     pll_register_string('no_tag_posts', 'No posts found with this tag', 'Tags');
