@@ -102,6 +102,16 @@ function wb_register_strings() {
     pll_register_string('tag', 'Tag:', 'Tags');
     pll_register_string('no_category_posts', 'No posts found in this category', 'Categories');
     pll_register_string('category', 'Category:', 'Categories');
+    pll_register_string('submit_review', 'Submit Your Review', 'Forms');
+    pll_register_string('must_login', 'You must be logged in to submit a review.', 'Forms');
+    pll_register_string('register_here', 'Register here', 'Forms');
+    pll_register_string('login', 'Login', 'Forms');
+    pll_register_string('your_name', 'Your Name', 'Forms');
+    pll_register_string('your_photo', 'Your Photo', 'Forms');
+    pll_register_string('optional', '(Optional)', 'Forms');
+    pll_register_string('rating', 'Rating', 'Forms');
+    pll_register_string('your_review', 'Your Review', 'Forms');
+    pll_register_string('submit_review_btn', 'Submit Review', 'Forms');
    
 }
 
@@ -111,10 +121,17 @@ add_action('init', 'wb_register_strings');
 //survey form submission for Facebook
 
 function wb_save_survey_response_handler() {
+
+    //Verify nonce for security
+    if (!wp_verify_nonce($_POST['survey_nonce'], 'save_survey_response')) {
+        wp_die(__('Security check failed.'), __('Security Error'), array('response' => 403));
+    }
+
+
 	//fetch the input fields
-	$fb_group_interest = $_REQUEST["fb_group_interest"];
-	$fb_usage = $_REQUEST["fb_usage"]; 
-	$fb_expectations = $_REQUEST["fb_expectations"];
+	$fb_group_interest = sanitize_text_filed($_REQUEST["fb_group_interest"]);
+	$fb_usage = sanitize_text_filed($_REQUEST["fb_usage"]); 
+	$fb_expectations = sanitize_textarea_filed($_REQUEST["fb_expectations"]);
 
     // Creating a unique title with date and time
     $title = "Survey Response - " . date('Y-m-d H:i:s');
@@ -242,3 +259,7 @@ function handle_review_submission_guest() {
     wp_die(__('You must be logged in to submit a review.'), __('Access Denied'), array('response' => 403));
 }
 
+function enable_woo_commerce_support() {
+    add_theme_support( 'woocommerce' );
+}
+add_action( 'after_setup_theme', 'enable_woo_commerce_support' );
