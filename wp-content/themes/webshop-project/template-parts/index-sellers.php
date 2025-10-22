@@ -42,7 +42,7 @@
   <div class="grid gap-10 w-full grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 sm:px-10 ">
         <?php
         $args = array(
-            'post_type' => 'post', // TO BE CHANGED to webshop post type(I guess) later
+            'post_type' => 'product', // TO BE CHANGED to webshop post type(I guess) later
             'posts_per_page' => 4,
             'orderby' => 'date',
             'order' => 'DESC',

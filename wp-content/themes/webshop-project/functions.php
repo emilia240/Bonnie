@@ -242,3 +242,7 @@ function handle_review_submission_guest() {
     wp_die(__('You must be logged in to submit a review.'), __('Access Denied'), array('response' => 403));
 }
 
+function enable_woo_commerce_support() {
+    add_theme_support( 'woocommerce' );
+}
+add_action( 'after_setup_theme', 'enable_woo_commerce_support' );
