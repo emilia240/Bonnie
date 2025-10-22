@@ -3,7 +3,7 @@
 
 <section class="max-w-3xl mx-auto !py-12 !px-4">
   <h1 class="text-responsive-lg !mb-8 text-[#1D1D1D]" style="font-family: 'Bodoni MT', serif;">
-  <?php echo esc_html(pll_e('Search results for:')); ?><span class="text-[#74B24B]" style="font-family: 'Skolar Sans', sans-serif; font-weight: 600;"><?php echo esc_html(get_search_query()); ?></span>
+  <?php echo esc_html(pll_e('Search results for : ')); ?><span class="text-[#74B24B]" style="font-family: 'Skolar Sans', sans-serif; font-weight: 600;"><?php echo esc_html(get_search_query()); ?></span>
   </h1>
 
   <?php if (have_posts()) : ?>
@@ -18,7 +18,7 @@
       <?php endwhile; ?>
     </ul>
   <?php else : ?>
-    <p class="text-responsive-sm text-[#1D1D1D] bg-[#F4F4F4] rounded-lg shadow !p-6"><?php echo esc_html(pll_e('No results found.')); ?></p>
+    <p class="text-responsive-sm text-[#1D1D1D] bg-[#F4F4F4] rounded-lg shadow !p-6"><?php echo esc_html(pll_e('No results found.'));?></p>
   <?php endif; ?>
 
       <!-- Custom Pagination-->
