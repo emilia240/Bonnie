@@ -113,7 +113,7 @@
 
       <!-- Mobile bottom navigation -->
       <nav class="flex flex-col items-center bg-[#efefef]" aria-label="<?php echo esc_attr(pll__('Main navigation')); ?>" >
-        <a href="<?php echo esc_url(home_url('/pets')); ?>" class="<?php if (is_page('pets')) echo 'text-[#78BDE8]'; else echo 'text-[#1D1D1D]'; ?> py-2 text-responsive-base" style="font-family: 'Bodoni MT', serif;"><?php echo esc_html(pll__('Pets')); ?></a>
+        <a href="<?php echo esc_url(home_url('/shop')); ?>" class="<?php if (is_page('shop')) echo 'text-[#78BDE8]'; else echo 'text-[#1D1D1D]'; ?> py-2 text-responsive-base" style="font-family: 'Bodoni MT', serif;"><?php echo esc_html(pll__('Pets')); ?></a>
         <a href="<?php echo esc_url(home_url('/food-supplies')); ?>" class="<?php if (is_page('food-supplies')) echo 'text-[#78BDE8]'; else echo 'text-[#1D1D1D]'; ?> py-2 text-responsive-base" style="font-family: 'Bodoni MT', serif;"><?php echo esc_html(pll__('Food & supplies')); ?></a>
         <a href="<?php echo esc_url(home_url('/terrariums')); ?>" class="<?php if (is_page('terrariums')) echo 'text-[#78BDE8]'; else echo 'text-[#1D1D1D]'; ?> py-2 text-responsive-base" style="font-family: 'Bodoni MT', serif;"><?php echo esc_html(pll__('Terrariums')); ?></a>
         <a href="<?php echo esc_url(home_url('/offers')); ?>" class="<?php if (is_page('offers')) echo 'text-[#78BDE8]'; else echo 'text-[#1D1D1D]'; ?> py-2 text-responsive-base" style="font-family: 'Bodoni MT', serif;"><?php echo esc_html(pll__('Offers')); ?></a>
@@ -126,7 +126,7 @@
   <!-- Bottom navigation (desktop view) -->
   <div class="hidden lg:block bg-[#efefef] !py-3 text-responsive-base" style="font-family: 'Bodoni MT', serif;" role="navigation" aria-label="<?php echo esc_attr(pll__('Main navigation')); ?>">
     <nav class="flex justify-evenly min-w-max lg:min-w-0">
-      <a href="<?php echo esc_url(home_url('/pets')); ?>" class="<?php if (is_page('pets')) echo 'active'; ?> text-[#1D1D1D] no-underline !px-4 !py-2 transition-transform lg:hover:scale-105 border-b-4 border-transparent [&.active]:border-[#1C3361] [&.active]:!mb-[-6px] whitespace-nowrap"><?php echo esc_html(pll__('Pets')); ?></a>
+      <a href="<?php echo esc_url(home_url('/shop')); ?>" class="<?php if (is_page('shop')) echo 'active'; ?> text-[#1D1D1D] no-underline !px-4 !py-2 transition-transform lg:hover:scale-105 border-b-4 border-transparent [&.active]:border-[#1C3361] [&.active]:!mb-[-6px] whitespace-nowrap"><?php echo esc_html(pll__('Pets')); ?></a>
       <a href="<?php echo esc_url(home_url('/food-supplies')); ?>" class="<?php if (is_page('food-supplies')) echo 'active'; ?> text-[#1D1D1D] no-underline !px-4 !py-2 transition-transform lg:hover:scale-105 border-b-4 border-transparent [&.active]:border-[#1C3361] [&.active]:!mb-[-6px] whitespace-nowrap"><?php echo esc_html(pll__('Food & supplies')); ?></a>
       <a href="<?php echo esc_url(home_url('/terrariums')); ?>" class="<?php if (is_page('terrariums')) echo 'active'; ?> text-[#1D1D1D] no-underline !px-4 !py-2 transition-transform lg:hover:scale-105 border-b-4 border-transparent [&.active]:border-[#1C3361] [&.active]:!mb-[-6px] whitespace-nowrap"><?php echo esc_html(pll__('Terrariums')); ?></a>
       <a href="<?php echo esc_url(home_url('/offers')); ?>" class="<?php if (is_page('offers')) echo 'active'; ?> text-[#1D1D1D] no-underline !px-4 !py-2 transition-transform lg:hover:scale-105 border-b-4 border-transparent [&.active]:border-[#1C3361] [&.active]:!mb-[-6px] whitespace-nowrap"><?php echo esc_html(pll__('Offers')); ?></a>
