@@ -79,7 +79,12 @@ function wb_register_strings() {
     pll_register_string('skip_to_main', 'Skip to main content', 'Accessibility');
     pll_register_string('toggle_mobile_menu', 'Toggle mobile menu', 'Accessibility');
     pll_register_string('search', 'Search', 'Accessibility');
-    
+    pll_register_string('no_result', 'No results found', 'Search');
+    pll_register_string('search', 'Search results for', 'Search');
+    pll_register_string('no_tag_posts', 'No posts found with this tag', 'Tags');
+    pll_register_string('tag', 'Tag:', 'Tags');
+    pll_register_string('no_category_posts', 'No posts found in this category', 'Categories');
+    pll_register_string('category', 'Category:', 'Categories');
    
 }
 
