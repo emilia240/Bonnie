@@ -9,7 +9,6 @@
     ?>
 
 
-  <!-- Header with lines on the side -->
   <div class="flex items-center w-full !mb-10">
     <hr class="flex-grow border-t border-[var(--color-dark)]">
     <h2 class="!mx-6 text-responsive-lg" style="font-family: 'Aquavit', san-serif; font-weight: 500;">
@@ -18,7 +17,6 @@
     <hr class="flex-grow border-t border-[var(--color-dark)]">
   </div>
 
-  <!-- Subtitle and button row -->
   <div class="flex lg:flex-row sm:flex-row flex-col gap-2 items-center justify-between !mb-8 sm:px-10">
     <p class="text-responsive-md font-body max-w-2xl" style="font-family: var(--font-body);">
         <?php if ($subtitle): ?>
@@ -38,7 +36,7 @@
     </a>
   </div>
 
-  <!-- Product cards with Tailwind classes only -->
+
 <div class="grid gap-6 w-full grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 sm:px-10">
     <?php
     $args = array(
@@ -80,7 +78,7 @@
                         <?php if ($is_on_sale): ?>
                             <div class="absolute top-4 left-4 z-10">
                                 <span class="bg-white/90 text-red-500 px-3 py-1 rounded-lg text-sm font-bold">
-                                    <?php echo pll__('sale_badge'); ?>
+                                <?php echo esc_html(pll_e('Sale!')); ?>
                                 </span>
                             </div>
                         <?php endif; ?>
@@ -94,16 +92,16 @@
                             <div class="flex flex-col gap-1 mb-4">
                                 <?php if ($is_on_sale && $regular_price): ?>
                                     <span class="text-sm text-gray-300 line-through">
-                                    <?php echo esc_html($regular_price); ?>,00 <?php echo pll__('currency_kr'); ?>
+                                    <?php echo esc_html($regular_price); ?>,00 <?php echo esc_html(pll_e('kr.')); ?>
                                     </span>
                                 <?php endif; ?>
                                 <span class="text-xl font-bold text-white" style="text-shadow: 0 1px 3px rgba(0,0,0,0.3);">
-                                    <?php echo esc_html($sale_price); ?>,00 <?php echo pll__('currency_kr'); ?>
+                                    <?php echo esc_html($sale_price); ?>,00 <?php echo esc_html(pll_e('kr.')); ?>
                                 </span>
                             </div>
                            
                             <button class="w-full bg-white/90 text-blue-800 py-2 px-4 rounded-lg font-medium hover:bg-white transition-colors duration-200">
-                                <?php echo pll__('add_to_cart'); ?>
+                            <?php echo esc_html(pll_e('Add to cart')); ?>
                             </button>
                         </div>
                     </div>
