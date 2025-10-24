@@ -23,7 +23,7 @@
             <?php echo esc_html($subtitle); ?>
         <?php endif; ?>
     </p>
-    <a  href="<?php echo esc_url(get_permalink(get_option('page_for_posts'))); ?>"
+    <a href="<?php echo esc_url( wc_get_page_permalink('shop') ); ?>"
     class="bg-[#1C3361] text-[#F4F4F4] !px-6 !py-2 rounded-full inline-flex items-center !gap-2 no-wrap lg:hover:bg-white lg:hover:text-[#1C3361] 
             lg:hover:border lg:hover:border-[#1C3361] transition-colors duration-200" style="font-family: 'Bodoni MT', serif; font-weight: 500;">
         <?php if ($button_text): ?>
