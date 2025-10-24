@@ -100,7 +100,7 @@
                             </div>
                            
                             <button class="w-full bg-white/90 text-blue-800 py-2 px-4 rounded-lg font-medium hover:bg-white transition-colors duration-200">
-                            <?php echo esc_html(pll_e('Add to cart')); ?>
+                            <?php echo esc_html(pll_e('View Product')); ?>
                             </button>
                         </div>
                     </div>

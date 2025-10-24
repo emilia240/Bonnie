@@ -113,7 +113,7 @@ function wb_register_strings() {
     pll_register_string('your_review', 'Your Review', 'Forms');
     pll_register_string('submit_review_btn', 'Submit Review', 'Forms');
     pll_register_string('sale_badge', 'Sale!', 'Homepage');
-    pll_register_string('add_to_cart', 'Add to card', 'Homepage');
+    pll_register_string('view_product', 'View Product', 'Homepage');
     pll_register_string('no_image', 'No Image', 'Homepage');
     pll_register_string('pets_category', 'Pets', 'Homepage');
     pll_register_string('our_top_sellers', 'Our top sellers', 'Homepage');
