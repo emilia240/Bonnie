@@ -263,3 +263,11 @@ function enable_woo_commerce_support() {
     add_theme_support( 'woocommerce' );
 }
 add_action( 'after_setup_theme', 'enable_woo_commerce_support' );
+
+function yourtheme_woocommerce_setup() {
+    // These lines enable the core WooCommerce gallery features
+    add_theme_support( 'wc-product-gallery-zoom' );
+    add_theme_support( 'wc-product-gallery-lightbox' );
+    add_theme_support( 'wc-product-gallery-slider' );
+}
+add_action( 'after_setup_theme', 'yourtheme_woocommerce_setup' );
