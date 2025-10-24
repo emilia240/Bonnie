@@ -5,7 +5,6 @@
     $subtitle = get_field('sellers_subtitle');
     $button_text = get_field('sellers_button_text');
 
-    $button_url = home_url('/pets'); // Link to the pets page
     ?>
 
 
