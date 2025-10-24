@@ -71,7 +71,7 @@
                             ]); ?>
                         <?php else: ?>
                             <div class="w-full h-64 bg-gray-200 rounded-2xl flex items-center justify-center">
-                                <span class="text-gray-400">No Image</span>
+                                <span class="text-gray-400"><?php echo pll__('no_image'); ?></span>
                             </div>
                         <?php endif; ?>
                       
@@ -80,7 +80,7 @@
                         <?php if ($is_on_sale): ?>
                             <div class="absolute top-4 left-4 z-10">
                                 <span class="bg-white/90 text-red-500 px-3 py-1 rounded-lg text-sm font-bold">
-                                    Sale!
+                                    <?php echo pll__('sale_badge'); ?>
                                 </span>
                             </div>
                         <?php endif; ?>
@@ -94,16 +94,16 @@
                             <div class="flex flex-col gap-1 mb-4">
                                 <?php if ($is_on_sale && $regular_price): ?>
                                     <span class="text-sm text-gray-300 line-through">
-                                        <?php echo esc_html($regular_price); ?>,00 kr.
+                                    <?php echo esc_html($regular_price); ?>,00 <?php echo pll__('currency_kr'); ?>
                                     </span>
                                 <?php endif; ?>
                                 <span class="text-xl font-bold text-white" style="text-shadow: 0 1px 3px rgba(0,0,0,0.3);">
-                                    <?php echo esc_html($sale_price); ?>,00 kr.
+                                    <?php echo esc_html($sale_price); ?>,00 <?php echo pll__('currency_kr'); ?>
                                 </span>
                             </div>
                            
                             <button class="w-full bg-white/90 text-blue-800 py-2 px-4 rounded-lg font-medium hover:bg-white transition-colors duration-200">
-                                ADD TO CART
+                                <?php echo pll__('add_to_cart'); ?>
                             </button>
                         </div>
                     </div>
@@ -114,7 +114,7 @@
         <?php wp_reset_postdata(); ?>
 
     <?php else: ?>
-        <p class="text-center col-span-full text-gray-600">No products found.</p>
+        <p class="text-center col-span-full text-gray-600"><?php echo esc_html(pll_e('No products found.')); ?></p>
     <?php endif; ?>
 </div>
 </section>

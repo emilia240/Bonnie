@@ -112,7 +112,15 @@ function wb_register_strings() {
     pll_register_string('rating', 'Rating', 'Forms');
     pll_register_string('your_review', 'Your Review', 'Forms');
     pll_register_string('submit_review_btn', 'Submit Review', 'Forms');
-   
+    pll_register_string('sale_badge', 'Sale!', 'Product Cards');
+    pll_register_string('add_to_cart', 'ADD TO CART', 'Product Cards');
+    pll_register_string('no_image', 'No Image', 'Product Cards');
+    pll_register_string('pets_category', 'Pets', 'Product Cards');
+    pll_register_string('our_top_sellers', 'Our top sellers', 'Homepage');
+    pll_register_string('pets_customers_love', 'Pets that our customers love the most!', 'Homepage');
+    pll_register_string('explore_all', 'Explore all', 'Homepage');
+    pll_register_string('no_products_found', 'No products found.', 'Product Cards');
+    pll_register_string('currency_kr', 'kr.', 'Product Cards');
 }
 
 add_action('init', 'wb_register_strings');
