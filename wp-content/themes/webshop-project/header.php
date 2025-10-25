@@ -72,7 +72,7 @@
       <!-- Login/Basket -->
       <div class="flex flex-wrap !gap-3" role="navigation" aria-label="<?php echo esc_attr(pll__('User account and shopping basket')); ?>">
         <a href="#" class="bg-[#1D1D1D] text-[#F4F4F4] !px-4 !py-2 rounded-full no-underline text-responsive-xs">👤 <?php echo esc_html(pll__('Login')); ?></a>
-        <a href="#" class="bg-[#1D1D1D] text-[#F4F4F4] !px-4 !py-2 rounded-full no-underline text-responsive-xs">🛒 <?php echo esc_html(pll__('Basket')); ?></a>
+        <a href="<?php echo esc_url(home_url('/cart')); ?>" class="bg-[#1D1D1D] text-[#F4F4F4] !px-4 !py-2 rounded-full no-underline text-responsive-xs">🛒 <?php echo esc_html(pll__('Basket')); ?></a>
       </div>
     </div>
   </div>
