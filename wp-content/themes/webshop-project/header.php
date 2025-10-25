@@ -71,8 +71,8 @@
 
       <!-- Login/Basket -->
       <div class="flex flex-wrap !gap-3" role="navigation" aria-label="<?php echo esc_attr(pll__('User account and shopping basket')); ?>">
-        <a href="#" class="bg-[#1D1D1D] text-[#F4F4F4] !px-4 !py-2 rounded-full no-underline text-responsive-xs">👤 <?php echo esc_html(pll__('Login')); ?></a>
-        <a href="<?php echo esc_url(home_url('/cart')); ?>" class="bg-[#1D1D1D] text-[#F4F4F4] !px-4 !py-2 rounded-full no-underline text-responsive-xs">🛒 <?php echo esc_html(pll__('Basket')); ?></a>
+        <a href="#" class="bg-[#] text-[#f4f4f4] !px-4 !py-2 rounded-full no-underline text-responsive-xs border-2 border-[#f4f4f4] transition-colors duration-200 hover:bg-[#f4f4f4] hover:text-[#1C3361]">👤 <?php echo esc_html(pll__('Login')); ?></a>
+        <a href="<?php echo esc_url(home_url('/cart')); ?>" class="bg-[#1C3361] text-[#f4f4f4] !px-4 !py-2 rounded-full no-underline text-responsive-xs border-2 border-[#f4f4f4] transition-colors duration-200 hover:bg-[#f4f4f4] hover:text-[#1C3361]">'🛒 <?php echo esc_html(pll__('Basket')); ?></a>
       </div>
     </div>
   </div>
@@ -108,7 +108,7 @@
       <!-- Mobile login/basket -->
       <div class="flex flex-col gap-6 items-center justify-center py-2" aria-label="<?php echo esc_attr(pll__('User account and shopping basket')); ?>">
         <a href="#" class="bg-[#1D1D1D] text-[#F4F4F4] px-4 py-2 rounded-full no-underline text-responsive-xs">👤 <?php echo esc_html(pll__('Login')); ?></a>
-        <a href="#" class="bg-[#1D1D1D] text-[#F4F4F4] px-4 py-2 rounded-full no-underline text-responsive-xs">🛒 <?php echo esc_html(pll__('Basket')); ?></a>
+        <a href="<?php echo esc_url(home_url('/cart')); ?>" class="bg-[#6a3ab2] text-white font-semibold py-2 px-4 rounded-md shadow-lg transition-all duration-200 hover:bg-[#552a9e] hover:shadow-xl">🛒 <?php echo esc_html(pll__('Basket')); ?></a>
       </div>
 
       <!-- Mobile bottom navigation -->
