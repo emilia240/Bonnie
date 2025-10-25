@@ -1050,7 +1050,27 @@ body.woocommerce a[href*="/blog"] {
 }
 
 /* ========================================================= */
-/* MY ACCOUNT NAVIGATION (THE MENU/TABS) */
+/* 1. GLOBAL FULL-WIDTH OVERRIDE */
+/* ========================================================= */
+
+/* Forces the main WooCommerce container to span 100% of the viewport */
+.woocommerce-account { 
+    max-width: none !important; 
+    margin: 0 !important;
+    padding: 0 !important; 
+}
+
+/* Base Headings and Text Fonts/Colors */
+.woocommerce-MyAccount-content h1,
+.woocommerce-MyAccount-content h2,
+.woocommerce-MyAccount-content h3 {
+    font-family: 'Bodoni MT', serif; /* Apply your desired font to headings */
+    color: #1C3361; /* Primary Brand Color for headings */
+    margin-bottom: 0.8em;
+}
+
+/* ========================================================= */
+/* 2. MY ACCOUNT NAVIGATION (THE MENU/TABS) */
 /* ========================================================= */
 
 /* Main Navigation Container */
@@ -1107,7 +1127,7 @@ body.woocommerce a[href*="/blog"] {
 
 
 /* ========================================================= */
-/* CONTENT AREA STYLING (Forms, Tables, Text) */
+/* 3. CONTENT AREA STYLING (Forms, Tables, Text) */
 /* ========================================================= */
 
 .woocommerce-MyAccount-content {
@@ -1153,10 +1173,7 @@ body.woocommerce a[href*="/blog"] {
     color: #ffffff !important;
 }
 
-/* ========================================================= */
 /* TABLE STYLING (Orders, Addresses) */
-/* ========================================================= */
-
 .woocommerce-orders-table, 
 .woocommerce-table--addresses {
     width: 100%;
@@ -1182,8 +1199,9 @@ body.woocommerce a[href*="/blog"] {
 }
 
 
-/* MOBILE RESPONSIVENESS */
-
+/* ========================================================= */
+/* 4. MOBILE RESPONSIVENESS AND FULL-WIDTH LAYOUT */
+/* ========================================================= */
 
 @media screen and (min-width: 768px) {
     /* Desktop: Two-column layout */
@@ -1192,11 +1210,16 @@ body.woocommerce a[href*="/blog"] {
         flex-wrap: nowrap;
     }
     .woocommerce-MyAccount-navigation {
-        flex: 0 0 250px; /* Wider navigation bar on desktop */
-        margin-right: 30px;
+        flex: 0 0 250px; /* Width of the menu */
+        /* Use internal padding instead of margin for spacing in a full-width container */
+        padding-right: 30px; 
+        margin-right: 0; 
     }
     .woocommerce-MyAccount-content {
         flex-grow: 1;
+        /* Re-introduce slight padding to prevent content from touching the screen edge */
+        padding-left: 20px; 
+        padding-right: 20px;
     }
 }
 
