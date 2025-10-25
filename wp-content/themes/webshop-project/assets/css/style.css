@@ -796,6 +796,8 @@ body.woocommerce a[href*="/blog"] {
 }
 
 
+
+/* Cart Table Styling */
 .woocommerce-cart-form table.shop_table {
     border: 1px solid #e5e5e5 !important;
     border-collapse: collapse;
@@ -1028,6 +1030,7 @@ body.woocommerce a[href*="/blog"] {
     background: #0077b3;
 }
 
+<<<<<<< Updated upstream
 
 
 /* Woocomerce - CHECKOUT page*/
@@ -1235,3 +1238,189 @@ body.woocommerce a[href*="/blog"] {
     }
 }
 
+=======
+/* ========================================================= */
+/* BASE STYLING & COLORS */
+/* ========================================================= */
+
+.woocommerce-account {
+    max-width: 1100px; /* Slightly wider than 1000px for a modern look */
+    margin: 3em auto;
+    padding: 0 15px;
+}
+
+/* Headings and Main Text */
+.woocommerce-MyAccount-content h1,
+.woocommerce-MyAccount-content h2,
+.woocommerce-MyAccount-content h3 {
+    font-family: 'Bodoni MT', serif; /* Apply your desired font to headings */
+    color: #1C3361; /* Primary Brand Color for headings */
+    margin-bottom: 0.8em;
+}
+
+/* ========================================================= */
+/* MY ACCOUNT NAVIGATION (THE MENU/TABS) */
+/* ========================================================= */
+
+/* Main Navigation Container */
+.woocommerce-MyAccount-navigation {
+    background-color: #f7f7f7; /* Secondary Background Color */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px; 
+    border: 1px solid #e0e0e0;
+}
+
+/* List Items (Individual Tabs) */
+.woocommerce-MyAccount-navigation li {
+    margin: 0;
+    border-bottom: 1px solid #eaeaea; /* Light separator */
+}
+.woocommerce-MyAccount-navigation li:last-child {
+    border-bottom: none;
+}
+
+/* Navigation Links */
+.woocommerce-MyAccount-navigation a {
+    display: block;
+    padding: 12px 10px;
+    color: #1C3361; /* Primary Color for links */
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.2s, color 0.2s;
+    font-family: 'Bodoni MT', serif; 
+    letter-spacing: 0.5px;
+}
+
+/* Hover/Focus Effect */
+.woocommerce-MyAccount-navigation a:hover {
+    background-color: #e8e8e8;
+    color: #1C3361; 
+}
+
+/* Active/Current Link Styling */
+.woocommerce-MyAccount-navigation li.is-active a {
+    background-color: #1C3361; /* Primary Brand Color */
+    color: #ffffff;
+    border-radius: 4px;
+    font-weight: 700;
+}
+/* Logout Link Styling */
+.woocommerce-MyAccount-navigation-link--customer-logout a {
+    color: #dc3545; 
+    font-family: sans-serif; 
+}
+.woocommerce-MyAccount-navigation-link--customer-logout a:hover {
+    background-color: #fcebeb;
+}
+
+
+/* ========================================================= */
+/* CONTENT AREA STYLING (Forms, Tables, Text) */
+/* ========================================================= */
+
+.woocommerce-MyAccount-content {
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+/* Forms (Login, Registration, Account Details) */
+.woocommerce form input.input-text,
+.woocommerce form textarea {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #1D1D1D;
+    background-color: #ffffff;
+}
+.woocommerce form .form-row label {
+    font-weight: 600;
+    color: #1C3361;
+}
+
+/* Primary Buttons (Login, Register, Save Changes) */
+.woocommerce-button, 
+.woocommerce .button {
+    background-color: #1C3361 !important; /* Primary Brand Color */
+    color: #ffffff !important;
+    padding: 12px 25px !important;
+    border-radius: 4px !important;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+    border: none !important;
+    line-height: 1 !important;
+    font-family: sans-serif;
+}
+.woocommerce-button:hover,
+.woocommerce .button:hover {
+    background-color: #0077b3 !important; 
+    color: #ffffff !important;
+}
+
+/* ========================================================= */
+/* TABLE STYLING (Orders, Addresses) */
+/* ========================================================= */
+
+.woocommerce-orders-table, 
+.woocommerce-table--addresses {
+    width: 100%;
+    border-collapse: collapse;
+}
+.woocommerce-orders-table th, .woocommerce-orders-table td,
+.woocommerce-table--addresses th, .woocommerce-table--addresses td {
+    padding: 12px 0;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+.woocommerce-orders-table thead th {
+    font-weight: 700;
+    color: #333;
+    background-color: #f7f7f7; 
+    padding-left: 10px;
+}
+/* View Order Button */
+.woocommerce-orders-table .button.view {
+    background-color: #1C3361 !important;
+    padding: 8px 15px !important;
+    font-size: 0.9em;
+}
+
+
+/* MOBILE RESPONSIVENESS */
+
+
+@media screen and (min-width: 768px) {
+    /* Desktop: Two-column layout */
+    .woocommerce-account .woocommerce {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .woocommerce-MyAccount-navigation {
+        flex: 0 0 250px; /* Wider navigation bar on desktop */
+        margin-right: 30px;
+    }
+    .woocommerce-MyAccount-content {
+        flex-grow: 1;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    /* Mobile: Stack the menu and content */
+    .woocommerce-MyAccount-navigation {
+        padding: 0;
+        background: none;
+        border: none;
+    }
+    .woocommerce-MyAccount-navigation ul {
+        display: block;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+}
+>>>>>>> Stashed changes
