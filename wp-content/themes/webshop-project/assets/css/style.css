@@ -40,7 +40,6 @@ Description: A custom WordPress theme for an online pet webshop + its blog.
 .lang-item-de img {
     width: 2rem!important;
     height: auto !important;
-    object-fit: contain !important;
 }
 
 /* font sizes*/
@@ -135,26 +134,34 @@ Description: A custom WordPress theme for an online pet webshop + its blog.
 
 /*
 woocommerce
-
-1. MAIN PRODUCT GRID LAYOUT */
+ 1. MAIN PRODUCT GRID LAYOUT */
+ .page-title {
+    display: none !important;
+}
+.woocommerce ul.products li.product .price + span {
+  display: none !important;
+}
 .woocommerce ul.products {
     display: flex !important;
     flex-wrap: wrap !important;
     justify-content: space-between !important;
     margin: 15 -8px !important;
-    font-family: "Skolar Sans", sans-serif !important; 
+    font-family: "Skolar Sans", sans-serif !important;
 }
 
 /* 2. PRODUCT BOX */
 .woocommerce ul.products li.product {
     width: calc(25% - 20px) !important;
-    margin: 5px 10px 25px 10px !important;
+    margin: 5px 10px 25px 10px !important; 
     box-sizing: border-box !important;
     display: flex !important;
     flex-direction: column !important;
     float: none !important;
     clear: none !important;
-    background-color: #1C3361 !important;
+
+    /* Styling */
+    background-color: #1C3361
+			!important;
     color: #ffffff !important;
     border-radius: 10px !important;
     overflow: hidden !important;
@@ -198,7 +205,7 @@ woocommerce
 .woocommerce ul.products li.product .woocommerce-loop-product__title {
     font-size: 18px !important;
     font-weight: 600 !important;
-    padding: 8px 10px 6px 10px !important; 
+    padding: 8px 10px 6px 10px !important;
     color: #ffffff !important;
     background-color: transparent !important;
     margin: 0 !important;
@@ -243,7 +250,7 @@ woocommerce
     color: #1C3361 !important;
     font-weight: 600 !important;
     border-radius: 6px !important;
-    padding: 15px 12px !important; 
+    padding: 15px 12px !important;
     margin: 8px auto 12px auto !important;
 	border: 2px solid #1C3361;
     text-transform: uppercase !important;
@@ -259,14 +266,15 @@ woocommerce
 	border:2px solid #ffffff
 }
 
-/* Single product Page Styles 
-1. GLOBAL LAYOUT & CONTAINER */
+
+/* SINGLE PRODUCT PAGE */
+
+/* 1. GLOBAL LAYOUT & CONTAINER */
 .single-product div.product {
     padding: 50px 50px; 
     background-color: #f7f7f7; 
     font-family: "Skolar Sans", sans-serif; 
 }
-
 
 .woocommerce-page #content, .woocommerce-page .site-content {
     padding: 20px; 
@@ -276,7 +284,7 @@ woocommerce
 /* 2. PRODUCT SUMMARY (Right Side) */
 .single-product div.product .summary {
     background-color: transparent;
-    padding: 50px; 
+    padding: 50px;
 }
 
 /* Product Title */
@@ -286,7 +294,7 @@ woocommerce
     margin-bottom: 5px;
 }
 
-/* Shop Tagline/Short Description Area */
+/* 3.  Shop Tagline/Short Description Area */
 .woocommerce div.product .woocommerce-product-details__short-description {
     font-size: 14px;
     color: #555;
@@ -299,18 +307,8 @@ woocommerce
 .single-product div.product span.price {
     font-size: 26px;
     font-weight: 700;
-    color: #222; 
+    color: #222; /* Primary text color */
     margin: 15px 0 20px 0;
-}
-
-/* 3. CUSTOMER SERVICE & SUPPORT */
-.custom-support-info { 
-    font-size: 14px;
-    color: #555;
-    margin-bottom: 25px;
-}
-.custom-support-info strong {
-    font-weight: 600;
 }
 
 /* 4. QUANTITY INPUT STYLES */
@@ -321,7 +319,7 @@ woocommerce
     border-radius: 8px;
     overflow: hidden;
     margin-right: 15px;
-    height: 40px; 
+    height: 40px;
 }
 
 .woocommerce div.product form.cart .quantity .qty {
@@ -360,6 +358,7 @@ woocommerce
 }
 
 .woocommerce button.single_add_to_cart_button {
+    /* Use the blue color from your product grid */
     background-color: #1C3361 !important; 
     color: #ffffff !important;
     font-weight: 600;
@@ -368,7 +367,7 @@ woocommerce
     padding: 10px 20px;
     font-size: 16px;
     line-height: 20px; 
-    height: 40px; 
+    height: 40px;
     transition: background-color 0.3s;
 }
 
@@ -382,18 +381,17 @@ woocommerce
 /* 6. PRODUCT IMAGE GALLERY & THUMBNAILS */
 .single-product div.product .woocommerce-product-gallery {
     width: 50%; 
-    object-fit: cover !important;
 }
 
 /* Thumbnail wrapper alignment */
 .single-product div.product .woocommerce-product-gallery__wrapper {
-    flex-direction: column; /* Main image on top, thumbnails below */
+    flex-direction: column; 
 }
 
-/* Thumbnail layout  */
+/* Thumbnail layout (The 3 small squares in your prototype) */
 .flex-control-nav.flex-control-thumbs {
     display: flex;
-    justify-content: flex-start; 
+    justify-content: flex-start; /* Align left */
     list-style: none;
     padding: 0;
     margin-top: 15px;
@@ -402,7 +400,7 @@ woocommerce
     margin-right: 10px;
 }
 .flex-control-nav.flex-control-thumbs img {
-    width: 60px; 
+    width: 60px;
     height: 60px;
     object-fit: cover;
     border: 1px solid #ccc;
@@ -442,8 +440,9 @@ woocommerce
     font-weight: 500;
 }
 
+/* Active Tab Underline (Matches prototype line) */
 .woocommerce-tabs ul.tabs li.active {
-    border-bottom: 3px solid #1C3361; /* Active tab line color */
+    border-bottom: 3px solid #1C3361; 
     font-weight: 600;
     color: #1C3361;
 }
@@ -454,6 +453,7 @@ woocommerce
     padding: 0;
 }
 
+/* Tab Panel Content Styling */
 .woocommerce-tabs .panel {
     padding: 30px 0;
     background-color: transparent;
@@ -471,17 +471,18 @@ woocommerce
 }
 .related.products .woocommerce ul.products,
 .related.products .woocommerce ul.products li.product {
+    /* Your existing .woocommerce ul.products code applies here */
 }
 
+/* Fix for the Related Products title */
 .related.products h2 {
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 25px;
 }
 
-/*
-RESPONSIVNESS WOOCOMMERCE SINGLE AND PRODUCT PAGE
- Tablet (less than 1024px) */
+/*RESPONSIVNESS*/
+/* Tablet (less than 1024px) */
 @media (max-width: 1024px) {
     /* 1. Main Container Padding */
     .single-product div.product {
@@ -495,10 +496,11 @@ RESPONSIVNESS WOOCOMMERCE SINGLE AND PRODUCT PAGE
 
     /* Image Gallery (Left Side) */
     .single-product div.product .woocommerce-product-gallery {
-        width: 100%; 
+        width: 100%; /* Full width for the image */
         margin-right: 0;
         margin-bottom: 20px; 
         padding: 0; 
+    }
 
     /* Main Image Wrapper Padding */
     .single-product div.product .woocommerce-product-gallery__wrapper {
@@ -510,12 +512,12 @@ RESPONSIVNESS WOOCOMMERCE SINGLE AND PRODUCT PAGE
     /* Product Summary (Right Side - now full width) */
     .single-product div.product .summary {
         width: 100%;
-        padding: 0;
+        padding: 0; 
     }
 
     /* Tab Navigation */
     .woocommerce-tabs ul.tabs li {
-        margin-right: 20px; 
+        margin-right: 20px; /* Tighten up tab spacing */
         font-size: 15px;
     }
 }
@@ -543,14 +545,14 @@ RESPONSIVNESS WOOCOMMERCE SINGLE AND PRODUCT PAGE
 
     /* 4. Quantity & Add to Cart (Force stacking) */
     .woocommerce div.product form.cart {
-        flex-direction: column;
+        flex-direction: column; 
         align-items: stretch;
     }
 
     /* Quantity Box */
     .woocommerce div.product form.cart .quantity {
         width: 100%;
-        max-width: 150px;
+        max-width: 150px; 
         margin: 0 auto 15px auto; 
     }
 
@@ -561,7 +563,6 @@ RESPONSIVNESS WOOCOMMERCE SINGLE AND PRODUCT PAGE
         margin-top: 5px;
     }
     
-    /* Wishlist Icon (moves below button/quantity) */
     .wishlist-button-wrap {
         text-align: center;
         margin-top: 15px;
@@ -602,8 +603,8 @@ RESPONSIVNESS WOOCOMMERCE SINGLE AND PRODUCT PAGE
     .woocommerce-tabs .panel {
         padding: 20px 0;
     }
-  }
 }
+
 
 /* Tablet (768px – 1024px) */
 @media (max-width: 1024px) {
@@ -637,7 +638,7 @@ RESPONSIVNESS WOOCOMMERCE SINGLE AND PRODUCT PAGE
 /* Mobile (less than 768px) */
 @media (max-width: 767px) {
     .woocommerce ul.products {
-        margin: 0 -5px !important; 
+        margin: 0 -5px !important; /* reduce side margin */
     }
 
     .woocommerce ul.products li.product {
@@ -672,4 +673,37 @@ RESPONSIVNESS WOOCOMMERCE SINGLE AND PRODUCT PAGE
         padding: 2px 10px !important;
         top: 12px !important;
     }
+}
+
+
+/* Hide accidental "ssss" text anywhere inside WooCommerce product cards */
+.woocommerce ul.products li.product span,
+.woocommerce ul.products li.product div,
+.woocommerce ul.products li.product p {
+  color: inherit;
+}
+
+/* More targeted hiding — looks for "ssss" content via attribute or pseudo-element */
+.woocommerce ul.products li.product *::before,
+.woocommerce ul.products li.product *::after {
+  content: none !important;
+}
+
+/* If "ssss" is a stray element with no class */
+.woocommerce ul.products li.product {
+  font-family: "Skolar Sans", sans-serif !important;
+}
+.woocommerce ul.products li.product:has(span:empty),
+.woocommerce ul.products li.product span:empty {
+  display: none !important;
+}
+
+/* FINAL FORCE HIDE (temporary but effective) */
+.woocommerce ul.products li.product {
+  position: relative;
+}
+.woocommerce ul.products li.product:after {
+  content: "";
+  display: block;
+  color: transparent;
 }
