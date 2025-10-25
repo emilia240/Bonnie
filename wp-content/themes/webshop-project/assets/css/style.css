@@ -382,6 +382,7 @@ woocommerce
 /* 6. PRODUCT IMAGE GALLERY & THUMBNAILS */
 .single-product div.product .woocommerce-product-gallery {
     width: 50%; 
+    object-fit: cover !important;
 }
 
 /* Thumbnail wrapper alignment */
