@@ -142,7 +142,7 @@ woocommerce
     flex-wrap: wrap !important;
     justify-content: space-between !important;
     margin: 15 -8px !important;
-    font-family: "Skolar Sans", sans-serif !important; /* GLOBAL FONT */
+    font-family: "Skolar Sans", sans-serif !important; 
 }
 
 /* 2. PRODUCT BOX */
@@ -154,5 +154,326 @@ woocommerce
     flex-direction: column !important;
     float: none !important;
     clear: none !important;
+    background-color: #1C3361 !important;
+    color: #ffffff !important;
+    border-radius: 10px !important;
+    overflow: hidden !important;
+    position: relative !important;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2) !important;
+}
 
+/* 3. RESET FLOATS */
+.woocommerce ul.products li.product:nth-child(4n+1) {
+    clear: none !important;
+}
+
+/* 4. UNIVERSAL CHILD ELEMENT FIX */
+.woocommerce ul.products li.product * {
+    box-sizing: border-box !important;
+    max-width: 100% !important;
+    clear: none !important;
+    text-align: center !important;
+    font-family: "Skolar Sans", sans-serif !important;
+}
+
+/* 5. INNER LINK WRAPPER */
+.woocommerce ul.products li.product .woocommerce-loop-product__link {
+    display: flex !important;
+    flex-direction: column !important;
+    flex-grow: 1 !important;
+    background-color: #1C3361
+			!important;
+}
+
+/* 6. PRODUCT IMAGE */
+.woocommerce ul.products li.product img {
+    width: 100% !important;
+    height: 180px !important; 
+    object-fit: cover !important; 
+    display: block !important;
+    background-color: #f7f7f7 !important;
+}
+
+/* 7. PRODUCT TITLE */
+.woocommerce ul.products li.product .woocommerce-loop-product__title {
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    padding: 8px 10px 6px 10px !important; 
+    color: #ffffff !important;
+    background-color: transparent !important;
+    margin: 0 !important;
+    line-height: 1.3 !important;
+}
+
+/* 8. PRICE */
+.woocommerce ul.products li.product .price,
+.woocommerce ul.products li.product .price * {
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    padding: 0 10px 8px 10px !important; 
+    color: #ffffff !important;
+    background-color: transparent !important;
+    margin: 0 !important;
+    display: inline !important;
+}
+
+.woocommerce ul.products li.product .price {
+    display: block !important;
+    padding-top: 4px !important;
+}
+
+/* 9. SALE BADGE */
+.woocommerce ul.products li.product .onsale {
+    background-color: #ffffff !important;
+    color: #ff0000 !important;
+    border-radius: 100px !important;
+    padding: 2px 15px !important;
+    font-size: 15px !important;
+    font-weight: 700 !important;
+    top: 20px !important;
+    position: absolute !important;
+    z-index: 10 !important;
+}
+
+/* 10. ADD TO CART BUTTON */
+.woocommerce ul.products li.product .button,
+.woocommerce ul.products li.product .add_to_cart_button {
+    display: inline-block !important;
+    background-color: #ffffff !important;
+    color: #1C3361 !important;
+    font-weight: 600 !important;
+    border-radius: 6px !important;
+    padding: 15px 12px !important; 
+    margin: 8px auto 12px auto !important;
+	border: 2px solid #1C3361;
+    text-transform: uppercase !important;
+    font-size: 13px !important;
+    transition: all 0.3s ease !important;
+}
+
+.woocommerce ul.products li.product .button:hover,
+.woocommerce ul.products li.product .add_to_cart_button:hover {
+    background-color: #1C3361
+			!important;
+    color: #ffffff !important;
+	border:2px solid #ffffff
+}
+
+/* Single product Page Styles 
+1. GLOBAL LAYOUT & CONTAINER */
+.single-product div.product {
+    padding: 50px 50px; 
+    background-color: #f7f7f7; 
+    font-family: "Skolar Sans", sans-serif; 
+}
+
+
+.woocommerce-page #content, .woocommerce-page .site-content {
+    padding: 20px; 
+}
+
+
+/* 2. PRODUCT SUMMARY (Right Side) */
+.single-product div.product .summary {
+    background-color: transparent;
+    padding: 50px; 
+}
+
+/* Product Title */
+.single-product div.product .product_title {
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+/* Shop Tagline/Short Description Area */
+.woocommerce div.product .woocommerce-product-details__short-description {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+/* Price */
+.single-product div.product p.price, 
+.single-product div.product span.price {
+    font-size: 26px;
+    font-weight: 700;
+    color: #222; 
+    margin: 15px 0 20px 0;
+}
+
+/* 3. CUSTOMER SERVICE & SUPPORT */
+.custom-support-info { 
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 25px;
+}
+.custom-support-info strong {
+    font-weight: 600;
+}
+
+/* 4. QUANTITY INPUT STYLES */
+.woocommerce div.product form.cart .quantity {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-right: 15px;
+    height: 40px; 
+}
+
+.woocommerce div.product form.cart .quantity .qty {
+    width: 40px;
+    height: 100%;
+    text-align: center;
+    border: none;
+    padding: 0;
+    margin: 0;
+    line-height: 40px; 
+    font-size: 16px;
+}
+
+/* Quantity buttons (+ and -) */
+.woocommerce div.product form.cart .quantity input[type="button"] {
+    background-color: #fff;
+    color: #1C3361;
+    border: 2px solid !important;
+    padding: 0 10px;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 1;
+    height: 100%;
+    
+}
+
+.woocommerce div.product form.cart .quantity input[type="button"]:hover {
+    background-color: #eee;
+}
+
+/* 5. ADD TO CART BUTTON */
+.woocommerce div.product form.cart {
+    display: flex;
+    align-items: center; 
+    margin-bottom: 30px;
+}
+
+.woocommerce button.single_add_to_cart_button {
+    background-color: #1C3361 !important; 
+    color: #ffffff !important;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 16px;
+    line-height: 20px; 
+    height: 40px; 
+    transition: background-color 0.3s;
+}
+
+.woocommerce button.single_add_to_cart_button:hover {
+    background-color: #ffffff !important;
+	border: 2px solid #1C3361  !important;
+	color: #1C3361 !important;
+}
+
+
+/* 6. PRODUCT IMAGE GALLERY & THUMBNAILS */
+.single-product div.product .woocommerce-product-gallery {
+    width: 50%; 
+}
+
+/* Thumbnail wrapper alignment */
+.single-product div.product .woocommerce-product-gallery__wrapper {
+    flex-direction: column; /* Main image on top, thumbnails below */
+}
+
+/* Thumbnail layout  */
+.flex-control-nav.flex-control-thumbs {
+    display: flex;
+    justify-content: flex-start; 
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+.flex-control-nav.flex-control-thumbs li {
+    margin-right: 10px;
+}
+.flex-control-nav.flex-control-thumbs img {
+    width: 60px; 
+    height: 60px;
+    object-fit: cover;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    opacity: 0.7;
+    transition: all 0.2s;
+}
+.flex-control-nav.flex-control-thumbs img.flex-active,
+.flex-control-nav.flex-control-thumbs img:hover {
+    opacity: 1;
+    border-color: #1C3361; 
+}
+
+
+/* 7. PRODUCT DATA TABS (Description, Advice, Pick up) */
+.woocommerce-tabs {
+    margin-top: 50px;
+}
+
+/* Tab Navigation Styling */
+.woocommerce-tabs ul.tabs {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-bottom: 2px solid #ddd;
+}
+
+.woocommerce-tabs ul.tabs li {
+    background-color: transparent;
+    border: none;
+    margin-right: 30px;
+    padding: 0 0 10px 0;
+    position: relative;
+    top: 2px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.woocommerce-tabs ul.tabs li.active {
+    border-bottom: 3px solid #1C3361; /* Active tab line color */
+    font-weight: 600;
+    color: #1C3361;
+}
+
+.woocommerce-tabs ul.tabs li a {
+    text-decoration: none;
+    color: inherit;
+    padding: 0;
+}
+
+.woocommerce-tabs .panel {
+    padding: 30px 0;
+    background-color: transparent;
+    border: none;
+    line-height: 1.7;
+    font-size: 15px;
+    color: #333;
+}
+.woocommerce-tabs .panel p {
+    margin-bottom: 15px;
+}
+
+.related.products {
+    margin-top: 40px;
+}
+.related.products .woocommerce ul.products,
+.related.products .woocommerce ul.products li.product {
+}
+
+.related.products h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 25px;
 }
