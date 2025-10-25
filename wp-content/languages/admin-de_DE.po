@@ -2,12 +2,12 @@
 # This file is distributed under the same license as the WordPress - 6.8.x - Development - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-10-14 00:24:31+0000\n"
+"PO-Revision-Date: 2025-10-25 15:43:25+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: GlotPress/4.0.1\n"
+"X-Generator: GlotPress/4.0.3\n"
 "Language: de\n"
 "Project-Id-Version: WordPress - 6.8.x - Development - Administration\n"
 
@@ -1669,7 +1669,7 @@ msgstr "REST-API-Endpunkt: %s"
 
 #: wp-admin/includes/class-wp-site-health.php:2171
 msgid "When testing the REST API, an error was encountered:"
-msgstr "Beim Testen des REST-API ist ein Fehler aufgetreten:"
+msgstr "Beim Testen der REST-API ist ein Fehler aufgetreten:"
 
 #. translators: %s: The server PHP version.
 #: wp-admin/includes/class-wp-site-health.php:817
@@ -2399,7 +2399,7 @@ msgstr "Version %s erneut installieren"
 #. translators: %s: WordPress version.
 #: wp-admin/update-core.php:71
 msgid "Update to latest %s nightly"
-msgstr "Auf den aktuellen Nightly Build %s aktualisieren"
+msgstr "Auf den neuesten Nightly Build %s aktualisieren"
 
 #: wp-admin/erase-personal-data.php:132
 msgid "Send personal data erasure confirmation email."
@@ -3715,7 +3715,7 @@ msgstr "Werden sprechende Permalinks unterstützt?"
 
 #: wp-admin/includes/class-wp-debug-data.php:417
 msgid "PHP memory limit (only for admin screens)"
-msgstr "PHP-Speicher-Limit (nur für Administrator-Ansichten)"
+msgstr "PHP-Arbeitsspeichergrenze (nur für die Administration)"
 
 #: wp-admin/includes/class-wp-debug-data.php:219
 msgid "Is this site discouraging search engines?"
@@ -4192,7 +4192,7 @@ msgstr "Geplant für: %s"
 #: wp-admin/includes/meta-boxes.php:236 wp-admin/includes/meta-boxes.php:442
 msgctxt "publish box time format"
 msgid "H:i"
-msgstr "H:i"
+msgstr "G:i"
 
 #. translators: Publish box date format, see
 #. https://www.php.net/manual/datetime.format.php
@@ -4422,7 +4422,7 @@ msgstr "Inaktive Plugins verwalten"
 
 #: wp-admin/includes/class-wp-site-health.php:417
 msgid "Update your plugins"
-msgstr "Aktualisiere deine Plugins"
+msgstr "Deine Plugins aktualisieren"
 
 #: wp-admin/includes/class-wp-site-health.php:370
 msgid "Manage your plugins"
@@ -4817,7 +4817,7 @@ msgstr "Das REST-API kam zu einem unerwarteten Ergebnis"
 
 #: wp-admin/includes/class-wp-site-health.php:2167
 msgid "The REST API encountered an error"
-msgstr "Das REST-API hat einen Fehler gefunden"
+msgstr "Bei der REST-API ist ein Fehler aufgetreten"
 
 #: wp-admin/includes/class-wp-site-health.php:2132
 msgid "The REST API is one way that WordPress and other applications communicate with the server. For example, the block editor screen relies on the REST API to display and save your posts and pages."
@@ -5117,7 +5117,7 @@ msgstr "Eine neue WordPress-Version ist verfügbar."
 
 #: wp-admin/includes/class-wp-site-health.php:307
 msgid "Install the latest version of WordPress"
-msgstr "Die aktuelle Version von WordPress installieren"
+msgstr "Die neueste Version von WordPress installieren"
 
 #. translators: %s: The latest version of WordPress available.
 #: wp-admin/includes/class-wp-site-health.php:300
@@ -5255,7 +5255,7 @@ msgstr "Website des Autors"
 #: wp-admin/includes/class-wp-debug-data.php:1209
 #: wp-admin/includes/class-wp-debug-data.php:1354
 msgid "(Latest version: %s)"
-msgstr "(Aktuelle Version: %s)"
+msgstr "(Neueste Version: %s)"
 
 #. translators: 1: Plugin version number. 2: Plugin author name.
 #. translators: 1: Theme version number. 2: Theme author name.
@@ -5317,7 +5317,7 @@ msgstr "Maximale Eingabe-Zeit (max_input_time)"
 #: wp-admin/includes/class-wp-debug-data.php:413
 #: wp-admin/includes/class-wp-debug-data.php:422
 msgid "PHP memory limit"
-msgstr "PHP-Speicher-Limit (memory_limit)"
+msgstr "PHP-Arbeitsspeichergrenze"
 
 #: wp-admin/includes/class-wp-debug-data.php:407
 msgid "PHP time limit"
@@ -7764,7 +7764,7 @@ msgstr "Details der Version %2$s von %1$s anzeigen"
 #: wp-admin/includes/dashboard.php:1036
 msgctxt "dashboard"
 msgid "%1$s, %2$s"
-msgstr "%1$s, %2$s"
+msgstr "%1$s, %2$s Uhr"
 
 #: wp-admin/edit-form-advanced.php:369
 msgid "<strong>Publish</strong> &mdash; You can set the terms of publishing your post in the Publish box. For Status, Visibility, and Publish (immediately), click on the Edit link to reveal more options. Visibility includes options for password-protecting a post or making it stay at the top of your blog indefinitely (sticky). The Password protected option allows you to set an arbitrary password for each post. The Private option hides the post from everyone except editors and administrators. Publish (immediately) allows you to set a future or past date and time, so you can schedule a post to be published in the future or backdate a post."
@@ -7848,7 +7848,7 @@ msgstr "Deine Datei %s hat ein leeres Datenbank-Tabellenpräfix, was nicht unter
 
 #: wp-admin/index.php:187
 msgid "Dismiss the welcome panel"
-msgstr "Den Willkommen-Bereich ausblenden"
+msgstr "Willkommensbereich verwerfen"
 
 #. translators: Hidden accessibility text.
 #: wp-admin/includes/theme-install.php:203
@@ -7946,7 +7946,7 @@ msgstr "Taxonomie-Template"
 
 #: wp-admin/includes/dashboard.php:1763
 msgid "Dismiss the browser warning panel"
-msgstr "Den Bereich für Browser-Warnungen ausblenden"
+msgstr "Browser-Warnfeld verwerfen"
 
 #. translators: Hidden accessibility text.
 #: wp-admin/includes/dashboard.php:1115
@@ -8462,7 +8462,7 @@ msgstr "Theme-Footer"
 #. different calendar year, see https://www.php.net/manual/datetime.format.php
 #: wp-admin/includes/dashboard.php:1023
 msgid "M jS Y"
-msgstr "d.m.Y"
+msgstr "j. M Y"
 
 #. translators: 1: Comment author, 2: Notification if the comment is pending.
 #: wp-admin/includes/dashboard.php:863
@@ -9579,7 +9579,7 @@ msgstr "%s MB zulässiger Speicherplatz"
 #. https://www.php.net/manual/datetime.format.php
 #: wp-admin/includes/dashboard.php:1026
 msgid "M jS"
-msgstr "d.m."
+msgstr "j. M"
 
 #. translators: %s: Number of pages.
 #: wp-admin/includes/dashboard.php:315
@@ -11702,7 +11702,7 @@ msgstr "Links können in verschiedene Kategorien einsortiert werden. Es sind jed
 #. translators: 1: URL to About screen, 2: WordPress version.
 #: wp-admin/update-core.php:292
 msgid "<a href=\"%1$s\">Learn more about WordPress %2$s</a>."
-msgstr "<a href=\"%1$s\">Erfahre mehr über WordPress %2$s</a>."
+msgstr "<a href=\"%1$s\">Weitere Informationen zu WordPress %2$s</a>"
 
 #: wp-admin/users.php:55
 msgid "<strong>Edit</strong> takes you to the editable profile screen for that user. You can also reach that screen by clicking on the username."
@@ -12043,7 +12043,7 @@ msgstr "beispielbeitrag"
 #: wp-admin/options-permalink.php:265 wp-admin/options-permalink.php:266
 msgctxt "sample permalink base"
 msgid "archives"
-msgstr "archive"
+msgstr "archiv"
 
 #. translators: %s: URL to Import screen on the main site.
 #: wp-admin/import.php:171
@@ -12823,7 +12823,7 @@ msgstr "Es ist eine neue Version von WordPress verfügbar."
 
 #: wp-admin/update-core.php:274
 msgid "You have the latest version of WordPress."
-msgstr "Du benutzt die aktuelle Version von WordPress."
+msgstr "Du verwendest die neueste Version von WordPress."
 
 #: wp-admin/plugin-editor.php:181 wp-admin/theme-editor.php:172
 msgid "Function Name&hellip;"
@@ -12890,7 +12890,7 @@ msgstr "Wähle zuerst in der Auswahlbox das zu bearbeitende Theme und klicke dan
 
 #: wp-admin/theme-editor.php:30
 msgid "You can use the theme file editor to edit the individual CSS and PHP files which make up your theme."
-msgstr "Du kannst den Theme-Datei-Editor verwenden, um Änderungen in den individuellen CSS- und PHP-Dateien vorzunehmen, die das Design ausmachen."
+msgstr "Du kannst den Theme-Datei-Editor verwenden, um Änderungen in den individuellen CSS- und PHP-Dateien vorzunehmen, die das Theme ausmachen."
 
 #: wp-admin/includes/meta-boxes.php:1010
 msgid "(no parent)"
@@ -14366,11 +14366,11 @@ msgstr "Mir eine E-Mail senden, wenn"
 
 #: wp-admin/options-discussion.php:158
 msgid "newer"
-msgstr "neuesten"
+msgstr "neuere"
 
 #: wp-admin/options-discussion.php:157
 msgid "older"
-msgstr "ältesten"
+msgstr "ältere"
 
 #: wp-admin/options-discussion.php:81
 msgid "Users must be registered and logged in to comment"
@@ -14578,7 +14578,7 @@ msgstr "Ein automatisches Update konnte nicht beendet werden – <a href=\"%s\">
 #. translators: %s: WordPress version number, or 'Latest' string.
 #: wp-admin/includes/update.php:375
 msgid "Latest"
-msgstr "Aktuelle"
+msgstr "Neueste"
 
 #. translators: %s: WordPress version number, or 'Latest' string.
 #: wp-admin/includes/update.php:375
@@ -15842,7 +15842,7 @@ msgstr "Der Zielordner existiert bereits."
 
 #: wp-admin/includes/class-wp-upgrader.php:201
 msgid "Installing the latest version&#8230;"
-msgstr "Die aktuelle Version wird installiert &#8230;"
+msgstr "Die neueste Version wird installiert …"
 
 #: wp-admin/includes/class-wp-privacy-data-export-requests-list-table.php:63
 #: wp-admin/includes/class-wp-upgrader.php:200

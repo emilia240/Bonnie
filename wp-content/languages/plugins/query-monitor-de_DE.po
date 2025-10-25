@@ -2,12 +2,12 @@
 # This file is distributed under the same license as the Plugins - Query Monitor &#8211; The developer tools panel for WordPress - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-10-12 16:47:36+0000\n"
+"PO-Revision-Date: 2025-10-20 16:32:53+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: GlotPress/4.0.1\n"
+"X-Generator: GlotPress/4.0.3\n"
 "Language: de\n"
 "Project-Id-Version: Plugins - Query Monitor &#8211; The developer tools panel for WordPress - Stable (latest release)\n"
 
@@ -24,9 +24,19 @@ msgstr "leere Zeichenfolge"
 msgid "Drop-in: %s"
 msgstr "Drop-in: %s"
 
+#: output/html/hooks.php:36
+msgid "Hooks, Actions, & Filters"
+msgstr "Hooks, Aktionen und Filter"
+
 #: output/html/environment.php:245
 msgid "Development Mode"
 msgstr "Entwicklermodus"
+
+#. translators: 1: PHP file name, 2: Version number, 3: Alternative file name,
+#. 4: Optional message regarding the change.
+#: classes/Deprecated_File_Included.php:28
+msgid "File %1$s is deprecated since version %2$s! Use %3$s instead. %4$s"
+msgstr "Die Datei %1$s ist seit Version %2$s veraltet. Bitte verwende stattdessen %3$s. %4$s"
 
 #. translators: %s: Version number.
 #: classes/Doing_It_Wrong_Run.php:26
@@ -40,6 +50,11 @@ msgstr "Block-Template"
 #: output/html/multisite.php:51
 msgid "Function"
 msgstr "Funktion"
+
+#. translators: %s: Name of a multilingual plugin
+#: output/html/languages.php:62 output/html/languages.php:75
+msgid "%s Language"
+msgstr "%s-Sprache"
 
 #: dispatchers/Html.php:624
 msgctxt "colour scheme"
@@ -90,6 +105,15 @@ msgstr "Spreche mit deinem Webhoster über die Aktivierung einer Objekt-Cache-Er
 msgid "Persistent object cache plugin not in use"
 msgstr "Persistentes Objekt-Cache-Plugin wird nicht verwendet"
 
+#: output/html/overview.php:286
+msgid "Persistent object cache plugin in use"
+msgstr "Persistentes Objekt-Cache-Plugin im Einsatz"
+
+#. translators: 1: Memory used in bytes, 2: Memory used in megabytes
+#: output/html/overview.php:147
+msgid "%1$s bytes (%2$s MB)"
+msgstr "%1$s Bytes (%2$s MB)"
+
 #. translators: %s: A time in seconds with a decimal fraction. No space between
 #. value and unit symbol.
 #: output/html/db_queries.php:489 output/html/overview.php:105
@@ -116,10 +140,18 @@ msgid_plural "%s Q"
 msgstr[0] "%s Q"
 msgstr[1] "%s Q"
 
+#: output/Html.php:324
+msgid "Non-WordPress Core"
+msgstr "Nicht-WordPress-Core"
+
 #. translators: %s: Number of hooks
 #: dispatchers/Html.php:388
 msgid "Hooks in Use (%s)"
 msgstr "Hooks in Benutzung (%s)"
+
+#: dispatchers/Html.php:293
+msgid "Data collection ceased"
+msgstr "Die Datenerhebung wurde eingestellt"
 
 #: classes/Component_Core.php:10 output/Html.php:319 output/html/hooks.php:96
 msgid "WordPress Core"

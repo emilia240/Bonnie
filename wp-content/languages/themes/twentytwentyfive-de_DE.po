@@ -2,12 +2,12 @@
 # This file is distributed under the same license as the Themes - Twenty Twenty-Five package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-10-06 02:59:41+0000\n"
+"PO-Revision-Date: 2025-10-19 12:13:43+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: GlotPress/4.0.1\n"
+"X-Generator: GlotPress/4.0.3\n"
 "Language: de\n"
 "Project-Id-Version: Themes - Twenty Twenty-Five\n"
 
@@ -1954,7 +1954,7 @@ msgstr "Veranstaltungsliste"
 #: patterns/banner-intro-image.php:42 patterns/cta-centered-heading.php:28
 #: patterns/hero-full-width-image.php:33
 msgid "Learn more"
-msgstr "Mehr erfahren"
+msgstr "Weitere Informationen"
 
 #: patterns/cta-centered-heading.php:22
 msgid "Like flowers that bloom in unexpected places, every story unfolds with beauty and resilience, revealing hidden wonders."

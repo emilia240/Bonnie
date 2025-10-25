@@ -2,12 +2,12 @@
 # This file is distributed under the same license as the Plugins - Autoptimize - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-10-12 14:31:39+0000\n"
+"PO-Revision-Date: 2025-10-18 21:32:57+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: GlotPress/4.0.1\n"
+"X-Generator: GlotPress/4.0.3\n"
 "Language: de\n"
 "Project-Id-Version: Plugins - Autoptimize - Stable (latest release)\n"
 
@@ -737,7 +737,7 @@ msgstr "Erweiterte Einstellungen"
 
 #: classes/critcss-inc/admin_settings_queue.js.php:186
 msgid "Retry"
-msgstr "Neu versuchen"
+msgstr "Erneut versuchen"
 
 #: classes/critcss-inc/admin_settings_queue.js.php:166
 msgid "Delete all jobs?"
