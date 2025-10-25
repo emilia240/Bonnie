@@ -242,6 +242,7 @@ woocommerce
     z-index: 10 !important;
 }
 
+
 /* 10. ADD TO CART BUTTON */
 .woocommerce ul.products li.product .button,
 .woocommerce ul.products li.product .add_to_cart_button {
@@ -348,6 +349,33 @@ woocommerce
 
 .woocommerce div.product form.cart .quantity input[type="button"]:hover {
     background-color: #eee;
+}
+
+.single-product .product > .onsale {
+    
+    /* Shape, Color, Font (Your desired style) */
+    background-color: #ffffff !important;
+    color: #ff0000 !important;
+    border-radius: 100px !important;
+    padding: 8px 50px !important;
+    font-size: 15px !important;
+    font-weight: 700 !important;
+    
+    /* Positioning to Top-Right */
+    top: 20px !important; 
+    right: 20px !important; 
+    left: auto !important; /* Ensures it positions from the right */
+    
+    /* Display properties */
+    position: absolute !important;
+    z-index: 10 !important;
+    
+    /* Optional clean-up */
+    min-width: unset !important;
+    min-height: unset !important;
+    text-align: center !important;
+    line-height: 1.2 !important;
+    display: inline-block !important; 
 }
 
 /* 5. ADD TO CART BUTTON */
@@ -706,4 +734,25 @@ woocommerce
   content: "";
   display: block;
   color: transparent;
+}
+/* ================================================= */
+/* === MENU ACTIVE SWITCH: BLOG to PETS (Shop) === */
+/* ================================================= */
+
+/* 1. FORCE THE "PETS" LINK TO BE ACTIVE ON SHOP/PRODUCT PAGES */
+/* This targets the 'Pets' link on any WooCommerce page. */
+body.woocommerce a[href*="/shop"] {
+    border-bottom: 4px solid #1C3361 !important; /* Forces the blue underline */
+    margin-bottom: -6px !important;              /* Compensates for the 4px border height (from [&.active]:!mb-[-6px]) */
+    padding-bottom: 2px !important;              /* Often needed to make the line look right */
+    color: #1D1D1D !important;
+}
+
+/* 2. REMOVE THE ACTIVE STYLE FROM THE 'BLOG' LINK */
+body.woocommerce a[href*="/blog"] {
+    border-bottom: 4px solid transparent !important; /* Removes the border */
+    margin-bottom: 0 !important;
+    padding-bottom: 2px !important;
+
+    color: #1D1D1D !important;
 }
