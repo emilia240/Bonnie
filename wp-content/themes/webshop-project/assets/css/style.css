@@ -128,5 +128,579 @@ Description: A custom WordPress theme for an online pet webshop + its blog.
   margin-top: 10px;
 }
 
+.page-title {
+    display: none !important;
+}
+/* ================================================= */
+/* === COMPACT PRODUCT GRID + COLOR FIX (Slightly Longer) === */
+/* ================================================= */
+
+/* 1. MAIN PRODUCT GRID LAYOUT */
+.woocommerce ul.products {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: space-between !important;
+    margin: 15 -8px !important;
+    font-family: "Skolar Sans", sans-serif !important; /* GLOBAL FONT */
+}
+
+/* 2. PRODUCT BOX */
+.woocommerce ul.products li.product {
+    width: calc(25% - 20px) !important;
+    margin: 5px 10px 25px 10px !important; /* slightly more bottom spacing */
+    box-sizing: border-box !important;
+    display: flex !important;
+    flex-direction: column !important;
+    float: none !important;
+    clear: none !important;
+
+    /* Styling */
+    background-color: #1C3361
+			!important;
+    color: #ffffff !important;
+    border-radius: 10px !important;
+    overflow: hidden !important;
+    position: relative !important;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2) !important;
+}
+
+/* 3. RESET FLOATS */
+.woocommerce ul.products li.product:nth-child(4n+1) {
+    clear: none !important;
+}
+
+/* 4. UNIVERSAL CHILD ELEMENT FIX */
+.woocommerce ul.products li.product * {
+    box-sizing: border-box !important;
+    max-width: 100% !important;
+    clear: none !important;
+    text-align: center !important;
+    font-family: "Skolar Sans", sans-serif !important;
+}
+
+/* 5. INNER LINK WRAPPER */
+.woocommerce ul.products li.product .woocommerce-loop-product__link {
+    display: flex !important;
+    flex-direction: column !important;
+    flex-grow: 1 !important;
+    background-color: #1C3361
+			!important;
+}
+
+/* 6. PRODUCT IMAGE */
+.woocommerce ul.products li.product img {
+    width: 100% !important;
+    height: 180px !important; /* slightly taller than before */
+    object-fit: cover !important; /* crop nicely */
+    display: block !important;
+    background-color: #f7f7f7 !important;
+}
+
+/* 7. PRODUCT TITLE */
+.woocommerce ul.products li.product .woocommerce-loop-product__title {
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    padding: 8px 10px 6px 10px !important; /* slightly more padding */
+    color: #ffffff !important;
+    background-color: transparent !important;
+    margin: 0 !important;
+    line-height: 1.3 !important;
+}
+
+/* 8. PRICE */
+.woocommerce ul.products li.product .price,
+.woocommerce ul.products li.product .price * {
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    padding: 0 10px 8px 10px !important; /* slightly more padding */
+    color: #ffffff !important;
+    background-color: transparent !important;
+    margin: 0 !important;
+    display: inline !important;
+}
+
+.woocommerce ul.products li.product .price {
+    display: block !important;
+    padding-top: 4px !important;
+}
+
+/* 9. SALE BADGE */
+.woocommerce ul.products li.product .onsale {
+    background-color: #ffffff !important;
+    color: #ff0000 !important;
+    border-radius: 100px !important;
+    padding: 2px 15px !important;
+    font-size: 15px !important;
+    font-weight: 700 !important;
+    top: 20px !important;
+    position: absolute !important;
+    z-index: 10 !important;
+}
+
+/* 10. ADD TO CART BUTTON */
+.woocommerce ul.products li.product .button,
+.woocommerce ul.products li.product .add_to_cart_button {
+    display: inline-block !important;
+    background-color: #ffffff !important;
+    color: #1C3361 !important;
+    font-weight: 600 !important;
+    border-radius: 6px !important;
+    padding: 15px 12px !important; /* slightly taller */
+    margin: 8px auto 12px auto !important;
+	border: 2px solid #1C3361;
+    text-transform: uppercase !important;
+    font-size: 13px !important;
+    transition: all 0.3s ease !important;
+}
+
+.woocommerce ul.products li.product .button:hover,
+.woocommerce ul.products li.product .add_to_cart_button:hover {
+    background-color: #1C3361
+			!important;
+    color: #ffffff !important;
+	border:2px solid #ffffff
+}
+
+
+/* ============================= */
+/* === RESPONSIVE GRID FIXES === */
+/* ============================= */
+
+/* Tablet (768px – 1024px) */
+@media (max-width: 1024px) {
+    .woocommerce ul.products li.product {
+        width: calc(50% - 20px) !important; /* 2 products per row */
+        margin: 5px 10px 20px 10px !important;
+    }
+
+    .woocommerce ul.products li.product img {
+        height: 160px !important; /* slightly shorter */
+    }
+
+    .woocommerce ul.products li.product .woocommerce-loop-product__title {
+        font-size: 16px !important;
+        padding: 6px 8px 4px 8px !important;
+    }
+
+    .woocommerce ul.products li.product .price,
+    .woocommerce ul.products li.product .price * {
+        font-size: 14px !important;
+        padding: 0 8px 6px 8px !important;
+    }
+
+    .woocommerce ul.products li.product .button,
+    .woocommerce ul.products li.product .add_to_cart_button {
+        padding: 8px 10px !important;
+        font-size: 12px !important;
+    }
+}
+
+/* Mobile (less than 768px) */
+@media (max-width: 767px) {
+    .woocommerce ul.products {
+        margin: 0 -5px !important; /* reduce side margin */
+    }
+
+    .woocommerce ul.products li.product {
+        width: calc(100% - 10px) !important; /* 1 product per row */
+        margin: 5px 5px 20px 5px !important;
+    }
+
+    .woocommerce ul.products li.product img {
+        height: 140px !important;
+    }
+
+    .woocommerce ul.products li.product .woocommerce-loop-product__title {
+        font-size: 14px !important;
+        padding: 5px 6px 3px 6px !important;
+    }
+
+    .woocommerce ul.products li.product .price,
+    .woocommerce ul.products li.product .price * {
+        font-size: 13px !important;
+        padding: 0 6px 5px 6px !important;
+    }
+
+    .woocommerce ul.products li.product .button,
+    .woocommerce ul.products li.product .add_to_cart_button {
+        padding: 6px 10px !important;
+        font-size: 12px !important;
+    }
+
+    /* Optional: Reduce sale badge size on mobile */
+    .woocommerce ul.products li.product .onsale {
+        font-size: 12px !important;
+        padding: 2px 10px !important;
+        top: 12px !important;
+    }
+}
+
+
+/* ================================================= */
+/* === SINGLE PRODUCT PAGE STYLES (Prototype Match) === */
+/* ================================================= */
+
+/* 1. GLOBAL LAYOUT & CONTAINER */
+.single-product div.product {
+    padding: 50px 50px; /* Add top/bottom spacing */
+    background-color: #f7f7f7; /* Match prototype background */
+    font-family: "Skolar Sans", sans-serif; /* Use your global font */
+}
+
+/* Ensure the main content area has the required padding if not set globally */
+.woocommerce-page #content, .woocommerce-page .site-content {
+    padding: 20px; 
+}
+
+
+/* 2. PRODUCT SUMMARY (Right Side) */
+/* This is where the title, price, quantity, and button live */
+.single-product div.product .summary {
+    background-color: transparent;
+    padding: 50px; /* Space between image and details */
+}
+
+/* Product Title */
+.single-product div.product .product_title {
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+/* Shop Tagline/Short Description Area */
+.woocommerce div.product .woocommerce-product-details__short-description {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+/* Price */
+.single-product div.product p.price, 
+.single-product div.product span.price {
+    font-size: 26px;
+    font-weight: 700;
+    color: #222; /* Primary text color */
+    margin: 15px 0 20px 0;
+}
+
+/* 3. CUSTOMER SERVICE & SUPPORT */
+/* Text 'Customer service & support Call us at...' */
+.custom-support-info { /* You'll likely need to add this class manually in your template */
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 25px;
+}
+.custom-support-info strong {
+    font-weight: 600;
+}
+
+/* 4. QUANTITY INPUT STYLES */
+.woocommerce div.product form.cart .quantity {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-right: 15px;
+    height: 40px; /* Match button height */
+}
+
+.woocommerce div.product form.cart .quantity .qty {
+    width: 40px;
+    height: 100%;
+    text-align: center;
+    border: none;
+    padding: 0;
+    margin: 0;
+    line-height: 40px; /* Vertically center number */
+    font-size: 16px;
+}
+
+/* Quantity buttons (+ and -) */
+.woocommerce div.product form.cart .quantity input[type="button"] {
+    background-color: #fff;
+    color: #1C3361;
+    border: 2px solid !important;
+    padding: 0 10px;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 1;
+    height: 100%;
+    
+}
+
+.woocommerce div.product form.cart .quantity input[type="button"]:hover {
+    background-color: #eee;
+}
+
+/* 5. ADD TO CART BUTTON & HEART ICON */
+.woocommerce div.product form.cart {
+    display: flex;
+    align-items: center; /* Align quantity, button, and heart vertically */
+    margin-bottom: 30px;
+}
+
+.woocommerce button.single_add_to_cart_button {
+    /* Use the blue color from your product grid */
+    background-color: #1C3361 !important; 
+    color: #ffffff !important;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 16px;
+    line-height: 20px; /* Vertically center text */
+    height: 40px; /* Consistent height */
+    transition: background-color 0.3s;
+}
+
+.woocommerce button.single_add_to_cart_button:hover {
+    background-color: #ffffff !important;
+	border: 2px solid #1C3361  !important;
+	color: #1C3361 !important;
+	/* Slightly lighter blue on hover */
+}
+
+
+/* 6. PRODUCT IMAGE GALLERY & THUMBNAILS */
+.single-product div.product .woocommerce-product-gallery {
+    /* Adjust width if needed, standard is usually 50% */
+    width: 50%; 
+}
+
+/* Thumbnail wrapper alignment */
+.single-product div.product .woocommerce-product-gallery__wrapper {
+    flex-direction: column; /* Main image on top, thumbnails below */
+}
+
+/* Thumbnail layout (The 3 small squares in your prototype) */
+.flex-control-nav.flex-control-thumbs {
+    display: flex;
+    justify-content: flex-start; /* Align left */
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+.flex-control-nav.flex-control-thumbs li {
+    margin-right: 10px;
+}
+.flex-control-nav.flex-control-thumbs img {
+    width: 60px; /* Size of thumbnail */
+    height: 60px;
+    object-fit: cover;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    opacity: 0.7;
+    transition: all 0.2s;
+}
+.flex-control-nav.flex-control-thumbs img.flex-active,
+.flex-control-nav.flex-control-thumbs img:hover {
+    opacity: 1;
+    border-color: #1C3361; /* Active/hover border color */
+}
+
+
+/* 7. PRODUCT DATA TABS (Description, Advice, Pick up) */
+.woocommerce-tabs {
+    margin-top: 50px;
+}
+
+/* Tab Navigation Styling */
+.woocommerce-tabs ul.tabs {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-bottom: 2px solid #ddd;
+}
+
+.woocommerce-tabs ul.tabs li {
+    background-color: transparent;
+    border: none;
+    margin-right: 30px;
+    padding: 0 0 10px 0;
+    position: relative;
+    top: 2px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Active Tab Underline (Matches prototype line) */
+.woocommerce-tabs ul.tabs li.active {
+    border-bottom: 3px solid #1C3361; /* Active tab line color */
+    font-weight: 600;
+    color: #1C3361;
+}
+
+.woocommerce-tabs ul.tabs li a {
+    text-decoration: none;
+    color: inherit;
+    padding: 0;
+}
+
+/* Tab Panel Content Styling */
+.woocommerce-tabs .panel {
+    padding: 30px 0;
+    background-color: transparent;
+    border: none;
+    line-height: 1.7;
+    font-size: 15px;
+    color: #333;
+}
+.woocommerce-tabs .panel p {
+    margin-bottom: 15px;
+}
+
+
+/* ================================================= */
+/* === RELATED PRODUCTS (Applying Your Existing Code) === */
+/* ================================================= */
+
+/* WooCommerce standard hook for related products is usually after the tabs */
+.related.products {
+    margin-top: 40px;
+}
+
+/* Apply your existing product grid styles to the related products section */
+.related.products .woocommerce ul.products,
+.related.products .woocommerce ul.products li.product {
+    /* Your existing .woocommerce ul.products code applies here */
+}
+
+/* Fix for the Related Products title */
+.related.products h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+/* ============================================= */
+/* === SINGLE PRODUCT PAGE - RESPONSIVENESS === */
+/* ============================================= */
+
+/* Tablet (less than 1024px) */
+@media (max-width: 1024px) {
+    /* 1. Main Container Padding */
+    .single-product div.product {
+        padding: 30px 20px; /* Reduce global padding */
+    }
+
+    /* 2. Layout Stack (Image on top, Summary below) */
+    .woocommerce div.product {
+        display: block; /* Force the main product elements to stack */
+    }
+
+    /* Image Gallery (Left Side) */
+    .single-product div.product .woocommerce-product-gallery {
+        width: 100%; /* Full width for the image */
+        margin-right: 0;
+        margin-bottom: 20px; /* Space before details */
+        padding: 0; /* Remove padding from the gallery container */
+    }
+
+    /* Main Image Wrapper Padding */
+    .single-product div.product .woocommerce-product-gallery__wrapper {
+        padding: 10px; /* Slight reduction in inner padding for main image */
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    /* Product Summary (Right Side - now full width) */
+    .single-product div.product .summary {
+        width: 100%;
+        padding: 0; /* Remove padding for details block */
+    }
+
+    /* Tab Navigation */
+    .woocommerce-tabs ul.tabs li {
+        margin-right: 20px; /* Tighten up tab spacing */
+        font-size: 15px;
+    }
+}
+
+
+/* Mobile (less than 768px) */
+@media (max-width: 767px) {
+    /* 1. Main Container Padding */
+    .single-product div.product {
+        padding: 20px 10px; /* Further reduce global padding */
+    }
+
+    /* 2. Product Title */
+    .single-product div.product .product_title {
+        font-size: 28px;
+        line-height: 1.2;
+    }
+
+    /* 3. Price */
+    .single-product div.product p.price,
+    .single-product div.product span.price {
+        font-size: 22px;
+        margin: 10px 0 15px 0;
+    }
+
+    /* 4. Quantity & Add to Cart (Force stacking) */
+    .woocommerce div.product form.cart {
+        flex-direction: column; /* Stack Quantity and Button */
+        align-items: stretch;
+    }
+
+    /* Quantity Box */
+    .woocommerce div.product form.cart .quantity {
+        width: 100%;
+        max-width: 150px; /* Keep quantity input readable */
+        margin: 0 auto 15px auto; /* Center quantity and add space below */
+    }
+
+    /* Add to Cart Button */
+    .woocommerce button.single_add_to_cart_button {
+        width: 100%; /* Full width button on mobile */
+        max-width: none;
+        margin-top: 5px;
+    }
+    
+    /* Wishlist Icon (moves below button/quantity) */
+    .wishlist-button-wrap {
+        text-align: center;
+        margin-top: 15px;
+    }
+    .wishlist-button-wrap a.wishlist-icon {
+        margin-left: 0;
+    }
+
+
+    /* 5. Tabs */
+    .woocommerce-tabs {
+        margin-top: 30px;
+    }
+    .woocommerce-tabs ul.tabs {
+        display: block; /* Tabs stack vertically on very small screens */
+        border-bottom: none;
+    }
+    .woocommerce-tabs ul.tabs li {
+        width: 100%;
+        margin: 0 0 1px 0; /* Stacked look */
+        padding: 10px 15px;
+        border-bottom: 1px solid #ddd;
+        border-radius: 0;
+        background-color: #fff;
+    }
+
+    /* Active Tab */
+    .woocommerce-tabs ul.tabs li.active {
+        border-bottom: 1px solid #1C3361; /* Solid bottom border */
+        color: #1C3361;
+    }
+    .woocommerce-tabs ul.tabs li.active::before,
+    .woocommerce-tabs ul.tabs li.active::after {
+        display: none; /* Remove theme-specific tab decorations */
+    }
+
+    /* Tab Content Padding */
+    .woocommerce-tabs .panel {
+        padding: 20px 0;
+    }
+}
 
 
