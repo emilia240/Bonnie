@@ -735,12 +735,9 @@ woocommerce
   display: block;
   color: transparent;
 }
-/* ================================================= */
-/* === MENU ACTIVE SWITCH: BLOG to PETS (Shop) === */
-/* ================================================= */
+
 
 /* 1. FORCE THE "PETS" LINK TO BE ACTIVE ON SHOP/PRODUCT PAGES */
-/* This targets the 'Pets' link on any WooCommerce page. */
 body.woocommerce a[href*="/shop"] {
     border-bottom: 4px solid #1C3361 !important; /* Forces the blue underline */
     margin-bottom: -6px !important;              /* Compensates for the 4px border height (from [&.active]:!mb-[-6px]) */
@@ -756,3 +753,4 @@ body.woocommerce a[href*="/blog"] {
 
     color: #1D1D1D !important;
 }
+
