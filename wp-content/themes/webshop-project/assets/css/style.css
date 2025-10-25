@@ -1060,7 +1060,6 @@ body.woocommerce a[href*="/blog"] {
     }
 }
 
-
 /* Titles and Headers */
 .woocommerce-checkout h3,
 .woocommerce-checkout #order_review_heading {
@@ -1083,12 +1082,12 @@ body.woocommerce a[href*="/blog"] {
     font-size: 1em;
     box-shadow: inset 0 1px 3px rgba(0,0,0,0.06);
     transition: border-color 0.3s;
-    box-sizing: border-box; /* Crucial for responsive width */
+    box-sizing: border-box;
 }
 .woocommerce-checkout .form-row input.input-text:focus, 
 .woocommerce-checkout .form-row textarea:focus,
 .woocommerce-checkout .form-row select:focus {
-    border-color: #5b9edb; /* Focus color */
+    border-color: #5b9edb; 
     outline: none;
     box-shadow: 0 0 5px rgba(91, 158, 219, 0.5);
 }
@@ -1105,18 +1104,6 @@ body.woocommerce a[href*="/blog"] {
     text-decoration: none;
 }
 
-/* Half-width fields (First Name/Last Name, etc.) */
-.woocommerce-checkout .form-row-first,
-.woocommerce-checkout .form-row-last {
-    float: left;
-    width: 48%;
-}
-.woocommerce-checkout .form-row-first {
-    margin-right: 4%; /* Gap between the two columns */
-}
-.woocommerce-checkout .form-row-wide {
-    clear: both;
-}
 
 
 .woocommerce-checkout #order_review {
@@ -1202,11 +1189,11 @@ body.woocommerce a[href*="/blog"] {
     color: #555;
 }
 
-/* Place Order Button (Purple style from your cart images) */
+
 .woocommerce-checkout #payment .place-order button[type="submit"] {
     display: block;
     width: fit-content;
-    background-color: #1C3361; /* Your distinctive purple */
+    background-color: #1C3361; 
     color: #ffffff !important; 
     font-size: 1.1em;
     font-weight: 700;
@@ -1219,7 +1206,7 @@ body.woocommerce a[href*="/blog"] {
     transition: background-color 0.3s;
 }
 .woocommerce-checkout #payment .place-order button[type="submit"]:hover {
-    background-color: #0088cc; /* Darker purple on hover */
+    background-color: #0088cc; 
 }
 
 
