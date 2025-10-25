@@ -1031,6 +1031,7 @@ body.woocommerce a[href*="/blog"] {
 }
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 
 
 /* Woocomerce - CHECKOUT page*/
@@ -1239,6 +1240,8 @@ body.woocommerce a[href*="/blog"] {
 }
 
 =======
+=======
+>>>>>>> Stashed changes
 /* ========================================================= */
 /* BASE STYLING & COLORS */
 /* ========================================================= */
@@ -1422,5 +1425,9 @@ body.woocommerce a[href*="/blog"] {
         border-radius: 8px;
         overflow: hidden;
     }
+<<<<<<< Updated upstream
+}
+>>>>>>> Stashed changes
+=======
 }
 >>>>>>> Stashed changes
