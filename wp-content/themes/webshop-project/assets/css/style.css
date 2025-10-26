@@ -372,7 +372,7 @@ woocommerce
     /* Positioning to Top-Right */
     top: 20px !important; 
     right: 20px !important; 
-    left: auto !important; /* Ensures it positions from the right */
+    left: auto !important; 
     
     /* Display properties */
     position: absolute !important;
@@ -507,7 +507,7 @@ woocommerce
 }
 .related.products .woocommerce ul.products,
 .related.products .woocommerce ul.products li.product {
-    /* Your existing .woocommerce ul.products code applies here */
+
 }
 
 /* Fix for the Related Products title */
@@ -650,7 +650,7 @@ woocommerce
     }
 
     .woocommerce ul.products li.product img {
-        height: 160px !important; /* slightly shorter */
+        height: 160px !important; 
     }
 
     .woocommerce ul.products li.product .woocommerce-loop-product__title {
@@ -674,11 +674,11 @@ woocommerce
 /* Mobile (less than 768px) */
 @media (max-width: 767px) {
     .woocommerce ul.products {
-        margin: 0 -5px !important; /* reduce side margin */
+        margin: 0 -5px !important; 
     }
 
     .woocommerce ul.products li.product {
-        width: calc(100% - 10px) !important; /* 1 product per row */
+        width: calc(100% - 10px) !important; 
         margin: 5px 5px 20px 5px !important;
     }
 
@@ -749,11 +749,10 @@ woocommerce
 /* ================================================= */
 
 /* 1. FORCE THE "PETS" LINK TO BE ACTIVE ON SHOP/PRODUCT PAGES */
-/* This targets the 'Pets' link on any WooCommerce page. */
 body.woocommerce a[href*="/shop"] {
-    border-bottom: 4px solid #1C3361 !important; /* Forces the blue underline */
-    margin-bottom: -6px !important;              /* Compensates for the 4px border height (from [&.active]:!mb-[-6px]) */
-    padding-bottom: 2px !important;              /* Often needed to make the line look right */
+    border-bottom: 4px solid #1C3361 !important; 
+    margin-bottom: -6px !important;              
+    padding-bottom: 2px !important;              
     color: #1D1D1D !important;
 }
 
@@ -1043,7 +1042,7 @@ body.woocommerce a[href*="/blog"] {
 /* ========================================================= */
 
 .woocommerce-account {
-    max-width: 1100px; /* Slightly wider than 1000px for a modern look */
+    max-width: 1100px; 
     margin: 3em auto;
     padding: 0 15px;
 }
@@ -1052,7 +1051,7 @@ body.woocommerce a[href*="/blog"] {
 .woocommerce-MyAccount-content h1,
 .woocommerce-MyAccount-content h2,
 .woocommerce-MyAccount-content h3 {
-    font-family: 'Bodoni MT', serif; /* Apply your desired font to headings */
+    font-family: 'Bodoni MT', serif;
     color: #1C3361; /* Primary Brand Color for headings */
     margin-bottom: 0.8em;
 }
@@ -1221,7 +1220,6 @@ body.woocommerce a[href*="/blog"] {
 /* 1. GLOBAL FULL-WIDTH OVERRIDE */
 /* ========================================================= */
 
-/* Forces the main WooCommerce container to span 100% of the viewport */
 .woocommerce-account { 
     max-width: none !important; 
     margin: 0 !important;
@@ -1232,8 +1230,8 @@ body.woocommerce a[href*="/blog"] {
 .woocommerce-MyAccount-content h1,
 .woocommerce-MyAccount-content h2,
 .woocommerce-MyAccount-content h3 {
-    font-family: 'Bodoni MT', serif; /* Apply your desired font to headings */
-    color: #1C3361; /* Primary Brand Color for headings */
+    font-family: 'Bodoni MT', serif; 
+    color: #1C3361;
     margin-bottom: 0.8em;
 }
 
@@ -1379,13 +1377,11 @@ body.woocommerce a[href*="/blog"] {
     }
     .woocommerce-MyAccount-navigation {
         flex: 0 0 250px; /* Width of the menu */
-        /* Use internal padding instead of margin for spacing in a full-width container */
         padding-right: 30px; 
         margin-right: 0; 
     }
     .woocommerce-MyAccount-content {
         flex-grow: 1;
-        /* Re-introduce slight padding to prevent content from touching the screen edge */
         padding-left: 20px; 
         padding-right: 20px;
     }
