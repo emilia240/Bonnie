@@ -70,11 +70,12 @@
       </div>
 
       <!-- Login/Basket -->
-
+      <div class="flex flex-wrap !gap-3" role="navigation" aria-label="<?php echo esc_attr(pll__('User account and shopping basket')); ?>">
+        
         <?php 
         $my_account_url = esc_url( wc_get_page_permalink( 'myaccount' ) );$link_text = is_user_logged_in() ? pll__('My Account') : pll__('Login');?>
-        <a href="<?php echo $my_account_url; ?>" class="bg-[#1D1D1D] text-[#F4F4F4] !px-4 !py-2 rounded-full no-underline text-responsive-xs">👤 <?php echo esc_html($link_text); ?></a>
-        <a href="<?php echo esc_url(home_url('/cart')); ?>" class="bg-[#1D1D1D] text-[#F4F4F4] !px-4 !py-2 rounded-full no-underline text-responsive-xs">🛒 <?php echo esc_html(pll__('Basket')); ?></a>
+        <a href="<?php echo $my_account_url; ?>" class="bg-[#f4f4f4] text-[#1C3361] !px-4 !py-2 rounded-full no-underline text-responsive-xs border-2 border-[#f4f4f4] hover:bg-[#1c3361] hover:text-[#f4f4f4]">👤 <?php echo esc_html($link_text); ?></a>
+        <a href="<?php echo esc_url(home_url('/cart')); ?>" class="bg-[#f4f4f4] text-[#1C3361] !px-4 !py-2 rounded-full no-underline text-responsive-xs border-2 border-[#f4f4f4] hover:bg-[#1c3361] hover:text-[#f4f4f4]">🛒 <?php echo esc_html(pll__('Basket')); ?></a>
       </div>
     </div>
   </div>
