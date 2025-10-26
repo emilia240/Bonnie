@@ -2,16 +2,34 @@
 # This file is distributed under the same license as the Plugins - Rank Math SEO – AI SEO Tools to Dominate SEO Rankings - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-10-08 01:50:59+0000\n"
+"PO-Revision-Date: 2025-10-26 03:41:32+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: GlotPress/4.0.1\n"
+"X-Generator: GlotPress/4.0.3\n"
 "Language: de\n"
 "Project-Id-Version: Plugins - Rank Math SEO – AI SEO Tools to Dominate SEO Rankings - Stable (latest release)\n"
 
-#: includes/admin/class-ask-review.php:175
+#. translators: %1$s is the error message, %2$s is the table name.
+#: includes/helpers/class-db.php:224
+msgid "Rank Math SEO: Getting error \"%1$s\" while creating table <code>%2$s</code>. Please contact your server administrator to fix this issue."
+msgstr "Rank Math SEO: Beim Erstellen der Tabelle <code>%2$s</code> tritt der Fehler „%1$s“ auf. Bitte wende dich an deinen Serveradministrator, um dieses Problem zu beheben."
+
+#: includes/class-installer.php:256
+msgid "The format of the tables array has changed. Please update your code accordingly."
+msgstr "Das Format des Tabellen-Arrays hat sich geändert. Bitte aktualisiere deinen Code entsprechend."
+
+#. Translators: 1: opening anchor tag, 2: closing anchor tag.
+#: includes/admin/class-notices.php:70
+msgid "The React Settings UI is currently disabled, and the classic settings interface is active. Note: The PHP-based settings interface will be removed in an upcoming release. %1$sEnable the React Settings UI%2$s to switch back."
+msgstr "Die React-Einstellungsoberfläche ist derzeit deaktiviert, die klassische Einstellungsoberfläche ist aktiv. Hinweis: Die PHP-basierte Einstellungsoberfläche wird in einer zukünftigen Version entfernt. %1$sAktiviere die React-Einstellungsoberfläche%2$s, um zurück zu wechseln."
+
+#: includes/admin/class-admin-menu.php:266
+msgid "Halloween Sale"
+msgstr "Halloween-Angebot"
+
+#: includes/admin/class-ask-review.php:182
 msgid "We would love to get your feedback! It's essential for our continued development. Please consider taking a moment to leave a review of your experience on Trustpilot."
 msgstr "Wir freuen uns über dein Feedback! Es ist für unsere Weiterentwicklung unerlässlich. Bitte nehme dir einen Moment Zeit und hinterlasse eine Bewertung deiner Erfahrungen auf Trustpilot."
 
@@ -526,8 +544,8 @@ msgstr "Häufig gestellte Fragen von Rank Math"
 
 #: includes/admin/class-cmb2-options.php:384
 #: includes/admin/class-cmb2-options.php:392
-#: includes/admin/class-option-center.php:586
-#: includes/admin/class-option-center.php:592
+#: includes/admin/class-option-center.php:588
+#: includes/admin/class-option-center.php:594
 msgid "You do not have permission to edit the .htaccess file."
 msgstr "Du hast keine Berechtigung, die .htaccess-Datei zu bearbeiten."
 
@@ -2845,11 +2863,11 @@ msgstr "Nein, ich will es nicht"
 msgid "Yes, I want to learn more"
 msgstr "Ja, ich möchte mehr erfahren"
 
-#: rank-math.php:470
+#: rank-math.php:475
 msgid "This action is IRREVERSIBLE."
 msgstr "Diese Aktion ist NICHT UMKEHRBAR."
 
-#: rank-math.php:469
+#: rank-math.php:474
 msgid "CAUTION:"
 msgstr "VORSICHT:"
 
@@ -3117,31 +3135,31 @@ msgstr "Hallo,"
 msgid "[%s] An update is available for Rank Math"
 msgstr "[%s] Ein Update ist verfügbar für Rank Math"
 
-#: includes/admin/class-ask-review.php:180
+#: includes/admin/class-ask-review.php:187
 msgid "I already did"
 msgstr "Das habe ich bereits"
 
-#: includes/admin/class-ask-review.php:179
+#: includes/admin/class-ask-review.php:186
 #: includes/admin/class-pro-notice.php:245
 msgid "No, maybe later"
 msgstr "Nein, vielleicht später"
 
-#: includes/admin/class-ask-review.php:178
+#: includes/admin/class-ask-review.php:185
 msgid "Yes, you deserve it"
 msgstr "Ja, du hast es verdient"
 
-#: includes/admin/class-ask-review.php:176
+#: includes/admin/class-ask-review.php:183
 msgid "Co-founder of Rank Math"
 msgstr "Mitbegründer von Rank Math"
 
 #. Translators: placeholder is the plugin name.
-#: includes/admin/class-ask-review.php:172
+#: includes/admin/class-ask-review.php:179
 msgctxt "plugin name inside the review notice"
 msgid "Rank Math SEO"
 msgstr "Rank Math SEO"
 
 #. Translators: placeholder is the plugin name.
-#: includes/admin/class-ask-review.php:172
+#: includes/admin/class-ask-review.php:179
 msgid "Hey, we noticed you've been using %s for more than a week now – that's awesome!"
 msgstr "Hey, uns ist aufgefallen, dass du %s jetzt seit mehr als einer Woche verwendest – das ist großartig!"
 
@@ -4335,7 +4353,7 @@ msgstr "Du bist leider nicht berechtigt, Plugins dieser Website zu deaktivieren.
 #. filter link
 #: includes/settings/general/others.php:90 assets/admin/js/generalSettings.js:1
 msgid "filter"
-msgstr "Filtern"
+msgstr "filter"
 
 #. Translators: %s is the word "nofollow" code tag and second one for the
 #. filter link
@@ -4593,7 +4611,7 @@ msgid "Custom or Generated SEO Title of the current post/page"
 msgstr "Individueller oder generierter SEO-Titel des aktuellen Beitrags/der aktuellen Seite"
 
 #. translators: 1. Bold text 2. Bold text
-#: rank-math.php:468
+#: rank-math.php:473
 msgid "%1$s A filter to remove the Rank Math data from the database is present. Deactivating & Deleting this plugin will remove everything related to the Rank Math plugin. %2$s"
 msgstr "%1$s In deinem Theme ist ein Filter zum Entfernen der Rank Math Daten aus der Datenbank vorhanden. Das Deaktivieren dieses Plugins entfernt alles, was mit dem Rank Math-Plugin zusammenhängt. %2$s"
 
@@ -5425,7 +5443,7 @@ msgstr "Preis gültig bis"
 msgid "Page %s"
 msgstr "Seite %s"
 
-#: includes/admin/class-post-columns.php:282
+#: includes/admin/class-post-columns.php:288
 msgid "Is Pillar"
 msgstr "Ist Säule"
 
@@ -5435,7 +5453,7 @@ msgstr "Ist Säule"
 msgid "Performer"
 msgstr "Darsteller"
 
-#: includes/admin/class-post-columns.php:291
+#: includes/admin/class-post-columns.php:297
 msgid "Not Set"
 msgstr "Nicht festgelegt"
 
@@ -6434,7 +6452,7 @@ msgstr "Wir haben neue Beitrags-Typen (%1$s) entdeckt und du solltest die Einste
 #: includes/modules/sitemap/class-admin.php:251
 #: assets/admin/js/sitemapSettings.js:1
 msgid "%s archives"
-msgstr "%s Archive"
+msgstr "%s-Archiv"
 
 #. translators: Taxonomy singular label
 #: includes/modules/sitemap/class-admin.php:246
@@ -7808,7 +7826,7 @@ msgstr "Zugriffszeit"
 #: includes/modules/404-monitor/class-table.php:225
 #: includes/modules/redirections/class-table.php:276
 msgid "Hits"
-msgstr "Treffer"
+msgstr "Zugriffe"
 
 #: includes/modules/404-monitor/class-table.php:224
 msgid "User-Agent"
@@ -8116,7 +8134,7 @@ msgstr "Nicht folgen"
 msgid "Prevents pages from being indexed and displayed in search engine result pages"
 msgstr "Verhindert, dass Seiten indiziert und in Suchmaschinen-Ergebnisseiten angezeigt werden"
 
-#: includes/admin/class-post-columns.php:265
+#: includes/admin/class-post-columns.php:271
 #: includes/helpers/class-choices.php:75 assets/admin/js/rank-math-app.js:1
 msgid "No Index"
 msgstr "Kein Index"
@@ -8138,17 +8156,17 @@ msgid "Address:"
 msgstr "Adresse:"
 
 #: includes/admin/class-cmb2-options.php:419
-#: includes/admin/class-option-center.php:614
+#: includes/admin/class-option-center.php:616
 msgid ".htaccess file updated successfully."
 msgstr ".htaccess-Datei erfolgreich aktualisiert."
 
 #: includes/admin/class-cmb2-options.php:413
-#: includes/admin/class-option-center.php:609
+#: includes/admin/class-option-center.php:611
 msgid "Failed to update .htaccess file. Please check file permissions."
 msgstr "Aktualisierung der .htaccess-Datei fehlgeschlagen. Bitte überprüfe die Dateiberechtigungen."
 
 #: includes/admin/class-cmb2-options.php:406
-#: includes/admin/class-option-center.php:604
+#: includes/admin/class-option-center.php:606
 msgid "Failed to backup .htaccess file. Please check file permissions."
 msgstr "Fehler beim Sichern der .htaccess-Datei. Bitte überprüfe die Dateiberechtigungen."
 
@@ -8411,7 +8429,7 @@ msgstr "Seite"
 msgid "Focus Keyword of the current post"
 msgstr "Fokus-Schlüsselwort des aktuellen Beitrags"
 
-#: includes/admin/class-post-columns.php:286
+#: includes/admin/class-post-columns.php:292
 #: includes/replace-variables/class-advanced-variables.php:44
 #: assets/admin/js/rank-math-app.js:1
 #: includes/modules/content-ai/assets/js/content-ai-page.js:1
@@ -8631,7 +8649,7 @@ msgstr "Beitragstitel"
 msgid "Page %1$d of %2$d"
 msgstr "Seite %1$d von %2$d"
 
-#: rank-math.php:489
+#: rank-math.php:494
 msgid "Documentation"
 msgstr "Dokumentation"
 
@@ -8650,7 +8668,7 @@ msgstr "Aktiv"
 #: includes/module/class-module.php:105
 #: includes/modules/404-monitor/class-admin.php:222
 #: includes/modules/instant-indexing/class-instant-indexing.php:222
-#: includes/modules/redirections/class-admin.php:319 rank-math.php:431
+#: includes/modules/redirections/class-admin.php:319 rank-math.php:436
 #: assets/admin/js/instantIndexingSettings.js:1 assets/admin/js/modules.js:1
 #: assets/admin/js/rank-math-app.js:1
 #: includes/modules/schema/blocks/schema/assets/js/index.js:1
@@ -8694,7 +8712,7 @@ msgstr "Aktiviere die Unterstützung für die strukturierten Daten, mit denen Me
 msgid "Records the URLs on which visitors & search engines run into 404 Errors. You can also turn on Redirections to redirect the error causing URLs to other URLs."
 msgstr "Zeichnet die URLs auf, unter denen Besucher und Suchmaschinen auf 404-Fehler stoßen. Du kannst auch Umleitungen aktivieren, um die fehlerhaften URLs auf andere URLs umzuleiten."
 
-#: includes/class-installer.php:348
+#: includes/class-installer.php:379
 #: includes/settings/general/breadcrumbs.php:121
 #: assets/admin/js/generalSettings.js:1
 msgid "404 Error: page not found"
@@ -8702,7 +8720,7 @@ msgstr "Fehler 404: Seite nicht gefunden"
 
 #. translators: Search query term
 #. translators: placeholder
-#: includes/class-installer.php:347
+#: includes/class-installer.php:378
 #: includes/settings/general/breadcrumbs.php:110
 #: assets/admin/js/generalSettings.js:1
 msgid "Results for %s"
@@ -8710,13 +8728,13 @@ msgstr "Ergebnisse für %s"
 
 #. translators: Archive title
 #. translators: placeholder
-#: includes/class-installer.php:345
+#: includes/class-installer.php:376
 #: includes/settings/general/breadcrumbs.php:98
 #: assets/admin/js/generalSettings.js:1
 msgid "Archives for %s"
 msgstr "Archiv für %s"
 
-#: includes/class-installer.php:343
+#: includes/class-installer.php:374
 #: includes/settings/general/breadcrumbs.php:65
 #: assets/admin/js/generalSettings.js:1
 msgid "Home"
@@ -8908,7 +8926,7 @@ msgstr "Mehr erfahren"
 msgid "Learn More"
 msgstr "Weitere Informationen"
 
-#: rank-math.php:488 assets/admin/js/wizard.js:1
+#: rank-math.php:493 assets/admin/js/wizard.js:1
 msgid "Getting Started"
 msgstr "Erste Schritte"
 
@@ -9291,7 +9309,7 @@ msgstr "Preis"
 
 #: includes/opengraph/class-slack.php:227
 msgid "In stock"
-msgstr "Auf Lager"
+msgstr "Vorrätig"
 
 #: includes/3rdparty/divi/class-divi.php:157
 #: includes/admin/class-assets.php:134
@@ -9313,15 +9331,15 @@ msgstr "Alternativer Text"
 msgid "Title"
 msgstr "Titel"
 
-#: includes/admin/class-post-columns.php:288
+#: includes/admin/class-post-columns.php:294
 msgid "Keyword"
 msgstr "Schlüsselwort"
 
-#: includes/admin/class-post-columns.php:229
-#: includes/admin/class-post-columns.php:250
-#: includes/admin/class-post-columns.php:301
-#: includes/admin/class-post-columns.php:321
-#: includes/admin/class-post-columns.php:334
+#: includes/admin/class-post-columns.php:231
+#: includes/admin/class-post-columns.php:252
+#: includes/admin/class-post-columns.php:307
+#: includes/admin/class-post-columns.php:327
+#: includes/admin/class-post-columns.php:340
 #: includes/modules/schema/assets/js/schema-gutenberg.js:1
 #: includes/modules/schema/assets/js/schema-template.js:1
 msgid "Save"
@@ -9360,11 +9378,11 @@ msgstr "SEO Score: Schlecht"
 msgid "SEO Score: Good"
 msgstr "SEO Score: Gut"
 
-#: includes/admin/class-post-columns.php:230
-#: includes/admin/class-post-columns.php:251
-#: includes/admin/class-post-columns.php:302
-#: includes/admin/class-post-columns.php:322
-#: includes/admin/class-post-columns.php:335 assets/admin/js/post-list.js:1
+#: includes/admin/class-post-columns.php:232
+#: includes/admin/class-post-columns.php:253
+#: includes/admin/class-post-columns.php:308
+#: includes/admin/class-post-columns.php:328
+#: includes/admin/class-post-columns.php:341 assets/admin/js/post-list.js:1
 #: includes/modules/redirections/assets/js/redirections.js:1
 msgid "Cancel"
 msgstr "Abbrechen"
@@ -9556,7 +9574,7 @@ msgstr "Import &amp; Export"
 
 #: includes/admin/class-admin-dashboard-nav.php:111
 #: includes/admin/class-setup-wizard.php:68
-#: includes/admin/class-setup-wizard.php:69 rank-math.php:432 rank-math.php:437
+#: includes/admin/class-setup-wizard.php:69 rank-math.php:437 rank-math.php:442
 #: assets/admin/js/modules.js:1
 msgid "Setup Wizard"
 msgstr "Einrichtungsassistent"
@@ -9600,7 +9618,7 @@ msgstr "Hilfe und Support"
 #: includes/modules/analytics/views/email-reports/header.php:38
 #: includes/modules/role-manager/class-members.php:48
 #: includes/modules/role-manager/class-user-role-editor.php:58
-#: includes/modules/schema/class-blocks.php:75
+#: includes/modules/schema/class-blocks.php:76
 #: includes/modules/status/class-system-status.php:51
 #: assets/admin/js/blocks.js:1 assets/admin/js/gutenberg.js:1
 #: assets/admin/js/rank-math-app.js:1

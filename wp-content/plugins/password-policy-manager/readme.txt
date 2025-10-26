@@ -7,7 +7,7 @@ Donate link: https://miniorange.com
 Requires at least: 4.6
 Tested up to: 6.8
 Requires PHP: 5.3.0
-Stable tag: 2.0.5
+Stable tag: 2.0.6
 License: Expat
 License URI: https://plugins.miniorange.com/mit-license
 
@@ -156,6 +156,10 @@ If a user hasn't logged in yet, they will be prompted to change their password d
 
 
 == Changelog ==
+
+= 2.0.6 =
+
+* Security Fixes - User Profile
 
 = 2.0.5 =
 
