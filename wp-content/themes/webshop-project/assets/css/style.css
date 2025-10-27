@@ -1837,19 +1837,23 @@ body.woocommerce a[href*="/blog"] {
     background-color: #1C3361 !important; /* Primary Brand Color */
     color: #ffffff !important;
     padding: 12px 25px !important;
-    border-radius: 4px !important;
+    border-radius: 5rem !important;
     font-weight: 600;
     text-transform: uppercase;
-    transition: background-color 0.3s;
     border: none !important;
     line-height: 1 !important;
     font-family: sans-serif;
+    transition: color 0.3s,;
 }
+
 .woocommerce-button:hover,
 .woocommerce .button:hover {
-    background-color: #0077b3 !important; 
-    color: #ffffff !important;
+    background-color: white !important;
+    border: 1px solid #1C3361 !important;
+    color: #1C3361 !important; 
 }
+
+
 
 /* TABLE STYLING (Orders, Addresses) */
 .woocommerce-orders-table, 
@@ -1874,6 +1878,13 @@ body.woocommerce a[href*="/blog"] {
     background-color: #1C3361 !important;
     padding: 8px 15px !important;
     font-size: 0.9em;
+    border-radius: 5rem !important;
+}
+
+.woocommerce-orders-table .button.view:hover {
+    background-color: white !important;
+    border: 1px solid #1C3361 !important;
+    color: #1C3361 !important; 
 }
 
 

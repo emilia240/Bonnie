@@ -282,10 +282,10 @@ add_action( 'after_setup_theme', 'yourtheme_woocommerce_setup' );
 
 
 
-function something() {
+function show_category_on_product() {
    global $product;
     $terms = get_the_terms( $product->get_id(), 'product_cat' );
     echo $terms[0]->name;
 }
 
-add_action( 'woocommerce_after_shop_loop_item_title', 'something', 5 );
+add_action( 'woocommerce_after_shop_loop_item_title', 'show_category_on_product', 5 );
