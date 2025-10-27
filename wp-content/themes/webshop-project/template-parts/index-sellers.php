@@ -76,7 +76,7 @@
 
                         <?php if ($is_on_sale): ?>
                             <div class="absolute top-4 left-4 z-10">
-                                <span class="bg-white/90 text-red-500 px-3 py-1 rounded-lg text-sm font-bold">
+                                <span class="bg-[#476cb5] text-[#f4f4f4] px-3 py-1 rounded-lg text-sm font-bold">
                                 <?php echo esc_html(pll_e('Sale!')); ?>
                                 </span>
                             </div>
