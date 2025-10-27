@@ -279,3 +279,13 @@ function yourtheme_woocommerce_setup() {
     add_theme_support( 'wc-product-gallery-slider' );
 }
 add_action( 'after_setup_theme', 'yourtheme_woocommerce_setup' );
+
+
+
+function something() {
+   global $product;
+    $terms = get_the_terms( $product->get_id(), 'product_cat' );
+    echo $terms[0]->name;
+}
+
+add_action( 'woocommerce_after_shop_loop_item_title', 'something', 5 );
