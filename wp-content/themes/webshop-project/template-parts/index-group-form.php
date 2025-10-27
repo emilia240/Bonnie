@@ -92,8 +92,8 @@
 
       <div class="mb-6">
         <label for="fb_expectations" class="mb-3 block text-responsive-base" style="font-family: var(--font-body);">
-        <?php echo esc_html(pll__('What kind of content would you like to see in our group? '));?>
-        </label>
+<?php echo esc_html(pll__('What kind of content would you like to see in our group?'));?>
+</label>
           <textarea name="fb_expectations" id="fb_expectations" rows="3"
            placeholder="<?php echo esc_html(pll__('e.g. care tips, contact with breeders, pet help...')); ?>"
            class="text-responsive-sm w-full h-[180px] sm:h-[200px] md:h-[230px] rounded-md border border-gray-300 p-3 focus:border-blue-500"
