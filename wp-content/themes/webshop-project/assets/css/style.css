@@ -304,6 +304,18 @@ woocommerce
     margin-bottom: 5px;
 }
 
+.woocommerce .price,
+.woocommerce .price a,
+.woocommerce .price span,
+.woocommerce .price bdi,
+.woocommerce .woocommerce-Price-amount,
+.woocommerce .woocommerce-Price-amount bdi,
+.woocommerce .woocommerce-Price-currencySymbol {
+  text-decoration: none !important;
+  border-bottom: none !important; /* Some themes use border-bottom instead of underline */
+}
+
+
 /* 3.  Shop Tagline/Short Description Area */
 .woocommerce div.product .woocommerce-product-details__short-description {
     font-size: 14px;
