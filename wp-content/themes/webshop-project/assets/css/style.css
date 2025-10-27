@@ -505,10 +505,8 @@ woocommerce
 .related.products {
     margin-top: 40px;
 }
-.related.products .woocommerce ul.products,
-.related.products .woocommerce ul.products li.product {
 
-}
+
 
 /* Fix for the Related Products title */
 .related.products h2 {
@@ -1815,6 +1813,65 @@ body.woocommerce a[href*="/blog"] {
     background-color: #ffffff;
 }
 
+.woocommerce-account .addresses {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Each address box */
+.woocommerce-account .addresses .address {
+    flex: 1 1 300px;
+    background: #f7f7f7;
+    border-radius: 8px;
+    padding: 25px 20px 20px 20px;
+    margin-bottom: 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    position: relative;
+    min-width: 250px;
+}
+
+.woocommerce-account .woocommerce-Address address {
+  font-style: normal;       
+  color: #333 !important;                
+  line-height: 1.6;            
+  font-size: 20px;         
+  margin: 10px 0 0 0;          
+}
+
+
+/* Title styling (Billing/Shipping) */
+.woocommerce-account .addresses .title {
+    font-family: 'Bodoni MT', serif;
+    margin-top: 10px;
+    color: #1C3361;
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-top: 15px;
+    display: block;
+}
+
+.woocommerce-account .woocommerce-MyAccount-content > p:first-of-type {
+    margin-bottom: 10px;
+    font-size: 1.5em !important;
+    margin-left: 25px !important;
+
+   
+
+}
+
+
+.woocommerce-account .addresses .address .edit {
+    display: block;
+    width: 100%;
+    margin: 18px 0 0 0;
+    text-align: center;
+    float: none !important;
+    position: static !important;
+}
+
+
+
 /* Forms (Login, Registration, Account Details) */
 .woocommerce form input.input-text,
 .woocommerce form textarea {
@@ -1886,6 +1943,35 @@ body.woocommerce a[href*="/blog"] {
     border: 1px solid #1C3361 !important;
     color: #1C3361 !important; 
 }
+
+.woocommerce-account .addresses .address .edit,
+.woocommerce-account .addresses .title .edit {
+    background-color: #1C3361 !important;
+    color: #ffffff !important;
+    padding: 10px 23px !important;
+    border-radius: 5rem !important;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none !important;
+    line-height: 1 !important;
+    font-family: sans-serif;
+    transition: color 0.3s;
+    width: auto !important;      /* Let width fit content */
+    height: auto !important;     /* Let height fit content */
+    word-break: break-word;    
+    box-sizing: border-box;
+}
+
+.woocommerce-account .addresses .title .edit:hover {
+    background-color: white !important;
+    border: 1px solid #1C3361 !important;
+    color: #1C3361 !important; 
+
+
+}
+
+
 
 
 /* ========================================================= */
