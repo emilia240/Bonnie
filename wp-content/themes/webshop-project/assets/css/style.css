@@ -245,6 +245,7 @@ woocommerce
     animation: simplePulse 2s ease-in-out infinite !important;
 }
 
+
 @keyframes simplePulse {
     0%, 100% { transform: scale(1); }
     50% { transform: scale(1.1); }
@@ -362,8 +363,8 @@ woocommerce
 .single-product .product > .onsale {
     
     /* Shape, Color, Font (Your desired style) */
-    background-color: #ffffff !important;
-    color: #ff0000 !important;
+    background-color: #476cb5!important;
+    color: #f4f4f4 !important;
     border-radius: 100px !important;
     padding: 8px 50px !important;
     font-size: 15px !important;
